@@ -158,6 +158,53 @@
         </div>
       </div>
     </section>
+
+    <section id="editExamScreen" class="screen">
+      <div class="card">
+        <div class="button-row" style="margin-bottom: 16px;">
+          <button class="btn btn-muted" id="editExamBackBtn">← Back to Home</button>
+        </div>
+
+        <h2>Edit Exam Details</h2>
+
+        <form id="editExamForm" class="edit-exam-form">
+          <fieldset>
+            <legend>Exam Info</legend>
+            <div class="form-row">
+              <label>Exam Title</label>
+              <input id="editExamTitle" type="text" placeholder="Enter exam title" required />
+            </div>
+            <div class="form-row">
+              <label>Date</label>
+              <input id="editExamDate" type="date" required />
+            </div>
+            <div class="form-row">
+              <label>Duration (minutes)</label>
+              <input id="editExamDuration" type="number" min="1" required />
+            </div>
+            <div class="form-row">
+              <label>Marks Per Question</label>
+              <input id="editExamMarks" type="number" min="0" step="0.5" required />
+            </div>
+            <div class="form-row">
+              <label>Negative Mark</label>
+              <input id="editExamNegative" type="number" min="0" step="0.5" required />
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Questions</legend>
+            <div id="editQuestionsWrap"></div>
+            <button type="button" class="btn btn-secondary" id="addQuestionBtn">+ Add Question</button>
+          </fieldset>
+
+          <div class="button-row">
+            <button type="button" class="btn btn-muted" id="editExamCancelBtn">Cancel</button>
+            <button type="submit" class="btn">Save Changes</button>
+          </div>
+        </form>
+      </div>
+    </section>
   </main>
 
   <!-- Question Preview Modal -->

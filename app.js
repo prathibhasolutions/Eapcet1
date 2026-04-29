@@ -24,8 +24,11 @@
     home: document.getElementById("homeScreen"),
     instruction: document.getElementById("instructionScreen"),
     exam: document.getElementById("examScreen"),
-    result: document.getElementById("resultScreen")
+    result: document.getElementById("resultScreen"),
+    editExam: document.getElementById("editExamScreen")
   };
+
+  var editingExamId = null;
 
   function showScreen(name) {
     Object.keys(screens).forEach(function (key) {
@@ -193,6 +196,11 @@
     examList.innerHTML = "";
 
     var allExams = getAllExams();
+    if (!allExams.length) {
+      examList.innerHTML = "<div class='exam-item'><div><strong>No exams available</strong><p>Import or add an exam to continue.</p></div></div>";
+      return;
+    }
+
     allExams.forEach(function (exam) {
       var row = document.createElement("div");
       row.className = "exam-item";
@@ -201,7 +209,11 @@
         + "<strong>" + escapeHtml(exam.title) + "</strong>"
         + "<p>Date: " + escapeHtml(exam.date) + " | Questions: " + exam.questions.length + "</p>"
         + "</div>"
-        + "<button class=\"btn\" data-exam-id=\"" + exam.id + "\">Start Test</button>";
+        + "<div class=\"exam-item-actions\">"
+        + "<button class=\"btn\" data-exam-id=\"" + exam.id + "\">Start Test</button>"
+        + "<button class=\"btn btn-secondary\" data-edit-id=\"" + exam.id + "\">Edit</button>"
+        + "<button class=\"btn btn-danger\" data-delete-id=\"" + exam.id + "\">Delete</button>"
+        + "</div>";
       examList.appendChild(row);
     });
 
@@ -209,6 +221,24 @@
       btn.addEventListener("click", function () {
         var id = btn.getAttribute("data-exam-id");
         startInstructionFlow(id);
+      });
+    });
+
+    examList.querySelectorAll("button[data-edit-id]").forEach(function (btn) {
+      btn.addEventListener("click", function (e) {
+        e.stopPropagation();
+        var id = btn.getAttribute("data-edit-id");
+        openExamEditor(id);
+      });
+    });
+
+    examList.querySelectorAll("button[data-delete-id]").forEach(function (btn) {
+      btn.addEventListener("click", function (e) {
+        e.stopPropagation();
+        var id = btn.getAttribute("data-delete-id");
+        if (window.confirm("Are you sure you want to delete this exam? This cannot be undone.")) {
+          deleteExam(id);
+        }
       });
     });
   }
@@ -959,6 +989,21 @@
     return [];
   }
 
+  function ensureUniqueExamId(exam, usedIds) {
+    var baseId = String(exam.id || "exam");
+    var nextId = baseId;
+    var count = 1;
+
+    while (usedIds[nextId]) {
+      count += 1;
+      nextId = baseId + "-copy-" + count;
+    }
+
+    exam.id = nextId;
+    usedIds[nextId] = true;
+    return exam;
+  }
+
   function importExamJson(fileText) {
     var parsed;
     try {
@@ -975,12 +1020,31 @@
     }
 
     var current = readImportedExams();
+    var existing = getAllExams();
+    var usedIds = {};
+    var renamed = 0;
+
+    existing.forEach(function (exam) {
+      usedIds[exam.id] = true;
+    });
+
+    incoming = incoming.map(function (exam) {
+      var originalId = exam.id;
+      ensureUniqueExamId(exam, usedIds);
+      if (exam.id !== originalId) renamed += 1;
+      return exam;
+    });
+
     var map = {};
     current.forEach(function (exam) { map[exam.id] = exam; });
     incoming.forEach(function (exam) { map[exam.id] = exam; });
 
     writeImportedExams(Object.keys(map).map(function (id) { return map[id]; }));
     renderExamList();
+    if (renamed > 0) {
+      window.alert("Imported " + incoming.length + " exam(s). " + renamed + " exam ID(s) were auto-renamed to avoid conflicts.");
+      return;
+    }
     window.alert("Imported " + incoming.length + " exam(s) successfully.");
   }
 
@@ -1030,6 +1094,87 @@
     }
   }
 
+  function openExamEditor(examId) {
+    var exam = findExamById(examId);
+    if (!exam) {
+      window.alert("Exam not found.");
+      return;
+    }
+
+    editingExamId = examId;
+    loadExamForEdit(exam);
+    showScreen("editExam");
+  }
+
+  function loadExamForEdit(exam) {
+    document.getElementById("editExamTitle").value = exam.title || "";
+    document.getElementById("editExamDate").value = exam.date || "";
+    document.getElementById("editExamDuration").value = exam.durationMinutes || 180;
+    document.getElementById("editExamMarks").value = exam.marksPerQuestion || 1;
+    document.getElementById("editExamNegative").value = exam.negativeMark || 0;
+    renderEditQuestions(exam.questions || []);
+  }
+
+  function renderEditQuestions(questions) {
+    var wrap = document.getElementById("editQuestionsWrap");
+    wrap.innerHTML = "";
+
+    questions.forEach(function (q, idx) {
+      var options = Array.isArray(q.options) ? q.options : ["A", "B", "C", "D"];
+      var optionsText = options.map(function (opt) {
+        return typeof opt === "string" ? opt : (opt.text || opt.id || opt);
+      }).join(", ");
+
+      var box = document.createElement("div");
+      box.className = "question-edit-box";
+      box.innerHTML = ""
+        + "<div class=\"form-row\">"
+        + "<label>Question " + (idx + 1) + "</label>"
+        + "<textarea data-qid=\"" + escapeHtml(q.id || "") + "\" data-qidx=\"" + idx + "\" placeholder=\"Question text (supports LaTeX math)\">"
+        + escapeHtml(q.text || "")
+        + "</textarea>"
+        + "</div>"
+        + "<div class=\"form-row\">"
+        + "<label>Image URL</label>"
+        + "<input type=\"text\" data-qimg=\"" + idx + "\" placeholder=\"Image URL (optional)\" value=\"" + escapeHtml(q.image || "") + "\" />"
+        + "</div>"
+        + "<div class=\"form-row\">"
+        + "<label>Options (comma-separated)</label>"
+        + "<input type=\"text\" data-qopt=\"" + idx + "\" placeholder=\"A, B, C, D\" value=\"" + escapeHtml(optionsText) + "\" />"
+        + "</div>"
+        + "<div class=\"form-row\">"
+        + "<label>Correct Answer</label>"
+        + "<input type=\"text\" data-qcor=\"" + idx + "\" placeholder=\"Correct option (e.g., A)\" value=\"" + escapeHtml(getCorrectOptionId(q) || "") + "\" />"
+        + "</div>"
+        + "<div class=\"form-row\">"
+        + "<label>Section</label>"
+        + "<input type=\"text\" data-qsec=\"" + idx + "\" placeholder=\"Section name (e.g., Maths)\" value=\"" + escapeHtml(q.section || "") + "\" />"
+        + "</div>"
+        + "<button type=\"button\" class=\"question-edit-remove\" data-qremove=\"" + idx + "\">Remove Question</button>";
+      wrap.appendChild(box);
+    });
+
+    wrap.querySelectorAll("button[data-qremove]").forEach(function (btn) {
+      btn.addEventListener("click", function (e) {
+        e.preventDefault();
+        var exam = findExamById(editingExamId);
+        if (exam && exam.questions) {
+          var idx = Number(btn.getAttribute("data-qremove"));
+          exam.questions.splice(idx, 1);
+          renderEditQuestions(exam.questions);
+        }
+      });
+    });
+  }
+
+  function deleteExam(examId) {
+    var imported = readImportedExams();
+    var filtered = imported.filter(function (e) { return e.id !== examId; });
+    writeImportedExams(filtered);
+    renderExamList();
+    window.alert("Exam deleted successfully.");
+  }
+
   function wireEvents() {
     wireMarkForReview();
     wireModal();
@@ -1073,6 +1218,85 @@
 
     document.getElementById("goHomeBtn").addEventListener("click", function () {
       clearResultSession();
+      showScreen("home");
+    });
+
+    document.getElementById("editExamBackBtn").addEventListener("click", function () {
+      editingExamId = null;
+      showScreen("home");
+    });
+
+    document.getElementById("editExamCancelBtn").addEventListener("click", function () {
+      editingExamId = null;
+      showScreen("home");
+    });
+
+    document.getElementById("addQuestionBtn").addEventListener("click", function (e) {
+      e.preventDefault();
+      var exam = findExamById(editingExamId);
+      if (exam) {
+        var newQ = {
+          id: "q-new-" + Date.now(),
+          section: "General",
+          text: "",
+          image: "",
+          options: ["A", "B", "C", "D"],
+          correct: "A"
+        };
+        exam.questions.push(newQ);
+        renderEditQuestions(exam.questions);
+      }
+    });
+
+    document.getElementById("editExamForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      var exam = findExamById(editingExamId);
+      if (!exam) return;
+
+      var title = (document.getElementById("editExamTitle").value || "").trim();
+      var date = (document.getElementById("editExamDate").value || "").trim();
+      var duration = Number(document.getElementById("editExamDuration").value || 180);
+      var marks = Number(document.getElementById("editExamMarks").value || 1);
+      var negative = Number(document.getElementById("editExamNegative").value || 0);
+
+      if (!title || !date) {
+        window.alert("Please fill in exam title and date.");
+        return;
+      }
+
+      exam.title = title;
+      exam.date = date;
+      exam.durationMinutes = duration;
+      exam.marksPerQuestion = marks;
+      exam.negativeMark = negative;
+
+      var wrap = document.getElementById("editQuestionsWrap");
+      var textareas = wrap.querySelectorAll("textarea");
+      textareas.forEach(function (ta, idx) {
+        var qtext = ta.value;
+        var qimg = document.querySelector("input[data-qimg='" + idx + "']").value;
+        var qopt = (document.querySelector("input[data-qopt='" + idx + "']").value || "").split(",").map(function (s) { return s.trim(); });
+        var qcor = (document.querySelector("input[data-qcor='" + idx + "']").value || "").trim();
+        var qsec = (document.querySelector("input[data-qsec='" + idx + "']").value || "").trim();
+
+        if (exam.questions[idx]) {
+          exam.questions[idx].text = qtext;
+          exam.questions[idx].image = qimg;
+          exam.questions[idx].options = qopt.length > 0 ? qopt : ["A", "B", "C", "D"];
+          exam.questions[idx].correct = qcor || "A";
+          exam.questions[idx].section = qsec || "General";
+        }
+      });
+
+      var imported = readImportedExams();
+      var map = {};
+      imported.forEach(function (e) { map[e.id] = e; });
+      map[exam.id] = exam;
+      writeImportedExams(Object.keys(map).map(function (id) { return map[id]; }));
+
+      window.alert("Exam changes saved successfully!");
+      editingExamId = null;
+      renderExamList();
       showScreen("home");
     });
   }
