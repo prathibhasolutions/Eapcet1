@@ -1,0 +1,550 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin — Upload Exam</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --brand: #0b5fff;
+      --ink: #0f172a;
+      --muted: #64748b;
+      --line: #d7deea;
+      --card: #fff;
+      --ok: #16a34a;
+      --warn: #dc2626;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: "Manrope", sans-serif;
+      background: #f3f7ff;
+      color: var(--ink);
+      padding: 24px 16px 60px;
+    }
+
+    h1 { font-size: 22px; margin-bottom: 4px; }
+    .sub { color: var(--muted); font-size: 14px; margin-bottom: 24px; }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 20px;
+      max-width: 960px;
+      margin: 0 auto 20px;
+    }
+
+    .card h2 {
+      font-size: 16px;
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px;
+    }
+
+    label { display: block; font-size: 13px; font-weight: 600; margin-bottom: 4px; color: var(--muted); }
+
+    input, select {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 9px 10px;
+      font-size: 14px;
+      font-family: inherit;
+    }
+
+    /* ── Section key grid ───────────────────────── */
+    .section-label {
+      font-weight: 700;
+      font-size: 14px;
+      margin: 18px 0 10px;
+      padding: 6px 12px;
+      border-radius: 8px;
+      display: inline-block;
+    }
+
+    .label-maths    { background: #dbeafe; color: #1e40af; }
+    .label-physics  { background: #fef3c7; color: #92400e; }
+    .label-chem     { background: #dcfce7; color: #166534; }
+
+    .key-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+      gap: 6px;
+    }
+
+    .key-cell {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 3px;
+    }
+
+    .key-cell span {
+      font-size: 11px;
+      color: var(--muted);
+      font-weight: 700;
+    }
+
+    .key-cell select {
+      width: 100%;
+      padding: 6px 4px;
+      font-size: 13px;
+      font-weight: 700;
+      text-align: center;
+      border-radius: 6px;
+    }
+
+    .key-cell select.val-A { background: #eff6ff; border-color: #93c5fd; }
+    .key-cell select.val-B { background: #f0fdf4; border-color: #86efac; }
+    .key-cell select.val-C { background: #fefce8; border-color: #fde047; }
+    .key-cell select.val-D { background: #fdf4ff; border-color: #e879f9; }
+
+    /* ── Paste-key area ─────────────────────────── */
+    .paste-tip {
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+
+    .paste-row {
+      display: flex;
+      gap: 8px;
+      align-items: flex-start;
+    }
+
+    .paste-row textarea {
+      flex: 1;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 10px;
+      font-family: monospace;
+      font-size: 13px;
+      resize: vertical;
+      min-height: 70px;
+    }
+
+    /* ── Buttons ────────────────────────────────── */
+    .btn-row {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .btn {
+      border: 0;
+      border-radius: 10px;
+      padding: 11px 18px;
+      font-weight: 700;
+      cursor: pointer;
+      font-size: 14px;
+      font-family: inherit;
+    }
+
+    .btn-primary { background: linear-gradient(90deg, #0b5fff, #2575ff); color: #fff; }
+    .btn-green   { background: linear-gradient(90deg, #15803d, #16a34a); color: #fff; }
+    .btn-muted   { background: #e9edf5; color: var(--ink); }
+    .btn:hover   { filter: brightness(1.07); }
+
+    /* ── Output ─────────────────────────────────── */
+    #outputWrap { display: none; }
+
+    .output-box {
+      background: #0f172a;
+      color: #e2e8f0;
+      border-radius: 10px;
+      padding: 16px;
+      font-family: monospace;
+      font-size: 12px;
+      white-space: pre;
+      overflow-x: auto;
+      max-height: 340px;
+      margin-top: 12px;
+    }
+
+    .step-list {
+      list-style: none;
+      counter-reset: step;
+      display: grid;
+      gap: 10px;
+    }
+
+    .step-list li {
+      counter-increment: step;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 14px;
+    }
+
+    .step-list li::before {
+      content: counter(step);
+      background: var(--brand);
+      color: #fff;
+      font-weight: 800;
+      min-width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+    }
+
+    .folder-tree {
+      background: #f8fafc;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 12px 16px;
+      font-family: monospace;
+      font-size: 13px;
+      line-height: 2;
+    }
+
+    .tag { display: inline-block; border-radius: 6px; padding: 2px 8px; font-size: 12px; font-weight: 700; }
+    .tag-blue { background: #dbeafe; color: #1d4ed8; }
+    .tag-green { background: #dcfce7; color: #15803d; }
+    .tag-orange { background: #ffedd5; color: #c2410c; }
+
+    .alert {
+      background: #fef2f2;
+      border: 1px solid #fca5a5;
+      border-radius: 8px;
+      padding: 10px 14px;
+      font-size: 13px;
+      color: #991b1b;
+      margin-top: 8px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div style="max-width:960px;margin:0 auto 20px;">
+    <h1>📋 Exam Admin Panel</h1>
+    <p class="sub">Fill in the exam details and answer keys, then download the ready-to-use <code>exams.js</code>.</p>
+  </div>
+
+  <!-- Step 1: Image folder guide -->
+  <div class="card">
+    <h2>Step 1 — Upload Question Images to GitHub</h2>
+    <ul class="step-list">
+      <li>Create an <strong>Exam ID</strong> below (e.g. <code>eapcet-daily-002</code>). Use only lowercase letters, numbers and hyphens.</li>
+      <li>In your GitHub repo, create folders matching this structure and upload your question images:</li>
+    </ul>
+    <div class="folder-tree" id="folderTree" style="margin-top:12px;">
+assets/
+└── exams/
+    └── <span id="treeId" style="color:#0b5fff;font-weight:700;">eapcet-daily-001</span>/
+        ├── maths/
+        │   ├── q1.jpg  …  q80.jpg
+        ├── physics/
+        │   ├── q1.jpg  …  q40.jpg
+        └── chemistry/
+            ├── q1.jpg  …  q40.jpg
+    </div>
+    <p style="font-size:13px;color:var(--muted);margin-top:10px;">
+      <span class="tag tag-blue">Tip</span>&nbsp;
+      Each image should contain the full question text and the 4 options (A, B, C, D) — students will select the option on screen.
+    </p>
+  </div>
+
+  <!-- Step 2: Exam details -->
+  <div class="card">
+    <h2>Step 2 — Exam Details</h2>
+    <div class="form-grid">
+      <div>
+        <label for="examId">Exam ID</label>
+        <input id="examId" type="text" placeholder="eapcet-daily-002" value="eapcet-daily-002" />
+      </div>
+      <div>
+        <label for="examTitle">Exam Title</label>
+        <input id="examTitle" type="text" placeholder="EAPCET Daily Mock Test - 002" value="EAPCET Daily Mock Test - 002" />
+      </div>
+      <div>
+        <label for="examDate">Date</label>
+        <input id="examDate" type="date" />
+      </div>
+      <div>
+        <label for="duration">Duration (minutes)</label>
+        <input id="duration" type="number" value="180" min="1" />
+      </div>
+      <div>
+        <label for="marksPerQ">Marks per Question</label>
+        <input id="marksPerQ" type="number" value="1" min="0" step="0.5" />
+      </div>
+      <div>
+        <label for="negativeMark">Negative Mark</label>
+        <input id="negativeMark" type="number" value="0" min="0" step="0.25" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Step 3: Answer keys -->
+  <div class="card">
+    <h2>Step 3 — Enter Answer Keys</h2>
+
+    <p class="paste-tip">
+      <strong>Quick fill:</strong> paste a string of 160 letters (e.g. <code>ABCDDCBA…</code>) and click Apply.
+    </p>
+    <div class="paste-row">
+      <textarea id="bulkPaste" placeholder="Paste all 160 answer keys as a single string: ABCDABCD…"></textarea>
+      <button class="btn btn-muted" onclick="applyBulkPaste()">Apply</button>
+    </div>
+    <div id="pasteAlert" class="alert">Please provide exactly 160 characters (only A, B, C or D).</div>
+
+    <div id="keyGridRoot"></div>
+  </div>
+
+  <!-- Generate -->
+  <div class="card">
+    <h2>Step 4 — Generate &amp; Download</h2>
+    <p style="font-size:14px;color:var(--muted);margin-bottom:14px;">
+      This creates a new <code>exams.js</code> that <strong>includes all previous exams</strong> plus your new one. Replace the file in your repo and push to GitHub.
+    </p>
+    <div class="btn-row">
+      <button class="btn btn-primary" onclick="generateOutput()">Generate exams.js</button>
+      <button class="btn btn-green" id="downloadBtn" style="display:none" onclick="downloadFile()">⬇ Download exams.js</button>
+    </div>
+    <div id="alertMsg" class="alert" style="display:none;"></div>
+    <div id="outputWrap">
+      <div class="output-box" id="outputBox"></div>
+      <div class="btn-row">
+        <button class="btn btn-muted" onclick="copyOutput()">📋 Copy to Clipboard</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Existing exams loader -->
+  <div class="card">
+    <h2>Existing Exams (optional)</h2>
+    <p class="paste-tip">
+      Paste your current <code>exams.js</code> content here so new exam is appended to the existing list instead of replacing it.
+    </p>
+    <textarea id="existingJs" style="width:100%;height:120px;font-family:monospace;font-size:12px;border:1px solid var(--line);border-radius:8px;padding:10px;" placeholder="Paste existing exams.js content here…"></textarea>
+  </div>
+
+  <script>
+    var SECTIONS = [
+      { key: "maths",     title: "Maths",     count: 80, start: 1  },
+      { key: "physics",   title: "Physics",   count: 40, start: 81 },
+      { key: "chemistry", title: "Chemistry", count: 40, start: 121 }
+    ];
+
+    var LABEL_CLASS = { maths: "label-maths", physics: "label-physics", chemistry: "label-chem" };
+
+    // Set today's date default
+    document.getElementById("examDate").value = new Date().toISOString().slice(0, 10);
+
+    // Sync folder tree preview
+    document.getElementById("examId").addEventListener("input", function () {
+      var id = this.value.trim() || "eapcet-daily-001";
+      document.getElementById("treeId").textContent = id;
+    });
+
+    // Build key grid
+    (function buildGrid() {
+      var root = document.getElementById("keyGridRoot");
+      root.innerHTML = "";
+      SECTIONS.forEach(function (sec) {
+        var heading = document.createElement("div");
+        heading.className = "section-label " + LABEL_CLASS[sec.key];
+        heading.textContent = sec.title + " (" + sec.count + " questions, Q" + sec.start + "–Q" + (sec.start + sec.count - 1) + ")";
+        root.appendChild(heading);
+
+        var grid = document.createElement("div");
+        grid.className = "key-grid";
+
+        for (var i = 1; i <= sec.count; i++) {
+          var qNo = sec.start + i - 1;
+          var cell = document.createElement("div");
+          cell.className = "key-cell";
+
+          var label = document.createElement("span");
+          label.textContent = "Q" + qNo;
+
+          var sel = document.createElement("select");
+          sel.id = "key-" + qNo;
+          sel.className = "val-A";
+          ["A", "B", "C", "D"].forEach(function (opt) {
+            var o = document.createElement("option");
+            o.value = opt;
+            o.textContent = opt;
+            sel.appendChild(o);
+          });
+          sel.addEventListener("change", function () {
+            this.className = "val-" + this.value;
+          });
+
+          cell.appendChild(label);
+          cell.appendChild(sel);
+          grid.appendChild(cell);
+        }
+        root.appendChild(grid);
+      });
+    })();
+
+    function getKeys() {
+      var keys = [];
+      for (var i = 1; i <= 160; i++) {
+        var sel = document.getElementById("key-" + i);
+        keys.push(sel ? sel.value : "A");
+      }
+      return keys;
+    }
+
+    function applyBulkPaste() {
+      var raw = (document.getElementById("bulkPaste").value || "").replace(/\s/g, "").toUpperCase();
+      var alert = document.getElementById("pasteAlert");
+      var valid = /^[ABCD]{160}$/.test(raw);
+      alert.style.display = valid ? "none" : "block";
+      if (!valid) return;
+
+      for (var i = 0; i < 160; i++) {
+        var sel = document.getElementById("key-" + (i + 1));
+        if (sel) {
+          sel.value = raw[i];
+          sel.className = "val-" + raw[i];
+        }
+      }
+    }
+
+    function buildExamObject(id, title, date, duration, marksPerQ, negativeMark, keys) {
+      var questions = [];
+      var sectionDefs = [
+        { key: "maths",     title: "Maths",     count: 80, start: 1 },
+        { key: "physics",   title: "Physics",   count: 40, start: 81 },
+        { key: "chemistry", title: "Chemistry", count: 40, start: 121 }
+      ];
+
+      sectionDefs.forEach(function (sec) {
+        for (var i = 1; i <= sec.count; i++) {
+          var qNo = sec.start + i - 1;
+          questions.push({
+            id: sec.key + "-" + i,
+            section: sec.title,
+            image: "assets/exams/" + id + "/" + sec.key + "/q" + i + ".jpg",
+            options: ["A", "B", "C", "D"],
+            correct: keys[qNo - 1]
+          });
+        }
+      });
+
+      return {
+        id: id,
+        title: title,
+        date: date,
+        durationMinutes: Number(duration),
+        marksPerQuestion: Number(marksPerQ),
+        negativeMark: Number(negativeMark),
+        sections: [
+          { key: "maths",     title: "Maths",     count: 80, start: 1,   end: 80  },
+          { key: "physics",   title: "Physics",   count: 40, start: 81,  end: 120 },
+          { key: "chemistry", title: "Chemistry", count: 40, start: 121, end: 160 }
+        ],
+        questions: questions
+      };
+    }
+
+    function examToJs(exam) {
+      var lines = [];
+      lines.push("  {");
+      lines.push("    id: " + JSON.stringify(exam.id) + ",");
+      lines.push("    title: " + JSON.stringify(exam.title) + ",");
+      lines.push("    date: " + JSON.stringify(exam.date) + ",");
+      lines.push("    durationMinutes: " + exam.durationMinutes + ",");
+      lines.push("    marksPerQuestion: " + exam.marksPerQuestion + ",");
+      lines.push("    negativeMark: " + exam.negativeMark + ",");
+      lines.push("    sections: [");
+      exam.sections.forEach(function (s, i) {
+        var comma = i < exam.sections.length - 1 ? "," : "";
+        lines.push("      { key: " + JSON.stringify(s.key) + ", title: " + JSON.stringify(s.title) + ", count: " + s.count + ", start: " + s.start + ", end: " + s.end + " }" + comma);
+      });
+      lines.push("    ],");
+      lines.push("    questions: [");
+      exam.questions.forEach(function (q, i) {
+        var comma = i < exam.questions.length - 1 ? "," : "";
+        lines.push("      { id: " + JSON.stringify(q.id) + ", section: " + JSON.stringify(q.section) + ", image: " + JSON.stringify(q.image) + ", options: [\"A\",\"B\",\"C\",\"D\"], correct: " + JSON.stringify(q.correct) + " }" + comma);
+      });
+      lines.push("    ]");
+      lines.push("  }");
+      return lines.join("\n");
+    }
+
+    var generatedCode = "";
+
+    function generateOutput() {
+      var id       = document.getElementById("examId").value.trim();
+      var title    = document.getElementById("examTitle").value.trim();
+      var date     = document.getElementById("examDate").value;
+      var duration = document.getElementById("duration").value;
+      var marksPerQ     = document.getElementById("marksPerQ").value;
+      var negativeMark  = document.getElementById("negativeMark").value;
+
+      var alertBox = document.getElementById("alertMsg");
+      if (!id || !title || !date) {
+        alertBox.textContent = "Please fill in Exam ID, Title, and Date.";
+        alertBox.style.display = "block";
+        return;
+      }
+      alertBox.style.display = "none";
+
+      var keys = getKeys();
+      var newExam = buildExamObject(id, title, date, duration, marksPerQ, negativeMark, keys);
+
+      // Try to extract existing exams from pasted content
+      var existingExams = [];
+      var existingJs = (document.getElementById("existingJs").value || "").trim();
+      if (existingJs) {
+        try {
+          // Sandboxed eval to extract window.EXAMS
+          var sandbox = { window: { EXAMS: [] } };
+          (new Function("window", existingJs))(sandbox.window);
+          if (Array.isArray(sandbox.window.EXAMS)) {
+            existingExams = sandbox.window.EXAMS.filter(function (e) { return e.id !== newExam.id; });
+          }
+        } catch (e) {
+          // Ignore parse errors — just start fresh
+        }
+      }
+
+      var allExams = existingExams.concat([newExam]);
+
+      var output = "window.EXAMS = [\n";
+      output += allExams.map(examToJs).join(",\n");
+      output += "\n];";
+
+      generatedCode = output;
+      document.getElementById("outputBox").textContent = output;
+      document.getElementById("outputWrap").style.display = "block";
+      document.getElementById("downloadBtn").style.display = "inline-block";
+    }
+
+    function copyOutput() {
+      if (!generatedCode) return;
+      navigator.clipboard.writeText(generatedCode).then(function () {
+        alert("Copied to clipboard!");
+      }).catch(function () {
+        alert("Press Ctrl+A then Ctrl+C inside the code box to copy.");
+      });
+    }
+
+    function downloadFile() {
+      if (!generatedCode) return;
+      var blob = new Blob([generatedCode], { type: "text/javascript" });
+      var a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      a.download = "exams.js";
+      a.click();
+    }
+  </script>
+</body>
+</html>

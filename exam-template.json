@@ -1,0 +1,56 @@
+{
+  "exams": [
+    {
+      "id": "eapcet-daily-002",
+      "title": "EAPCET Daily Mock Test - 002",
+      "date": "2026-04-29",
+      "durationMinutes": 180,
+      "marksPerQuestion": 1,
+      "negativeMark": 0,
+      "sections": [
+        { "key": "maths", "title": "Maths", "count": 1, "start": 1, "end": 1 },
+        { "key": "physics", "title": "Physics", "count": 1, "start": 2, "end": 2 },
+        { "key": "chemistry", "title": "Chemistry", "count": 1, "start": 3, "end": 3 }
+      ],
+      "questions": [
+        {
+          "id": "maths-1",
+          "section": "Maths",
+          "text": "If $x^2 - 5x + 6 = 0$, then the value of $x$ can be:",
+          "image": "assets/exams/eapcet-daily-002/maths/q1.jpg",
+          "options": [
+            { "id": "A", "text": "$x=2$" },
+            { "id": "B", "text": "$x=3$" },
+            { "id": "C", "text": "$x=4$", "image": "assets/exams/eapcet-daily-002/maths/q1-opt-c.jpg" },
+            { "id": "D", "text": "$x=5$" }
+          ],
+          "correct": "A"
+        },
+        {
+          "id": "physics-1",
+          "section": "Physics",
+          "text": "A body is projected with speed $u$ at angle $\\theta$. Time of flight is:",
+          "options": [
+            { "id": "A", "text": "$\\frac{u\\sin\\theta}{g}$" },
+            { "id": "B", "text": "$\\frac{2u\\sin\\theta}{g}$" },
+            { "id": "C", "text": "$\\frac{u\\cos\\theta}{g}$" },
+            { "id": "D", "text": "$\\frac{2u\\cos\\theta}{g}$" }
+          ],
+          "correct": "B"
+        },
+        {
+          "id": "chemistry-1",
+          "section": "Chemistry",
+          "text": "Identify the correct Lewis structure.",
+          "options": [
+            { "id": "A", "text": "Option A", "image": "assets/exams/eapcet-daily-002/chemistry/q1-opt-a.jpg" },
+            { "id": "B", "text": "Option B", "image": "assets/exams/eapcet-daily-002/chemistry/q1-opt-b.jpg" },
+            { "id": "C", "text": "Option C" },
+            { "id": "D", "text": "Option D" }
+          ],
+          "correct": "A"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,604 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Question Upload Center</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Sora:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f3f7ff;
+      --ink: #0f172a;
+      --muted: #5b6577;
+      --line: #d7deea;
+      --card: #ffffff;
+      --brand: #0b5fff;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Manrope", sans-serif;
+      background: radial-gradient(circle at 10% 10%, #dce8ff 0%, #f3f7ff 40%, #ecfff7 100%);
+      color: var(--ink);
+      min-height: 100vh;
+      padding: 22px 14px 40px;
+    }
+
+    .wrap {
+      max-width: 980px;
+      margin: 0 auto;
+    }
+
+    .hero {
+      background: linear-gradient(120deg, #0f172a 0%, #163469 55%, #005670 100%);
+      color: #fff;
+      border-radius: 16px;
+      padding: 20px;
+      margin-bottom: 14px;
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-family: "Sora", sans-serif;
+      font-size: 24px;
+    }
+
+    .hero p {
+      margin: 8px 0 0;
+      opacity: 0.9;
+      font-size: 14px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 16px;
+      margin-bottom: 12px;
+      box-shadow: 0 12px 28px rgba(28, 43, 72, 0.08);
+    }
+
+    .card h2 {
+      margin: 0 0 8px;
+      font-size: 18px;
+    }
+
+    .hint {
+      margin: 0 0 12px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .btn {
+      border: 0;
+      background: linear-gradient(90deg, var(--brand), #2575ff);
+      color: #fff;
+      border-radius: 10px;
+      padding: 10px 14px;
+      font-weight: 700;
+      font-size: 14px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .btn-muted {
+      background: #e9edf5;
+      color: var(--ink);
+    }
+
+    .json-box {
+      margin-top: 10px;
+      width: 100%;
+      min-height: 140px;
+      resize: vertical;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 10px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 12px;
+      background: #fff;
+    }
+
+    .field-select,
+    .field-input {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 10px;
+      font-family: "Manrope", sans-serif;
+      font-size: 14px;
+      background: #fff;
+      color: var(--ink);
+      min-width: 240px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 700px) {
+      .grid-2 { grid-template-columns: 1fr; }
+      .field-select,
+      .field-input { min-width: 0; width: 100%; }
+    }
+
+    .status {
+      margin-top: 10px;
+      font-size: 13px;
+      color: #166534;
+      background: #ecfdf5;
+      border: 1px solid #bbf7d0;
+      border-radius: 8px;
+      padding: 8px 10px;
+      display: none;
+    }
+
+    .status.error {
+      color: #991b1b;
+      background: #fef2f2;
+      border-color: #fecaca;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <h1>Question Upload Center</h1>
+      <p>Admin page for importing exams in JSON format (text + LaTeX + optional images).</p>
+    </section>
+
+    <section class="card">
+      <h2>Upload JSON File</h2>
+      <p class="hint">Import one exam, array of exams, or an object with exams key. Imported exams are stored in this browser and shown on the student home page.</p>
+      <div class="actions">
+        <input id="examJsonInput" type="file" accept="application/json,.json" hidden>
+        <button class="btn btn-muted" id="pickFileBtn" type="button">Choose JSON File</button>
+        <a class="btn btn-muted" href="exam-template.json" download>Download Template</a>
+        <a class="btn btn-muted" href="EXAM_JSON_FORMAT.md" target="_blank" rel="noopener">View JSON Format</a>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Paste JSON</h2>
+      <p class="hint">Paste JSON content and click import.</p>
+      <textarea id="examJsonText" class="json-box" placeholder="Paste JSON here..."></textarea>
+      <div class="actions" style="margin-top:10px;">
+        <button class="btn" id="importFromTextBtn" type="button">Import Pasted JSON</button>
+        <a class="btn btn-muted" href="admin.html" target="_blank" rel="noopener">Open Easy Builder</a>
+        <a class="btn btn-muted" href="index.html">Go to Student Home</a>
+      </div>
+      <div id="statusBox" class="status"></div>
+    </section>
+
+    <section class="card">
+      <h2>Add Questions to Specific Exam + Section</h2>
+      <p class="hint">Choose target exam and section first. Your pasted questions will be inserted only into that exam and section.</p>
+
+      <div class="actions" style="gap:10px;align-items:center;">
+        <label for="targetExamSelect" style="font-size:13px;color:var(--muted);font-weight:700;">Target Exam</label>
+        <select id="targetExamSelect" class="field-select"></select>
+      </div>
+
+      <div class="actions" style="gap:10px;align-items:center;margin-top:10px;">
+        <label for="targetSectionSelect" style="font-size:13px;color:var(--muted);font-weight:700;">Target Section</label>
+        <select id="targetSectionSelect" class="field-select">
+          <option value="Maths">Maths</option>
+          <option value="Physics">Physics</option>
+          <option value="Chemistry">Chemistry</option>
+          <option value="General">General</option>
+        </select>
+      </div>
+
+      <div class="grid-2">
+        <input id="newExamId" class="field-input" type="text" placeholder="New exam id (required only for Create New Exam)">
+        <input id="newExamTitle" class="field-input" type="text" placeholder="New exam title (optional for Create New Exam)">
+      </div>
+
+      <textarea id="sectionQuestionsText" class="json-box" placeholder="Paste questions JSON only (array or { &quot;questions&quot;: [...] })"></textarea>
+
+      <div class="actions" style="margin-top:10px;">
+        <button class="btn" id="importToSectionBtn" type="button">Import Into Selected Exam + Section</button>
+      </div>
+    </section>
+  </div>
+
+  <script src="exams.js"></script>
+  <script>
+    var IMPORTED_EXAMS_STORAGE_KEY = "eapcet-imported-exams-v1";
+
+    function slugify(value) {
+      return String(value || "")
+        .trim()
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, "-")
+        .replace(/^-+|-+$/g, "") || "section";
+    }
+
+    function toOptionObject(opt, index) {
+      var fallbackId = String.fromCharCode(65 + index);
+      if (typeof opt === "string") {
+        return { id: opt, text: "Option " + opt, image: "" };
+      }
+      if (opt && typeof opt === "object") {
+        var id = String(opt.id || fallbackId);
+        return {
+          id: id,
+          text: opt.text != null ? String(opt.text) : (opt.label != null ? String(opt.label) : ("Option " + id)),
+          image: opt.image || opt.imageUrl || ""
+        };
+      }
+      return { id: fallbackId, text: "Option " + fallbackId, image: "" };
+    }
+
+    function normalizeQuestion(question, index) {
+      var q = question && typeof question === "object" ? question : {};
+      var options = Array.isArray(q.options) ? q.options : ["A", "B", "C", "D"];
+
+      return {
+        id: q.id || ("q-" + (index + 1)),
+        section: q.section || "General",
+        text: q.text != null ? String(q.text) : "",
+        image: q.image || q.imageUrl || "",
+        options: options.map(function (opt, i) { return toOptionObject(opt, i); }),
+        correct: q.correct || q.correctOption || "A"
+      };
+    }
+
+    function buildSectionsFromQuestions(questions) {
+      var list = [];
+      var start = 1;
+      var grouped = {};
+
+      questions.forEach(function (q) {
+        var title = q.section || "General";
+        grouped[title] = (grouped[title] || 0) + 1;
+      });
+
+      Object.keys(grouped).forEach(function (title) {
+        var count = grouped[title];
+        list.push({
+          key: slugify(title),
+          title: title,
+          count: count,
+          start: start,
+          end: start + count - 1
+        });
+        start += count;
+      });
+
+      if (!list.length) return [{ key: "general", title: "General", count: 0, start: 1, end: 0 }];
+      return list;
+    }
+
+    function normalizeExam(exam) {
+      if (!exam || typeof exam !== "object") return null;
+      var questions = Array.isArray(exam.questions) ? exam.questions.map(normalizeQuestion) : [];
+      var sections = Array.isArray(exam.sections) && exam.sections.length ? exam.sections : buildSectionsFromQuestions(questions);
+
+      return {
+        id: String(exam.id || ("exam-" + Date.now())),
+        title: String(exam.title || "Mock Test"),
+        date: String(exam.date || new Date().toISOString().slice(0, 10)),
+        durationMinutes: Number(exam.durationMinutes || 180),
+        marksPerQuestion: Number(exam.marksPerQuestion || 1),
+        negativeMark: Number(exam.negativeMark || 0),
+        sections: sections,
+        questions: questions
+      };
+    }
+
+    function getAllExams() {
+      var base = Array.isArray(window.EXAMS) ? window.EXAMS.map(normalizeExam).filter(Boolean) : [];
+      var imported = readImported().map(normalizeExam).filter(Boolean);
+      var map = {};
+      base.forEach(function (exam) { map[exam.id] = exam; });
+      imported.forEach(function (exam) { map[exam.id] = exam; });
+      return Object.keys(map).map(function (id) { return map[id]; });
+    }
+
+    function parseQuestionsPayload(payload) {
+      if (Array.isArray(payload)) return payload;
+      if (payload && Array.isArray(payload.questions)) return payload.questions;
+      return [];
+    }
+
+    function parseSectionKey(sectionTitle) {
+      var s = String(sectionTitle || "").toLowerCase();
+      if (s === "maths") return "maths";
+      if (s === "physics") return "physics";
+      if (s === "chemistry") return "chemistry";
+      return slugify(sectionTitle);
+    }
+
+    function reorderBySection(questions) {
+      var preferred = ["Maths", "Physics", "Chemistry"];
+      var buckets = {};
+
+      questions.forEach(function (q) {
+        var sec = q.section || "General";
+        if (!buckets[sec]) buckets[sec] = [];
+        buckets[sec].push(q);
+      });
+
+      var ordered = [];
+      preferred.forEach(function (sec) {
+        if (buckets[sec]) {
+          ordered = ordered.concat(buckets[sec]);
+          delete buckets[sec];
+        }
+      });
+
+      Object.keys(buckets).forEach(function (sec) {
+        ordered = ordered.concat(buckets[sec]);
+      });
+
+      return ordered;
+    }
+
+    function rebuildSectionsFromOrderedQuestions(questions) {
+      var sections = [];
+      var start = 1;
+      var current = null;
+      var count = 0;
+
+      questions.forEach(function (q) {
+        var sec = q.section || "General";
+        if (sec !== current) {
+          if (current !== null) {
+            sections.push({
+              key: parseSectionKey(current),
+              title: current,
+              count: count,
+              start: start,
+              end: start + count - 1
+            });
+            start += count;
+          }
+          current = sec;
+          count = 1;
+        } else {
+          count += 1;
+        }
+      });
+
+      if (current !== null) {
+        sections.push({
+          key: parseSectionKey(current),
+          title: current,
+          count: count,
+          start: start,
+          end: start + count - 1
+        });
+      }
+
+      return sections;
+    }
+
+    function nextQuestionNumberForSection(exam, sectionTitle) {
+      var max = 0;
+      (exam.questions || []).forEach(function (q) {
+        if ((q.section || "") !== sectionTitle) return;
+        var m = String(q.id || "").match(/-(\d+)$/);
+        if (m) max = Math.max(max, Number(m[1]));
+      });
+      return max + 1;
+    }
+
+    function populateExamSelect() {
+      var select = document.getElementById("targetExamSelect");
+      if (!select) return;
+      var exams = getAllExams();
+      select.innerHTML = "";
+
+      var createOpt = document.createElement("option");
+      createOpt.value = "__new__";
+      createOpt.textContent = "Create New Exam";
+      select.appendChild(createOpt);
+
+      exams.forEach(function (exam) {
+        var opt = document.createElement("option");
+        opt.value = exam.id;
+        opt.textContent = exam.title + " (" + exam.id + ")";
+        select.appendChild(opt);
+      });
+    }
+
+    function upsertImportedExam(updatedExam) {
+      var current = readImported().map(normalizeExam).filter(Boolean);
+      var map = {};
+      current.forEach(function (exam) { map[exam.id] = exam; });
+      map[updatedExam.id] = updatedExam;
+      var merged = Object.keys(map).map(function (id) { return map[id]; });
+      writeImported(merged);
+    }
+
+    function importQuestionsIntoSection() {
+      var examSelect = document.getElementById("targetExamSelect");
+      var sectionSelect = document.getElementById("targetSectionSelect");
+      var newExamIdInput = document.getElementById("newExamId");
+      var newExamTitleInput = document.getElementById("newExamTitle");
+      var textBox = document.getElementById("sectionQuestionsText");
+
+      var raw = String(textBox.value || "").trim();
+      if (!raw) {
+        setStatus("Paste questions JSON first.", true);
+        return;
+      }
+
+      var parsed;
+      try {
+        parsed = JSON.parse(raw);
+      } catch (e) {
+        setStatus("Invalid questions JSON.", true);
+        return;
+      }
+
+      var incomingQuestions = parseQuestionsPayload(parsed);
+      if (!incomingQuestions.length) {
+        setStatus("No questions found. Use array or { questions: [...] }.", true);
+        return;
+      }
+
+      var targetSection = sectionSelect.value;
+      var targetExamId = examSelect.value;
+      var allExams = getAllExams();
+      var exam = null;
+
+      if (targetExamId === "__new__") {
+        var newId = String(newExamIdInput.value || "").trim();
+        if (!newId) {
+          setStatus("Enter new exam id for Create New Exam.", true);
+          return;
+        }
+        var newTitle = String(newExamTitleInput.value || "").trim() || ("Mock Test - " + newId);
+        exam = {
+          id: newId,
+          title: newTitle,
+          date: new Date().toISOString().slice(0, 10),
+          durationMinutes: 180,
+          marksPerQuestion: 1,
+          negativeMark: 0,
+          sections: [],
+          questions: []
+        };
+      } else {
+        for (var i = 0; i < allExams.length; i++) {
+          if (allExams[i].id === targetExamId) {
+            exam = allExams[i];
+            break;
+          }
+        }
+        if (!exam) {
+          setStatus("Selected exam not found.", true);
+          return;
+        }
+      }
+
+      var startNo = nextQuestionNumberForSection(exam, targetSection);
+      var normalizedNew = incomingQuestions.map(function (q, idx) {
+        var nq = normalizeQuestion(q, idx);
+        nq.section = targetSection;
+        nq.id = parseSectionKey(targetSection) + "-" + (startNo + idx);
+        return nq;
+      });
+
+      var mergedQuestions = (exam.questions || []).concat(normalizedNew);
+      mergedQuestions = reorderBySection(mergedQuestions);
+      exam.questions = mergedQuestions;
+      exam.sections = rebuildSectionsFromOrderedQuestions(mergedQuestions);
+
+      upsertImportedExam(exam);
+      populateExamSelect();
+      setStatus("Imported " + normalizedNew.length + " question(s) into exam '" + exam.title + "' under section '" + targetSection + "'.", false);
+    }
+
+    function parsePayload(payload) {
+      if (Array.isArray(payload)) return payload;
+      if (payload && Array.isArray(payload.exams)) return payload.exams;
+      if (payload && typeof payload === "object" && payload.questions) return [payload];
+      return [];
+    }
+
+    function readImported() {
+      try {
+        var raw = localStorage.getItem(IMPORTED_EXAMS_STORAGE_KEY);
+        if (!raw) return [];
+        var parsed = JSON.parse(raw);
+        return Array.isArray(parsed) ? parsed : [];
+      } catch (e) {
+        return [];
+      }
+    }
+
+    function writeImported(exams) {
+      localStorage.setItem(IMPORTED_EXAMS_STORAGE_KEY, JSON.stringify(exams));
+    }
+
+    function setStatus(msg, isError) {
+      var box = document.getElementById("statusBox");
+      box.textContent = msg;
+      box.classList.toggle("error", !!isError);
+      box.style.display = "block";
+    }
+
+    function importExamJson(rawText) {
+      var parsed;
+      try {
+        parsed = JSON.parse(rawText);
+      } catch (e) {
+        setStatus("Invalid JSON format.", true);
+        return;
+      }
+
+      var incoming = parsePayload(parsed).map(normalizeExam).filter(Boolean);
+      if (!incoming.length) {
+        setStatus("No valid exam data found.", true);
+        return;
+      }
+
+      var current = readImported();
+      var map = {};
+      current.forEach(function (exam) { map[exam.id] = exam; });
+      incoming.forEach(function (exam) { map[exam.id] = exam; });
+
+      var merged = Object.keys(map).map(function (id) { return map[id]; });
+      writeImported(merged);
+      setStatus("Imported " + incoming.length + " exam(s) successfully.", false);
+    }
+
+    (function wire() {
+      var fileInput = document.getElementById("examJsonInput");
+      var pickBtn = document.getElementById("pickFileBtn");
+      var textBtn = document.getElementById("importFromTextBtn");
+      var textBox = document.getElementById("examJsonText");
+      var importToSectionBtn = document.getElementById("importToSectionBtn");
+
+      pickBtn.addEventListener("click", function () {
+        fileInput.value = "";
+        fileInput.click();
+      });
+
+      fileInput.addEventListener("change", function () {
+        var file = fileInput.files && fileInput.files[0];
+        if (!file) return;
+
+        var reader = new FileReader();
+        reader.onload = function () { importExamJson(String(reader.result || "")); };
+        reader.onerror = function () { setStatus("Unable to read selected file.", true); };
+        reader.readAsText(file);
+      });
+
+      textBtn.addEventListener("click", function () {
+        var raw = String(textBox.value || "").trim();
+        if (!raw) {
+          setStatus("Paste JSON content first.", true);
+          return;
+        }
+        importExamJson(raw);
+      });
+
+      if (importToSectionBtn) {
+        importToSectionBtn.addEventListener("click", importQuestionsIntoSection);
+      }
+
+      populateExamSelect();
+    })();
+  </script>
+</body>
+</html>

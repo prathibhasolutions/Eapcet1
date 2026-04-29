@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EAPCET Mock Test Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Sora:wght@500;700&display=swap" rel="stylesheet">
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['$', '$'], ['\\(', '\\)']], displayMath: [['$$', '$$'], ['\\[', '\\]']] },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-shape bg-shape-1"></div>
+  <div class="bg-shape bg-shape-2"></div>
+
+  <main class="app" id="appRoot">
+    <section id="homeScreen" class="screen active">
+      <header class="hero">
+        <div class="brand-row">
+          <img id="brandLogo" class="inst-logo" src="assets/logo/prathibha-institute-logo.png" alt="Prathibha Institute logo" />
+        </div>
+        <div>
+          <p class="eyebrow">Daily Competitive Practice</p>
+          <h1>TG EAPCET MOCK TEST</h1>
+        </div>
+        <div class="hero-meta">
+          <span class="chip">Maths 80</span>
+          <span class="chip">Physics 40</span>
+          <span class="chip">Chemistry 40</span>
+          <span class="chip">180 Minutes</span>
+        </div>
+      </header>
+
+      <div class="card">
+        <div class="card-head">
+          <h2>Available Exams</h2>
+        </div>
+        <div id="examList" class="exam-list"></div>
+      </div>
+    </section>
+
+    <section id="instructionScreen" class="screen">
+      <div class="card">
+        <h2 id="instructionExamTitle">Exam Instructions</h2>
+        <div class="guidelines">
+          <p><strong>Pattern:</strong> 160 questions total.</p>
+          <ul>
+            <li>Maths: 80 questions</li>
+            <li>Physics: 40 questions</li>
+            <li>Chemistry: 40 questions</li>
+            <li>Duration: 180 minutes</li>
+          </ul>
+          <p><strong>Navigation:</strong> Use section tabs and question palette to jump quickly.</p>
+          <p><strong>Submission:</strong> Test auto-submits at timer end. You can also submit manually anytime.</p>
+        </div>
+
+        <form id="consentForm" class="consent">
+          <label for="studentName">Student Name</label>
+          <input id="studentName" type="text" placeholder="Enter your full name" required />
+
+          <label class="check-row">
+            <input id="consentCheck" type="checkbox" required />
+            <span>I have read all instructions and I am ready to start the test.</span>
+          </label>
+
+          <div class="button-row">
+            <button type="button" class="btn btn-muted" id="backToHomeBtn">Back</button>
+            <button type="submit" class="btn">Start Test</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section id="examScreen" class="screen">
+      <header class="exam-topbar">
+        <div class="exam-topbar-left">
+          <img id="examLogo" class="exam-logo" src="assets/logo/prathibha-institute-logo.png" alt="Prathibha Institute" />
+          <div>
+            <h2 id="activeExamTitle">Mock Test</h2>
+            <p id="studentBadge"></p>
+          </div>
+        </div>
+        <div class="timer-wrap">
+          <span>Time Left</span>
+          <strong id="timer">180:00</strong>
+        </div>
+        <button class="btn btn-danger" id="submitTestBtn">Submit Test</button>
+      </header>
+
+      <div class="exam-layout">
+        <aside class="palette-panel">
+          <div class="section-tabs" id="sectionTabs"></div>
+          <div class="palette-grid" id="questionPalette"></div>
+          <div class="legend">
+            <p><span class="dot dot-answered"></span> Answered</p>
+            <p><span class="dot dot-visited"></span> Visited, Not Answered</p>
+            <p><span class="dot dot-not-visited"></span> Not Visited</p>
+            <p><span class="dot dot-marked"></span> Marked for Review</p>
+            <p><span class="dot dot-marked-answered"></span> Marked + Answered</p>
+          </div>
+        </aside>
+
+        <section class="question-panel">
+          <div class="question-header">
+            <span id="questionMeta">Question 1</span>
+            <span id="sectionMeta">Maths</span>
+          </div>
+
+          <div id="questionTextWrap" class="question-text-wrap"></div>
+
+          <div class="question-image-wrap">
+            <img id="questionImage" alt="Question" />
+          </div>
+
+          <div class="options" id="optionsWrap"></div>
+
+          <div class="button-row mark-row">
+            <button class="btn btn-mark" id="markReviewBtn">Mark for Review</button>
+          </div>
+
+          <div class="button-row">
+            <button class="btn btn-muted" id="prevBtn">Previous</button>
+            <button class="btn" id="nextBtn">Next</button>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section id="resultScreen" class="screen">
+      <div class="card">
+        <h2>Exam Result Report</h2>
+        <div id="resultSummary" class="result-summary"></div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Section</th>
+                <th>Your Answer</th>
+                <th>Correct Key</th>
+                <th>Status</th>
+                <th>Question</th>
+              </tr>
+            </thead>
+            <tbody id="resultTableBody"></tbody>
+          </table>
+        </div>
+        <div class="button-row">
+          <button class="btn btn-muted" id="goHomeBtn">Home</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Question Preview Modal -->
+  <div id="qModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal-box">
+      <div class="modal-head">
+        <span id="modalTitle">Question Preview</span>
+        <button class="modal-close" id="modalCloseBtn" aria-label="Close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-meta">
+          <span id="modalQNo"></span>
+          <span id="modalSection"></span>
+        </div>
+        <div id="modalQText" class="modal-qtext"></div>
+        <div class="modal-img-wrap">
+          <img id="modalQImg" alt="Question" />
+        </div>
+        <div id="modalOptionPreview" class="modal-options"></div>
+        <div class="modal-answers">
+          <div class="modal-answer-row">
+            <span class="modal-label">Your Answer:</span>
+            <span id="modalYourAns" class="modal-val"></span>
+          </div>
+          <div class="modal-answer-row">
+            <span class="modal-label">Correct Answer:</span>
+            <span id="modalCorrectAns" class="modal-val modal-val-correct"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Submit Summary Modal -->
+  <div id="submitModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="submitModalTitle" hidden>
+    <div class="modal-box submit-modal-box">
+      <div class="modal-head">
+        <span id="submitModalTitle">Submit Test Summary</span>
+        <button class="modal-close" id="submitModalCloseBtn" aria-label="Close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p class="submit-note">Review your response status before final submission.</p>
+
+        <div class="submit-stats" id="submitStatsWrap">
+          <div class="submit-stat"><p>Total Questions</p><strong id="sumTotal">0</strong></div>
+          <div class="submit-stat"><p>Answered</p><strong id="sumAnswered">0</strong></div>
+          <div class="submit-stat"><p>Not Answered</p><strong id="sumNotAnswered">0</strong></div>
+          <div class="submit-stat"><p>Not Visited</p><strong id="sumNotVisited">0</strong></div>
+          <div class="submit-stat"><p>Marked For Review</p><strong id="sumMarked">0</strong></div>
+          <div class="submit-stat"><p>Marked + Answered</p><strong id="sumMarkedAnswered">0</strong></div>
+        </div>
+
+        <div class="button-row submit-actions">
+          <button class="btn btn-muted" id="submitBackBtn">Back to Exam</button>
+          <button class="btn btn-danger" id="submitFinalBtn">Submit Test</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="exams.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
