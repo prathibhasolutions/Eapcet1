@@ -174,10 +174,18 @@
 
   function getAllExams() {
     var base = Array.isArray(window.EXAMS) ? window.EXAMS.map(normalizeExam).filter(Boolean) : [];
+    var bundledPayload = window.BUNDLED_EXAMS;
+    var bundled = [];
+    if (Array.isArray(bundledPayload)) bundled = bundledPayload;
+    else if (bundledPayload && Array.isArray(bundledPayload.exams)) bundled = bundledPayload.exams;
+    else if (bundledPayload && typeof bundledPayload === "object" && bundledPayload.questions) bundled = [bundledPayload];
+    bundled = bundled.map(normalizeExam).filter(Boolean);
+
     var imported = readImportedExams();
     var map = {};
 
     base.forEach(function (exam) { map[exam.id] = exam; });
+    bundled.forEach(function (exam) { map[exam.id] = exam; });
     imported.forEach(function (exam) { map[exam.id] = exam; });
 
     return Object.keys(map).map(function (id) { return map[id]; });
