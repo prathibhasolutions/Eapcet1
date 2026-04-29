@@ -4901,7 +4901,7 @@ window.BUNDLED_EXAMS = {
         {
           "id": "chemistry-38",
           "section": "Chemistry",
-          "text": "What is Y in the following reaction sequence? (Propene $\\xrightarrow{\\text{(i) O}_3\\text{, (ii) Zn+H}_2\\text{O}}$ acetone + HCHO; C$_4$H$_8$ $\\xrightarrow{\\text{HBr/(C}_6\\text{H}_5\\text{CO)}_2\\text{O}_2}$ X $\\xrightarrow{\\text{(i) Mg/dry ether, (ii) CO}_2\\text{, (iii) H}_3\\text{O}^+}$ Y)",
+          "text": "What is Y in the following reaction sequence?",
           "image": "assets/exams/eapcet-pyq-2024/chemistry/q38.jpg",
           "options": [
             {
@@ -9894,7 +9894,7 @@ window.BUNDLED_EXAMS = {
         {
           "id": "chemistry-38",
           "section": "Chemistry",
-          "text": "What is Y in the following reaction sequence? (Propene $\\xrightarrow{\\text{(i) O}_3\\text{, (ii) Zn+H}_2\\text{O}}$ acetone + HCHO; C$_4$H$_8$ $\\xrightarrow{\\text{HBr/(C}_6\\text{H}_5\\text{CO)}_2\\text{O}_2}$ X $\\xrightarrow{\\text{(i) Mg/dry ether, (ii) CO}_2\\text{, (iii) H}_3\\text{O}^+}$ Y)",
+          "text": "What is Y in the following reaction sequence?",
           "image": "assets/exams/eapcet-pyq-2024/chemistry/q38.jpg",
           "options": [
             {
