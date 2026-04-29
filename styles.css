@@ -553,7 +553,7 @@ legend {
   border: 1px dashed var(--line);
   border-radius: 12px;
   overflow: hidden;
-  min-height: 260px;
+  min-height: unset;
   display: grid;
   place-items: center;
   background: #fdfefe;
@@ -564,7 +564,9 @@ legend {
 }
 
 .question-image-wrap img {
-  width: 100%;
+  max-width: 100%;
+  max-height: 220px;
+  width: auto;
   height: auto;
   object-fit: contain;
 }
@@ -595,11 +597,14 @@ legend {
 }
 
 .opt-img {
-  width: 100%;
-  max-width: 520px;
+  max-width: 100%;
+  max-height: 120px;
+  width: auto;
+  height: auto;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: #fff;
+  object-fit: contain;
 }
 
 .btn-mark {
