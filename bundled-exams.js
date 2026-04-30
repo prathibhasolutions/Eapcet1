@@ -13667,7 +13667,7 @@ window.BUNDLED_EXAMS = {
     {
       "id": "physics-33",
       "section": "Physics",
-      "text": "An RLC circuit has a 150 O resistor, 20 �F capacitor and 500 mH inductor connected in series with 100 V AC supply at $400\\text{ rad s}^{-1}$. The phase angle between current and applied voltage is",
+      "text": "An RLC circuit has a 150 Ohm resistor, 20 $\\mu\\text{F}$ capacitor and 500 mH inductor connected in series with 100 V AC supply at $400\\text{ rad s}^{-1}$. The phase angle between current and applied voltage is",
       "image": "",
       "options": [
         {
@@ -13729,7 +13729,7 @@ window.BUNDLED_EXAMS = {
     {
       "id": "physics-35",
       "section": "Physics",
-      "text": "In Young's double slit experiment, slits are 3 mm apart and illuminated by light of wavelengths 3750 � and 7500 �. Screen is at 4 m. The minimum distance from the common central bright fringe at which bright fringes of both interference patterns coincide is",
+      "text": "In Young's double slit experiment, slits are 3 mm apart and illuminated by light of wavelengths 375 nm and 750 nm. Screen is at 4 m. The minimum distance from the common central bright fringe at which bright fringes of both interference patterns coincide is",
       "image": "",
       "options": [
         {
@@ -14473,7 +14473,7 @@ window.BUNDLED_EXAMS = {
     {
       "id": "chemistry-19",
       "section": "Chemistry",
-      "text": "The IUPAC name of the compound (benzene ring with OH, Br ortho, CN meta to OH)",
+      "text": "The IUPAC name of the compound ",
       "image": "assets/exams/eapcet-pyq-2022-shift1/chemistry/q19.jpg",
       "options": [
         {
@@ -14767,7 +14767,7 @@ window.BUNDLED_EXAMS = {
         },
         {
           "id": "C",
-          "text": "I > III > II (incorrect)",
+          "text": "I > III > II ",
           "image": ""
         },
         {
@@ -14969,7 +14969,7 @@ window.BUNDLED_EXAMS = {
     {
       "id": "chemistry-35",
       "section": "Chemistry",
-      "text": "Identify the major product formed from the following reaction (1-methylcyclohexene + (i) HCl, (ii) AgNO2)",
+      "text": "Identify the major product formed from the following reaction ",
       "image": "assets/exams/eapcet-pyq-2022-shift1/chemistry/q35.jpg",
       "options": [
         {
@@ -15000,7 +15000,7 @@ window.BUNDLED_EXAMS = {
     {
       "id": "chemistry-36",
       "section": "Chemistry",
-      "text": "Identify the major product of the following reaction (chlorobenzene + Br2, Anhyd. FeCl3)",
+      "text": "Identify the major product of the following reaction",
       "image": "assets/exams/eapcet-pyq-2022-shift1/chemistry/q36.jpg",
       "options": [
         {
@@ -15031,7 +15031,7 @@ window.BUNDLED_EXAMS = {
     {
       "id": "chemistry-37",
       "section": "Chemistry",
-      "text": "Identify the product/s formed in the following reaction (benzyl isopropyl ether + HBr)",
+      "text": "Identify the product/s formed in the following reaction",
       "image": "assets/exams/eapcet-pyq-2022-shift1/chemistry/q37.jpg",
       "options": [
         {
@@ -15093,7 +15093,7 @@ window.BUNDLED_EXAMS = {
     {
       "id": "chemistry-39",
       "section": "Chemistry",
-      "text": "Identify the major product from the following reaction sequence (cyclopentanone + (i) CH3MgCl, (ii) H3O+, (iii) 20% H3PO4, 358 K)",
+      "text": "Identify the major product from the following reaction sequence ",
       "image": "assets/exams/eapcet-pyq-2022-shift1/chemistry/q39.jpg",
       "options": [
         {
