@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EAPCET | Question Paper</title>
+
+  <!-- MathJax for LaTeX rendering -->
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['$', '$'], ['\\(', '\\)']], displayMath: [['$$', '$$'], ['\\[', '\\]']] },
+      startup: {
+        ready() {
+          MathJax.startup.defaultReady();
+          MathJax.startup.promise.then(() => {
+            document.getElementById('loading').style.display = 'none';
+            document.getElementById('content').style.display = 'block';
+          });
+        }
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" id="MathJax-script" async></script>
+
+  <style>
+    /* ── Base ──────────────────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-size: 13pt;
+      background: #f4f6f9;
+      color: #1a1a2e;
+      line-height: 1.6;
+    }
+
+    /* ── Screen wrapper ───────────────────────────────────────────── */
+    .wrapper {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 24px 16px 48px;
+    }
+
+    /* ── Header ───────────────────────────────────────────────────── */
+    .exam-header {
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+      color: #fff;
+      border-radius: 12px;
+      padding: 28px 32px;
+      margin-bottom: 28px;
+      text-align: center;
+    }
+    .exam-header h1 { font-size: 22pt; letter-spacing: 0.5px; margin-bottom: 6px; }
+    .exam-header .sub { font-size: 11pt; opacity: 0.8; }
+    .exam-meta { display: flex; justify-content: center; gap: 32px; margin-top: 16px; flex-wrap: wrap; }
+    .exam-meta span {
+      background: rgba(255,255,255,0.12);
+      border-radius: 20px;
+      padding: 4px 16px;
+      font-size: 10pt;
+    }
+
+    /* ── Exam selector ────────────────────────────────────────────── */
+    .exam-selector-bar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+    .exam-selector-bar label {
+      font-weight: 600;
+      color: #0f3460;
+      font-size: 11pt;
+    }
+    .exam-selector-bar select {
+      padding: 8px 14px;
+      border-radius: 8px;
+      border: 2px solid #0f3460;
+      font-size: 11pt;
+      color: #1a1a2e;
+      background: #fff;
+      cursor: pointer;
+    }
+    @media print { .exam-selector-bar { display: none !important; } }
+
+    /* ── Print button ─────────────────────────────────────────────── */
+    .print-btn {
+      display: block;
+      margin: 0 auto 28px;
+      padding: 12px 36px;
+      background: #0f3460;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 13pt;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .print-btn:hover { background: #e94560; }
+    @media print { .print-btn, .exam-header .sub, #loading { display: none !important; } }
+
+    /* ── Section header ───────────────────────────────────────────── */
+    .section-header {
+      background: #0f3460;
+      color: #fff;
+      border-radius: 8px;
+      padding: 10px 20px;
+      margin: 32px 0 18px;
+      font-size: 14pt;
+      font-weight: 700;
+      letter-spacing: 1px;
+      page-break-after: avoid;
+    }
+
+    /* ── Question card ────────────────────────────────────────────── */
+    .question-card {
+      background: #fff;
+      border-radius: 10px;
+      border-left: 5px solid #0f3460;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+      padding: 18px 22px 14px;
+      margin-bottom: 16px;
+      page-break-inside: avoid;
+    }
+    .question-card.answered-correct { border-left-color: #2ecc71; }
+
+    .q-number {
+      font-weight: 700;
+      color: #0f3460;
+      font-size: 10pt;
+      margin-bottom: 6px;
+    }
+
+    .q-text { margin-bottom: 12px; }
+
+    .q-image {
+      max-width: 100%;
+      max-height: 220px;
+      display: block;
+      margin: 8px 0 12px;
+      border-radius: 6px;
+      border: 1px solid #ddd;
+    }
+
+    /* ── Options grid ─────────────────────────────────────────────── */
+    .options-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px 16px;
+    }
+    @media (max-width: 600px) { .options-grid { grid-template-columns: 1fr; } }
+
+    .option {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      padding: 7px 10px;
+      border-radius: 6px;
+      border: 1.5px solid #e0e0e0;
+      background: #fafafa;
+      font-size: 11pt;
+    }
+    .option.correct {
+      border-color: #2ecc71;
+      background: #eafaf1;
+      font-weight: 600;
+    }
+    .option-label {
+      min-width: 22px;
+      font-weight: 700;
+      color: #0f3460;
+    }
+    .option.correct .option-label { color: #27ae60; }
+    .option-img {
+      max-width: 100%;
+      max-height: 100px;
+      border-radius: 4px;
+      margin-top: 4px;
+    }
+
+    /* ── Correct badge ────────────────────────────────────────────── */
+    .correct-badge {
+      display: inline-block;
+      margin-top: 10px;
+      background: #2ecc71;
+      color: #fff;
+      border-radius: 20px;
+      padding: 2px 14px;
+      font-size: 9.5pt;
+      font-weight: 600;
+    }
+
+    /* ── Review flag ──────────────────────────────────────────────── */
+    .review-flag {
+      display: inline-block;
+      margin-left: 8px;
+      background: #f39c12;
+      color: #fff;
+      border-radius: 20px;
+      padding: 1px 10px;
+      font-size: 8.5pt;
+    }
+
+    /* ── Loading ──────────────────────────────────────────────────── */
+    #loading {
+      text-align: center;
+      padding: 60px;
+      font-size: 14pt;
+      color: #555;
+    }
+    #content { display: none; }
+
+    /* ── Print styles ─────────────────────────────────────────────── */
+    @media print {
+      body { background: #fff; font-size: 11pt; }
+      .wrapper { max-width: 100%; padding: 0; }
+      .exam-header { border-radius: 0; margin-bottom: 16px; padding: 18px 20px; }
+      .question-card { box-shadow: none; margin-bottom: 10px; padding: 12px 16px 10px; border-radius: 6px; }
+      .section-header { border-radius: 4px; margin: 20px 0 12px; }
+    }
+  </style>
+</head>
+<body>
+<div class="wrapper">
+  <div id="loading">⏳ Loading MathJax — please wait…</div>
+
+  <div id="content">
+    <div class="exam-header">
+      <h1 id="exam-title">EAPCET | Question Paper</h1>
+      <div class="sub">AP Engineering, Agriculture & Pharmacy Common Entrance Test</div>
+      <div class="exam-meta" id="exam-meta"></div>
+    </div>
+
+    <div class="exam-selector-bar">
+      <label for="exam-select">Select Exam:</label>
+      <select id="exam-select" onchange="loadExam(this.value)"></select>
+    </div>
+
+    <button class="print-btn" onclick="window.print()">🖨 Print / Save as PDF</button>
+
+    <div id="exam-body"></div>
+  </div>
+</div>
+
+<script src="bundled-exams.js"></script>
+<script>
+function escapeMathHtml(text) {
+  return (text || '').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+
+function loadExam(examId) {
+  const exams = window.BUNDLED_EXAMS.exams;
+  const exam = exams.find(e => e.id === examId) || exams[0];
+
+  // Update URL param without reload
+  const url = new URL(window.location);
+  url.searchParams.set('exam', exam.id);
+  window.history.replaceState({}, '', url);
+
+  // Update header
+  document.getElementById('exam-title').textContent = 'EAPCET — ' + exam.title;
+  document.title = 'EAPCET — ' + exam.title + ' | Question Paper';
+  const totalQ = exam.questions ? exam.questions.length : 0;
+  document.getElementById('exam-meta').innerHTML =
+    `<span>📅 ${exam.date || ''}</span>` +
+    `<span>⏱ ${exam.durationMinutes || 180} Minutes</span>` +
+    `<span>📝 ${totalQ} Questions</span>` +
+    `<span>🏆 ${totalQ} Marks</span>` +
+    `<span>${exam.negativeMark ? '−' + exam.negativeMark + ' Negative' : '❌ No Negative Marking'}</span>`;
+
+  // Render questions
+  const body = document.getElementById('exam-body');
+  body.innerHTML = '';
+
+  const sections = {};
+  (exam.questions || []).forEach(q => {
+    if (!sections[q.section]) sections[q.section] = [];
+    sections[q.section].push(q);
+  });
+
+  const sectionOrder = ['Maths', 'Physics', 'Chemistry'];
+  let globalNum = 0;
+
+  sectionOrder.forEach(secName => {
+    const qs = sections[secName];
+    if (!qs || qs.length === 0) return;
+
+    const secDiv = document.createElement('div');
+    secDiv.innerHTML = `<div class="section-header">${secName} &nbsp;(${qs.length} Questions)</div>`;
+    body.appendChild(secDiv);
+
+    qs.forEach(q => {
+      globalNum++;
+      const card = document.createElement('div');
+      card.className = 'question-card';
+
+      const reviewHtml = q.needsReview ? `<span class="review-flag">⚠ Review</span>` : '';
+      let html = `<div class="q-number">Q${globalNum}.${reviewHtml}</div>`;
+      html += `<div class="q-text">${escapeMathHtml(q.text)}</div>`;
+
+      if (q.image) {
+        html += `<img class="q-image" src="${q.image}" alt="Question ${globalNum} diagram" />`;
+      }
+
+      html += `<div class="options-grid">`;
+      q.options.forEach(opt => {
+        const isCorrect = opt.id === q.correct;
+        html += `<div class="option${isCorrect ? ' correct' : ''}">`;
+        html += `<span class="option-label">(${opt.id})</span>`;
+        html += `<span>${escapeMathHtml(opt.text)}${opt.image ? `<br><img class="option-img" src="${opt.image}" alt="Option ${opt.id}" />` : ''}</span>`;
+        html += `</div>`;
+      });
+      html += `</div>`;
+
+      html += `<div class="correct-badge">✓ Correct: (${q.correct})</div>`;
+
+      card.innerHTML = html;
+      body.appendChild(card);
+    });
+  });
+
+  if (window.MathJax && MathJax.typesetPromise) {
+    MathJax.typesetPromise([body]);
+  }
+}
+
+// Populate dropdown
+(function () {
+  const exams = window.BUNDLED_EXAMS.exams;
+  const sel = document.getElementById('exam-select');
+  exams.forEach(e => {
+    const opt = document.createElement('option');
+    opt.value = e.id;
+    opt.textContent = e.title;
+    sel.appendChild(opt);
+  });
+
+  // Pick from URL param or default to first
+  const params = new URLSearchParams(window.location.search);
+  const requestedId = params.get('exam');
+  const exam = exams.find(e => e.id === requestedId) || exams[0];
+  sel.value = exam.id;
+  loadExam(exam.id);
+})();
+</script>
+</body>
+</html>

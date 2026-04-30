@@ -355,8 +355,12 @@
     return question.options.map(function (opt, i) { return toOptionObject(opt, i); });
   }
 
+  function escapeMathHtml(text) {
+    return (text || "").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  }
+
   function renderMathInNode(node, html) {
-    node.innerHTML = html || "";
+    node.innerHTML = escapeMathHtml(html);
     safeTypeset(node);
   }
 
@@ -474,7 +478,7 @@
 
       var txt = document.createElement("div");
       txt.className = "opt-text";
-      txt.innerHTML = "<strong>" + escapeHtml(opt.id) + ".</strong> " + (opt.text || "");
+      txt.innerHTML = "<strong>" + escapeHtml(opt.id) + ".</strong> " + escapeMathHtml(opt.text);
       content.appendChild(txt);
 
       if (opt.image) {
@@ -628,7 +632,7 @@
       var row = document.createElement("div");
       row.className = "modal-option" + (opt.id === correctId ? " correct-opt" : "");
 
-      var html = "<strong>" + escapeHtml(opt.id) + ".</strong> " + (opt.text || "");
+      var html = "<strong>" + escapeHtml(opt.id) + ".</strong> " + escapeMathHtml(opt.text);
       if (opt.image) {
         html += "<div style='margin-top:8px'><img class='opt-img' alt='Option " + escapeHtml(opt.id) + "' src='" + escapeHtml(opt.image) + "'></div>";
       }
