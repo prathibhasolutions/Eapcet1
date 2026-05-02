@@ -255,18 +255,37 @@
     }
     #content { display: none; }
 
+    .page-logo {
+      width: 58px;
+      height: auto;
+      display: block;
+      margin-bottom: 8px;
+      margin-left: auto;
+    }
+
     /* ── Print styles ─────────────────────────────────────────────── */
     @media print {
-      body { background: #fff; font-size: 11pt; }
+      @page { margin: 14mm 10mm 14mm 10mm; }
+      body { background: #fff; font-size: 11pt; padding-top: 22mm; }
       .wrapper { max-width: 100%; padding: 0; }
       .exam-header { border-radius: 0; margin-bottom: 16px; padding: 18px 20px; }
       .question-card { box-shadow: none; margin-bottom: 10px; padding: 12px 16px 10px; border-radius: 6px; }
       .section-header { border-radius: 4px; margin: 20px 0 12px; }
+
+      .page-logo {
+        position: fixed;
+        top: 4mm;
+        right: 8mm;
+        width: 14mm;
+        margin: 0;
+        z-index: 9999;
+      }
     }
   </style>
 </head>
 <body style="-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;">
 <div class="wrapper">
+  <img class="page-logo" src="assets/logo/prathibha-institute-logo.png" alt="Institute logo" />
   <div id="loading">⏳ Loading MathJax — please wait…</div>
 
   <div id="content">
@@ -288,6 +307,7 @@
 </div>
 
 <script src="bundled-exams.js"></script>
+<script src="may2nd-shift1.js"></script>
 <script>
 function escapeMathHtml(text) {
   return (text || '').replace(/</g, '&lt;').replace(/>/g, '&gt;');
@@ -380,10 +400,19 @@ function loadExam(examId) {
     sel.appendChild(opt);
   });
 
-  // Pick from URL param or default to first
+  // Pick from URL param, otherwise prefer May 2nd Shift 1, then first
   const params = new URLSearchParams(window.location.search);
   const requestedId = params.get('exam');
-  const exam = exams.find(e => e.id === requestedId) || exams[0];
+  const defaultId = 'may2nd-shift1';
+  const exam = exams.find(e => e.id === requestedId)
+    || exams.find(e => e.id === defaultId)
+    || exams[0];
+
+  if (!exam) {
+    document.getElementById('loading').textContent = 'No exam data found.';
+    return;
+  }
+
   sel.value = exam.id;
   loadExam(exam.id);
 })();
