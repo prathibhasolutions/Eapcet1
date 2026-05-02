@@ -21,6 +21,49 @@
     };
   </script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" id="MathJax-script" async></script>
+  <script>
+    // ── Content protection ──────────────────────────────────────────
+    document.addEventListener('contextmenu', function(e) { e.preventDefault(); });
+    document.addEventListener('copy', function(e) { e.preventDefault(); });
+    document.addEventListener('cut', function(e) { e.preventDefault(); });
+    document.addEventListener('paste', function(e) { e.preventDefault(); });
+    document.addEventListener('selectstart', function(e) { e.preventDefault(); });
+    document.addEventListener('dragstart', function(e) { e.preventDefault(); });
+    document.addEventListener('keydown', function(e) {
+      if (e.ctrlKey && ['c','x','a','s','u','p'].includes(e.key.toLowerCase())) { e.preventDefault(); }
+      if (e.key === 'F12') { e.preventDefault(); showDevToolsAlert(); }
+      if (e.ctrlKey && e.shiftKey && ['i','j','c'].includes(e.key.toLowerCase())) { e.preventDefault(); showDevToolsAlert(); }
+      if (e.ctrlKey && e.key.toLowerCase() === 'u') { e.preventDefault(); showDevToolsAlert(); }
+    });
+
+    // ── DevTools detection overlay ──────────────────────────────────
+    function showDevToolsAlert() {
+      if (document.getElementById('__devtools-block__')) return;
+      var overlay = document.createElement('div');
+      overlay.id = '__devtools-block__';
+      overlay.style.cssText = 'position:fixed;inset:0;z-index:2147483647;background:rgba(20,0,0,0.97);display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:sans-serif;';
+      overlay.innerHTML = '<div style="background:#c0392b;border-radius:16px;padding:48px 56px;max-width:480px;text-align:center;box-shadow:0 0 80px #ff000088;">'
+        + '<div style="font-size:64px;margin-bottom:16px;">&#9888;</div>'
+        + '<h1 style="color:#fff;font-size:26px;margin-bottom:12px;letter-spacing:1px;">ACCESS VIOLATION</h1>'
+        + '<p style="color:#ffc0c0;font-size:15px;line-height:1.6;">Unauthorized use of browser developer tools is <strong>strictly prohibited</strong> on this examination platform.<br><br>This incident has been logged.</p>'
+        + '<button onclick="document.getElementById(\"__devtools-block__\").remove()" style="margin-top:28px;padding:12px 32px;background:#fff;color:#c0392b;border:none;border-radius:8px;font-size:15px;font-weight:700;cursor:pointer;">Dismiss</button>'
+        + '</div>';
+      document.body.appendChild(overlay);
+    }
+
+    // Detect DevTools via window size difference
+    (function detectDevTools() {
+      var threshold = 160;
+      function check() {
+        var widthDiff = window.outerWidth - window.innerWidth;
+        var heightDiff = window.outerHeight - window.innerHeight;
+        if (widthDiff > threshold || heightDiff > threshold) {
+          showDevToolsAlert();
+        }
+      }
+      setInterval(check, 1000);
+    })();
+  </script>
 
   <style>
     /* ── Base ──────────────────────────────────────────────────────── */
@@ -222,7 +265,7 @@
     }
   </style>
 </head>
-<body>
+<body style="-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;">
 <div class="wrapper">
   <div id="loading">⏳ Loading MathJax — please wait…</div>
 
