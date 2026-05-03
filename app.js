@@ -608,7 +608,7 @@
       + kpi("Attempted", result.attempted)
       + kpi("Correct", result.correct)
       + kpi("Wrong", result.wrong)
-      + kpi("Score", result.score)
+      + kpi("Score", result.score, "kpi-score")
       + kpi("Exam", escapeHtml(state.exam.title))
       + kpi("Submitted At", escapeHtml(submittedAt));
 
@@ -939,8 +939,9 @@
     return true;
   }
 
-  function kpi(label, value) {
-    return "<div class='kpi'><p>" + label + "</p><strong>" + value + "</strong></div>";
+  function kpi(label, value, extraClass) {
+    var cls = "kpi" + (extraClass ? " " + extraClass : "");
+    return "<div class='" + cls + "'><p>" + label + "</p><strong>" + value + "</strong></div>";
   }
 
   function submitExam(isAutoSubmit) {
@@ -954,79 +955,90 @@
     result.submittedAt = new Date().toLocaleString();
     saveResultSession(result);
     renderResult(result);
-    downloadResultPdf(result, isAutoSubmit);
+    autoDownloadResultPdf(result, isAutoSubmit);
     saveResultToGoogleSheet(result, isAutoSubmit);
   }
 
-  function downloadResultPdf(result, isAutoSubmit) {
-    if (!window.jspdf || !window.jspdf.jsPDF) return;
+  function autoDownloadResultPdf(result, isAutoSubmit) {
+    var resultScreen = document.getElementById("resultScreen");
+    if (!resultScreen || !window.jspdf || !window.jspdf.jsPDF || typeof window.html2canvas !== "function") return;
 
-    var jsPDF = window.jspdf.jsPDF;
-    var doc = new jsPDF({ unit: "pt", format: "a4" });
-    var pageW = doc.internal.pageSize.getWidth();
-    var pageH = doc.internal.pageSize.getHeight();
-    var margin = 40;
-    var y = margin;
+    var card = resultScreen.querySelector(".card");
+    if (!card) return;
 
-    function writeLine(text, fontSize, gap) {
-      if (y > pageH - margin) {
-        doc.addPage();
-        y = margin;
-      }
-      doc.setFontSize(fontSize || 11);
-      doc.text(String(text || ""), margin, y);
-      y += gap || 16;
-    }
+    var tmp = document.createElement("div");
+    tmp.style.position = "fixed";
+    tmp.style.left = "-100000px";
+    tmp.style.top = "0";
+    tmp.style.width = "1100px";
+    tmp.style.background = "#ffffff";
+    tmp.style.padding = "16px";
 
-    function writeWrapped(label, value) {
-      var content = String(label + ": " + value);
-      var lines = doc.splitTextToSize(content, pageW - (margin * 2));
-      lines.forEach(function (line) {
-        writeLine(line, 11, 14);
-      });
-      y += 2;
-    }
+    var clone = card.cloneNode(true);
+    clone.style.boxShadow = "none";
+    clone.style.height = "auto";
+    clone.style.maxHeight = "none";
 
-    doc.setFontSize(18);
-    doc.text("EAPCET Mock Test Result", margin, y);
-    y += 24;
-
-    writeWrapped("Exam", state.exam.title);
-    writeWrapped("Student", state.studentName || "-");
-    writeWrapped("Submitted At", result.submittedAt || "-");
-    writeWrapped("Submission Type", isAutoSubmit ? "Auto (Timer Completed)" : "Manual");
-    y += 6;
-
-    writeWrapped("Total Questions", result.total);
-    writeWrapped("Attempted", result.attempted);
-    writeWrapped("Correct", result.correct);
-    writeWrapped("Wrong", result.wrong);
-    writeWrapped("Score", result.score);
-    y += 10;
-
-    writeLine("Question-wise Details", 13, 18);
-    writeLine("# | Section | Your Answer | Correct | Status", 10, 14);
-
-    (result.rows || []).forEach(function (row) {
-      var line = [
-        row.no,
-        row.section || "",
-        row.selected || "-",
-        row.correct || "-",
-        row.status || "-"
-      ].join(" | ");
-
-      var lines = doc.splitTextToSize(line, pageW - (margin * 2));
-      lines.forEach(function (l) {
-        writeLine(l, 10, 13);
-      });
+    // Expand scroll-clipped result tables so every row is included in the export.
+    var tableWraps = clone.querySelectorAll(".table-wrap, .key-log-wrap");
+    tableWraps.forEach(function (wrap) {
+      wrap.style.maxHeight = "none";
+      wrap.style.overflow = "visible";
+      wrap.style.height = "auto";
     });
 
-    var safeExam = String(state.exam.title || "exam").replace(/[^a-z0-9]+/gi, "-").replace(/^-+|-+$/g, "").toLowerCase();
-    var safeStudent = String(state.studentName || "student").replace(/[^a-z0-9]+/gi, "-").replace(/^-+|-+$/g, "").toLowerCase();
-    var stamp = new Date().toISOString().replace(/[.:]/g, "-");
-    var fileName = [safeExam || "exam", safeStudent || "student", "result", stamp].join("_") + ".pdf";
-    doc.save(fileName);
+    var actionRows = clone.querySelectorAll(".button-row");
+    actionRows.forEach(function (row) { row.remove(); });
+
+    var meta = document.createElement("p");
+    meta.style.margin = "0 0 10px 0";
+    meta.style.fontSize = "12px";
+    meta.style.color = "#334155";
+    meta.textContent = "Submission Type: " + (isAutoSubmit ? "Auto (Timer Completed)" : "Manual");
+    clone.insertBefore(meta, clone.children[1] || null);
+
+    tmp.appendChild(clone);
+    document.body.appendChild(tmp);
+
+    // Give MathJax and layout one tick before capture.
+    setTimeout(function () {
+      window.html2canvas(tmp, {
+        scale: 2,
+        useCORS: true,
+        backgroundColor: "#ffffff"
+      }).then(function (canvas) {
+        var jsPDF = window.jspdf.jsPDF;
+        var doc = new jsPDF({ unit: "pt", format: "a4" });
+        var pageW = doc.internal.pageSize.getWidth();
+        var pageH = doc.internal.pageSize.getHeight();
+        var margin = 20;
+        var imgW = pageW - (margin * 2);
+        var imgH = (canvas.height * imgW) / canvas.width;
+        var imgData = canvas.toDataURL("image/png");
+
+        var heightLeft = imgH;
+        var y = margin;
+        doc.addImage(imgData, "PNG", margin, y, imgW, imgH);
+        heightLeft -= (pageH - margin * 2);
+
+        while (heightLeft > 0) {
+          doc.addPage();
+          y = margin - (imgH - heightLeft);
+          doc.addImage(imgData, "PNG", margin, y, imgW, imgH);
+          heightLeft -= (pageH - margin * 2);
+        }
+
+        var safeExam = String(state.exam.title || "exam").replace(/[^a-z0-9]+/gi, "-").replace(/^-+|-+$/g, "").toLowerCase();
+        var safeStudent = String(state.studentName || "student").replace(/[^a-z0-9]+/gi, "-").replace(/^-+|-+$/g, "").toLowerCase();
+        var stamp = new Date().toISOString().replace(/[.:]/g, "-");
+        var fileName = [safeExam || "exam", safeStudent || "student", "result", stamp].join("_") + ".pdf";
+        doc.save(fileName);
+      }).catch(function () {
+        // Do not block result flow if PDF generation fails.
+      }).finally(function () {
+        document.body.removeChild(tmp);
+      });
+    }, 120);
   }
 
   function saveExamSession() {

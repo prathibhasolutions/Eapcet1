@@ -653,6 +653,22 @@ legend {
   font-size: 22px;
 }
 
+.kpi-score {
+  border: 2px solid #f59e0b;
+  background: linear-gradient(135deg, #fff7ed 0%, #fffbeb 100%);
+  box-shadow: 0 8px 20px rgba(245, 158, 11, 0.18);
+}
+
+.kpi-score p {
+  color: #b45309;
+  font-weight: 700;
+}
+
+.kpi-score strong {
+  color: #92400e;
+  font-size: 28px;
+}
+
 .section-scores {
   display: flex;
   flex-wrap: wrap;
@@ -994,5 +1010,69 @@ td {
 
   .submit-stats {
     grid-template-columns: 1fr;
+  }
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 12mm;
+  }
+
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  body {
+    background: #fff !important;
+  }
+
+  .bg-shape,
+  .hero,
+  .button-row,
+  #examScreen,
+  #homeScreen,
+  #instructionScreen,
+  #editExamScreen,
+  #qModal,
+  #submitModal {
+    display: none !important;
+  }
+
+  .app {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  #resultScreen {
+    display: block !important;
+    animation: none !important;
+  }
+
+  #resultScreen .card {
+    box-shadow: none;
+    border: 1px solid #d7deea;
+    border-radius: 10px;
+  }
+
+  .table-wrap {
+    max-height: none;
+    overflow: visible;
+  }
+
+  .result-key-activity .table-wrap {
+    max-height: none;
+    overflow: visible;
+  }
+
+  table {
+    page-break-inside: auto;
+  }
+
+  tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
   }
 }
