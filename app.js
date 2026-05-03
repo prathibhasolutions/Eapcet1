@@ -4,6 +4,8 @@
     studentName: "",
     answers: {},
     marked: {},
+    keyActivity: [],
+    awayStartedAt: 0,
     visited: {},
     currentQuestionIndex: 0,
     currentPaletteSection: "maths",
@@ -265,6 +267,8 @@
   function initExamSession() {
     state.answers = {};
     state.marked = {};
+    state.keyActivity = [];
+    state.awayStartedAt = 0;
     state.visited = {};
     state.currentQuestionIndex = 0;
     state.currentPaletteSection = state.exam.sections[0] ? state.exam.sections[0].key : "maths";
@@ -562,15 +566,38 @@
     var wrong = attempted - correct;
     var score = (correct * state.exam.marksPerQuestion) - (wrong * state.exam.negativeMark);
 
+    // Section-wise breakdown
+    var sectionMap = {};
+    state.exam.questions.forEach(function (q) {
+      var sec = q.section || "General";
+      if (!sectionMap[sec]) sectionMap[sec] = { correct: 0, wrong: 0, total: 0 };
+      sectionMap[sec].total += 1;
+      var correctId = getCorrectOptionId(q);
+      var ans = state.answers[q.id] || "-";
+      if (ans !== "-") {
+        if (ans === correctId) sectionMap[sec].correct += 1;
+        else sectionMap[sec].wrong += 1;
+      }
+    });
+    var sections = Object.keys(sectionMap).map(function (sec) {
+      var s = sectionMap[sec];
+      var secScore = (s.correct * state.exam.marksPerQuestion) - (s.wrong * state.exam.negativeMark);
+      return { name: sec, correct: s.correct, wrong: s.wrong, total: s.total, score: secScore };
+    });
+
     return {
       total: total,
       attempted: attempted,
       correct: correct,
       wrong: wrong,
       score: score,
+      sections: sections,
+      keyActivity: (state.keyActivity || []).slice(),
       rows: rows
     };
   }
+
+  var SECTION_COLORS = ["#3b82f6", "#10b981", "#f59e0b", "#8b5cf6", "#ef4444", "#06b6d4"];
 
   function renderResult(result) {
     var submittedAt = result.submittedAt || new Date().toLocaleString();
@@ -584,6 +611,23 @@
       + kpi("Score", result.score)
       + kpi("Exam", escapeHtml(state.exam.title))
       + kpi("Submitted At", escapeHtml(submittedAt));
+
+    // Section-wise score strip
+    var secWrap = document.getElementById("sectionScores");
+    secWrap.innerHTML = "";
+    (result.sections || []).forEach(function (s, i) {
+      var color = SECTION_COLORS[i % SECTION_COLORS.length];
+      var card = document.createElement("div");
+      card.className = "sec-score-card";
+      card.style.borderColor = color;
+      card.innerHTML = "<div class='sec-score-name' style='color:" + color + "'>" + escapeHtml(s.name) + "</div>"
+        + "<div class='sec-score-val' style='color:" + color + "'>" + s.score + "<span class='sec-score-total'>/" + s.total + "</span></div>"
+        + "<div class='sec-score-meta'>"
+        + "<span class='sec-ok'>&#10003; " + s.correct + "</span>"
+        + "<span class='sec-bad'>&#10005; " + s.wrong + "</span>"
+        + "</div>";
+      secWrap.appendChild(card);
+    });
 
     var tbody = document.getElementById("resultTableBody");
     tbody.innerHTML = "";
@@ -606,6 +650,33 @@
         openQuestionModal(Number(btn.getAttribute("data-qindex")));
       });
     });
+
+    var keyLogWrap = document.getElementById("resultKeyActivity");
+    if (keyLogWrap) {
+      var keyRows = Array.isArray(result.keyActivity) ? result.keyActivity : [];
+      if (!keyRows.length) {
+        keyLogWrap.innerHTML = "<h3>Keyboard Activity Log</h3><p class='key-log-empty'>No keyboard activity captured during exam.</p>";
+      } else {
+        var logHtml = "";
+        keyRows.forEach(function (entry, idx) {
+          logHtml += "<tr>"
+            + "<td>" + (idx + 1) + "</td>"
+            + "<td>" + escapeHtml(entry.at || "-") + "</td>"
+            + "<td>Q" + escapeHtml(entry.questionNo || "-") + "</td>"
+            + "<td>" + escapeHtml(entry.section || "-") + "</td>"
+            + "<td><strong>" + escapeHtml(entry.key || "-") + "</strong></td>"
+            + "</tr>";
+        });
+        keyLogWrap.innerHTML = ""
+          + "<h3>Keyboard Activity Log</h3>"
+          + "<p class='key-log-note'>Captured browser activity during exam, including keys typed in this tab and tab/window switch events. External app keystrokes cannot be captured by browser security.</p>"
+          + "<div class='table-wrap key-log-wrap'>"
+          + "<table><thead><tr><th>#</th><th>Time</th><th>Question</th><th>Section</th><th>Key</th></tr></thead><tbody>"
+          + logHtml
+          + "</tbody></table>"
+          + "</div>";
+      }
+    }
 
     showScreen("result");
   }
@@ -746,6 +817,78 @@
         }
       }
     });
+  }
+
+  function formatKeyStroke(e) {
+    var key = String(e.key || "");
+    var parts = [];
+
+    if (e.ctrlKey) parts.push("Ctrl");
+    if (e.altKey) parts.push("Alt");
+    if (e.shiftKey) parts.push("Shift");
+    if (e.metaKey) parts.push("Meta");
+
+    if (key === " ") key = "Space";
+    if (key === "Control" || key === "Shift" || key === "Alt" || key === "Meta") {
+      if (!parts.length) return "";
+      return parts.join("+");
+    }
+
+    parts.push(key);
+    return parts.join("+");
+  }
+
+  function isExamScreenActive() {
+    return !!(screens.exam && screens.exam.classList.contains("active"));
+  }
+
+  function pushExamActivity(label) {
+    if (!state.exam || state.submitted) return;
+    if (!isExamScreenActive()) return;
+
+    var q = getQuestionByIndex(state.currentQuestionIndex);
+    state.keyActivity.push({
+      at: new Date().toLocaleString(),
+      key: label,
+      questionNo: state.currentQuestionIndex + 1,
+      section: q && q.section ? q.section : "General"
+    });
+
+    // Keep cache bounded to avoid excessive localStorage growth.
+    if (state.keyActivity.length > 500) {
+      state.keyActivity.shift();
+    }
+
+    if (state.keyActivity.length % 5 === 0) {
+      saveExamSession();
+    }
+  }
+
+  function handleExamAwayStart(source) {
+    if (!state.exam || state.submitted) return;
+    if (!isExamScreenActive()) return;
+    if (state.awayStartedAt) return;
+
+    state.awayStartedAt = Date.now();
+    pushExamActivity("[LEFT_EXAM:" + source + "]");
+    saveExamSession();
+  }
+
+  function handleExamReturn(source) {
+    if (!state.exam || state.submitted) return;
+    if (!isExamScreenActive()) return;
+    if (!state.awayStartedAt) return;
+
+    var seconds = Math.max(1, Math.round((Date.now() - state.awayStartedAt) / 1000));
+    state.awayStartedAt = 0;
+    pushExamActivity("[RETURNED_EXAM:" + source + " after " + seconds + "s]");
+    saveExamSession();
+  }
+
+  function logKeyboardActivity(e) {
+    var key = formatKeyStroke(e);
+    if (!key) return;
+    pushExamActivity(key);
   }
 
   function saveResultSession(result) {
@@ -894,6 +1037,8 @@
       studentName: state.studentName,
       answers: state.answers,
       marked: state.marked,
+      keyActivity: state.keyActivity,
+      awayStartedAt: state.awayStartedAt,
       visited: state.visited,
       currentQuestionIndex: state.currentQuestionIndex,
       currentPaletteSection: state.currentPaletteSection,
@@ -939,6 +1084,8 @@
     state.studentName = saved.studentName || "";
     state.answers = saved.answers && typeof saved.answers === "object" ? saved.answers : {};
     state.marked = saved.marked && typeof saved.marked === "object" ? saved.marked : {};
+    state.keyActivity = Array.isArray(saved.keyActivity) ? saved.keyActivity : [];
+    state.awayStartedAt = Number(saved.awayStartedAt || 0);
     state.visited = saved.visited && typeof saved.visited === "object" ? saved.visited : {};
     state.currentQuestionIndex = Number(saved.currentQuestionIndex || 0);
     state.currentPaletteSection = saved.currentPaletteSection || (state.exam.sections[0] ? state.exam.sections[0].key : "maths");
@@ -983,6 +1130,7 @@
       wrong: result.wrong,
       score: result.score,
       answers: state.answers,
+      keyActivity: result.keyActivity || [],
       resultRows: result.rows || []
     };
 
@@ -1193,6 +1341,23 @@
     wireMarkForReview();
     wireModal();
     wireJsonImport();
+
+    document.addEventListener("keydown", function (e) {
+      logKeyboardActivity(e);
+    });
+
+    document.addEventListener("visibilitychange", function () {
+      if (document.hidden) handleExamAwayStart("tab-hidden");
+      else handleExamReturn("tab-visible");
+    });
+
+    window.addEventListener("blur", function () {
+      handleExamAwayStart("window-blur");
+    });
+
+    window.addEventListener("focus", function () {
+      handleExamReturn("window-focus");
+    });
 
     document.getElementById("backToHomeBtn").addEventListener("click", function () {
       showScreen("home");
