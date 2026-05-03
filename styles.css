@@ -571,6 +571,11 @@ legend {
   object-fit: contain;
 }
 
+.question-image-wrap.image-large img {
+  max-height: 480px;
+  max-width: 100%;
+}
+
 .options {
   display: grid;
   gap: 8px;

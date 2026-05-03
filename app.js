@@ -81,6 +81,7 @@
       section: q.section || "General",
       text: q.text != null ? String(q.text) : "",
       image: q.image || q.imageUrl || "",
+      imageLarge: !!q.imageLarge,
       options: options.map(function (opt, i) { return toOptionObject(opt, i); }),
       correct: q.correct || q.correctOption || "A"
     };
@@ -457,6 +458,7 @@
     var image = document.getElementById("questionImage");
     var imageWrap = image.parentElement;
     image.alt = "Question " + (qIndex + 1);
+    imageWrap.classList.toggle("image-large", !!q.imageLarge);
     setImageWithFallback(image, imageWrap, q.image, "Question image missing", q.image);
 
     var selected = state.answers[q.id] || "";
