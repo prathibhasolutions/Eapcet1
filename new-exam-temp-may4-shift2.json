@@ -530,8 +530,8 @@
                                         {
                                             "id":  "maths-17",
                                             "section":  "Maths",
-                                            "text":  "Let $\\left(1+x+x^2\\right)^n=a_0+a_1x+a_2x^2+\\ldots+a_{2n}x^{2n}$. Then match List-I with List-II. List-I: A) $a_0+a_2+\\ldots+a_{2n}$; B) $a_1+a_3+\\ldots+a_{2n-1}$; C) $a_1+2a_2+3a_3+\\ldots+2na_{2n}$. List-II: I) $n\\cdot3^{n-1}$; II) $n\\cdot3^n$; III) $\\dfrac{1}{2}(3^n+1)$; IV) $\\dfrac{1}{2}(3^n-1)$. The correct match is",
-                                            "image":  "",
+                                            "text":  "Let $\\left(1+x+x^2\\right)^n=a_0+a_1x+a_2x^2+\\ldots+a_{2n}x^{2n}$. Then match List-I with List-II.  The correct match is",
+                                            "image":  "assets/exams/may4th-shift2/maths/questions/q17.png",
                                             "options":  [
                                                             {
                                                                 "id":  "A",
@@ -659,22 +659,22 @@
                                             "options":  [
                                                             {
                                                                 "id":  "A",
-                                                                "text":  "$30Â°$",
+                                                                "text":  "$30°$",
                                                                 "image":  ""
                                                             },
                                                             {
                                                                 "id":  "B",
-                                                                "text":  "$45Â°$",
+                                                                "text":  "$45°$",
                                                                 "image":  ""
                                                             },
                                                             {
                                                                 "id":  "C",
-                                                                "text":  "$60Â°$",
+                                                                "text":  "$60°$",
                                                                 "image":  ""
                                                             },
                                                             {
                                                                 "id":  "D",
-                                                                "text":  "$90Â°$",
+                                                                "text":  "$90°$",
                                                                 "image":  ""
                                                             }
                                                         ],
@@ -1088,8 +1088,8 @@
                                         {
                                             "id":  "maths-35",
                                             "section":  "Maths",
-                                            "text":  "The mean deviation about the median of the following distribution is: $x$: 6, 12, 18, 24, 30, 36, 42; $f$: 4, 7, 9, 18, 15, 10, 5",
-                                            "image":  "",
+                                            "text":  "The mean deviation about the median of the following distribution is: ",
+                                            "image":  "assets/exams/may4th-shift2/maths/questions/q35.png",
                                             "options":  [
                                                             {
                                                                 "id":  "A",
@@ -1305,8 +1305,8 @@
                                         {
                                             "id":  "maths-42",
                                             "section":  "Maths",
-                                            "text":  "Match the locus of the points in List-I with the curves in List-II (Here $p$, $q$ and $r$ are constants and $t$, $\\theta$ and $\\lambda$ are parameters). List-I: A) $\\left[\\dfrac{p}{2}\\left(t+\\dfrac{1}{t}\\right), \\dfrac{q}{2}\\left(t-\\dfrac{1}{t}\\right)\\right]$; B) $(p+q\\cos\\theta, r+q\\sin\\theta)$; C) $(p+\\lambda^2, q-\\lambda)$. List-II: I) parabola; II) circle; III) ellipse; IV) hyperbola. The correct match is",
-                                            "image":  "",
+                                            "text":  "Match the locus of the points in List-I with the curves in List-II (Here $p$, $q$ and $r$ are constants and $t$, $\\theta$ and $\\lambda$ are parameters). The correct match is",
+                                            "image":  "assets/exams/may4th-shift2/maths/questions/q42.png",
                                             "options":  [
                                                             {
                                                                 "id":  "A",
@@ -1336,7 +1336,7 @@
                                         {
                                             "id":  "maths-43",
                                             "section":  "Maths",
-                                            "text":  "When the origin is shifted to $(1,-2)$ by translation of coordinate axes, the transformed coordinates of $(3,-2)$ are $(\\alpha,\\beta)$. If the axes are rotated about origin through an angle of $45Â°$ after the translation, then the transformed coordinates of $(\\alpha,\\beta)$ are",
+                                            "text":  "When the origin is shifted to $(1,-2)$ by translation of coordinate axes, the transformed coordinates of $(3,-2)$ are $(\\alpha,\\beta)$. If the axes are rotated about origin through an angle of $45°$ after the translation, then the transformed coordinates of $(\\alpha,\\beta)$ are",
                                             "image":  "",
                                             "options":  [
                                                             {
@@ -1615,8 +1615,8 @@
                                         {
                                             "id":  "maths-52",
                                             "section":  "Maths",
-                                            "text":  "Let $k\u003e0$, $s_\\alpha\\equiv x^2+y^2+2\\alpha x+k=0$ and $s_\\beta\\equiv x^2+y^2+2\\beta y-k=0$. Then match the items of List-I with those of List-II. List-I: A) Point circles of $s_\\alpha=0$; B) Point circles of $s_\\beta=0$; C) The circles in $s_\\alpha=0$ are; D) The circles in $s_\\beta=0$ are. List-II: i) do not exist; ii) intersecting; iii) non-intersecting; iv) $(\\pm\\sqrt{k},0)$; v) $(0,\\pm\\sqrt{k})$. The correct match is",
-                                            "image":  "",
+                                            "text":  "Let $k\u003e0$, $s_\\alpha\\equiv x^2+y^2+2\\alpha x+k=0$ and $s_\\beta\\equiv x^2+y^2+2\\beta y-k=0$. Then match the items of List-I with those of List-II.  The correct match is",
+                                            "image":  "assets/exams/may4th-shift2/maths/questions/q52.png",
                                             "options":  [
                                                             {
                                                                 "id":  "A",
@@ -2011,7 +2011,7 @@
                                                                 "image":  ""
                                                             }
                                                         ],
-                                            "correct":  "C",
+                                            "correct":  "D",
                                             "needsReview":  false,
                                             "issue":  ""
                                         },
@@ -2290,7 +2290,7 @@
                                                                 "image":  ""
                                                             }
                                                         ],
-                                            "correct":  "C",
+                                            "correct":  "D",
                                             "needsReview":  false,
                                             "issue":  ""
                                         },
@@ -2514,7 +2514,7 @@
                                         {
                                             "id":  "physics-1",
                                             "section":  "Physics",
-                                            "text":  "Identify the correct option. The range of the gravitational force is large but not infinite. The range of electromagnetic force is large but lesser than the range of gravitational force. The range of weak nuclear force is smaller than the range of strong nuclear force, gravitation force and electromagnetic force. The range of the weak as well as strong nuclear force is of the order of $10^{-10}$ m.",
+                                            "text":  "Identify the correct option. ",
                                             "image":  "",
                                             "options":  [
                                                             {
@@ -2731,27 +2731,27 @@
                                         {
                                             "id":  "physics-8",
                                             "section":  "Physics",
-                                            "text":  "A light rigid wire of length 1 m is attached to a ball A of mass 500 g to one end. The other end of the wire is fixed, so that the wire can rotate freely in vertical plane about its fixed end. At the lowest point of the circular motion, the ball is given a horizontal velocity 6 m/s. Determine the radial component of the acceleration of the ball, when this rigid wire makes an angle 60Â° with the upward vertical. (Assume $g=10$ m/sÂ²)",
+                                            "text":  "A light rigid wire of length 1 m is attached to a ball A of mass 500 g to one end. The other end of the wire is fixed, so that the wire can rotate freely in vertical plane about its fixed end. At the lowest point of the circular motion, the ball is given a horizontal velocity 6 m/s. Determine the radial component of the acceleration of the ball, when this rigid wire makes an angle 60° with the upward vertical. (Assume $g=10$ m/sÂ²)",
                                             "image":  "assets/exams/may4th-shift2/physics/questions/q8.png",
                                             "options":  [
                                                             {
                                                                 "id":  "A",
-                                                                "text":  "$10$ m/sÂ²",
+                                                                "text":  "$10$ m/s²",
                                                                 "image":  ""
                                                             },
                                                             {
                                                                 "id":  "B",
-                                                                "text":  "$6$ m/sÂ²",
+                                                                "text":  "$6$ m/s²",
                                                                 "image":  ""
                                                             },
                                                             {
                                                                 "id":  "C",
-                                                                "text":  "$18$ m/sÂ²",
+                                                                "text":  "$18$ m/s²",
                                                                 "image":  ""
                                                             },
                                                             {
                                                                 "id":  "D",
-                                                                "text":  "$25$ m/sÂ²",
+                                                                "text":  "$25$ m/s²",
                                                                 "image":  ""
                                                             }
                                                         ],
@@ -2767,22 +2767,22 @@
                                             "options":  [
                                                             {
                                                                 "id":  "A",
-                                                                "text":  "$1.5$ m/sÂ²",
+                                                                "text":  "$1.5$ m/s²",
                                                                 "image":  ""
                                                             },
                                                             {
                                                                 "id":  "B",
-                                                                "text":  "$3.0$ m/sÂ²",
+                                                                "text":  "$3.0$ m/s²",
                                                                 "image":  ""
                                                             },
                                                             {
                                                                 "id":  "C",
-                                                                "text":  "$4.5$ m/sÂ²",
+                                                                "text":  "$4.5$ m/s²",
                                                                 "image":  ""
                                                             },
                                                             {
                                                                 "id":  "D",
-                                                                "text":  "$2.5$ m/sÂ²",
+                                                                "text":  "$2.5$ m/s²",
                                                                 "image":  ""
                                                             }
                                                         ],
@@ -2793,7 +2793,7 @@
                                         {
                                             "id":  "physics-10",
                                             "section":  "Physics",
-                                            "text":  "A uniform sphere of radius R and mass $m$ is placed on an inclined plane which makes an angle 45Â° to the horizontal. For which of the following value of coefficient of friction, the sphere rolls without slipping",
+                                            "text":  "A uniform sphere of radius R and mass $m$ is placed on an inclined plane which makes an angle 45° to the horizontal. For which of the following value of coefficient of friction, the sphere rolls without slipping",
                                             "image":  "",
                                             "options":  [
                                                             {
@@ -2817,7 +2817,7 @@
                                                                 "image":  ""
                                                             }
                                                         ],
-                                            "correct":  "D",
+                                            "correct":  "A",
                                             "needsReview":  false,
                                             "issue":  ""
                                         },
@@ -2979,7 +2979,7 @@
                                         {
                                             "id":  "physics-16",
                                             "section":  "Physics",
-                                            "text":  "A cubical block of wood, of length 10 cm, floats at the interface between oil of density 800 kg/mÂ³ and water. The lower surface of the block is 1.5 cm below the interface. If the depth of water is 10 cm below the interface and oil is upto 10 cm above the interface then the difference in pressure at the lower and the upper face of the wooden block is (Assume density of water $=1000$ kg/mÂ³ and $g=10$ m/sÂ²)",
+                                            "text":  "A cubical block of wood, of length 10 cm, floats at the interface between oil of density 800 kg/m³ and water. The lower surface of the block is 1.5 cm below the interface. If the depth of water is 10 cm below the interface and oil is upto 10 cm above the interface then the difference in pressure at the lower and the upper face of the wooden block is (Assume density of water $=1000$ kg/m³ and $g=10$ m/s²)",
                                             "image":  "assets/exams/may4th-shift2/physics/questions/q16.png",
                                             "options":  [
                                                             {
@@ -3041,7 +3041,7 @@
                                         {
                                             "id":  "physics-18",
                                             "section":  "Physics",
-                                            "text":  "A cup of coffee cools from 150 Â°F to 144 Â°F in 1 min in a room at 72 Â°F. How much time will the coffee take to cool from 110 Â°F to 104 Â°F in the same room?",
+                                            "text":  "A cup of coffee cools from 150 °F to 144 °F in 1 min in a room at 72 °F. How much time will the coffee take to cool from 110 °F to 104 °F in the same room?",
                                             "image":  "",
                                             "options":  [
                                                             {
@@ -3189,7 +3189,7 @@
                                                                 "image":  ""
                                                             }
                                                         ],
-                                            "correct":  "B",
+                                            "correct":  "C",
                                             "needsReview":  false,
                                             "issue":  ""
                                         },
@@ -3227,7 +3227,7 @@
                                         {
                                             "id":  "physics-24",
                                             "section":  "Physics",
-                                            "text":  "The pass axes of two polarizers were kept such that the incident unpolarized beam of intensity $I_0$, gets completely blocked. Another polarizer was introduced in between these two polarizers with its pass axis 60Â° with respect to the pass axis of the first one. The output intensity would then become",
+                                            "text":  "The pass axes of two polarizers were kept such that the incident unpolarized beam of intensity $I_0$, gets completely blocked. Another polarizer was introduced in between these two polarizers with its pass axis 60° with respect to the pass axis of the first one. The output intensity would then become",
                                             "image":  "",
                                             "options":  [
                                                             {
@@ -3351,7 +3351,7 @@
                                         {
                                             "id":  "physics-28",
                                             "section":  "Physics",
-                                            "text":  "When subjected to a voltage of 10 V, the current through a resistor at a temperature of 40 Â°C is 0.1 A. The temperature coefficient of resistance of the material of the resistor is $2\\times10^{-4}$ Â°Câ»Â¹. The temperature of the resistor in Â°C when the current drops to 0.098 A is",
+                                            "text":  "When subjected to a voltage of 10 V, the current through a resistor at a temperature of 40 °C is 0.1 A. The temperature coefficient of resistance of the material of the resistor is $2\\times10^{-4}$ °C⁻¹. The temperature of the resistor in °C when the current drops to 0.098 A is",
                                             "image":  "",
                                             "options":  [
                                                             {
@@ -3444,7 +3444,7 @@
                                         {
                                             "id":  "physics-31",
                                             "section":  "Physics",
-                                            "text":  "A small bar magnet experiences a torque of 0.016 Nm when placed with its axis at 30Â° with an external field of 0.04 T. If the bar magnet is replaced by a solenoid of cross-sectional area of 1 cmÂ² and 1000 turns but having the same magnetic moment as that of bar magnet, then the current flowing through the solenoid is",
+                                            "text":  "A small bar magnet experiences a torque of 0.016 Nm when placed with its axis at 30° with an external field of 0.04 T. If the bar magnet is replaced by a solenoid of cross-sectional area of 1 cm² and 1000 turns but having the same magnetic moment as that of bar magnet, then the current flowing through the solenoid is",
                                             "image":  "",
                                             "options":  [
                                                             {
@@ -3506,7 +3506,7 @@
                                         {
                                             "id":  "physics-33",
                                             "section":  "Physics",
-                                            "text":  "In series L-C-R circuit, the resonance frequency of circuit increases two times that of the initial circuit by changing C to C\u0027 and R from 100 Î© to 400 Î©, while the inductance was kept the same. The ratio $C/C\u0027$, is",
+                                            "text":  "In series L-C-R circuit, the resonance frequency of circuit increases two times that of the initial circuit by changing C to C\u0027 and R from 100 ohm to 400 ohm, while the inductance was kept the same. The ratio $C/C\u0027$, is",
                                             "image":  "",
                                             "options":  [
                                                             {
@@ -3542,22 +3542,22 @@
                                             "options":  [
                                                             {
                                                                 "id":  "A",
-                                                                "text":  "$1.56\\times10^6$ W/mÂ²",
+                                                                "text":  "$1.56\\times10^6$ W/m²",
                                                                 "image":  ""
                                                             },
                                                             {
                                                                 "id":  "B",
-                                                                "text":  "$1.89\\times10^6$ W/mÂ²",
+                                                                "text":  "$1.89\\times10^6$ W/m²",
                                                                 "image":  ""
                                                             },
                                                             {
                                                                 "id":  "C",
-                                                                "text":  "$8.92\\times10^5$ W/mÂ²",
+                                                                "text":  "$8.92\\times10^5$ W/m²",
                                                                 "image":  ""
                                                             },
                                                             {
                                                                 "id":  "D",
-                                                                "text":  "$4.62\\times10^6$ W/mÂ²",
+                                                                "text":  "$4.62\\times10^6$ W/m²",
                                                                 "image":  ""
                                                             }
                                                         ],
@@ -3654,7 +3654,7 @@
                                                                 "image":  ""
                                                             }
                                                         ],
-                                            "correct":  "B",
+                                            "correct":  "C",
                                             "needsReview":  false,
                                             "issue":  ""
                                         },
@@ -3909,8 +3909,8 @@
                                         {
                                             "id":  "chemistry-6",
                                             "section":  "Chemistry",
-                                            "text":  "Match the following. List-I (Molecules/Ions): A) $N_2^+$; B) CO; C) $O_2$; D) $O_2^-$. List-II (Bond order): I) 1.0; II) 1.5; III) 2.0; IV) 2.5; V) 3. The correct answer is",
-                                            "image":  "",
+                                            "text":  "Match the following. The correct answer is",
+                                            "image":  "assets/exams/may4th-shift2/chemistry/questions/q6.png",
                                             "options":  [
                                                             {
                                                                 "id":  "A",
@@ -4002,7 +4002,7 @@
                                         {
                                             "id":  "chemistry-9",
                                             "section":  "Chemistry",
-                                            "text":  "The approximate molarity of a solution in mol Lâ»Â¹ that contains 13.50 g of NaCl dissolved in 452 mL of water is",
+                                            "text":  "The approximate molarity of a solution in mol L-¹ that contains 13.50 g of NaCl dissolved in 452 mL of water is",
                                             "image":  "",
                                             "options":  [
                                                             {
@@ -4064,7 +4064,7 @@
                                         {
                                             "id":  "chemistry-11",
                                             "section":  "Chemistry",
-                                            "text":  "The increase in entropy in J Kâ»Â¹ of a substance when it absorbs 1 kJ of heat energy at 3 K is",
+                                            "text":  "The increase in entropy in J K-¹ of a substance when it absorbs 1 kJ of heat energy at 3 K is",
                                             "image":  "",
                                             "options":  [
                                                             {
@@ -4095,7 +4095,7 @@
                                         {
                                             "id":  "chemistry-12",
                                             "section":  "Chemistry",
-                                            "text":  "Consider the equilibrium $H_2+I_2\\rightleftharpoons2HI$. Calculate the equilibrium constant of the reverse reaction when the equilibrium concentration of $H_2$, $I_2$ and HI are $1.14\\times10^{-2}$, $0.12\\times10^{-2}$ and $2.52\\times10^{-2}$ mol Lâ»Â¹, respectively",
+                                            "text":  "Consider the equilibrium $H_2+I_2\\rightleftharpoons2HI$. Calculate the equilibrium constant of the reverse reaction when the equilibrium concentration of $H_2$, $I_2$ and HI are $1.14\\times10^{-2}$, $0.12\\times10^{-2}$ and $2.52\\times10^{-2}$ mol L-¹, respectively",
                                             "image":  "",
                                             "options":  [
                                                             {
@@ -4150,7 +4150,7 @@
                                                                 "image":  ""
                                                             }
                                                         ],
-                                            "correct":  "B",
+                                            "correct":  "C",
                                             "needsReview":  false,
                                             "issue":  ""
                                         },
@@ -4212,7 +4212,7 @@
                                                                 "image":  ""
                                                             }
                                                         ],
-                                            "correct":  "A",
+                                            "correct":  "D",
                                             "needsReview":  false,
                                             "issue":  ""
                                         },
@@ -4312,7 +4312,7 @@
                                         {
                                             "id":  "chemistry-19",
                                             "section":  "Chemistry",
-                                            "text":  "The number of no bond resonance structures possible for but-1-ene and a 3Â° carbocation having methyl, ethyl and isobutyl groups on cationic carbon respectively are",
+                                            "text":  "The number of no bond resonance structures possible for but-1-ene and a 3° carbocation having methyl, ethyl and isobutyl groups on cationic carbon respectively are",
                                             "image":  "",
                                             "options":  [
                                                             {
@@ -4529,7 +4529,7 @@
                                         {
                                             "id":  "chemistry-26",
                                             "section":  "Chemistry",
-                                            "text":  "When the temperature of a reaction is raised by 10 Â°C, how many times the rate will be enhanced?",
+                                            "text":  "When the temperature of a reaction is raised by 10 °C, how many times the rate will be enhanced?",
                                             "image":  "",
                                             "options":  [
                                                             {
@@ -4870,7 +4870,7 @@
                                         {
                                             "id":  "chemistry-37",
                                             "section":  "Chemistry",
-                                            "text":  "Arrange the following compounds in the correct order of their acid strength. (Hâ‚‚O is a, phenol is b, (CHâ‚ƒ)â‚‚CHOH is c, and allylic alcohol is d)",
+                                            "text":  "Arrange the following compounds in the correct order of their acid strength. ",
                                             "image":  "assets/exams/may4th-shift2/chemistry/questions/q37.png",
                                             "options":  [
                                                             {
@@ -4964,26 +4964,26 @@
                                             "id":  "chemistry-40",
                                             "section":  "Chemistry",
                                             "text":  "The compound \"A\" decolourises $Br_2/CCl_4$ and releases $N_2$-gas with $HNO_2$. The compound \"A\" is",
-                                            "image":  "assets/exams/may4th-shift2/chemistry/questions/q40.png",
+                                            "image":  "",
                                             "options":  [
                                                             {
                                                                 "id":  "A",
-                                                                "text":  "cyclopentyl methyl amine (structure shown)",
+                                                                "text":  "",
                                                                 "image":  "assets/exams/may4th-shift2/chemistry/options/q40-opt-a.png"
                                                             },
                                                             {
                                                                 "id":  "B",
-                                                                "text":  "1,2,3,6-tetrahydropyridine (structure shown)",
+                                                                "text":  "",
                                                                 "image":  "assets/exams/may4th-shift2/chemistry/options/q40-opt-b.png"
                                                             },
                                                             {
                                                                 "id":  "C",
-                                                                "text":  "N-allyl-N-ethylamine (structure shown)",
+                                                                "text":  "",
                                                                 "image":  "assets/exams/may4th-shift2/chemistry/options/q40-opt-c.png"
                                                             },
                                                             {
                                                                 "id":  "D",
-                                                                "text":  "N-methyl aniline (structure shown)",
+                                                                "text":  "",
                                                                 "image":  "assets/exams/may4th-shift2/chemistry/options/q40-opt-d.png"
                                                             }
                                                         ],
