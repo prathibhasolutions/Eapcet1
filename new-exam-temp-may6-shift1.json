@@ -1,0 +1,5067 @@
+{
+  "exams": [
+    {
+      "id": "eapcet-pyq-2024",
+      "title": "TG EAPCET Previous Year Paper 2024",
+      "date": "2026-04-29",
+      "durationMinutes": 180,
+      "marksPerQuestion": 1,
+      "negativeMark": 0,
+      "sections": [
+        {
+          "key": "maths",
+          "title": "Maths",
+          "count": 80,
+          "start": 1,
+          "end": 80
+        },
+        {
+          "key": "physics",
+          "title": "Physics",
+          "count": 40,
+          "start": 81,
+          "end": 120
+        },
+        {
+          "key": "chemistry",
+          "title": "Chemistry",
+          "count": 40,
+          "start": 121,
+          "end": 160
+        }
+      ],
+      "questions": [
+        {
+          "id": "maths-1",
+          "section": "Maths",
+          "text": "Let $f(x) = \\frac{1}{2} - \\tan\\left(\\frac{\\pi x}{2}\\right)$, $-1 < x < 1$ and $g(x) = \\sqrt{3 + 4x - 4x^2}$, then the domain of $(f+g)$ is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\left[\\frac{1}{2}, 1\\right)$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\left[\\frac{-1}{2}, \\frac{1}{2}\\right)$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\left[-\\frac{1}{2}, 1\\right)$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\left[-\\frac{1}{2}, -1\\right]$",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-2",
+          "section": "Maths",
+          "text": "Let $a > 1$ be a constant. If $f: A \\to A$ and $(x, y) \\in f$ satisfy $a^x + a^y = a$, then $A =$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$(0, a]$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$[0, a]$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$(-\\infty, 1)$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$(-\\infty, a+1)$",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-3",
+          "section": "Maths",
+          "text": "If $\\frac{1}{1 \\cdot 5} + \\frac{1}{5 \\cdot 9} + \\frac{1}{9 \\cdot 13} + \\ldots$ to $n$ terms $= \\frac{27}{109}$, then $n =$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$21$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$27$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$63$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$189$",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-4",
+          "section": "Maths",
+          "text": "Let $B = \\begin{bmatrix}1 & 2\\\\ 0 & 1\\end{bmatrix}$ and $A$ be a $2 \\times 2$ matrix satisfying $(A^T)^{-1} = A$. If $X = ABA^T$, then $A^T X^{2021} A =$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\begin{bmatrix}1 & 2^{2021}\\\\ 0 & 1\\end{bmatrix}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\begin{bmatrix}1 & 2021\\\\ 0 & 1\\end{bmatrix}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\begin{bmatrix}1 & 0\\\\ 0 & 1\\end{bmatrix}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\begin{bmatrix}1 & 4042\\\\ 0 & 1\\end{bmatrix}$",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-5",
+          "section": "Maths",
+          "text": "If $A$ is a $3 \\times 3$ matrix such that $|A| = 27$, $\\text{Adj}\\, A = k A^T$, then $k^2 - 3k + 5 =$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$5$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$3$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$0$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$2$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-6",
+          "section": "Maths",
+          "text": "If the system of equations $2x+9y+5z=8$, $2x+3y-z=-4$, $x-2z=-5$ have infinite number of solutions $x=-5+at$, $y=2+bt$, $z=ct$, $t \\in \\mathbb{R}$, then $a$, $b$, $c$ respectively are",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$1, 1, 1$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$2, 1, 1$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$-2, -1, 1$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$2, -1, 1$",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-7",
+          "section": "Maths",
+          "text": "If $(\\sqrt{3}+i)^8 - (\\sqrt{3}-i)^8 = \\alpha + i\\beta$, then $\\alpha - \\frac{\\sqrt{3}}{2}\\beta =$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$256$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$384\\sqrt{3}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$384$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$256\\sqrt{3}$",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-8",
+          "section": "Maths",
+          "text": "If $\\alpha$, $\\beta$ are the roots of the equation $1+x+x^2=0$, then $(2-\\alpha)(2-\\beta)(2-\\alpha^{10})(2-\\alpha^{20}) =$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$36$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$64$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$49$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$81$",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-9",
+          "section": "Maths",
+          "text": "For $n \\in \\mathbb{N}$, $\\left(\\dfrac{1+\\cos\\theta+i\\sin\\theta}{1+\\cos\\theta-i\\sin\\theta}\\right)^n =$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\cos(n\\theta) - i\\sin n\\theta$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$-\\cos(n\\theta) + i\\sin(n\\theta)$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\cos(n\\theta) + i\\sin n\\theta$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$-\\cos(n\\theta) - i\\sin n\\theta$",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-10",
+          "section": "Maths",
+          "text": "$f(x) = ax^2 - bx - a$ is a quadratic expression. If $K$ is the least real number such that $f(x) \\leq K$ $\\forall x \\in \\mathbb{R}$, then",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$K = 0$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$K < -2$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$K > 0$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$-1 < K < 0$",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-11",
+          "section": "Maths",
+          "text": "Assertion (A): The maximum value of $-x^2+3x+1$ is $\\frac{11}{4}$. Reason (R): If $a < 0$, the maximum value of $ax^2+bx+c$ exist at $x = \\frac{-b}{2a}$. The correct option among the following is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "(A) is true, (R) is true and (R) is the correct explanation for (A)",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "(A) is true, (R) is true but (R) is not the correct explanation for (A)",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "(A) is true but (R) is false",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "(A) is false but (R) is true",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-12",
+          "section": "Maths",
+          "text": "If $f(x) \\equiv x^2+ax+2=0$ and $g(x) \\equiv x^2+2x+a=0$ have only one real common root, then sum of the roots of $f(x)+g(x)=0$ is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\frac{-1}{2}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$0$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\frac{1}{2}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$1$",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-13",
+          "section": "Maths",
+          "text": "If the roots of the equation $3x^3 - 26x^2 + 52x - 24 = 0$ are in geometric progression, then the sum of two of its roots is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\frac{8}{3}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\frac{10}{3}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$9$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$10$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-14",
+          "section": "Maths",
+          "text": "If $x = {16}_{C_5} + {12}_{C_4}$, $y = \\sum_{r=1}^{3}(20-r)_{C_4}$, $z = \\sum_{k=1}^{4}(16-k)_{C_3}$, then $x+y+z =$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$19 \\times 17 \\times 45$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$19 \\times 17 \\times 15$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$19 \\times 17 \\times 16$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$19 \\times 17 \\times 48$",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-15",
+          "section": "Maths",
+          "text": "The number of five digit numbers greater than 50000 that can be formed by using all the digits 0, 1, 3, 5, 9 only once is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$24$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$48$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$150$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$30$",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-16",
+          "section": "Maths",
+          "text": "In the Binomial expansion of $(1+x)^{2k}$, if its middle term is the only numerically greatest term, then $x$ lies in the interval",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$(-2k, 2k)$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\left(-\\frac{k+1}{k}, \\frac{k+1}{k}\\right)$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$(-k, k)$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$(-(k+1), (k+1))$",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-17",
+          "section": "Maths",
+          "text": "Sum of the coefficients of $x^r$ ($r=0,1,2,3,\\ldots,15$) in the expansion of $(3x-1)^{15}$ is equal to the sum of the binomial coefficients of which of the following expansions? (a) $(1+x)^{15}$  (b) $(1+x)^{16}+(1-x)^{16}$  (c) $(1+x)^{16}-(1-x)^{16}$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "(a), (b) and (c)",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "(a) and (c) only",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "(b) and (c) only",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "(a) and (b) only",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-18",
+          "section": "Maths",
+          "text": "The $13^{\\text{th}}$ term in the expansion of $(1-4x)^{-4}$ is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "${}^{15}C_4 \\cdot 4^{12} x^{12}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$728 x^{12}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "${}^{15}C_3 \\cdot 4^{12} x^{12}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$1092 x^{12}$",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-19",
+          "section": "Maths",
+          "text": "The partial fraction decomposition of $\\dfrac{9x-7}{(x+3)(x^2+1)}$ is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\dfrac{17}{5(x+3)} - \\dfrac{(17x-6)}{5(x^2+1)}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\dfrac{-17}{5(x+3)} - \\dfrac{(17x-6)}{5(x^2+1)}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\dfrac{17}{5(x+3)} + \\dfrac{(17x-6)}{5(x^2+1)}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\dfrac{-17}{5(x+3)} + \\dfrac{(17x-6)}{5(x^2+1)}$",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-20",
+          "section": "Maths",
+          "text": "$\\cos\\dfrac{7\\pi}{8} + \\cos\\dfrac{\\pi}{4} + \\cos\\left(\\dfrac{-\\pi}{8}\\right) - 1 =$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$4\\cos\\dfrac{\\pi}{16}\\cos\\dfrac{3\\pi}{4}\\cos\\dfrac{5\\pi}{8}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$4\\cos\\dfrac{\\pi}{16}\\cos\\dfrac{\\pi}{8}\\sin\\dfrac{5\\pi}{8}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$4\\cos\\dfrac{\\pi}{16}\\cos\\dfrac{3\\pi}{8}\\cos\\dfrac{9\\pi}{16}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$-4\\cos\\dfrac{\\pi}{16}\\cos\\dfrac{5\\pi}{8}\\cos\\dfrac{\\pi}{16}$",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-21",
+          "section": "Maths",
+          "text": "If $\\dfrac{2\\sin\\alpha}{1+\\cos\\alpha+\\sin\\alpha} = x$, then $\\dfrac{1-\\cos\\alpha-\\sin\\alpha}{\\cos\\alpha} =$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\dfrac{1}{x}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$-x$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$1-x$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$1+x$",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-22",
+          "section": "Maths",
+          "text": "$\\dfrac{\\cot^2 15^\\circ - 1}{\\cot^2 15^\\circ + 1} =$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\dfrac{1}{2}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\dfrac{\\sqrt{3}}{2}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\dfrac{3\\sqrt{3}}{4}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\dfrac{\\sqrt{3}}{4}$",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-23",
+          "section": "Maths",
+          "text": "If $A + B + C = 4S$, then $\\cos(2S-A) + \\cos(2S-B) - \\cos(2S-C) - \\cos 2S =$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$4\\cos\\dfrac{A}{2}\\cos\\dfrac{B}{2}\\cos\\dfrac{C}{2}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$4\\cos\\dfrac{A}{2}\\sin\\dfrac{B}{2}\\sin\\dfrac{C}{2}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$4\\sin\\dfrac{A}{2}\\cos\\dfrac{B}{2}\\sin\\dfrac{C}{2}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$4\\sin\\dfrac{A}{2}\\sin\\dfrac{B}{2}\\cos\\dfrac{C}{2}$",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-24",
+          "section": "Maths",
+          "text": "The number of values of $x$ satisfying $\\sin 4x = \\cos 3x$ and $\\dfrac{-\\pi}{6} < x < \\dfrac{\\pi}{2}$, is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$0$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$1$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$2$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$3$",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-25",
+          "section": "Maths",
+          "text": "If $f(n) = \\tan\\left[\\tan^{-1}\\dfrac{1}{1+2} + \\tan^{-1}\\dfrac{1}{1+6} + \\tan^{-1}\\dfrac{1}{1+12} + \\ldots + \\tan^{-1}\\dfrac{1}{1+n(n+1)}\\right]$, then $f(2021) =$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\dfrac{2020}{2022}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\dfrac{2022}{2024}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\dfrac{2021}{2023}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\dfrac{2019}{2021}$",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-26",
+          "section": "Maths",
+          "text": "If $y = \\log_2 \\sin x$, then the minimum value of $\\cosh y$ is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$2$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\dfrac{2}{e}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\dfrac{e}{2}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$1$",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-27",
+          "section": "Maths",
+          "text": "In a $\\triangle ABC$, if $\\angle C = 90^\\circ$, $\\dfrac{a^2+b^2}{a^2-b^2}\\sin(A-B)=1$ and $0 < B < 45^\\circ$, then",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$a > b > c$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$c > a > b$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$c > b > a$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$a < b < c$",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-28",
+          "section": "Maths",
+          "text": "In a triangle ABC, if $r r_2 = r_1 r_3$, then $\\cos 2B =$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$-1$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$1$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$0$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\dfrac{1}{2}$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-29",
+          "section": "Maths",
+          "text": "If the sides of a triangle are 3, 4 and 5 then the circumradius of the triangle is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$2$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\dfrac{3}{2}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\dfrac{5}{2}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\dfrac{7}{2}$",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-30",
+          "section": "Maths",
+          "text": "In a $\\triangle ABC$, $\\dfrac{\\cos^2\\left(\\frac{B-C}{2}\\right)}{(b+c)^2} + \\dfrac{\\sin^2\\left(\\frac{B-C}{2}\\right)}{(b-c)^2} =$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$1/a^2$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$2/a^2$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$3/a^2$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$4/a^2$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-31",
+          "section": "Maths",
+          "text": "If the collinear points A, B and C have position vectors respectively $(1, x, 3)$, $(3, 4, 7)$ and $(y, -2, -5)$, then $x+y =$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$-1$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$1$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$-5$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$5$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-32",
+          "section": "Maths",
+          "text": "The two lines $L_1: \\vec{r} = (\\vec{i}+5\\vec{j}+5\\vec{k})+t(4\\vec{i}-4\\vec{j}+5\\vec{k})$ and $L_2: \\vec{r} = (2\\vec{i}+4\\vec{j}+5\\vec{k})+s(8\\vec{i}-3\\vec{j}+\\vec{k})$ are such that",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "both are parallel",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "both are perpendicular",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "both are Skew lines",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "both are non-Skew lines, non-parallel, non-perpendicular",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-33",
+          "section": "Maths",
+          "text": "$\\vec{a}$, $\\vec{b}$, $\\vec{c}$ are non-coplanar vectors. If the position vector of the point of intersection of the line $\\vec{r}=\\vec{a}+2\\vec{b}+p(\\vec{a}-2\\vec{c})$ and the plane $\\vec{r}=3\\vec{a}-q(\\vec{c}-\\vec{b})+K(\\vec{a}-\\vec{b}+\\vec{c})$ is $\\vec{r}=x\\vec{a}+y\\vec{b}+z\\vec{c}$, then $xyz=$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$-8$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$8$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$12$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$-12$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-34",
+          "section": "Maths",
+          "text": "Let $\\vec{a}$, $\\vec{b}$, $\\vec{c}$ be unit vectors such that $2\\vec{a}+3\\vec{b}+4\\vec{c}=\\vec{0}$. Then $|\\vec{b}\\times\\vec{c}|=$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\dfrac{\\sqrt{15}}{8}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\dfrac{\\sqrt{15}}{16}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\dfrac{\\sqrt{15}}{4}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\dfrac{\\sqrt{15}}{2}$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-35",
+          "section": "Maths",
+          "text": "The shortest distance between the Skew lines $\\vec{r}=(3\\vec{i}+4\\vec{j}-2\\vec{k})+\\lambda(-\\vec{i}+2\\vec{j}+\\vec{k})$ and $\\vec{r}=(\\vec{i}-7\\vec{j}-2\\vec{k})+\\mu(\\vec{i}+3\\vec{j}+2\\vec{k})$ is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\dfrac{26}{5\\sqrt{5}}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\sqrt{45}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\sqrt{35}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\dfrac{36}{5\\sqrt{5}}$",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-36",
+          "section": "Maths",
+          "text": "If $\\vec{b}=2\\vec{i}-\\vec{j}-\\vec{k}$, $\\vec{a}=3\\vec{i}+4\\vec{j}-5\\vec{k}$ and $\\vec{b}\\times(\\vec{a}\\times\\vec{b})=\\dfrac{\\vec{a}-k\\vec{b}}{l}$, then $\\dfrac{k}{l|\\vec{b}|}$ is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "the orthogonal projection of $\\vec{b}$ on $\\vec{a}$ and equal to $\\dfrac{7}{\\sqrt{50}}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "the orthogonal projection of $\\vec{a}$ on $\\vec{b}$ and equal to $\\dfrac{7}{\\sqrt{6}}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "the orthogonal projection of $\\vec{b}$ in the direction perpendicular to $\\vec{a}$ and equal to $\\dfrac{5}{3}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "the orthogonal projection of $\\vec{a}$ in the direction perpendicular to $\\vec{b}$ and equal to $\\dfrac{752}{3}$",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-37",
+          "section": "Maths",
+          "text": "If $M_1$ and $M_2$ are the mean deviations from mean and median of the first 15 even integers, then $M_1 + M_2 =$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\dfrac{112}{15}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\dfrac{224}{15}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\dfrac{56}{15}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\dfrac{28}{15}$",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-38",
+          "section": "Maths",
+          "text": "A box contains 8 red, 3 white and 9 blue balls. If 3 balls are drawn from the box at random one after the other without replacement, then the probability that they are 2 red balls and 1 white ball is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\dfrac{7}{95}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\dfrac{13}{95}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\dfrac{7}{36}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\dfrac{11}{36}$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-39",
+          "section": "Maths",
+          "text": "A bag B contains 4 white balls and 2 black balls. Another bag C contains 3 white balls and 5 black balls. If one ball is drawn randomly from each bag, then the probability that the two balls drawn are both white is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\dfrac{1}{4}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\dfrac{5}{24}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\dfrac{13}{24}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\dfrac{3}{4}$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-40",
+          "section": "Maths",
+          "text": "From $3n$ consecutive integers three integers are selected at random. The probability that their sum is divisible by 3 is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\dfrac{3 \\cdot n_{C_3} + n^2}{3n_{C_3}}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\dfrac{2 \\cdot n_{C_3} + n^3}{3n_{C_3}}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\dfrac{3n^2-3n+2}{(3n-1)(3n-2)}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\dfrac{3n^2-3n+2}{(3n+1)(3n+2)}$",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-41",
+          "section": "Maths",
+          "text": "A die is rolled 5 times. Getting an odd number in one trial is considered as a success. The variance of the distribution of successes is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\dfrac{8}{3}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\dfrac{3}{8}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\dfrac{4}{5}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\dfrac{5}{4}$",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-42",
+          "section": "Maths",
+          "text": "Face masks are supplied to a junior college in packets of 100. If there is a chance that 1 in 500 face masks is defective, then the number of packets containing no defective face masks in a consignment of 10,000 packets is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\dfrac{10000}{e^{0.2}}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$(10000)e^{0.2}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$(10000)e^{-0.02}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\dfrac{(10000)e^{0.002}}{2!}$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-43",
+          "section": "Maths",
+          "text": "A $(1,0)$, B $(0,2)$ and C $(1,2)$ are three points on XY-plane. If a point P$(x,y)$ moves such that the area of triangle PAB is twice the area of the triangle ABC, then the locus of the point P is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$4x^2-4xy+y^2-8x+4y=0$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$4x^2+4xy+y^2-8x-4y-12=0$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$4x^2-4xy+y^2-8x+4y-12=0$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$4x^2+4xy+y^2-8x+4y+12=0$",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-44",
+          "section": "Maths",
+          "text": "The angle by which axes are to be rotated without changing the origin so that the transformed equation of $x^2+4xy-y^2=0$ in new coordinates $(X,Y)$ does not contain XY term is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\dfrac{1}{2}\\tan^{-1}(2)$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\tan^{-1}(2)$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\dfrac{\\pi}{8}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\dfrac{\\pi}{4}$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-45",
+          "section": "Maths",
+          "text": "A straight line passing through origin O intersects the lines $10x-8y-10=0$ and $\\dfrac{x}{4}-\\dfrac{y}{5}+1=0$ at right angles and at the points P and Q respectively. Then the ratio in which O divides the line segment PQ is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$1:2$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$1:4$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$1:1$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$3:4$",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-46",
+          "section": "Maths",
+          "text": "Consider the lines $L_1 \\equiv 4x+5y-6=0$, $L_2 \\equiv 2x+3y-4=0$, $L_3 \\equiv 3x-y+2=0$. If the line $L_1=0$ intersects the lines $L_2=0$ and $L_3=0$ at the points A and B respectively, then the combined equation of OA and OB is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$26x^2+17xy+2y^2=0$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$x^2-2xy+y^2=0$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$3x^2+17xy+2y^2=0$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$26x^2+2xy+17y^2=0$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-47",
+          "section": "Maths",
+          "text": "$x-y=0$ and $\\dfrac{x}{2}+\\dfrac{y}{2}=1$ are respectively the perpendicular bisectors of the sides AB and AC of a triangle ABC. If the vertex is A$(2,3)$, then the equation of the side BC is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$x-2y+1=0$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$x+2y-3=0$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$2x+y-3=0$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$x-2y=-4$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-48",
+          "section": "Maths",
+          "text": "In an isosceles right angled triangle, if the equation of the hypotenuse and its opposite vertex are $3x+4y=4$ and $(2,2)$, then the slopes of the remaining two sides are",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\dfrac{1}{7}, -7$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\dfrac{-1}{7}, 7$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\dfrac{1}{7}, 7$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\dfrac{-1}{7}, -7$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-49",
+          "section": "Maths",
+          "text": "The product of the length of perpendiculars from origin to the pair of lines $x^2+3y^2+4xy-4x-10y+3=0$ is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\dfrac{3}{\\sqrt{20}}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\dfrac{9}{\\sqrt{20}}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\dfrac{3}{\\sqrt{15}}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\dfrac{3}{\\sqrt{5}}$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-50",
+          "section": "Maths",
+          "text": "If $ax^2+2hxy+by^2+2gx+2fy+c=0$ represents a pair of lines, which of the following statements is true?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "If the slope of one line is negative of the slope of another line, then $h=0$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "If the two lines are parallel then $2f(gh+af)=0$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "If the two lines intersect at origin then $g=f=0$ and $h^2=ab$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "The x-coordinate of the point of intersection of the lines is positive when $hf-bg>0$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-51",
+          "section": "Maths",
+          "text": "If the line $y=mx+C$ is a tangent to the circle $x^2+y^2=16$, then $m=$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\pm\\dfrac{1}{4}\\sqrt{C-16}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\pm\\dfrac{1}{4}\\sqrt{C^2-16}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\pm\\dfrac{1}{C}\\sqrt{C^2+16}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\pm\\dfrac{1}{16}(C^2-16)$",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-52",
+          "section": "Maths",
+          "text": "If the points $(2,3)$ and $(K,-2)$ are conjugate with respect to the circle $x^2+y^2-2x+4y-2=0$, then $K=$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$8$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$6$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$4$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$3$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-53",
+          "section": "Maths",
+          "text": "The number of common tangents that can be drawn to the circles $x^2+y^2-2x-2y-23=0$ and $x^2+y^2-4x-4y-1=0$ is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$0$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$1$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$2$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$3$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-54",
+          "section": "Maths",
+          "text": "A point that lies on the common tangent to the circles $x^2+y^2-2x+18y+78=0$ and $x^2+y^2+8x-6y-200=0$ among the following options is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\left(0, \\dfrac{139}{12}\\right)$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\left(\\dfrac{-137}{5}, \\dfrac{-1}{6}\\right)$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\left(31, \\dfrac{-4}{3}\\right)$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\left(\\dfrac{-2}{5}, \\dfrac{-47}{4}\\right)$",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-55",
+          "section": "Maths",
+          "text": "The length of the common chord of the circles $x^2+y^2+2x+3y+1=0$ and $x^2+y^2+4x+3y+2=0$ is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\sqrt{2}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$2\\sqrt{2}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$2$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$4$",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-56",
+          "section": "Maths",
+          "text": "The parametric equations of the parabola $x^2-8x+12y+15=0$ are",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$x=4+6t, y=\\dfrac{1}{12}-3t^2$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$x=\\dfrac{1}{12}-3t^2, y=4+6t$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$x=3t^2, y=6t$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$x=6t, y=3t^2$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-57",
+          "section": "Maths",
+          "text": "The equation of the directrix of the parabola $(2x-3y-5)^2=20(3x+2y+1)$ is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$3x+2y+1+5\\sqrt{3}=0$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$3x+2y+5=0$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$2x-3y+1+5\\sqrt{3}=0$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$2x-3y+5=0$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-58",
+          "section": "Maths",
+          "text": "Given the ellipse (E) $4x^2+9y^2-36=0$, the circle (C) $x^2+y^2-9=0$ and two points A$(1,2)$, B$(2,1)$, which of the following is correct?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "B lies inside C but outside E",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "B lies outside both C and E",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "A lies inside both C and E",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "A lies inside C, but outside E",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-59",
+          "section": "Maths",
+          "text": "If a circle $(x-1)^2+y^2=r^2$ touches the ellipse $x^2+4y^2=16$ internally, then $r=$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\sqrt{\\dfrac{11}{3}}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\dfrac{11}{3}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\sqrt{\\dfrac{15}{2}}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$2$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-60",
+          "section": "Maths",
+          "text": "If the latus rectum of a hyperbola $\\dfrac{x^2}{a^2}-\\dfrac{y^2}{b^2}=1$ subtends an angle of $60°$ at the other focus, then the eccentricity of the hyperbola is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$2$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\dfrac{\\sqrt{3}+1}{2}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$2\\sqrt{3}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\sqrt{3}$",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-61",
+          "section": "Maths",
+          "text": "The centroid of a triangle with vertices A$(3,4,5)$, B$(6,7,2)$ and C$(x,y,z)$ is $(3,2,3)$, then $x+y+z=$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$-3$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$7$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$3$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$-7$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-62",
+          "section": "Maths",
+          "text": "If $(2,-1,2)$ and $(K,-3,-5)$ are the triads of direction ratios of two lines and the angle between the lines is $60°$, then",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$K^2-56K-208=0$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$5K^2-110K+112=0$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$7K^2-112K-110=0$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$7K^2-112K+110=0$",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-63",
+          "section": "Maths",
+          "text": "A point on the plane determined by the points A$(1,1,-1)$, B$(2,-1,0)$ and C$(-1,0,2)$ among the following is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$(1,2,-2)$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$(2,1,-3)$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$(2,-2,2)$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$(2,1,2)$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-64",
+          "section": "Maths",
+          "text": "If $f(x) = -(\\sin^2 x + \\cos^5 x)$, then $\\lim_{x \\to 0}\\dfrac{1}{x}f'(x)$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "exist and is equal to $0$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "exist and is equal to $7$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "exist and is equal to $3$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "does not exist",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-65",
+          "section": "Maths",
+          "text": "Let $a$, $b$, $c$ be three real numbers. If the function $f(x) = \\begin{cases}\\cos(2x+\\pi) & \\text{if } x \\leq 0 \\\\ ax^2+b & \\text{if } 0<x<1 \\\\ cx+4 & \\text{if } 1 \\leq x \\leq 2 \\\\ 3a+1 & \\text{if } x \\geq 2\\end{cases}$ is continuous everywhere, then $b^2-bc+c^2=$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$133$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$157$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$43$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$31$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-66",
+          "section": "Maths",
+          "text": "$\\displaystyle\\lim_{n \\to \\infty} P\\left(1+\\dfrac{r}{100n}\\right)^{tn} =$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$P$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$P\\left(1+\\dfrac{r}{100}\\right)^t$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$Pe^{\\frac{rt}{100}}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$Pe^{\\frac{r}{100}}$",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-67",
+          "section": "Maths",
+          "text": "If $f:\\mathbb{R}\\to\\mathbb{R}$ is a differentiable function at $a \\in \\mathbb{R}$ such that $f'(a)=af(a)$, then $\\displaystyle\\lim_{x \\to a}\\dfrac{xf(a)-af(x)}{x-a}=$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$(1-a^2)f(a)$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\dfrac{f(a)}{a}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$af(a)$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\dfrac{f(a)}{1-a^2}$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-68",
+          "section": "Maths",
+          "text": "If $x=a(t-\\sin t)$ and $y=a(1-\\cos t)$, then $\\dfrac{d^2y}{dx^2}=$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\dfrac{1}{4a\\sin^4\\left(\\frac{t}{2}\\right)}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\dfrac{-1}{4a\\sin^4\\left(\\frac{t}{2}\\right)}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\dfrac{1}{4a\\cos^4\\left(\\frac{t}{2}\\right)}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\dfrac{-1}{4a\\cos^4\\left(\\frac{t}{2}\\right)}$",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-69",
+          "section": "Maths",
+          "text": "If $y=\\cos^{-1}(\\tanh x)+\\sinh(\\sin 6x)$, then $\\dfrac{dy}{dx}=$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\dfrac{-1}{\\cosh x}+6\\cos 6x\\cosh(\\sin 6x)$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\dfrac{1}{\\cosh x}-6\\cos 6x\\cosh(\\sin 6x)$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\dfrac{-1}{\\cosh x}-6\\cos 6x\\cosh(\\sin 6x)$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\dfrac{1}{\\cosh x}+6\\cos 6x\\cosh(\\sin 6x)$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-70",
+          "section": "Maths",
+          "text": "If $y=x^{\\sqrt{x}}$, then $\\dfrac{dy}{dx}=$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\dfrac{\\ln x}{2\\sqrt{2}}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\dfrac{x^{\\sqrt{x}}}{\\sqrt{x}}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\dfrac{y\\ln x}{2\\sqrt{x}}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\dfrac{y(\\ln x+2)}{2\\sqrt{x}}$",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-71",
+          "section": "Maths",
+          "text": "Let $\\mathbb{R}^* = \\mathbb{R} - \\left\\{(2k-1)\\dfrac{\\pi}{2} \\,\\middle|\\, k \\in I\\right\\}$. The function $f:\\mathbb{R}^* \\to \\mathbb{R}$ is defined as $f(x)=\\tan x - x$, then $f(x)$ is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "an increasing function",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "a decreasing function",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "minimum at $x=0$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "periodic function",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-72",
+          "section": "Maths",
+          "text": "If the tangent to the curve $xy+ax+by=0$ at $(1,1)$ makes an angle $\\tan^{-1}2$ with X-axis, then $\\dfrac{a+b}{ab}=$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$0$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\dfrac{1}{2}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$-\\dfrac{1}{2}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$2$",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-73",
+          "section": "Maths",
+          "text": "The volume of a spherical balloon is increasing at the rate of $2$ cm$^3$/sec. When its radius is 4 cm, the rate of change of its surface area (in cm$^2$/sec) is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$1$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$2$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$3$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$4$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-74",
+          "section": "Maths",
+          "text": "If a cubic function $f(x)=ax^3+bx^2-\\dfrac{18}{5}x+\\dfrac{19}{10}$ has maximum value 10 at $x=-3$ and has minimum value $\\dfrac{-5}{2}$ at $x=2$, then $f(1)=$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$-10$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\dfrac{-6}{5}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$6$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\dfrac{28}{5}$",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-75",
+          "section": "Maths",
+          "text": "If $\\int\\dfrac{1}{(x-2)^5(x-1)^4}\\,dx = \\sum_{r=-4}^{-1}A_r\\left(\\dfrac{x-2}{x-1}\\right)^r + \\sum_{r=1}^{3}A_r\\left(\\dfrac{x-2}{x-1}\\right)^r + Bf(x)$, then $f(x)=$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\log(x-2)-\\log(x-1)$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\left(\\dfrac{x-2}{x-1}\\right)+\\log x$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$x+\\log\\left(\\dfrac{x-2}{x-1}\\right)$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\log x$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-76",
+          "section": "Maths",
+          "text": "If $f(x)+K$ is obtained by evaluating $\\int\\dfrac{x^3}{(1+x^2)^3}\\,dx$ using the substitution $x=\\tan\\theta$ and $g(x)+C$ is obtained by evaluating $\\int\\dfrac{x^3}{(1+x^2)^3}\\,dx$ using the substitution $x^2+1=Z$, then $f(x)-g(x)+K-C=$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\dfrac{1}{4}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "any constant",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "any function of $x$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\dfrac{x}{1+x^2}$",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-77",
+          "section": "Maths",
+          "text": "For $-1<x<1$ and $y>1$, if $\\int\\dfrac{x}{\\sqrt{1+x}+\\sqrt{1-x}}\\,dx+\\int\\dfrac{y}{\\sqrt{y+1}+\\sqrt{y-1}}\\,dy = A(1+x)^{3/2}+B(1-x)^{3/2}+f(y)(y+1)^{3/2}+g(y)(y-1)^{3/2}+C$, then $Af(y)+Bg(y)=$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\dfrac{2y}{15}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\dfrac{-4}{45}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\dfrac{-4}{15}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\dfrac{3y+2}{45}$",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-78",
+          "section": "Maths",
+          "text": "Let $\\{x\\}$ denote the fractional part of a real number $x$. Then $\\int_0^2 \\{x\\}\\,dx=$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$1$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$2$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$3$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$0$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-79",
+          "section": "Maths",
+          "text": "$\\int_0^2 |1-x^2|\\,dx=$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$1$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$2$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$3$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\dfrac{1}{2}$",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-80",
+          "section": "Maths",
+          "text": "If the solution of $\\dfrac{dy}{dx}=(3x+y+4)^2$ is $\\dfrac{1}{\\sqrt{3}}\\left(\\tan^{-1}f(x,y)\\right)-x=K$, then $f(1,2)=$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\dfrac{2}{\\sqrt{3}}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$3$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$3\\sqrt{3}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$2\\sqrt{3}$",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-1",
+          "section": "Physics",
+          "text": "Which of the following statement is correct?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Electromagnetic force is short ranged",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Relative strength of gravitational force is higher than that of weak nuclear force",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Range of the weak nuclear force is smaller than that of strong nuclear force",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Relative strength of strong nuclear force may or may not be higher than that of electromagnetic force",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-2",
+          "section": "Physics",
+          "text": "If $\\varepsilon_0$ and $\\mu_0$ represent the permittivity and permeability of free space respectively, then the dimension of the product $\\varepsilon_0 \\mu_0$ is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$M^0 L^{-2} T^2$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$M^0 L^2 T^{-2}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$M^0 L T^{-1}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$M^0 L^{-1} T$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-3",
+          "section": "Physics",
+          "text": "Two balls are released from the same position at a height of 500 m above ground, one after the other, with an interval of 1s. What is the distance between the two balls when the first hits ground? (Acceleration due to gravity $g=10$ m/s$^2$)",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$95$ m",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$65$ m",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$130$ m",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$175$ m",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-4",
+          "section": "Physics",
+          "text": "A cyclist traversed half the distance of a linear track with a velocity 10 m/s. The remaining part of the track was covered with a velocity $v_1$ for half the time and a velocity $v_2$ for the other half of the time. If $v_1+v_2=20$ m/s, then the average velocity of the cyclist during the completion of the journey through the track is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$30$ m/s",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$20$ m/s",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$10$ m/s",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$15$ m/s",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-5",
+          "section": "Physics",
+          "text": "A projectile is thrown at a speed which is twice its speed at its maximum height. If R and H are its range and maximum height respectively, then the ratio $\\dfrac{R}{H}$ is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\dfrac{4}{\\sqrt{3}}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\dfrac{\\sqrt{3}}{8}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$2$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$2\\sqrt{3}$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-6",
+          "section": "Physics",
+          "text": "A particle is moving in xy-plane crosses the origin at time $t=0$. The equation of motion of the particle is $y=4x^2$. If the velocity of the particle is $\\vec{v}=\\left(2\\hat{i}+2\\hat{j}\\right) m/s$ and acceleration is $\\vec{a}=\\left(a\\hat{j}\\right) m/s^2$, then the magnitude of $a$ is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$8$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$16$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$8\\sqrt{2}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$32$",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-7",
+          "section": "Physics",
+          "text": "A person is managing to be at rest between two vertical walls by pressing one wall by his hands and feet and second wall with his back. The coefficient of friction is 0.5 between his body and the wall. If the force with which the person pushes the wall is 500 N, then the mass of the person is (Take $g=10$ m/s^2)",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$80$ kg",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$40$ kg",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$75$ kg",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$50$ kg",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-8",
+          "section": "Physics",
+          "text": "An object A of mass 20 kg and travelling at 20 m/s crashes into another object B of mass 200 kg and travelling at 10 m/s, in the same direction. After the collision, object A bounces back in opposite direction at a speed of 10 m/s. The speed of the object B after the collision is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$13$ m/s",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$12$ m/s",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$14$ m/s",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$20$ m/s",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-9",
+          "section": "Physics",
+          "text": "A water pump rated 600 W, has an efficiency of 95%. If it is used to raise water through vertical distance of 60 m. The volume of water drawn in 20 minutes is [Use density of water =1000 kg $m^{-3}$, g=10 $m/s^2$]",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$1.14 m^3$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$2.24 m^3$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$11.4 m^3$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$22.4 m^3$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-10",
+          "section": "Physics",
+          "text": "Ball P of mass m moving with velocity '$v$' collides with another ball Q of mass 2m, at rest. If $v_P$ and $v_Q$ are the final velocities of P and Q respectively, after collision, then (Assume the coefficient of restitution is $1/3$)",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\dfrac{v_Q}{v_P}=4$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\dfrac{v_P}{v_Q}=4$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\dfrac{v_Q}{v_P}=2$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\dfrac{v_P}{v_Q}=2$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-11",
+          "section": "Physics",
+          "text": "A wheel undergoes a constant angular acceleration from time $t=0$ to $t=20$ s and thereafter angular acceleration is zero. If angular velocity at $t=2$ s is found to be 5 rad/s, then the number of revolutions made by the wheel in time interval $t=0$ s to $t=50$ s is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$1000/\\pi$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$600\\pi$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$1500/\\pi$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$2000/\\pi$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "qno": 92,
+          "id": "physics-12",
+          "section": "Physics",
+          "text": "A circular hoop of radius 50 cm and mass 1 kg rotating with an angular velocity $\\omega_0$ is placed on a rough horizontal surface. The initial velocity of the centre of the hoop is zero. Let 'v' be the velocity of the centre of the hoop when it ceases to slip. The ratio $v/\\omega_0$ will be",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "10 cm",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "50 cm",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "25 cm",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "12.5 cm",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "qno": 93,
+          "id": "physics-13",
+          "section": "Physics",
+          "text": "A simple harmonic oscillator has an amplitude of 0.5 m and a time period of 2 seconds. What is the magnitude of acceleration when it is displaced from the mean position by 0.25 m?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\pi^2 \\ \\mathrm{m/s^2}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\dfrac{\\pi^2}{2} \\ \\mathrm{m/s^2}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\dfrac{\\pi^2}{4} \\ \\mathrm{m/s^2}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\dfrac{\\pi^2}{8} \\ \\mathrm{m/s^2}$",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "qno": 94,
+          "id": "physics-14",
+          "section": "Physics",
+          "text": "A point mass 'm' is located at a distance r from a uniform thin rod of mass M and length L as shown in the figure. The magnitude of gravitational force of attraction is",
+          "image": "assets/exams/may6th-shift1/physics/questions/q14.png",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\dfrac{GMm}{r^2}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\dfrac{GMm}{(r+L)^2}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\dfrac{GMm}{r(r+L)}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\dfrac{GMm}{\\left(r+\\dfrac{L}{2}\\right)^2}$",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "qno": 95,
+          "id": "physics-15",
+          "section": "Physics",
+          "text": "Consider a fluid in a container. Let the density of the fluid at the surface and at depth  $H$ be $\\rho_0$ and $\\rho$ respectively. The bulk modulus of the fluid is $B_0$. If $\\rho=\\dfrac{\\rho_0}{1+\\alpha\\rho_0 gH}$ then the constant $\\alpha$ is $\\left(\\text{Assume } \\dfrac{\\rho-\\rho_0}{\\rho_0} \\ll 1\\right)$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$B_0$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\dfrac{1}{B_0}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "-$B_0$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$-\\dfrac{1}{B_0}$",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "qno": 96,
+          "id": "physics-16",
+          "section": "Physics",
+          "text": "Liquid A rises to a height of 10 cm in a capillary tube and liquid B falls to a depth of 2 cm in the same tube. The density of A and B are 1 $\\text{g/cm}^3$ and 10 $\\text{g/cm}^3$ respectively. The contact angle of A and B with the tube is 0° and 135° respectively. If the surface tension of A and B are $S_A$ and $S_B$ then the ratio $\\dfrac{S_B}{S_A}$ is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\sqrt{2}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$2\\sqrt{2}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\dfrac{1}{\\sqrt{2}}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\dfrac{1}{2\\sqrt{2}}$",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "qno": 97,
+          "id": "physics-17",
+          "section": "Physics",
+          "text": "A wooden block of density 0.5 g/cc is tied to a string. The other end of the string is fixed to the bottom of a tank. The tank is filled with a liquid of density 1 g/cc. If the tension of the string is 20 N, then the mass of the block is (Take g = 10 m/s²)",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "1 kg",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "2 kg",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "3 kg",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "0.5 kg",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "qno": 98,
+          "id": "physics-18",
+          "section": "Physics",
+          "text": "The wavelength of the radiation emitted by a black body is 6 mm and Wein's constant is $3 \\times 10^{-3}$ mK. Then temperature of black body is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "5 K",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "3 K",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "0.5 K",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "50 K",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "qno": 99,
+          "id": "physics-19",
+          "section": "Physics",
+          "text": "Thermopile Bolometer is used to detect",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Ultraviolet radiation",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "X-rays",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Gamma radiation",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Infrared radiation",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "qno": 100,
+          "id": "physics-20",
+          "section": "Physics",
+          "text": "An ideal monoatomic gas of volume V is adiabatically expanded to a volume 3 V at 27°C. The final temperature in Kelvins is $\\left(\\text{use } \\dfrac{C_p}{C_v} = \\dfrac{5}{3}\\right)$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "144.2",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "170.3",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "50.4",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "100.2",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "qno": 101,
+          "id": "physics-21",
+          "section": "Physics",
+          "text": "The following figure shows a Carnot engine that works between temperatures $T_1=400\\,\\text{K}$ and $T_2=200\\,\\text{K}$ and drives a Carnot refrigeration that works between temperatures $T_3=350\\,\\text{K}$ and $T_4=250\\,\\text{K}$. The quantity $\\dfrac{Q_3}{Q_1}$ will be",
+          "image": "assets/exams/may6th-shift1/physics/questions/q21.png",
+          "options": [
+            {
+              "id": "A",
+              "text": "1.5",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "2.0",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "2.25",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "1.75",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "qno": 102,
+          "id": "physics-22",
+          "section": "Physics",
+          "text": "Two non-reactive monoatomic ideal gases have their atomic masses in the ratio 3 : 4. The ratio of their partial pressures when enclosed in a vessel kept at a constant temperature is 2 : 3. The ratio of their densities is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "1.1",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "2.0",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "0.9",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "0.5",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "qno": 103,
+          "id": "physics-23",
+          "section": "Physics",
+          "text": "Which of the following is not a transverse wave?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Light waves",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Sound waves",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Waves on a violin string",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Water waves",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "qno": 104,
+          "id": "physics-24",
+          "section": "Physics",
+          "text": "A point source is located at a distance of 20 cm from the front surface of a symmetrical glass biconvex lens with equal radii of curvature 5 cm. The distance at which image formed from the rear surface of this lens is [Given refractive index of the glass is 1.5]",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\dfrac{20}{3}$ cm",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\dfrac{10}{3}$ cm",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "5 cm",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "10 cm",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "qno": 105,
+          "id": "physics-25",
+          "section": "Physics",
+          "text": "The fringe widths are found to be $\\omega_1$ and $\\omega_2$ respectively if a Young's double slit experiment is performed in medium of refractive index $n_1$ and $n_2$ respectively. The correct statement is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\omega_1 > \\omega_2$ if $n_1 > n_2$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\omega_1 > \\omega_2$ if $n_1 < n_2$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\omega_1 = \\omega_2$ if $n_1 < n_2$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\dfrac{\\omega_1}{\\omega_2} = \\dfrac{n_1}{n_2}$",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "qno": 106,
+          "id": "physics-26",
+          "section": "Physics",
+          "text": "A particle of mass $m$ and charge $q$ is thrown perpendicular to an electric field of intensity $E$ with an initial velocity $v$. The particle moves a distance $x$ perpendicular to the field and a distance $y$ along the direction of the field. If $y=\\alpha x^2$ then the $\\alpha$ is given by",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\dfrac{qE}{m}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\dfrac{qEv^2}{m}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\dfrac{2qE}{mv^2}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\dfrac{qE}{2mv^2}$",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "qno": 107,
+          "id": "physics-27",
+          "section": "Physics",
+          "text": "A circuit is shown in the following figure for $C_1 = (3 \\pm 0.011)\\ \\mu\\text{F}$, $C_2 = (5 \\pm 0.01)\\ \\mu\\text{F}$, and $C_3 = (1 \\pm 0.01)\\ \\mu\\text{F}$. If $C$ is the equivalent capacitance across AB, then $C$ is given by",
+          "image": "assets/exams/may6th-shift1/physics/questions/q27.png",
+          "options": [
+            {
+              "id": "A",
+              "text": "$(0.9 \\pm 0.114)\\ \\mu\\text{F}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$(0.9 \\pm 0.01)\\ \\mu\\text{F}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$(0.9 \\pm 0.023)\\ \\mu\\text{F}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$(0.9 \\pm 0.09)\\ \\mu\\text{F}$",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "qno": 108,
+          "id": "physics-28",
+          "section": "Physics",
+          "text": "In a meter bridge experiment, the balance point from left is 37.5 cm. The ratio of the right gap resistance to the left gap resistance is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\dfrac{5}{3}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\dfrac{8}{5}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\dfrac{4}{5}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\dfrac{3}{2}$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "qno": 109,
+          "id": "physics-29",
+          "section": "Physics",
+          "text": "Given the fact that A) Magnetic field exerts force only on a moving charge B) Electric field exerts force on both stationary and moving charge C) Magnetic field exerts force on charge moving parallel to the direction of the field. Which of the following is true?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "A and C",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "A and B",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "B and C",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "A, B and C",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "qno": 110,
+          "id": "physics-30",
+          "section": "Physics",
+          "text": "A galvanometer coil has a resistance of 10 $\\Omega$ and the meter shows full scale deflection for a current of 2 mA. What resistance needs to be connected to convert the meter into a voltmeter of range 0 to 18 V?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "8880 $\\Omega$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "8990 $\\Omega$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "9000 $\\Omega$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "9010 $\\Omega$",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "qno": 111,
+          "id": "physics-31",
+          "section": "Physics",
+          "text": "A magnetic dipole is placed horizontally with the north pole pointing towards north. The horizontal component of earth's magnetic field is 20 $\\mu\\text{T}$. If the neutral point is found at a distance of 20 cm in the plane bisecting the dipole then the magnetic moment of the dipole is (Assume $\\mu_0 = 4\\pi \\times 10^{-7}$ S.I. units)",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$1.2\\ \\text{Am}^2$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$2.2\\ \\text{Am}^2$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$1.4\\ \\text{Am}^2$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$1.6\\ \\text{Am}^2$",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "qno": 112,
+          "id": "physics-32",
+          "section": "Physics",
+          "text": "An infinitely long cylinder is kept parallel to an uniform magnetic field $B$ directed along the positive z-axis. The direction of induced current as seen from the z-axis will be",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "zero",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "along the magnetic field",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "clockwise of the +ve z-axis",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "anti-clockwise of the +ve z-axis",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "qno": 113,
+          "id": "physics-33",
+          "section": "Physics",
+          "text": "A resistor of 20 $\\Omega$ and a capacitor are connected in series with an AC current source of 50 Hz. What should be the capacitance to produce a phase difference of 30° between the voltage and current?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\dfrac{1}{\\sqrt{2}\\pi}\\ \\text{mF}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\dfrac{\\sqrt{3}}{2\\pi}\\ \\text{mF}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\sqrt{3}\\ \\text{mF}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\dfrac{\\sqrt{2}}{\\pi}\\ \\text{mF}$",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "qno": 114,
+          "id": "physics-34",
+          "section": "Physics",
+          "text": "A laser beam has intensity $17.7 \\times 10^{14}\\ \\text{W/m}^2$. The amplitude of the electric field is $\\left[\\text{Use } \\varepsilon_0 = 8.85 \\times 10^{-12}\\ \\dfrac{\\text{C}^2}{\\text{N-M}^2}\\right]$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\dfrac{10}{\\sqrt{3}} \\times 10^9\\ \\text{N/C}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$10^{10}\\ \\dfrac{\\text{N}}{\\text{C}}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\dfrac{\\sqrt{3}}{2} \\times 10^9\\ \\text{N/C}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\dfrac{2}{\\sqrt{3}} \\times 10^9\\ \\text{N/C}$",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "qno": 115,
+          "id": "physics-35",
+          "section": "Physics",
+          "text": "A light bulb of power 100 W is placed at the centre of a hollow sphere of radius 10 cm. If the 66% of the energy is converted into light, then the pressure exerted by the light on the surface of the sphere will be (Assume the surface of sphere to be perfectly absorbing)",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$1.0 \\times 10^{-5}\\ \\text{N/m}^2$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$1.5 \\times 10^{-7}\\ \\text{N/m}^2$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$1.75 \\times 10^{-6}\\ \\text{N/m}^2$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$7.5 \\times 10^{-5}\\ \\text{N/m}^2$",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "qno": 116,
+          "id": "physics-36",
+          "section": "Physics",
+          "text": "A hydrogen atom emits a photon corresponding to an electron transition from n = 5 to n = 1. If R is the Rydberg constant, then the wavelength of emitted photon is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\dfrac{25}{24R}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\dfrac{24R}{25}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\dfrac{4}{5R}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\dfrac{5R}{4}$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "qno": 117,
+          "id": "physics-37",
+          "section": "Physics",
+          "text": "If 5 mg of $^{235}\\text{U}$ is completely destroyed in an atom bomb, then approximate total energy released is (given that the energy released per fission is 200 MeV)",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$4 \\times 10^8\\ \\text{J}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$6 \\times 10^9\\ \\text{J}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$5 \\times 10^7\\ \\text{J}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$3 \\times 10^{10}\\ \\text{J}$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "qno": 118,
+          "id": "physics-38",
+          "section": "Physics",
+          "text": "In an intrinsic semi conductor at room temperature number of electrons and holes are",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "equal",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "zero",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "unequal",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "electrons more than holes",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "qno": 119,
+          "id": "physics-39",
+          "section": "Physics",
+          "text": "Identify the logic gate for which the output is 0, when any of the inputs is 1",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "NOR",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "NAND",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "AND",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "OR",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "qno": 120,
+          "id": "physics-40",
+          "section": "Physics",
+          "text": "A carrier wave of peak voltage 15 V is used to transmit a message signal. What should be the peak voltage of the modulating signal in order to have a modulation index of 80%?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "8 V",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "10 V",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "11 V",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "12 V",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "qno": 121,
+          "id": "chemistry-1",
+          "section": "Chemistry",
+          "text": "The ratio of the highest to the lowest wavelength of Lyman series is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "4 : 3",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "9 : 8",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "27 : 5",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "16 : 5",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "qno": 122,
+          "id": "chemistry-2",
+          "section": "Chemistry",
+          "text": "The relation between the stopping potential $(V_0)$ and frequency $(\\nu)$ is correctly represented in $\\phi = \\text{Work function}$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$V_0 = \\dfrac{\\phi}{e} - \\dfrac{h\\nu^2}{e}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$V_0 = \\dfrac{h\\nu}{e} + \\dfrac{\\phi}{e}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$V_0 = \\dfrac{h\\nu}{e} - \\dfrac{\\phi}{e}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$V_0 = \\dfrac{h\\nu}{e^2}$",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "qno": 123,
+          "id": "chemistry-3",
+          "section": "Chemistry",
+          "text": "The correct increasing order of the electronegativity is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\text{B} < \\text{C} < \\text{S} < \\text{Cl}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\text{B} < \\text{S} < \\text{C} < \\text{Cl}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\text{B} < \\text{C} < \\text{Cl} < \\text{S}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\text{C} < \\text{B} < \\text{S} < \\text{Cl}$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "qno": 124,
+          "id": "chemistry-4",
+          "section": "Chemistry",
+          "text": "The alkaline earth metal sulphate, which has its hydration enthalpy greater than its lattice energy is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\text{BeSO}_4$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\text{BaSO}_4$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\text{CaSO}_4$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\text{SrSO}_4$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "qno": 125,
+          "id": "chemistry-5",
+          "section": "Chemistry",
+          "text": "A pair of molecules with see-saw shape and linear shape, respectively, is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\text{CH}_4$ and $\\text{SO}_3$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\text{XeF}_4$ and $\\text{CS}_2$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\text{SF}_4$ and $\\text{C}_2\\text{H}_2$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\text{CCl}_4$ and $\\text{CO}_2$",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "qno": 126,
+          "id": "chemistry-6",
+          "section": "Chemistry",
+          "text": "Which of the following species is a radical?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\text{CO}_2$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\text{NO}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\text{NO}_2^-$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\text{CN}^-$",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "qno": 127,
+          "id": "chemistry-7",
+          "section": "Chemistry",
+          "text": "1 L each of gases A and B diffused through a membrane in 15 and 30 minutes, respectively, under identical conditions. What is the ratio of molecular weight of A and B?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "1 : 2",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "2 : 1",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "4 : 1",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "1 : 4",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "qno": 128,
+          "id": "chemistry-8",
+          "section": "Chemistry",
+          "text": "The figure represents PV vs P relation for CO, $\\text{CH}_4$, $\\text{H}_2$ and He gases under identical conditions. Which curve, shown in the figure, represents He gas?",
+          "image": "assets/exams/may6th-shift1/chemistry/questions/q8.png",
+          "options": [
+            {
+              "id": "A",
+              "text": "1",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "2",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "3",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "4",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "qno": 129,
+          "id": "chemistry-9",
+          "section": "Chemistry",
+          "text": "An organic compound contains 60% C; 4.48% H and 35.5% O. Its empirical formula is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\text{C}_9\\text{H}_8\\text{O}_4$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\text{C}_5\\text{H}_4\\text{O}_2$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\text{C}_5\\text{H}_4\\text{O}_4$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\text{C}_9\\text{H}_7\\text{O}_6$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "qno": 130,
+          "id": "chemistry-10",
+          "section": "Chemistry",
+          "text": "The number of sodium ions present in 0.5 mole of sodium ferrocyanide is?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$2 \\times 10^{23}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$0.5 \\times 10^{23}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$12 \\times 10^{23}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$4 \\times 10^{23}$",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "qno": 131,
+          "id": "chemistry-11",
+          "section": "Chemistry",
+          "text": "How many times the volume of a diatomic gas should be increased reversibly and adiabatically in order to reduce its RMS velocity to half of its initial value.",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "4",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "8",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "16",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "32",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "qno": 132,
+          "id": "chemistry-12",
+          "section": "Chemistry",
+          "text": "The correct decreasing order of the basic strength is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\text{HS}^- > \\text{CH}_3^- > \\text{NH}_2^- > \\text{CN}^-$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\text{HS}^- > \\text{CN}^- > \\text{NH}_2^- > \\text{CH}_3^-$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\text{CH}_3^- > \\text{NH}_2^- > \\text{CN}^- > \\text{HS}^-$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\text{NH}_2^- > \\text{CN}^- > \\text{CH}_3^- > \\text{HS}^-$",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "qno": 133,
+          "id": "chemistry-13",
+          "section": "Chemistry",
+          "text": "The equilibrium constant for the reaction is $P_4(s) + 5O_2(g) \\rightleftharpoons P_4O_{10}(s)$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$K_c = \\sqrt{5O_2}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$K_c = \\frac{[P_4O_{10}]}{[P_4][O_2]^5}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$K_c = [O_2]^5$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$K_c = \\dfrac{1}{[O_2]^5}$",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "qno": 134,
+          "id": "chemistry-14",
+          "section": "Chemistry",
+          "text": "The sum of the total number of neutrons present in protium, deuterium and tritium is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "5",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "3",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "4",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "6",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "qno": 135,
+          "id": "chemistry-15",
+          "section": "Chemistry",
+          "text": "A metal 'M' readily gives $\\text{MSO}_4$ which is soluble in water. It forms its oxide MO which is amphoteric. It forms an insoluble hydroxide $\\text{M(OH)}_2$, which is soluble in NaOH solution. The M is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Be",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Ba",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Ca",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Mg",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "qno": 136,
+          "id": "chemistry-16",
+          "section": "Chemistry",
+          "text": "Which one of the following oxide dissolves in both hydrochloric acid and sodium hydroxide?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "MgO",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\text{Na}_2\\text{O}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\text{Al}_2\\text{O}_3$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "BaO",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "qno": 137,
+          "id": "chemistry-17",
+          "section": "Chemistry",
+          "text": "Which of the given atoms has the greatest electron affinity?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "F",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Cl",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "P",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Al",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "qno": 138,
+          "id": "chemistry-18",
+          "section": "Chemistry",
+          "text": "The indicator used during the estimation of COD of a water sample is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "EBT",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\text{K}_2\\text{Cr}_2\\text{O}_7$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Ferroin",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Phenopthalene",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "qno": 139,
+          "id": "chemistry-19",
+          "section": "Chemistry",
+          "text": "The stability order of the given alkenes is",
+          "image": "assets/exams/may6th-shift1/chemistry/questions/q19.png",
+          "options": [
+            {
+              "id": "A",
+              "text": "(I) > (II) > (III)",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "(I) > (III) > (II)",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "(III) > (II) > (I)",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "(III) > (I) > (II)",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "qno": 140,
+          "id": "chemistry-20",
+          "section": "Chemistry",
+          "text": "Among the following reactions, the reaction that does not give alkane product is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\text{CH}_3\\text{C}\\equiv\\text{CCH}_3 \\xrightarrow{\\text{Pt, H}_2}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\text{CH}_3\\text{CH}_2\\text{CH}_2\\text{CH}_2\\text{CO}_2\\text{Na} \\xrightarrow{\\text{Electrolysis}} $",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\text{CH}_3\\text{CH}_2\\text{Br} \\xrightarrow{\\text{Na, dry ether}} $",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\text{CH}_3\\text{CH}_2\\text{CH}_2\\text{CH}_2\\text{F} \\xrightarrow{\\text{Zn, H}^+} $",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "qno": 141,
+          "id": "chemistry-21",
+          "section": "Chemistry",
+          "text": "Hex-1-yne on reaction with $\\text{Br}_2$ (excess)/$\\text{CCl}_4$ gives",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "1, 1, 3, 3-Tetrabromohexane",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "2, 2, 3, 3-Tetrabromohexane",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "1, 1, 1, 2-Tetrabromohexane",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "1, 1, 2, 2-Tetrabromohexane",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "qno": 142,
+          "id": "chemistry-22",
+          "section": "Chemistry",
+          "text": "The number of voids in 1 mole of a compounds forming a hcp structure are",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$1.8 \\times 10^{24}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$3.6 \\times 10^{24}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$6.0 \\times 10^{23}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$7.2 \\times 10^{24}$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "qno": 143,
+          "id": "chemistry-23",
+          "section": "Chemistry",
+          "text": "A 3 ml of solution was made by dissolving 20 mg of protein at 0°C. The osmotic pressure of the resulting solution is 3.8 torr. The molecular weight of the protein is approximately (in g/mol)",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "300",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$3 \\times 10^5$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$3 \\times 10^4$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$3 \\times 10^3$",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "qno": 144,
+          "id": "chemistry-24",
+          "section": "Chemistry",
+          "text": "When salt is added to water, which of the following statement is true?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Boiling point decreases",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Boiling point increases",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Boiling point remain constant",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Freezing point increases",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "qno": 145,
+          "id": "chemistry-25",
+          "section": "Chemistry",
+          "text": "Given $\\lambda^\\circ_{\\text{Mg}^{2+}} = 106\\ \\text{S cm}^2\\text{ mole}^{-1} , \\lambda^\\circ_{\\text{SO}_4^{2-}} = 160\\ \\text{S cm}^2\\text{ mole}^{-1}$ . The value of $\\lambda^\\circ_{\\text{MgSO}_4}$ (in S cm$^2$ mole$^{-1}$) is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "271.6",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "266",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "390",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "126",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "qno": 146,
+          "id": "chemistry-26",
+          "section": "Chemistry",
+          "text": "For a first order reaction $t_{1/2}$ is 1200 s. The specific rate constant in s$^{-1}$ is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$5.8 \\times 10^{-4}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$5.8 \\times 10^{-5}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$0.58 \\times 10^{-6}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$0.58 \\times 10^{-5}$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "qno": 147,
+          "id": "chemistry-27",
+          "section": "Chemistry",
+          "text": "Which of the following statements is false during adsorption of gas molecule on a metal surface?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Enthalpy change is positive",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Entropy change is negative",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Both enthalpy and entropy simultaneously decreases",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Free energy change is negative",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "qno": 148,
+          "id": "chemistry-28",
+          "section": "Chemistry",
+          "text": "Give the correct characteristic colours of the products (P, Q, R, S) formed in the following reactions. A) $\\text{NO} + \\text{NO}_2 \\xrightarrow{<250\\text{ K}} P$ B) $2\\text{NO}_2 \\longleftrightarrow Q$ C) $\\text{Pb(NO}_3)_2 \\xrightarrow{673\\text{K}} R + \\text{PbO}$ D) $\\text{HNO}_3 + \\text{P}_4\\text{O}_{10} \\longrightarrow S + 4\\text{HPO}_3$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "P: Blue, Q: Colourless, R: Brown, S: Colourless",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "P: Colourless, Q: Blue, R: Colourless, S: Brown",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "P: Colourless, Q: Colourless, R: Blue, S: Brown",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "P: Brown, Q: Blue, R: Colourless, S: Colourless",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "qno": 149,
+          "id": "chemistry-29",
+          "section": "Chemistry",
+          "text": "The neutral oxide among the following is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\text{SO}_2$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\text{CO}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\text{CO}_2$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\text{CaO}$",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "qno": 150,
+          "id": "chemistry-30",
+          "section": "Chemistry",
+          "text": "Mustard gas among the following is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\text{CCl}_3\\text{NO}_2$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\text{ClCH}_2\\text{CH}_2\\text{SCH}_2\\text{CH}_2\\text{Cl}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\text{CH}_3\\text{SH}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\text{H}_2\\text{S}$",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "qno": 151,
+          "id": "chemistry-31",
+          "section": "Chemistry",
+          "text": "The reaction of aqueous $\\left[\\text{Ni}(\\text{H}_2\\text{O})_6\\right]^{2+}$ is performed by the addition of a bidentate ligand ethane-1,2-diamine (en). Match the following:  The correct match is",
+          "image": "assets/exams/may6th-shift1/chemistry/questions/q31.png",
+          "options": [
+            {
+              "id": "A",
+              "text": "A-I, B-II, C-III",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "A-II, B-III, C-IV",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "A-III, B-I, C-II",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "A-IV, B-I, C-III",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "qno": 152,
+          "id": "chemistry-32",
+          "section": "Chemistry",
+          "text": "The number of bridged CO ligands present in $\\text{Fe}_2(\\text{CO})_9$ and $\\text{CO}_2(\\text{CO})_8$, respectively, are",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "2, 1",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "2, 2",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "2, 3",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "3, 2",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "qno": 153,
+          "id": "chemistry-33",
+          "section": "Chemistry",
+          "text": "Glucose on prolonged heating with HI, gives product P. The product P is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\begin{array}{c}\\text{CH}_2\\text{I}\\\\|\\\\(\\text{CHOH})_4\\\\|\\\\\\text{CH}_2\\text{OH}\\end{array}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\begin{array}{c}\\text{CHO}\\\\|\\\\(\\text{CH-I})_4\\\\|\\\\\\text{CH}_2\\text{I}\\end{array}$,",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\begin{array}{c}\\text{CH}_3\\\\|\\\\(\\text{CH}_2)_4\\\\|\\\\\\text{CH}_3\\end{array}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\begin{array}{c}\\text{CH}_2\\text{-I}\\\\|\\\\(\\text{CHI})_4\\\\|\\\\\\text{CH}_2\\text{I}\\end{array}$",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "qno": 154,
+          "id": "chemistry-34",
+          "section": "Chemistry",
+          "text": "The most reactive molecules towards $SN1$ reaction is",
+          "image": "assets/exams/may6th-shift1/chemistry/questions/q34.png",
+          "imageLarge": true,
+          "options": [
+            {
+              "id": "A",
+              "text": "(I), (IV) and (VI)",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "(I), (II) and (IV)",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "(II), (III) and (V)",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "(IV), (V) and (VI)",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "qno": 155,
+          "id": "chemistry-35",
+          "section": "Chemistry",
+          "text": "Identify A, B and C, respectively, in the following reaction sequence are",
+          "image": "assets/exams/may6th-shift1/chemistry/questions/q35.png",
+          "options": [
+            {
+              "id": "A",
+              "text": "",
+              "image": "assets/exams/may6th-shift1/chemistry/options/q35-opt-a.png"
+            },
+            {
+              "id": "B",
+              "text": "",
+              "image": "assets/exams/may6th-shift1/chemistry/options/q35-opt-b.png"
+            },
+            {
+              "id": "C",
+              "text": "",
+              "image": "assets/exams/may6th-shift1/chemistry/options/q35-opt-c.png"
+            },
+            {
+              "id": "D",
+              "text": "",
+              "image": "assets/exams/may6th-shift1/chemistry/options/q35-opt-d.png"
+            }
+          ],
+          "correct": "D",
+          "needsReview": true,
+          "issue": "Options contain structural diagrams; text approximations used; correct answer inferred from green tick on option 4"
+        },
+        {
+          "qno": 156,
+          "id": "chemistry-36",
+          "section": "Chemistry",
+          "text": "The reaction used for the synthesis of ether is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Williamson's synthesis",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Reimer-Tiemann reaction",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Sandmeyer reaction",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Finkelstein reaction",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "qno": 157,
+          "id": "chemistry-37",
+          "section": "Chemistry",
+          "text": "The major product of the following reaction is",
+          "image": "assets/exams/may6th-shift1/chemistry/questions/q37.png",
+          "options": [
+            {
+              "id": "A",
+              "text": "",
+              "image": "assets/exams/may6th-shift1/chemistry/options/q37-opt-a.png"
+            },
+            {
+              "id": "B",
+              "text": "",
+              "image": "assets/exams/may6th-shift1/chemistry/options/q37-opt-b.png"
+            },
+            {
+              "id": "C",
+              "text": "",
+              "image": "assets/exams/may6th-shift1/chemistry/options/q37-opt-c.png"
+            },
+            {
+              "id": "D",
+              "text": "",
+              "image": "assets/exams/may6th-shift1/chemistry/options/q37-opt-d.png"
+            }
+          ],
+          "correct": "C",
+          "needsReview": true,
+          "issue": "All options are structural diagrams; image references used; correct answer from green tick on option 3"
+        },
+        {
+          "qno": 158,
+          "id": "chemistry-38",
+          "section": "Chemistry",
+          "text": "The major product formed in the following reaction scheme is",
+          "image": "assets/exams/may6th-shift1/chemistry/questions/q38.png",
+          "options": [
+            {
+              "id": "A",
+              "text": "",
+              "image": "assets/exams/may6th-shift1/chemistry/options/q38-opt-a.png"
+            },
+            {
+              "id": "B",
+              "text": "",
+              "image": "assets/exams/may6th-shift1/chemistry/options/q38-opt-b.png"
+            },
+            {
+              "id": "C",
+              "text": "",
+              "image": "assets/exams/may6th-shift1/chemistry/options/q38-opt-c.png"
+            },
+            {
+              "id": "D",
+              "text": "",
+              "image": "assets/exams/may6th-shift1/chemistry/options/q38-opt-d.png"
+            }
+          ],
+          "correct": "D",
+          "needsReview": true,
+          "issue": "All options are structural diagrams; image references used; correct answer from green tick on option 4"
+        },
+        {
+          "qno": 159,
+          "id": "chemistry-39",
+          "section": "Chemistry",
+          "text": "Which among the following is correct structure of the semicarbazone formed when ethanal reacts with semicarbazide?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\mathrm{CH_3-CH=N-C(=O)-NH-NH_2}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\mathrm{CH_3-CH_2-NH-C(=O)-NH-NH_2}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\mathrm{CH_3-CH=N-NH-C(=O)-NH_2}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\mathrm{CH_3-CH_2-NH-NH-C(=O)-NH_2}$",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "qno": 160,
+          "id": "chemistry-40",
+          "section": "Chemistry",
+          "text": "A 90 g of ethyl amine on reaction with methyl chloride produced a tertiary amine as an exclusive product. The amount of methyl chloride required is [Given mass in amu: H = 1, C = 12, N = 14, Cl = 35.5]",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "50.5 g",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "101 g",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "202 g",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "303 g",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        }
+      ]
+    }
+  ]
+}
