@@ -222,8 +222,6 @@
         + "</div>"
         + "<div class=\"exam-item-actions\">"
         + "<button class=\"btn\" data-exam-id=\"" + exam.id + "\">Start Test</button>"
-        + "<button class=\"btn btn-secondary\" data-edit-id=\"" + exam.id + "\">Edit</button>"
-        + "<button class=\"btn btn-danger\" data-delete-id=\"" + exam.id + "\">Delete</button>"
         + "</div>";
       examList.appendChild(row);
     });
@@ -235,23 +233,7 @@
       });
     });
 
-    examList.querySelectorAll("button[data-edit-id]").forEach(function (btn) {
-      btn.addEventListener("click", function (e) {
-        e.stopPropagation();
-        var id = btn.getAttribute("data-edit-id");
-        openExamEditor(id);
-      });
-    });
 
-    examList.querySelectorAll("button[data-delete-id]").forEach(function (btn) {
-      btn.addEventListener("click", function (e) {
-        e.stopPropagation();
-        var id = btn.getAttribute("data-delete-id");
-        if (window.confirm("Are you sure you want to delete this exam? This cannot be undone.")) {
-          deleteExam(id);
-        }
-      });
-    });
   }
 
   function startInstructionFlow(examId) {
