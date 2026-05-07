@@ -300,6 +300,7 @@
 <script src="may4th-shift2.js"></script>
 <script src="may5th-shift1.js"></script>
 <script src="may6th-shift1.js"></script>
+<script src="may6th-shift2.js"></script>
 <script src="ecet-grand-test-2.js"></script>
 <script>
 function escapeMathHtml(text) {
@@ -396,7 +397,7 @@ function loadExam(examId) {
   // Pick from URL param, otherwise prefer May 2nd Shift 1, then first
   const params = new URLSearchParams(window.location.search);
   const requestedId = params.get('exam');
-  const defaultId = 'may2nd-shift2';
+  const defaultId = 'may6th-shift2';
   const exam = exams.find(e => e.id === requestedId)
     || exams.find(e => e.id === defaultId)
     || exams[0];
