@@ -1,0 +1,19 @@
+﻿{
+  "exams": [
+    {
+      "id": "may7th-shift2",
+      "title": "May 7th (Shift 2)",
+      "date": "2026-05-07",
+      "durationMinutes": 180,
+      "marksPerQuestion": 1,
+      "negativeMark": 0,
+      "sections": [
+        { "name": "Maths", "from": 1, "to": 80 },
+        { "name": "Physics", "from": 81, "to": 120 },
+        { "name": "Chemistry", "from": 121, "to": 160 }
+      ],
+      "questions": []
+    }
+  ]
+}
+
