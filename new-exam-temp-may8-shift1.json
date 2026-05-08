@@ -4348,23 +4348,23 @@
           "options": [
             {
               "id": "A",
-              "text": "image",
-              "image": "assets/exams/may6th-shift1/chemistry/q20-opt-a.png"
+              "text": "",
+              "image": "assets/exams/may8th-shift1/chemistry/q20-opt-a.png"
             },
             {
               "id": "B",
-              "text": "image",
-              "image": "assets/exams/may6th-shift1/chemistry/q20-opt-b.png"
+              "text": "",
+              "image": "assets/exams/may8th-shift1/chemistry/q20-opt-b.png"
             },
             {
               "id": "C",
-              "text": "image",
-              "image": "assets/exams/may6th-shift1/chemistry/q20-opt-c.png"
+              "text": "",
+              "image": "assets/exams/may8th-shift1/chemistry/q20-opt-c.png"
             },
             {
               "id": "D",
-              "text": "image",
-              "image": "assets/exams/may6th-shift1/chemistry/q20-opt-d.png"
+              "text": "",
+              "image": "assets/exams/may8th-shift1/chemistry/q20-opt-d.png"
             }
           ],
           "correct": "B",
@@ -4591,7 +4591,7 @@
         {
           "id": "chemistry-28",
           "section": "Chemistry",
-          "text": "Observe the following reactions (unbalanced):\n$\\text{P}_2\\text{O}_3+\\text{H}_2\\text{O}\\rightarrow X$\n$\\text{P}_4\\text{O}_{10}+\\text{H}_2\\text{O}\\rightarrow Y$\nThe number of P=O bonds present in X, Y are respectively",
+          "text": "Observe the following reactions (unbalanced):\n$\\text{P}_2\\text{O}_3+\\text{H}_2\\text{O}\\rightarrow X$\n, $\\text{P}_4\\text{O}_{10}+\\text{H}_2\\text{O}\\rightarrow Y$\nThe number of P=O bonds present in X, Y are respectively",
           "image": "",
           "options": [
             {
@@ -4715,28 +4715,28 @@
         {
           "id": "chemistry-32",
           "section": "Chemistry",
-          "text": "What are 'X' and 'Y' respectively in the following reactions? (Polymer used in making safety helmets $\\xleftarrow{Y}$ HO-diol-OH $\\xrightarrow{X}$ Polymer used in manufacture of paints)",
-          "image": "",
+          "text": "What are 'X' and 'Y' respectively in the following reactions? ",
+          "image": "assets/exams/may8th-shift1/chemistry/q32.png",
           "options": [
             {
               "id": "A",
-              "text": "phthalic acid (ortho), isophthalic acid (meta)",
-              "image": ""
+              "text": "",
+              "image": "assets/exams/may8th-shift1/chemistry/q32-opt-a.png"
             },
             {
               "id": "B",
-              "text": "isophthalic acid (meta), phthalic acid (ortho)",
-              "image": ""
+              "text": "",
+              "image": "assets/exams/may8th-shift1/chemistry/q32-opt-b.png"
             },
             {
               "id": "C",
-              "text": "phthalic acid (ortho), terephthalic acid (para)",
-              "image": ""
+              "text": "",
+              "image": "assets/exams/may8th-shift1/chemistry/q32-opt-c.png"
             },
             {
               "id": "D",
-              "text": "isophthalic acid (meta), terephthalic acid (para)",
-              "image": ""
+              "text": "",
+              "image": "assets/exams/may8th-shift1/chemistry/q32-opt-d.png"
             }
           ],
           "correct": "A",
@@ -4808,8 +4808,8 @@
         {
           "id": "chemistry-35",
           "section": "Chemistry",
-          "text": "The reagent 'X' used in the following reaction to obtain good yield of the product is: R-OH $\\xrightarrow{X}$ R-I",
-          "image": "",
+          "text": "The reagent 'X' used in the following reaction to obtain good yield of the product is:",
+          "image": "assets/exams/may8th-shift1/chemistry/q35.png",
           "options": [
             {
               "id": "A",
@@ -4839,8 +4839,8 @@
         {
           "id": "chemistry-36",
           "section": "Chemistry",
-          "text": "The C-O-H bond angle in A is X and C-O-C bond angle in B is Y. What are X and Y? (A: $\\text{H}_3\\text{C}-\\text{O}-\\text{H}$, B: $\\text{H}_3\\text{C}-\\text{O}-\\text{CH}_3$)",
-          "image": "",
+          "text": "The C-O-H bond angle in A is X and C-O-C bond angle in B is Y. What are X and Y? ",
+          "image": "assets/exams/may8th-shift1/chemistry/q36.png",
           "options": [
             {
               "id": "A",
@@ -4870,8 +4870,8 @@
         {
           "id": "chemistry-37",
           "section": "Chemistry",
-          "text": "IUPAC name of the following compound is (structure: phenyl-O-CH$_2$CH(CH$_3$)CH$_2$CH$_3$)",
-          "image": "assets/exams/may6th-shift1/chemistry/q37.png",
+          "text": "IUPAC name of the following compound is ",
+          "image": "assets/exams/may8th-shift1/chemistry/q37.png",
           "options": [
             {
               "id": "A",
@@ -4901,28 +4901,28 @@
         {
           "id": "chemistry-38",
           "section": "Chemistry",
-          "text": "The bromides formed by the cleavage of ethers A and B with HBr respectively are (A: phenyl-O-ethyl ether, B: 2-methylpropyl methyl ether)",
-          "image": "assets/exams/may6th-shift1/chemistry/q38.png",
+          "text": "The bromides formed by the cleavage of ethers A and B with HBr respectively are",
+          "image": "assets/exams/may8th-shift1/chemistry/q38.png",
           "options": [
             {
               "id": "A",
-              "text": "PhBr, CH$_3$CH$_2$Br and (CH$_3$)$_2$CHCH$_2$Br, CH$_3$Br",
-              "image": ""
+              "text": "",
+              "image": "assets/exams/may8th-shift1/chemistry/q38-opt-a.png"
             },
             {
               "id": "B",
-              "text": "PhBr, CH$_3$CH$_2$Br and CH$_3$Br, (CH$_3$)$_2$CHCH$_2$Br",
-              "image": ""
+              "text": "",
+              "image": "assets/exams/may8th-shift1/chemistry/q38-opt-b.png"
             },
             {
               "id": "C",
-              "text": "CH$_3$CH$_2$Br, CH$_3$CH$_2$Br",
-              "image": ""
+              "text": "",
+              "image": "assets/exams/may8th-shift1/chemistry/q38-opt-c.png"
             },
             {
               "id": "D",
-              "text": "PhCH$_2$CH$_2$Br, (CH$_3$)$_2$CHCH$_2$Br",
-              "image": ""
+              "text": "",
+              "image": "assets/exams/may8th-shift1/chemistry/q38-opt-d.png"
             }
           ],
           "correct": "D",
@@ -4932,8 +4932,8 @@
         {
           "id": "chemistry-39",
           "section": "Chemistry",
-          "text": "Identify the set, in which X and Y are correctly matched (benzaldehyde $\\xrightarrow{X}$ Y)",
-          "image": "assets/exams/may6th-shift1/chemistry/q39.png",
+          "text": "Identify the set, in which X and Y are correctly matched ",
+          "image": "assets/exams/may8th-shift1/chemistry/q39.png",
           "options": [
             {
               "id": "A",
@@ -4963,8 +4963,8 @@
         {
           "id": "chemistry-40",
           "section": "Chemistry",
-          "text": "What are X and Y respectively in the following reactions? (PhCONH$_2$ $\\xleftarrow{Y}$ PhCONH$_2$ $\\xrightarrow{X}$ PhNH$_2$)",
-          "image": "assets/exams/may6th-shift1/chemistry/q40.png",
+          "text": "What are X and Y respectively in the following reactions? ",
+          "image": "assets/exams/may8th-shift1/chemistry/q40.png",
           "options": [
             {
               "id": "A",

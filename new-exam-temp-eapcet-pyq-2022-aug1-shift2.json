@@ -2,7 +2,7 @@
   "exams": [
     {
       "id": "eapcet-pyq-2022-aug1-shift2",
-      "title": "TG EAPCET Previous Year Paper - Mechanical Engineering 1st Aug 2022 Shift2",
+      "title": "ECET Grand Test 3",
       "date": "2022-08-01",
       "durationMinutes": 180,
       "marksPerQuestion": 1,
@@ -940,8 +940,8 @@
         {
           "id": "maths-30",
           "section": "Maths",
-          "text": "The values of function $f(x)$ at 5 discrete points are given below: $x$: 0, 0.1, 0.2, 0.3, 0.4; $f(x)$: 0, 10, 40, 90, 160. Then the value of $\\displaystyle\\int_0^{0.4}f(x)\\,dx$",
-          "image": "",
+          "text": "The values of function $f(x)$ at 5 discrete points are given below: Then the value of $\\displaystyle\\int_0^{0.4}f(x)\\,dx$",
+          "image": "assets/exams/ecet3/maths/q30.png",
           "options": [
             {
               "id": "A",
@@ -2336,7 +2336,7 @@
           "id": "physics-25",
           "section": "Physics",
           "text": "To balance the bridge in the circuit, the value of R is",
-          "image": "assets/exams/eapcet-pyq-2022-aug1-shift2/physics/q25.jpg",
+          "image": "assets/exams/ecet3/physics/q25.png",
           "options": [
             {
               "id": "A",
