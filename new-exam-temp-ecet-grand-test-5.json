@@ -1,0 +1,6244 @@
+{
+  "exams": [
+    {
+      "id": "eapcet-pyq-2024",
+      "title": "ECET Grand Test 5",
+      "date": "2023-05-20",
+      "durationMinutes": 180,
+      "marksPerQuestion": 1,
+      "negativeMark": 0,
+      "sections": [
+        {
+          "key": "maths",
+          "title": "Maths",
+          "count": 50,
+          "start": 1,
+          "end": 50
+        },
+        {
+          "key": "physics",
+          "title": "Physics",
+          "count": 25,
+          "start": 51,
+          "end": 75
+        },
+        {
+          "key": "chemistry",
+          "title": "Chemistry",
+          "count": 25,
+          "start": 76,
+          "end": 100
+        },
+        {
+          "key": "mechanical",
+          "title": "Mechanical",
+          "count": 100,
+          "start": 101,
+          "end": 200
+        }
+      ],
+      "questions": [
+        {
+          "id": "maths-1",
+          "section": "Maths",
+          "text": "Let $A=\\begin{bmatrix}3&1\\\\-1&2\\end{bmatrix}$. If $A^2=\\alpha A+\\beta I$, where $I$ is the $2\\times2$ identity matrix, then $(\\alpha,\\beta)=$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$(5,7)$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$(-5,-7)$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$(-5,7)$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$(5,-7)$",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-2",
+          "section": "Maths",
+          "text": "If $(a+b+c)=5$, then $\\det\\begin{bmatrix}a-b-c&2b&2c\\\\2a&b-c-a&2c\\\\2a&2b&c-a-b\\end{bmatrix}=$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$5$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$25$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$125$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$625$",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-3",
+          "section": "Maths",
+          "text": "If $\\begin{bmatrix}4&3\\\\9&7\\end{bmatrix}\\begin{bmatrix}x\\\\y\\end{bmatrix}=\\begin{bmatrix}18\\\\41\\end{bmatrix}$, then $12x+10y=$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$58$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$56$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$54$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$52$",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-4",
+          "section": "Maths",
+          "text": "If $\\log_{16}x+\\log_4 x+\\log_2 x=7$, then $x=$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$16$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$32$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$64$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$128$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-5",
+          "section": "Maths",
+          "text": "If $\\dfrac{2x^2-6x+5}{x^3-6x^2+11x-6}=\\dfrac{A}{x-1}+\\dfrac{B}{x-2}+\\dfrac{C}{x-3}$, then $10A+B+2C=$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$5$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$7$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$9$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$11$",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-6",
+          "section": "Maths",
+          "text": "If $\\log_x(3x^2+10x)=3$, then $x=$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$3$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$5$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$7$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$9$",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-7",
+          "section": "Maths",
+          "text": "The value of $\\sin^2 45^\\circ+\\sin^2 135^\\circ+\\sin^2 225^\\circ+\\sin^2 315^\\circ$ is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$1$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$2$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$0$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$4$",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-8",
+          "section": "Maths",
+          "text": "In a $\\triangle ABC$, if $a=3$, $b=4$ and $\\sin A=\\dfrac{3}{4}$, then the angle $B=$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$45^\\circ$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$60^\\circ$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$90^\\circ$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$70^\\circ$",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-9",
+          "section": "Maths",
+          "text": "$\\sin^2 36^\\circ - \\sin^2 18^\\circ=$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\dfrac{1}{2}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\dfrac{1}{4}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\dfrac{1}{8}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$1$",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-10",
+          "section": "Maths",
+          "text": "The period of the function $\\cos\\!\\left(\\dfrac{5}{3}\\right)\\sin\\!\\left(\\dfrac{2x}{3}\\right)+\\sin\\!\\left(\\dfrac{5}{3}\\right)\\cos\\!\\left(\\dfrac{2x}{3}\\right)$ is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\pi$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$2\\pi$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$3\\pi$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\dfrac{3\\pi}{2}$",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-11",
+          "section": "Maths",
+          "text": "If $\\cosh x=\\dfrac{5}{4}$, then $\\coth 2x=$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\dfrac{17}{15}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\dfrac{5}{3}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\dfrac{15}{17}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\dfrac{3}{5}$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-12",
+          "section": "Maths",
+          "text": "The modulus of the complex number $\\dfrac{2+i}{3-i}$ is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\dfrac{1}{\\sqrt{3}}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$1$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\sqrt{2}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\dfrac{1}{\\sqrt{2}}$",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-13",
+          "section": "Maths",
+          "text": "If the sides of a triangle are 13, 7 and 8, then the greatest angle of the triangle is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\dfrac{\\pi}{3}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\dfrac{\\pi}{2}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\dfrac{2\\pi}{3}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\dfrac{3\\pi}{2}$",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-14",
+          "section": "Maths",
+          "text": "If the angles of a triangle are in the ratio of $1:4:5$, then the ratio of the greatest side to the smallest side is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$4:\\sqrt{5}-1$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$5:4$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\sqrt{5}-1:4$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$4:\\sqrt{5}$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-15",
+          "section": "Maths",
+          "text": "Number of tangents drawn at a point of the circle is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "One",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Two",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Three",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Many",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-16",
+          "section": "Maths",
+          "text": "The minimum value of $f(x)=|x-2|+|x+2|$ is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$0$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$2$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$4$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$8$",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-17",
+          "section": "Maths",
+          "text": "The eccentricity of ellipse $\\dfrac{x^2}{16}+\\dfrac{y^2}{4}=1$ is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$2\\sqrt{3}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\sqrt{2}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\dfrac{\\sqrt{3}}{2}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\sqrt{3}$",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-18",
+          "section": "Maths",
+          "text": "$\\lim_{x\\to\\infty}\\left(1+\\dfrac{2}{x}\\right)^x=$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$e$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$e^2$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$e^3$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$e^4$",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-19",
+          "section": "Maths",
+          "text": "$\\dfrac{d}{dx}\\!\\left(\\sqrt{\\sin\\sqrt{x}}\\right)=$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\dfrac{1}{4}\\dfrac{\\sin\\sqrt{x}}{\\sqrt{x}}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\dfrac{1}{6}\\dfrac{\\cos\\sqrt{x}}{\\sqrt{x}}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\dfrac{1}{4}\\dfrac{\\cos\\sqrt{x}}{\\sqrt{x}\\sqrt{\\sin\\sqrt{x}}}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\dfrac{1}{2}\\dfrac{\\cos\\sqrt{x}}{\\sqrt{\\sin\\sqrt{x}}}$",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-20",
+          "section": "Maths",
+          "text": "If $x=2\\cos t-\\cos 2t$, $y=2\\sin t-\\sin 2t$, then $\\dfrac{dy}{dx}$ at $t=\\dfrac{\\pi}{6}$ is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$0$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$1$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\sqrt{3}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\dfrac{1}{\\sqrt{3}}$",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-21",
+          "section": "Maths",
+          "text": "If $y=\\cos(x+y)$, then $\\dfrac{dy}{dx}=$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\dfrac{1-\\sin(x+y)}{\\cos x+\\cos y}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\dfrac{1+\\sin(x+y)}{\\cos x-\\cos y}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\dfrac{\\cos(x+y)}{1+\\sin(x+y)}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\dfrac{-\\sin(x+y)}{1+\\sin(x+y)}$",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-22",
+          "section": "Maths",
+          "text": "The equation of tangent to the curve $xy=16$ at $P(4,4)$ is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$x+y=2$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$x+y=4$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$x+y=8$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$x+y=16$",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-23",
+          "section": "Maths",
+          "text": "The maximum value of $f(x)=\\left(\\dfrac{1}{x}\\right)^x$ is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$e^{1/e}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\left(\\dfrac{1}{e}\\right)^e$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\left(\\dfrac{1}{e}\\right)^{1/e}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$e^e$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-24",
+          "section": "Maths",
+          "text": "If $u(x,y,z)=\\log(x^3+y^3+z^3-3xyz)$, then $\\dfrac{\\partial u}{\\partial x}+\\dfrac{\\partial u}{\\partial y}+\\dfrac{\\partial u}{\\partial z}=$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\dfrac{1}{x+y+z}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\dfrac{9}{x+y+z}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\dfrac{6}{x+y+z}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\dfrac{3}{x+y+z}$",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-25",
+          "section": "Maths",
+          "text": "If $u(x,y)=\\log\\!\\left(\\dfrac{x^4+y^4}{x+y}\\right)$, then $x\\dfrac{\\partial u}{\\partial x}+y\\dfrac{\\partial u}{\\partial y}=$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$4$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$3$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$2$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$1$",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-26",
+          "section": "Maths",
+          "text": "$\\int\\dfrac{\\sin(\\tan^{-1}x)}{1+x^2}dx=$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$-\\cos(\\tan^{-1}x)+c$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\cos(\\tan^{-1}x)+c$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\sin(\\tan^{-1}x)+c$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$-\\sin(\\tan^{-1}x)+c$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-27",
+          "section": "Maths",
+          "text": "$\\int\\dfrac{1}{e^{2x}+e^x}dx=$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\log(e^x+1)-e^{-x}+c$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\log\\!\\left(\\dfrac{e^x+1}{e^x}\\right)+c$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\log(e^{-x}+1)-e^{-x}+c$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\log\\!\\left(\\dfrac{e^{-x}}{e^x+1}\\right)+e^{-x}+c$",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-28",
+          "section": "Maths",
+          "text": "The value of the integral $\\int_{-\\pi/2}^{\\pi/2}\\sin|x|\\,dx$ is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$0$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$1$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$-2$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$2$",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-29",
+          "section": "Maths",
+          "text": "The curves $y=x^2-4$ and $y=1-x^2$ together enclose an area of",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$10\\sqrt{10}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$5\\sqrt{10}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\dfrac{10\\sqrt{10}}{3}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\dfrac{10\\sqrt{10}}{9}$",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-30",
+          "section": "Maths",
+          "text": "The RMS value of $f(x)=\\sqrt{\\log x}$ on $[1,e]$ is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\sqrt{\\dfrac{e}{e-1}}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\sqrt{\\dfrac{e-1}{e}}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\dfrac{1}{\\sqrt{e-1}}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\sqrt{e-1}$",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-31",
+          "section": "Maths",
+          "text": "The approximate value of the integral $\\int_0^1\\dfrac{1}{1+x}dx$, using Trapezoidal rule with $h=0.5$, is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$0.69450$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$0.70834$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$0.67435$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$0.68500$",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-32",
+          "section": "Maths",
+          "text": "The velocity of a body as a function of time is given as $v(t)=5e^{-2t}+4$, where $t$ is in seconds and $v$ is in m/s. The acceleration when $t=5$ in $\\text{m/s}^2$ is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$-10e^{-10}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$-20e^{-10}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$-30e^{-10}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$-40e^{-10}$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-33",
+          "section": "Maths",
+          "text": "The order and degree of the differential equation $\\dfrac{d^2y}{dx^2}+\\left(\\dfrac{dy}{dx}\\right)^2+x=0$ respectively are",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$3$ and $3$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$2$ and $2$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$2$ and $3$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$2$ and $1$",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-34",
+          "section": "Maths",
+          "text": "The general solution of $ye^x dx+(y-1)dy=0$ is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$e^x-\\log y=c$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$e^x-y=c$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$e^x-y-\\log x=c$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$e^x+y-\\log y=c$",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-35",
+          "section": "Maths",
+          "text": "If $\\sin x\\,\\dfrac{dy}{dx}+y\\cos x=x\\sin x$, then $(y-1)\\sin x=$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$c-x\\sin x$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$c+x\\sin x$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$c-x\\cos x$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$c+x\\cos x$",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-36",
+          "section": "Maths",
+          "text": "The solution of the differential equation $(e^y+1)\\cos x\\,dx+e^y\\sin x\\,dy=0$ is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$(e^y+1)\\sin x=c$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$e^x\\sin x=c$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$(e^x+1)\\cos x=c$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$(e^y-1)\\sin x=c$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-37",
+          "section": "Maths",
+          "text": "The differential equation satisfied by $y=\\dfrac{A}{x}+B$, ($A$, $B$ are parameters) is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$x^2y_1=y$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$xy_1+2y_2=0$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$xy_2+2y_1=0$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$x^2y_1-2y=0$",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-38",
+          "section": "Maths",
+          "text": "The general solution of $\\log\\!\\left(\\dfrac{dy}{dx}\\right)=3x+3y$ is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$e^{3x}+e^{3y}=c$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$e^{-3x}+e^{-3y}=c$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$e^{-3x}+e^{3y}=c$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$e^{3x}+e^{-3y}=c$",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-39",
+          "section": "Maths",
+          "text": "If $y\\,dx+y^2 dy=x\\,dy$, $x\\in\\mathbb{R}$, $y>0$ and $y(1)=1$, then $y(-3)=$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$3$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$2$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$1$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$5$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-40",
+          "section": "Maths",
+          "text": "$\\mathcal{L}\\{\\sin 2t-2t\\cos 2t\\}=$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\dfrac{2}{(s^2+4)^2}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\dfrac{8}{(s^2+4)^2}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\dfrac{16}{(s^2+4)^2}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\dfrac{32}{(s^2+4)^2}$",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-41",
+          "section": "Maths",
+          "text": "$\\mathcal{L}\\{\\cosh 3t\\cos 3t\\}=$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\dfrac{1}{2}\\left[\\dfrac{s-6}{s^2-3s+18}+\\dfrac{s+6}{s^2+3s+18}\\right]$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\dfrac{1}{2}\\left[\\dfrac{s-3}{s^2-6s+18}+\\dfrac{s+3}{s^2+6s+18}\\right]$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\dfrac{1}{2}\\left[\\dfrac{s-4}{s^2-4s+9}+\\dfrac{s-3}{s^2-6s+9}\\right]$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\dfrac{1}{2}\\left[\\dfrac{s-6}{s^2+9}+\\dfrac{s+6}{3s^2+9}\\right]$",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-42",
+          "section": "Maths",
+          "text": "$\\mathcal{L}\\!\\left\\{\\dfrac{1-\\cos 3t}{t}\\right\\}=$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\dfrac{1}{2}\\log\\!\\left(\\dfrac{s^2+9}{s^2+3}\\right)$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\dfrac{1}{2}\\log\\!\\left(\\dfrac{s}{s+9}\\right)$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\dfrac{1}{2}\\log\\!\\left(\\dfrac{s}{s^2+9}\\right)$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\dfrac{1}{2}\\log\\!\\left(\\dfrac{s^2+9}{s^2}\\right)$",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-43",
+          "section": "Maths",
+          "text": "The Laplace transform of $f(t)=t\\sin t$ is $F(s)$ where $F(s)=$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\dfrac{s}{(1+s^2)^2}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\dfrac{2s}{(1+s^2)^2}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\dfrac{2s}{1+s^2}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\dfrac{s}{1+s^2}$",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-44",
+          "section": "Maths",
+          "text": "If $\\mathcal{L}^{-1}\\!\\left\\{\\dfrac{2s^2-1}{(s^2+1)(s^2+4)}\\right\\}=f(t)$, then $f\\!\\left(\\dfrac{\\pi}{2}\\right)=$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$1$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$-1$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$2$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$-2$",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-45",
+          "section": "Maths",
+          "text": "$\\int_0^\\infty\\dfrac{e^{-3t}-e^{-6t}}{t}dt=$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\log 6$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\log 3$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\log 2$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\log 18$",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-46",
+          "section": "Maths",
+          "text": "The solution of the differential equation $y''-2y'+2y=0$ satisfying $y(0)=y'(0)=1$ is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$e^t+e^{-2t}\\cos t$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$e^t+\\cos t$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$e^t\\sin t$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$e^t\\cos t$",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-47",
+          "section": "Maths",
+          "text": "The value of the Fourier coefficient $a_0$ in the Fourier series expansion of $f(x)=x\\sin x$ in $(0,2\\pi)$ is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$2$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$-2$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$1$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$-1$",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-48",
+          "section": "Maths",
+          "text": "If $b_1$, $b_2$ are Fourier coefficients in the Fourier series expansion of $f(x)=|\\sin x|$ in $(-\\pi,\\pi)$, then $b_1+b_2=$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\dfrac{2}{\\pi}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$-\\dfrac{2}{\\pi}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$0$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\dfrac{4}{\\pi}$",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-49",
+          "section": "Maths",
+          "text": "At $x=0$, the Fourier series of $f(x)=\\begin{cases}\\pi+x & \\text{if } -\\pi<x<0\\\\0 & \\text{if } 0\\le x<\\pi\\end{cases}$ converges to",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\pi$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$0$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$-\\pi$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\dfrac{\\pi}{2}$",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "maths-50",
+          "section": "Maths",
+          "text": "If $x=\\dfrac{\\pi}{2}+\\sum_{n=1}^\\infty a_n\\cos nx$, $0<x<\\pi$, then the value of $a_n$ is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\dfrac{2}{\\pi n^2}\\left[(-1)^n-1\\right]$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\dfrac{2}{\\pi n^2}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$0$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\dfrac{4}{\\pi n^2}$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-1",
+          "section": "Physics",
+          "text": "If $F$ is force, $x$ is distance and $t$ is time, then the dimensions of $\\dfrac{b}{a}$ in the equation $F=\\dfrac{b-x}{at}$ are same as that of",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Velocity",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Force",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Momentum",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Time",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-2",
+          "section": "Physics",
+          "text": "The static friction is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Equal to the dynamic friction",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Always greater than the dynamic friction",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Always less than the dynamic friction",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Sometimes less than and sometimes equal to dynamic friction",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-3",
+          "section": "Physics",
+          "text": "A vector $A$ points vertically upward and $B$ points towards north, the vector product of $B\\times A$ is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Along west",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Along east",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Vertically downward",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "No direction",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-4",
+          "section": "Physics",
+          "text": "A Vector $A$ has magnitude $9/2$ unit towards north, the direction of vector $-6A$ and $8A$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$-27$ units and $36$ units towards south",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$-27$ units and $36$ units towards north",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$-27$ units towards south and $36$ units towards north",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$-27$ units towards west and $36$ units towards east",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-5",
+          "section": "Physics",
+          "text": "The Angular displacement of a particle is described as $\\theta=2t+3t^2$, the angular velocity (in rad/sec) at $t=2$ sec is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$2$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$6$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$16$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$14$",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-6",
+          "section": "Physics",
+          "text": "The acceleration of a car moving on a straight road with a constant velocity of 40 m/sec is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$30\\text{ m/s}^2$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$20\\text{ m/s}^2$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$0\\text{ m/s}^2$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$40\\text{ m/s}^2$",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-7",
+          "section": "Physics",
+          "text": "Two wires of same length and made with same material are stretched with the same force. If the radii of the wires are in the ratio $1:3$, then the ratio of their elongations is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$1:3$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$9:1$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$3:1$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$1:9$",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-8",
+          "section": "Physics",
+          "text": "Along a stream line flow of fluid",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "The velocity of all fluid particles at a given instant is constant",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "The velocity of a fluid particle remains constant",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "The velocity of all fluid particles crossing a given position is constant",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "The speed of a fluid particle remains constant",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-9",
+          "section": "Physics",
+          "text": "Which of the following gives the relation between $C_p$ and $C_v$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$C_p-C_v=R$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$C_p=C_v$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$C_p-C_v>R$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$C_p/C_v=R$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-10",
+          "section": "Physics",
+          "text": "Compressed air coming out of punctured football becomes cooler because",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Adiabatic expansion",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Isothermal expansion",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Energy dissipation",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "See-beck effect",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-11",
+          "section": "Physics",
+          "text": "The work done (Joule) by 1 mole of a perfect gas when it expands isothermally to double its volume. The initial temperature of the gas is $0^\\circ$C and $R=8.31\\times10^7$ erg-mol$^{-1}$.K$^{-1}$. ($\\log_{10}2=0.3010$)",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$15.72$ joule",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$157.2$ joule",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$1572$ joule",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$1.572$ joule",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-12",
+          "section": "Physics",
+          "text": "The energy possessed by an object, by virtue of its motion is termed as",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Potential Energy",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Kinetic Energy",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Gravitational Energy",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Nuclear Energy",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-13",
+          "section": "Physics",
+          "text": "At what speed the observer must move towards a stationary source so that the apparent frequency will be double the original frequency of the source? The velocity of sound is $V$.",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$V$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\dfrac{V}{2}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$2V$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\dfrac{V}{4}$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-14",
+          "section": "Physics",
+          "text": "The displacement equation of a particle executing SHM is given by $y=a\\sin\\omega t+b\\cos\\omega t$, the resultant amplitude is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$(a^2+b^2)^{1/2}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$(a+b)$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$(a+b)^{1/2}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Zero",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-15",
+          "section": "Physics",
+          "text": "The periodic time ($T$) of simple pendulum is observed for different lengths ($L$). If a graph of $\\log_{10}L$ against $\\log_{10}T$ is plotted, the slope of the graph will be",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$1/2$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$-1/2$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$(2)^{1/2}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$2$",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-16",
+          "section": "Physics",
+          "text": "The maximum velocity of a particle performing SHM is 0.12 m/sec, if its maximum acceleration is 0.48 m/sec$^2$, then its time period (sec) is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$1.54$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$1.59$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$1.57$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$1.75$",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-17",
+          "section": "Physics",
+          "text": "The minimum energy required to take out an electron from an alkali metal is called",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Kinetic Energy",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Potential Energy",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Gibbs Free Energy",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Work Function",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-18",
+          "section": "Physics",
+          "text": "$N_1$ and $N_2$ be the number of atoms in the ground and excited states. Then the condition for population inversion is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$N_1=N_2$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$N_1>N_2$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$N_2>N_1$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$N_2=0$",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-19",
+          "section": "Physics",
+          "text": "Two magnets have magnetic moments in the ratio $2:1$. Their pole strengths are in the ratio $1:2$. Then the ratio of their magnetic lengths is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$1:4$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$1:1$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$2:3$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$4:1$",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-20",
+          "section": "Physics",
+          "text": "The susceptibility of para magnetic material is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Positive and small",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Positive and large",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Negative",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Zero",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-21",
+          "section": "Physics",
+          "text": "There are three equal resistors, how many different combinations of these resistors are possible.",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Four",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Two",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Three",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Five",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-22",
+          "section": "Physics",
+          "text": "Which one of the following is the perfect diamagnetic?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Any conductor",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "P-Type semiconductor",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "N-Type semiconductor",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Superconductor",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-23",
+          "section": "Physics",
+          "text": "The current in the PN junction diode during the reverse bias is the result of",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Majority carriers",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Minority carriers",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Both majority and minority carriers",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Only electrons",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-24",
+          "section": "Physics",
+          "text": "Which of the following has maximum energy gap?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Insulators",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Superconductors",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Metals",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Semiconductors",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-25",
+          "section": "Physics",
+          "text": "Which of the following is true for Fermi energy level for p-type extrinsic semiconductor?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "At middle of the band gap",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Close to valence band",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Close to conduction band",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Fermi level does not exist",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "chemistry-1",
+          "section": "Chemistry",
+          "text": "The values of Azimuthal and principal quantum numbers respectively for an electron that is present in 4d orbital",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "1 and 4",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "4 and 1",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "2 and 4",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "4 and 2",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "chemistry-2",
+          "section": "Chemistry",
+          "text": "Which of the following molecule has ionic bonding?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\text{CH}_3\\text{Cl}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\text{CH}_3\\text{OH}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\text{CO}_2$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "MgO",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "chemistry-3",
+          "section": "Chemistry",
+          "text": "What is the Oxidation number of carbon in formaldehyde?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$-4$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$+4$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$0$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$+2$",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "chemistry-4",
+          "section": "Chemistry",
+          "text": "The Molarity of a solution containing 9 g of glucose (molar mass 180) in 500 g of water is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$0.5$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$0.1$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$0.2$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$1.0$",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "chemistry-5",
+          "section": "Chemistry",
+          "text": "Prussian blue colloid is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\text{As}_2\\text{S}_3$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\text{Fe(OH)}_3$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\text{KFe[Fe(CN)}_6]$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\text{FeCl}_3$",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "chemistry-6",
+          "section": "Chemistry",
+          "text": "Which of the following anions is the strongest base?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\text{ClO}^-$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\text{ClO}_2^-$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\text{ClO}_3^-$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\text{ClO}_4^-$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "chemistry-7",
+          "section": "Chemistry",
+          "text": "The pH of $10^{-9}$ molar solution of HCl is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$9$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$-9$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Between 7 & 8",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Between 6 & 7",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "chemistry-8",
+          "section": "Chemistry",
+          "text": "Which one of the following is a Renewable energy source?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Petroleum",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Coal",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Natural gas",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Wind mills",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "chemistry-9",
+          "section": "Chemistry",
+          "text": "Which of the following gas is responsible for depletion of ozone layer in the atmosphere?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\text{CH}_2\\text{Cl}_2$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\text{CF}_2\\text{Cl}_2$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\text{CH}_2\\text{F}_2$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\text{CO}_2$",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "chemistry-10",
+          "section": "Chemistry",
+          "text": "The exhausted permutit is regenerated by percolating through it a solution of",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Calcium chloride",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Zinc chloride",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Sodium chloride",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Magnesium chloride",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "chemistry-11",
+          "section": "Chemistry",
+          "text": "During reverse osmosis:",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Dissolved salts are pushed out through semipermeable membrane",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Only dissolved ionic salts are pushed out through the semipermeable membrane",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Pure water is pushed out through semipermeable membrane",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Both water and dissolved salts are pushed out through the semipermeable membrane",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "chemistry-12",
+          "section": "Chemistry",
+          "text": "Which of the following is a weak electrolyte?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "HCl",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "NaOH",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\text{CH}_3\\text{COOH}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\text{H}_2\\text{SO}_4$",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "chemistry-13",
+          "section": "Chemistry",
+          "text": "When 2 amperes of current is passed through $\\text{CuSO}_4$ solution for 10 minutes, the amount of Cu deposited is (Atomic weight of Cu = 63.5 g)",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$3.94$ g",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$0.394$ g",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$0.788$ g",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$7.88$ g",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "chemistry-14",
+          "section": "Chemistry",
+          "text": "Composition of Nichrome alloy is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Ni:68%, Cu:27%, Fe:5%",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Ni:78%, Cr:20%, Fe:2%",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Ni:40%, Cu:60%",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Al:95%, Cu:2%, Ni:1%",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "chemistry-15",
+          "section": "Chemistry",
+          "text": "In the froth flotation method, pine oil",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Increases the surface tension of the solution",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Acts as a collector",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Does not affect the surface tension of the solution",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Decreases the surface tension of the solution",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "chemistry-16",
+          "section": "Chemistry",
+          "text": "During electro chemical corrosion in acidic environment",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Hydrogen evolution takes place",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Oxygen evolution takes place",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Oxygen absorption occurs",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Hydrogen absorption takes place",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "chemistry-17",
+          "section": "Chemistry",
+          "text": "The process of coating of Iron with Zinc metal is known as",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Galvanizing",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Sherardizing",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Zincing",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Tinning",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "chemistry-18",
+          "section": "Chemistry",
+          "text": "Bakelite is prepared by the condensation polymerization of",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Phenol and formaldehyde",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Urea and formaldehyde",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Phenol and acetaldehyde",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Urea and acetone",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "chemistry-19",
+          "section": "Chemistry",
+          "text": "The trade name of the polymer coated on non-stick utensils is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Dacron",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Orlon",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Teflon",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Nylon",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "chemistry-20",
+          "section": "Chemistry",
+          "text": "Octane number of a petrol that consists 20:80 mixture of n-heptane and 2,2,4-trimethyl pentane is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$100$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Zero",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$80$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$20$",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "chemistry-21",
+          "section": "Chemistry",
+          "text": "Producer gas is a mixture of",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\text{CO}_2+\\text{H}_2$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\text{CO}+\\text{N}_2$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\text{CO}+\\text{CH}_4$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\text{CH}_4+\\text{H}_2$",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "chemistry-22",
+          "section": "Chemistry",
+          "text": "For the following cell reaction $Fe+Ni^{2+}_{(a=1)}\\longrightarrow Fe^{2+}_{(a=1)}+Ni$. The EMF of the cell at 298 K is ($E^\\circ_{Fe^{2+}/Fe}=-0.440\\,V$; $E^\\circ_{Ni^{2+}/Ni}=-0.250\\,V$)",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$-0.190\\,V$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$+0.190\\,V$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$+0.690\\,V$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$-0.690\\,V$",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "chemistry-23",
+          "section": "Chemistry",
+          "text": "In Hydrogen-Oxygen fuel cell, the reaction at the cathode is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$O_2(g)+4H^++4e^-\\to 2H_2O$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$4H^++4e^-\\to 2H_2(g)$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$2H_2O\\to O_2(g)+4H^++4e^-$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$2H_2(g)+4OH^-\\to 4H_2O(\\ell)+4e^-$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "chemistry-24",
+          "section": "Chemistry",
+          "text": "Which of the following statements is true about SMOG?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "SMOG is derived from the fog",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "SMOG is derived from smoke",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "SMOG is derived from water vapour",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "SMOG is derived from both fog and smoke",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "chemistry-25",
+          "section": "Chemistry",
+          "text": "What do BOD and COD stand for?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Biological Oxygen Demand and Chemical Oxygen Demand respectively",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Chemical Oxygen Demand and Biological Oxygen Demand respectively",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Botanical Oxygen Demand and Chemical Oxygen Demand respectively",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Basic Oxygen Demand and Chemical Oxygen Demand respectively",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-1",
+          "section": "Mechanical",
+          "text": "_______ is used to scribing two parallel lines at a time on a wooden work surface",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Marking gauge",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Bevel gauge",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Mortise gauge",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Feeler gauge",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-2",
+          "section": "Mechanical",
+          "text": "What is the name of the chisel used to chip-off excess metal of welded joints and castings?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Cross cut chisel",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Diamond point chisel",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Flat chisel",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Half round nose chisel",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-3",
+          "section": "Mechanical",
+          "text": "Which of the following process belong to forging operation",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Fullering",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Welding",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Drawing",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Piercing",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-4",
+          "section": "Mechanical",
+          "text": "The following one is applied to improve the surface finish of the casting",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Facing sand",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Coal dust",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Saw dust",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Iron oxide",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-5",
+          "section": "Mechanical",
+          "text": "The purpose of metallic chills used in casting is to",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Progressive solidification",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Avoid all the defects",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Increase in strength of the casting",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Directional solidification",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-6",
+          "section": "Mechanical",
+          "text": "Investment casting is also called as",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Cold chamber die casting",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Shell moulding",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Lost wax method",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Centrifugal casting",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-7",
+          "section": "Mechanical",
+          "text": "_______ pattern is used when the contour of the part is such that, withdrawing the pattern from the mould is not possible",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Follow board",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Loose piece",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Sweep",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Match plate",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-8",
+          "section": "Mechanical",
+          "text": "In a broaching tool, the teeth which are responsible for heaviest cutting is called",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Rough teeth",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Semi finishing teeth",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Finishing teeth",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Smooth teeth",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-9",
+          "section": "Mechanical",
+          "text": "Metal removal rate of a shaper with cutting speed of 40 m min$^{-1}$, feed rate 0.5 mm per stroke and depth of cut 5 mm is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$100000\\text{ m}^3\\text{min}^{-1}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$100000\\text{ mm}^3\\text{min}^{-1}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$10000\\text{ m}^3\\text{min}^{-1}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$1000\\text{ mm}^3\\text{min}^{-1}$",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-10",
+          "section": "Mechanical",
+          "text": "In a slotting machine the part which houses complete driving mechanism is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Base",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Table",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Column",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Ram",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-11",
+          "section": "Mechanical",
+          "text": "Which driving mechanism of planing machine does not have speed reduction gear box",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Crank drive",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Belt drive",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Hydraulic drive",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Direct reversible drive",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-12",
+          "section": "Mechanical",
+          "text": "Which one of the following is not a desirable property of a cutting fluid",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Good lubrication",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "High heat absorption capacity",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Low flash point stability",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Preventing adhesion of metal on tool point",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-13",
+          "section": "Mechanical",
+          "text": "A welding process in which a heavy electric current is passed through the metals to be joined over a limited area, causing them to be locally heated to plastic state and the weld is completed by application of pressure for a prescribed time is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Cold welding",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Resistance welding",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Forge welding",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Flash welding",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-14",
+          "section": "Mechanical",
+          "text": "The ingredient of electrode used in welding which provides a reducing gas shield and increases arc voltage is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Potassium aluminium silicate",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Cellulose",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Rutile",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Metal carbonate",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-15",
+          "section": "Mechanical",
+          "text": "In a fluted milling cutter, inclined angle between land and face of the tooth is called",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Clearance angle",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Relief angle",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Radial rake angle",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Lip angle",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-16",
+          "section": "Mechanical",
+          "text": "A milling operation which involves use of a combination of more than two cutters mounted on a common arbor is called",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Slab milling",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Gang milling",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Straddle milling",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Angular milling",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-17",
+          "section": "Mechanical",
+          "text": "The term which indicates spacing between abrasive grains on grinding wheel is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Grit",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Grade",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Structure",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Grain",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-18",
+          "section": "Mechanical",
+          "text": "The surface finishing operation which is performed after polishing to provide a high lustre to the polished surface is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Lapping",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Honing",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Superfinishing",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Buffing",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-19",
+          "section": "Mechanical",
+          "text": "The operation through which a metal is cut along a single line, usually a straight line is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Shearing",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Parting",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Notching",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Trimming",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-20",
+          "section": "Mechanical",
+          "text": "The locators which are used to locate work from an external profile or outside edge are",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Vee-locators",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Profile locators",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Pin locators",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Diamond pin locators",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-21",
+          "section": "Mechanical",
+          "text": "The degree of closeness of the measured value of a certain quantity with its true value is called",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Accuracy",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Precision",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Sensitivity",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": true,
+          "issue": "Option D text missing from PDF"
+        },
+        {
+          "id": "mechanical-22",
+          "section": "Mechanical",
+          "text": "Limit gauges are used to:",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "measure flatness of the component",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "measure exact size of the component",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "check if the component dimension lies within permissible limits",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "measure surface roughness of the component",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-23",
+          "section": "Mechanical",
+          "text": "The surface roughness can be measured with",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Talysurf",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Autocollimator",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Sigma Comparator",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Sine bar",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-24",
+          "section": "Mechanical",
+          "text": "The tolerances of the dimension $55^{\\pm0.02}$ and $40^{+0.02}_{-0.03}$ are",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$0.04$ and $0.05$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$0.01$ and $0.06$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$0.03$ and $0.07$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$0.09$ and $0.02$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-25",
+          "section": "Mechanical",
+          "text": "The straight portion of the surface, on either side of screw is called",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Flank",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Crest",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Root",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Pitch",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-26",
+          "section": "Mechanical",
+          "text": "_______ is an application technology that uses computer software and machinery to facilitate automate manufacturing processes",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Computer aided design",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Computer aided manufacturing",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Computer aided engineering",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Computer integrated manufacturing",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-27",
+          "section": "Mechanical",
+          "text": "What happens to labour workforce when FMS concept is used",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Increases",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Decreases",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Gradually increases with time",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Increases and then decreases",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-28",
+          "section": "Mechanical",
+          "text": "Several machine tools can be controlled by a central computer in",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Numerical Control machine tool",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Computer Numerical Control machine tool",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Direct Numerical Control machine tool",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Central Computer Numerical Control machine tool",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-29",
+          "section": "Mechanical",
+          "text": "N001 G00 X07000 Y03000 M03N002 Y06000. In this M03 represents",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Absolute command",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Start Spindle rotation",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Clockwise circular interpolation",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Linear interpolation",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-30",
+          "section": "Mechanical",
+          "text": "The study of motion without regard to forces is known as",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Actuator",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Sensor",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Kinematics",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Dynamics",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-31",
+          "section": "Mechanical",
+          "text": "In polytropic process equation $PV^n=\\text{Constant}$, if $n=0$, the process is termed as",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Isochoric",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Isobaric",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Isothermal",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Adiabatic",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-32",
+          "section": "Mechanical",
+          "text": "In an internal combustion engine, during the compression stroke the heat rejected to the cooling water is 50 kJ/kg and the work input is 100 kJ/kg. The change in internal energy is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$-50\\text{ kJ/kg}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$150\\text{ kJ/kg}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$50\\text{ kJ/kg}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$-150\\text{ kJ/kg}$",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-33",
+          "section": "Mechanical",
+          "text": "The heat required to raise unit mass of a solid or liquid through one degree temperature rise is called as",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Enthalpy",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Entropy",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Calorific value",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Specific heat",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-34",
+          "section": "Mechanical",
+          "text": "\"The internal energy of a perfect gas is a function of the absolute temperature only\" This statement is given by",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Dalton's law",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Avagadro's law",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Joule's law",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Gaylussac's law",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-35",
+          "section": "Mechanical",
+          "text": "The first stage in the formation of a coal is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Peat",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Bituminous",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Semi-anthracite",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Anthracite",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-36",
+          "section": "Mechanical",
+          "text": "Stoichiometric mixture of air and the fuel is one that contains",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Excess of air",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Deficiency of air",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Just sufficient oxygen for complete combustion",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "No air",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-37",
+          "section": "Mechanical",
+          "text": "The energy liberated by the complete oxidation of a unit mass or volume of a fuel is called as",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Enthalpy",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Entropy",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Internal energy",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Calorific value",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-38",
+          "section": "Mechanical",
+          "text": "An Otto cycle consists of the following processes",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Two adiabatic and two isobaric",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Two adiabatic and two isothermal",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Two adiabatic and two polytropic",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Two adiabatic and two isochoric",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-39",
+          "section": "Mechanical",
+          "text": "A Carnot engine working between $227^\\circ$C and $27^\\circ$C produces 120 kJ of work. The heat added is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$300\\text{ kJ}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$136\\text{ kJ}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$240\\text{ kJ}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$24\\text{ kJ}$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-40",
+          "section": "Mechanical",
+          "text": "In a four stroke cycle engine",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "One power stroke is obtained in each revolution of crank shaft",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "One power stroke is obtained in every two revolution of crank shaft",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "One power is obtained in every four revolution of crank shaft",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Power stroke is not obtained in the cycle",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-41",
+          "section": "Mechanical",
+          "text": "The total power developed by combustion of fuel in the combustion chamber is called as",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Brake power",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Shaft power",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Indicated power",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Friction power",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-42",
+          "section": "Mechanical",
+          "text": "Brake thermal efficiency of an engine is given as",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Brake power / (Mass of fuel $\\times$ Calorific value)",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "(Brake power $\\times$ Mass of fuel) / Calorific value",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Mass of fuel / (Brake power $\\times$ Calorific value)",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "(Mass of fuel $\\times$ calorific value) / Brake power",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-43",
+          "section": "Mechanical",
+          "text": "A closed cycle constant pressure gas turbine works on",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Stirling cycle",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Carnot cycle",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Joule cycle",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Rankine cycle",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-44",
+          "section": "Mechanical",
+          "text": "The main constructional feature of a ram jet engine is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Having Propeller",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Having reduction gears",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Absence of compressor and turbine",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Having oxidizer tank",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-45",
+          "section": "Mechanical",
+          "text": "The saturation temperature of steam at 6 bar is $158.8^\\circ$C, temperature of steam was found to be $170^\\circ$C. The steam will be in",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Wet condition",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Superheated condition",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Dry condition",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Saturated condition",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-46",
+          "section": "Mechanical",
+          "text": "In which of the following boiler, hot gases flow inside the tubes surrounded by water.",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Babcock and Wilcox boiler",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Lamont boiler",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Cochran boiler",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Benson boiler",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-47",
+          "section": "Mechanical",
+          "text": "The boiler draught in which fan is installed near the base of the boiler to force the air through the furnace",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Natural draught",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Induced draught",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Balanced draught",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Forced draught",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-48",
+          "section": "Mechanical",
+          "text": "Superheated steam at 2 bar expands in a convergent divergent nozzle. For maximum discharge, the critical pressure at throat will be",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$1.092\\text{ bar}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$0.546\\text{ bar}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$0.578\\text{ bar}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$1.156\\text{ bar}$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-49",
+          "section": "Mechanical",
+          "text": "During which of following process does heat rejection take place in Carnot vapour cycle",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Isothermal compression",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Isentropic compression",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Isothermal expansion",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Isentropic expansion",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-50",
+          "section": "Mechanical",
+          "text": "The state of a substance whose evaporation from its liquid state is complete, is known as",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Vapour",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Perfect gas",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Steam",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Air",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-51",
+          "section": "Mechanical",
+          "text": "The reheat cycle in steam power plant is mainly adopted to",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Improve thermal efficiency",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Decrease the moisture content in low pressure stages to a safe value",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Decrease the capacity of condenser",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Recovers the waste heat of boiler",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-52",
+          "section": "Mechanical",
+          "text": "Boiler rating is usually defined in terms of",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Maximum temperature of steam in Kelvin",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Heat transfer rate in kJ/hr",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Steam output in kg/hr",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Heat transfer area in square meter",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-53",
+          "section": "Mechanical",
+          "text": "A surface condenser used in a steam power station, under cooling of condensate is undesirable due to",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Non absorption of gases in steam",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Reduce efficiency of the plant",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Increase the cooling water requirements",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Increase thermal stresses in the condenser",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-54",
+          "section": "Mechanical",
+          "text": "Which one of the following is used to bring down the speed of an impulse steam turbine to practical limits",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Centrifugal governor",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Compounding of the turbine",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Large flywheel",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Gear box",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-55",
+          "section": "Mechanical",
+          "text": "Lami's theorem states that if a point is in equilibrium under the action of three concurrent forces, then each force is proportional to the $\\alpha$ of the angle between the other two forces, where $\\alpha$ stands for",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Sec",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Cosec",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Sin",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Tan",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-56",
+          "section": "Mechanical",
+          "text": "Turning of steering wheel of the car is an example of",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Couple",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Force",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Impulse",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Torque",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-57",
+          "section": "Mechanical",
+          "text": "The moment of inertia ($I$) of a triangular section of height $h$ and base $b$ about an axis passing through the centroid and parallel to the base is given by",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$bh^3/2$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$bh^3/36$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$bh^3/12$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$bh^3/16$",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-58",
+          "section": "Mechanical",
+          "text": "The centre of gravity of semi-circle of radius $R$ is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$R/3\\pi$ from the base",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$4R/\\pi$ from the base",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$2R/\\pi$ from the base",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$4R/3\\pi$ from the base",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-59",
+          "section": "Mechanical",
+          "text": "_______ materials are capable of absorbing little elastic deformation and negligible plastic deformation before fracture",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Brittle",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Ductile",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Plastic",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Elastic",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-60",
+          "section": "Mechanical",
+          "text": "Poisson's ratio for Rubber varies from",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$0.25$ to $0.33$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$0.45$ to $0.50$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$0.1$ to $0.40$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$0.2$ to $0.50$",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-61",
+          "section": "Mechanical",
+          "text": "The point of contra flexure in a loaded beam is one where _______",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "The shear force is maximum",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "The bending moment is maximum",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "The shear forces change sign",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "The bending moment changes sign",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-62",
+          "section": "Mechanical",
+          "text": "A uniformly distributed load $w$ (kN/m) is acting over the entire length of 8 m long cantilever beam. If the bending moment at the fixed end is 64 kN-m, what is the value of $w$?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$3$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$2$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$6$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$8$",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-63",
+          "section": "Mechanical",
+          "text": "A beam of 200 mm wide and 200 mm deep is simply supported over a span of 5 meters. If the beam is subjected to a uniformly distributed load of 4 kN/m, find the section modulus of the beam",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$5.33\\times10^6\\text{ mm}^3$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$6.75\\times10^6\\text{ mm}^3$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$1.33\\times10^6\\text{ mm}^3$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$4.16\\times10^6\\text{ mm}^3$",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-64",
+          "section": "Mechanical",
+          "text": "A beam 3 m long simply supported at its ends is carrying a point load of 16 kN at its centre. The moment of inertia of the beam is given as equal to $6\\times10^7\\text{ mm}^4$. If $E$ for the material of the beam is $3\\times10^5\\text{ mm}^2$. What is the deflection at the centre of the beam?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$8\\text{ mm}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$0.8\\text{ mm}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$5\\text{ mm}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$0.5\\text{ mm}$",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-65",
+          "section": "Mechanical",
+          "text": "A solid shaft under Torsion, shear stress at the outer surface is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Minimum",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Maximum",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Zero",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Average",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-66",
+          "section": "Mechanical",
+          "text": "Which of the following assumption is not true for theory of torsion",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "The material of the shaft is uniform throughout",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "The twist along the shaft is uniform",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Cross section of the shaft, is not plane before and after twist",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "The shaft is uniform circular cross section throughout",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-67",
+          "section": "Mechanical",
+          "text": "The distance measured parallel to the axis between corresponding points on adjacent thread forms in the same axial plane section and on the same side of the axis is called as",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Lead",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Depth of thread",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Apex",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Pitch",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-68",
+          "section": "Mechanical",
+          "text": "The types of gears used to connect two intersecting coplanar shaft is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Spur gear",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Bevel gear",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Helical gear",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Spiral gear",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-69",
+          "section": "Mechanical",
+          "text": "V-belts are suitable for transmission of power between two shafts having",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Long centre distance",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Shorter distance",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Not used in power transmission",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Angular alignment",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-70",
+          "section": "Mechanical",
+          "text": "The key that transmits power through frictional resistance only is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Saddle Key",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Sunk Key",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Woodruff key",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Tangent Key",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-71",
+          "section": "Mechanical",
+          "text": "Stud is a Machine element that has",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Threads on both the ends",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Threads on only one end",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "No threads",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Threads on one end with head on the other end",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-72",
+          "section": "Mechanical",
+          "text": "Fluids for which the rate of deformation is proportional to the shear stress are called",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Bingham plastic",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Dilatant",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Pseudo plastic",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Newtonian fluids",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-73",
+          "section": "Mechanical",
+          "text": "The continuity equation is the result of application of the following law for the flow field",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "First law of thermodynamics",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Conservation of energy",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Newton second law of motion",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Conservation of mass",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-74",
+          "section": "Mechanical",
+          "text": "The difference between the energy line and hydraulic gradient line is called",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Static head",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Velocity head",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Pressure head",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Potential head",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-75",
+          "section": "Mechanical",
+          "text": "Euler's equation of motion",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Is applicable to any fluid",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Considers only gravity and pressure forces acting on an in-viscous fluid",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Considers gravity and viscous forces acting on a real fluid",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Considers only the pressure forces acting on a real fluid",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-76",
+          "section": "Mechanical",
+          "text": "Loss of head at the exit of pipe is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$0.5V^2/2g$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$V^2/2g$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$V^2/g$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$2V^2/g$",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-77",
+          "section": "Mechanical",
+          "text": "Under most practical conditions, the flow in a circular pipe is laminar if",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$Re\\ge4000$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$Re\\le2300$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$Re=10000$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Reynolds number is not applicable",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-78",
+          "section": "Mechanical",
+          "text": "When a steady jet of water impinges on a stationary inclined plane surface and if the fluid friction is neglected, the resultant force on the plane",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Is tangential to the surface",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Is normal to the surface",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Is in the direction of the jet flow",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Flow direction cannot be determined",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-79",
+          "section": "Mechanical",
+          "text": "To avoid cavitation, we must ensure that the local pressure everywhere inside the pump should be",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Above the vapour pressure",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Equal to atmospheric pressure",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Below the vapour pressure",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Gauge pressure",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-80",
+          "section": "Mechanical",
+          "text": "High specific speed (300 rpm to 800 rpm) and low heads (below 30 m) indicate that the turbine is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Pelton wheel",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Francis",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Kaplan",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Propeller",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-81",
+          "section": "Mechanical",
+          "text": "A pump is defined as a device which converts",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Hydraulic energy into Mechanical energy",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Mechanical energy into Hydraulic energy",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Kinetic energy into Mechanical energy",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Mechanical energy into Kinetic energy",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-82",
+          "section": "Mechanical",
+          "text": "Centrifugal pumps with forward-inclined blades generally have",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "A lower maximum efficiency than straight-bladed pumps",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "A higher maximum efficiency than straight-bladed pumps",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Equal efficiency",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Zero efficiency",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-83",
+          "section": "Mechanical",
+          "text": "Which of the following is not a turbomachine",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Centrifugal pump",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Kaplan turbine",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Fans",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Reciprocating pump",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-84",
+          "section": "Mechanical",
+          "text": "The ability of a material to resist indentation or penetration is called as",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Hardness",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Strength",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Resistance",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Toughness",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-85",
+          "section": "Mechanical",
+          "text": "The slow and progressive deformation of a material with time at constant stress is called as",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Fatigue",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Creep",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Fracture",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Brittleness",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-86",
+          "section": "Mechanical",
+          "text": "In grey cast iron the carbon is in the form of",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Graphite flakes",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Cementite",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Iron Carbide",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Spheroids",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-87",
+          "section": "Mechanical",
+          "text": "18:4:1 High speed steel contains the following metals respectively",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Tungsten, Vanadium, Chromium",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Vanadium, Chromium, Tungsten",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Tungsten, Chromium, Vanadium",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Chromium, Tungsten, Vanadium",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-88",
+          "section": "Mechanical",
+          "text": "Babbit metal is an alloy of the following",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Copper, Tin, Bismuth",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Copper, Antimony, Bismuth",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Copper, Tin, Chromium",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Copper, Antimony, Tin",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-89",
+          "section": "Mechanical",
+          "text": "Solid solution of carbon in $\\alpha$-iron is called",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Austenite",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Ferrite",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Martensite",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Pearlite",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-90",
+          "section": "Mechanical",
+          "text": "The product from blast furnace is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Cast Iron",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Wrought Iron",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Pig Iron",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Steel",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-91",
+          "section": "Mechanical",
+          "text": "The chemical formula for Cementite is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\text{Fe}_3\\text{C}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\text{Fe}_2\\text{C}_3$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\text{FeC}_3$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "FeC",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-92",
+          "section": "Mechanical",
+          "text": "Cupola is used to make",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Pig iron",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Wrought iron",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Steel",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Cast iron",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-93",
+          "section": "Mechanical",
+          "text": "During normalizing operation, the steel castings are cooled in",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Air",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "An oil bath",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "A water bath",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Vegetable oil",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-94",
+          "section": "Mechanical",
+          "text": "Line organization is used in",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Civil engineering constructions",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Hospital management",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Banking sector",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Marketing sector",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-95",
+          "section": "Mechanical",
+          "text": "Which of the following layouts is suited to job production",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Process layout",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Product layout",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Plant layout",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Functional layout",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-96",
+          "section": "Mechanical",
+          "text": "Which of the following represents India in ISO",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "PFRDA",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "FSSAI",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "BIS",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "BCCI",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-97",
+          "section": "Mechanical",
+          "text": "The appellate authority for an industrial dispute is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Management",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Labour court",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "High/Supreme court",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "President",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-98",
+          "section": "Mechanical",
+          "text": "In inventory control, the economic order quantity is the",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Optimum lot size",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Highest level of inventory",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Lot corresponding to break-even point",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Capability of a plant to produce",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-99",
+          "section": "Mechanical",
+          "text": "The grouping of activities into organizational units is called",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Corporate plans",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Centralization",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Company policy",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Departmentation",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "mechanical-100",
+          "section": "Mechanical",
+          "text": "ISO 9000 stands for",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Quantity management standards",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Quality management standards",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Qualification management standards",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Quality marketing system",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        }
+      ]
+    }
+  ]
+}
