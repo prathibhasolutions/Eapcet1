@@ -1,0 +1,5851 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RE-NEET MOCK TEST — Question Paper</title>
+<link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet"/>
+<script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer="" onload="initRender()" src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<style>
+@page { size: A4 portrait; margin: 11mm 13mm; }
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Times New Roman',Times,serif;font-size:9pt;line-height:1.38;color:#000;background:#fff;padding:10mm;position:relative;}
+.logo-container{position:absolute;top:7pt;right:10pt;width:16mm;height:16mm;pointer-events:none;}
+.logo-img{display:block;width:100%;height:100%;object-fit:contain;-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+@media print{body{padding:0;}.logo-container{position:absolute;top:7pt;right:10pt;}}
+@page{margin:40mm 13mm 16mm;}
+
+/* ── HEADER ── */
+.exam-header{border:2px solid #000;padding:7pt 52pt 6pt 10pt;margin-bottom:7pt;text-align:center;position:relative;}
+.exam-title{font-size:12.5pt;font-weight:bold;text-transform:uppercase;letter-spacing:.4pt;}
+.exam-code{font-size:9pt;font-weight:bold;margin-top:2pt;}
+.exam-meta{display:flex;justify-content:space-around;margin-top:5pt;font-size:8.5pt;border-top:1px solid #000;padding-top:4pt;font-weight:bold;}
+
+/* ── INSTRUCTIONS ── */
+.instructions{border:1px solid #555;padding:5pt 8pt;margin-bottom:7pt;font-size:8pt;}
+.inst-title{font-weight:bold;margin-bottom:3pt;font-size:8.5pt;}
+.instructions ol{margin-left:14pt;}
+.instructions li{margin-bottom:1.5pt;}
+
+/* ── 2-COLUMN WRAP ── */
+.questions-wrap{column-count:2;column-gap:7mm;column-rule:1px solid #bbb;}
+
+/* ── SECTION HEADER ── */
+.section-hdr{
+  column-span:all;
+  background:#111;color:#fff;text-align:center;
+  font-weight:bold;font-size:10pt;letter-spacing:.6pt;
+  padding:4pt 0;margin:6pt 0 3pt;
+}
+
+/* ── QUESTION ── */
+.question{break-inside:avoid;margin-bottom:6pt;padding-bottom:5pt;border-bottom:1px dotted #ccc;}
+.question:last-child{border-bottom:none;}
+.q-row{display:flex;gap:3pt;align-items:flex-start;}
+.q-num{font-weight:bold;min-width:20pt;flex-shrink:0;padding-top:1pt;}
+.q-body{flex:1;min-width:0;}
+.q-text{margin-bottom:2pt;word-break:break-word;}
+
+/* ── QUESTION IMAGE ── */
+.img-wrap{display:block;}
+.img-box{display:block;max-width:100%;max-height:55mm;margin:3pt 0;border:1px solid #bbb;object-fit:contain;background:#fff;}
+.img-missing{display:none;width:100%;padding:4pt 6pt;margin:3pt 0;border:1px dashed #999;background:#f7f7f7;font-size:7pt;color:#777;font-family:monospace;word-break:break-all;}
+
+/* ── OPTIONS ── */
+.options{margin-top:3pt;}
+.option{display:flex;gap:3pt;align-items:flex-start;margin-bottom:1.5pt;}
+.opt-lbl{font-weight:bold;min-width:18pt;flex-shrink:0;}
+.opt-body{flex:1;min-width:0;word-break:break-word;}
+.opt-img{display:block;max-width:100%;max-height:24mm;margin-top:2pt;border:1px solid #ccc;object-fit:contain;background:#fff;}
+
+/* ── REVIEW FLAG ── */
+.rflag{font-size:7pt;color:#c00;font-style:italic;margin-top:2pt;}
+
+/* ── ANSWER KEY PAGE ── */
+.ans-page{page-break-before:always;margin-top:10mm;}
+.ans-title{text-align:center;font-size:12pt;font-weight:bold;margin-bottom:8pt;border-bottom:2px solid #000;padding-bottom:4pt;}
+.ans-section{margin-bottom:8pt;}
+.ans-sec-hdr{font-weight:bold;background:#eee;padding:3pt 5pt;margin-bottom:4pt;font-size:8.5pt;}
+.ans-grid{display:grid;grid-template-columns:repeat(10,1fr);gap:2pt;font-size:8pt;}
+.ans-cell{border:1px solid #ccc;padding:2pt 3pt;text-align:center;}
+.ans-cell-hdr{font-weight:bold;background:#ddd;}
+
+.print-footer{display:none;}
+@media print{
+  .print-footer{
+    display:block;
+    position:fixed;
+    left:0;
+    right:0;
+    bottom:0mm;
+    text-align:center;
+    font-size:8pt;
+    letter-spacing:.5pt;
+    color:#111;
+  }
+}
+</style>
+</head>
+<body>
+<div class="exam-header">
+<div aria-hidden="true" class="logo-container"><img alt="Institute Logo" class="logo-img" src="assets/logo/prathibha-institute-logo.png"/></div>
+<div class="exam-title">RE-NEET MOCK TEST - 1</div>
+<div class="exam-code">Question Paper  |  Code: XX</div>
+<div class="exam-meta">
+<span>Date: 20th May 2026</span>
+<span>Duration: 3 Hours (180 min)</span>
+<span>Total Questions: 180</span>
+<span>Maximum Marks: 720</span>
+</div>
+</div>
+<div class="instructions">
+<div class="inst-title">GENERAL INSTRUCTIONS</div>
+<ol>
+<li>This paper has <strong>180 questions</strong>: Chemistry Q.1–Q.45, Biology Q.46–Q.135, Physics Q.136–Q.180.</li>
+<li>Each correct answer: <strong>+4 marks</strong>. Each incorrect answer: <strong>−1 mark</strong>. Unattempted: 0.</li>
+<li>Only <strong>ONE</strong> option is correct per question. Mark the appropriate circle on the OMR sheet.</li>
+<li>Use Blue / Black Ball Point Pen only. Do NOT use pencil.</li>
+</ol>
+</div>
+<div class="questions-wrap" id="qwrap"></div>
+<div id="anskey"></div>
+<div class="print-footer">Prathibha Institute</div>
+<script id="edata" type="application/json">
+{
+  "exams": [
+    {
+      "id": "reneet-mock",
+      "title": "RE-NEET MOCK TEST - 1",
+      "date": "2026-05-19",
+      "durationMinutes": 180,
+      "marksPerQuestion": 4,
+      "negativeMark": 1,
+      "sections": [
+        {
+          "key": "physics",
+          "title": "Physics",
+          "count": 45,
+          "start": 1,
+          "end": 45
+        },
+        {
+          "key": "chemistry",
+          "title": "Chemistry",
+          "count": 45,
+          "start": 46,
+          "end": 90
+        },
+        {
+          "key": "biology",
+          "title": "Biology",
+          "count": 90,
+          "start": 91,
+          "end": 180
+        }
+      ],
+      "questions": [
+        {
+          "id": "physics-1",
+          "section": "Physics",
+          "text": "Two astronauts are floating in gravitational free space after having lost contact with their spaceship. The two will",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Move towards each other",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Move away from each other",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Will become stationary",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Keep floating at the same distance between them",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-2",
+          "section": "Physics",
+          "text": "Young's double slit experiment is first performed in air and then in a medium other than air. It is found that $8^{th}$ bright fringe in the medium lies where $5^{th}$ dark fringe lies in air. The refractive index of the medium is nearly",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "1.59",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "1.69",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "1.78",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "1.25",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-3",
+          "section": "Physics",
+          "text": "In a common emitter transistor amplifier the audio signal voltage across the collector is 3 V. The resistance of collector is 3 k$\\Omega$. If current gain is 100 and the base resistance is 2 k$\\Omega$, the voltage and power gain of the amplifier is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "15 and 200",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "150 and 15000",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "20 and 2000",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "200 and 1000",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-4",
+          "section": "Physics",
+          "text": "An arrangement of three parallel straight wires placed perpendicular to plane of paper carrying same current 'I' along the same direction is shown in Fig. Magnitude of force per unit length on the middle wire 'B' is given by",
+          "image": "assets/exams/neet/physics/q4.png",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\dfrac{2\\mu_0 I^2}{\\pi d}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\dfrac{\\sqrt{2}\\,\\mu_0 I^2}{\\pi d}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\dfrac{\\mu_0 I^2}{\\sqrt{2}\\,\\pi d}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\dfrac{\\mu_0 I^2}{2\\pi d}$",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-5",
+          "section": "Physics",
+          "text": "The de-Broglie wavelength of a neutron in thermal equilibrium with heavy water at a temperature T (Kelvin) and mass m, is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\dfrac{h}{\\sqrt{3mkT}}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\dfrac{2h}{\\sqrt{3mkT}}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\dfrac{2h}{\\sqrt{mkT}}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\dfrac{h}{\\sqrt{mkT}}$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-6",
+          "section": "Physics",
+          "text": "Radioactive material 'A' has decay constant '$8\\lambda$' and material 'B' has decay constant '$\\lambda$'. Initially they have same number of nuclei. After what time, the ratio of number of nuclei of material 'B' to that 'A' will be $\\dfrac{1}{e}$?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\dfrac{1}{7\\lambda}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\dfrac{1}{8\\lambda}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\dfrac{1}{9\\lambda}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\dfrac{1}{\\lambda}$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-7",
+          "section": "Physics",
+          "text": "The given electrical network is equivalent to",
+          "image": "assets/exams/neet/physics/q7.png",
+          "options": [
+            {
+              "id": "A",
+              "text": "OR gate",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "NOR gate",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "NOT gate",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "AND gate",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-8",
+          "section": "Physics",
+          "text": "The resistance of a wire is 'R' ohm. If it is melted and stretched to 'n' times its original length, its new resistance will be",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$R/n$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$n^2R$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$R/n^2$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$nR$",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-9",
+          "section": "Physics",
+          "text": "Two cars moving in opposite directions approach each other with speed of 22 m/s and 16.5 m/s respectively. The driver of the first car blows a horn having a frequency 400 Hz. The frequency heard by the driver of the second car is [velocity of sound 340 m/s]",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "361 Hz",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "411 Hz",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "448 Hz",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "350 Hz",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-10",
+          "section": "Physics",
+          "text": "In an electromagnetic wave in free space the root mean square value of the electric field is $E_{rms} = 6$ V/m. The peak value of the magnetic field is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$2.83 \\times 10^{-8}$ T",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$0.70 \\times 10^{-8}$ T",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$4.23 \\times 10^{-8}$ T",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$1.41 \\times 10^{-8}$ T",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-11",
+          "section": "Physics",
+          "text": "Two rods A and B of different materials are welded together as shown in figure. Their thermal conductivities are $K_1$ and $K_2$. The thermal conductivity of the composite rod will be",
+          "image": "assets/exams/neet/physics/q11.png",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\dfrac{3(K_1+K_2)}{2}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$K_1 + K_2$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$2(K_1 + K_2)$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\dfrac{K_1+K_2}{2}$",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-12",
+          "section": "Physics",
+          "text": "Which one of the following represents forward bias diode?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "",
+              "image": "assets/exams/neet/physics/q12-opt-a.png"
+            },
+            {
+              "id": "B",
+              "text": "",
+              "image": "assets/exams/neet/physics/q12-opt-b.png"
+            },
+            {
+              "id": "C",
+              "text": "",
+              "image": "assets/exams/neet/physics/q12-opt-c.png"
+            },
+            {
+              "id": "D",
+              "text": "",
+              "image": "assets/exams/neet/physics/q12-opt-d.png"
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-13",
+          "section": "Physics",
+          "text": "A 250-Turn rectangular coil of length 2.1 cm and width 1.25 cm carries a current of 85 $\\mu$A and subjected to a magnetic field of strength 0.85 T. Work done for rotating the coil by 180° against the torque is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$4.55\\;\\mu$J",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$2.3\\;\\mu$J",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$1.15\\;\\mu$J",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$9.1\\;\\mu$J",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-14",
+          "section": "Physics",
+          "text": "If $\\theta_1$ and $\\theta_2$ be the apparent angles of dip observed in two vertical planes at right angles to each other, then the true angle of dip $\\theta$ is given by",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\tan^2\\theta = \\tan^2\\theta_1 + \\tan^2\\theta_2$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\cot^2\\theta = \\cot^2\\theta_1 - \\cot^2\\theta_2$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\tan^2\\theta = \\tan^2\\theta_1 - \\tan^2\\theta_2$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\cot^2\\theta = \\cot^2\\theta_1 + \\cot^2\\theta_2$",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-15",
+          "section": "Physics",
+          "text": "A potentiometer is an accurate and versatile device to make electrical measurements of EMF, because the method involves:",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Potential gradients",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "A condition of no current flow through the galvanometer",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "A combination of cells, galvanometer and resistances",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Cells",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-16",
+          "section": "Physics",
+          "text": "The ratio of resolving powers of an optical microscope for two wavelengths $\\lambda_1 = 4000$ Å and $\\lambda_2 = 6000$ Å is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "9 : 4",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "3 : 2",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "16 : 81",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "8 : 27",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-17",
+          "section": "Physics",
+          "text": "A thin prism having refracting angle 10° is made of glass of refractive index 1.42. This prism is combined with another thin prism of glass of refractive index 1.7. This combination produces dispersion without deviation. The refracting angle of second prism should be",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "6°",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "8°",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "10°",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "4°",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-18",
+          "section": "Physics",
+          "text": "A capacitor is charged by a battery. The battery is removed and another identical uncharged capacitor is connected in parallel. The total electrostatic energy of resulting system",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Decreases by a factor of 2",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Remains the same",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Increases by a factor of 2",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Increases by a factor of 4",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-19",
+          "section": "Physics",
+          "text": "Preeti reached the metro station and found that the escalator was not working. She walked up the stationary escalator in time $t_1$. On other days, if she remains stationary on the moving escalator, then the escalator takes her up in time $t_2$. The time taken by her to walk up on the moving escalator will be",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\dfrac{t_1 t_2}{t_2 - t_1}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\dfrac{t_1 t_2}{t_2 + t_1}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$t_1 - t_2$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\dfrac{t_1 + t_2}{2}$",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-20",
+          "section": "Physics",
+          "text": "Thermodynamic processes are indicated in the following diagram. Match the following:\nColumn-1: P. Process I, Q. Process II, R. Process III, S. Process IV\nColumn-2: a. Adiabatic, b. Isobaric, c. Isochoric, d. Isothermal",
+          "image": "assets/exams/neet/physics/q20.png",
+          "options": [
+            {
+              "id": "A",
+              "text": "P$\\rightarrow$c, Q$\\rightarrow$a, R$\\rightarrow$d, S$\\rightarrow$b",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "P$\\rightarrow$c, Q$\\rightarrow$d, R$\\rightarrow$b, S$\\rightarrow$a",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "P$\\rightarrow$d, Q$\\rightarrow$b, R$\\rightarrow$a, S$\\rightarrow$c",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "P$\\rightarrow$a, Q$\\rightarrow$c, R$\\rightarrow$d, S$\\rightarrow$b",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-21",
+          "section": "Physics",
+          "text": "One end of string of length $l$ is connected to a particle of mass 'm' and the other end is connected to a small peg on a smooth horizontal table. If the particle moves in circle with speed 'v', the net force on the particle (directed towards center) will be (T represents the tension in the string)",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$T + \\dfrac{mv^2}{l}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$T - \\dfrac{mv^2}{l}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Zero",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$T$",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-22",
+          "section": "Physics",
+          "text": "The two nearest harmonics of a tube closed at one end and open at other end are 220 Hz and 260 Hz. What is the fundamental frequency of the system?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "20 Hz",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "30 Hz",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "40 Hz",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "10 Hz",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-23",
+          "section": "Physics",
+          "text": "The photoelectric threshold wavelength of silver is $3250 \\times 10^{-10}$ m. The velocity of the electron ejected from a silver surface by ultraviolet light of wavelength $2536 \\times 10^{-10}$ m is (Given $h = 4.14 \\times 10^{-15}$ eVs and $c = 3 \\times 10^8$ ms$^{-1}$)",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\approx 0.6 \\times 10^6$ ms$^{-1}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\approx 61 \\times 10^3$ ms$^{-1}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\approx 0.3 \\times 10^6$ ms$^{-1}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\approx 6 \\times 10^5$ ms$^{-1}$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-24",
+          "section": "Physics",
+          "text": "Figure shows a circuit containing three identical resistors with resistance $R = 9.0\\;\\Omega$ each, two identical inductors with inductance $L = 2.0$ mH each, and an ideal battery with emf $\\varepsilon = 18$ V. The current 'i' through the battery just after the switch is closed is",
+          "image": "assets/exams/neet/physics/q24.png",
+          "options": [
+            {
+              "id": "A",
+              "text": "0.2 A",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "2 A",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "0 A",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "2 mA",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-25",
+          "section": "Physics",
+          "text": "A spherical black body with a radius of 12 cm radiates 450 watt power at 500 K. If the radius were halved and the temperature doubled, the power radiated in watt would be",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "450",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "1000",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "1800",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "225",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-26",
+          "section": "Physics",
+          "text": "A rope is wound around a hollow cylinder of mass 3 kg and radius 40 cm. What is the angular acceleration of the cylinder if the rope is pulled with a force of 30 N?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$0.25$ rad/s$^2$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$25$ rad/s$^2$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$5$ m/s$^2$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$25$ m/s$^2$",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-27",
+          "section": "Physics",
+          "text": "Two discs of same moment of inertia rotating about their regular axis passing through centre and perpendicular to the plane of disc with angular velocities $\\omega_1$ and $\\omega_2$. They are brought into contact face to face coinciding the axis of rotation. The expression for loss of energy during this process is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\dfrac{1}{4}I(\\omega_1 - \\omega_2)^2$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$I(\\omega_1 - \\omega_2)^2$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\dfrac{I}{8}(\\omega_1 - \\omega_2)^2$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\dfrac{1}{2}I(\\omega_1 + \\omega_2)^2$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-28",
+          "section": "Physics",
+          "text": "A gas mixture consists of 2 moles of $O_2$ and 4 moles of Ar at temperature T. Neglecting all vibrational modes, the total internal energy of the system is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "15 RT",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "9 RT",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "11 RT",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "4 RT",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-29",
+          "section": "Physics",
+          "text": "The bulk modulus of a spherical object is 'B'. If it is subjected to uniform pressure 'p', the fractional decrease in radius is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\dfrac{B}{3p}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\dfrac{3p}{B}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\dfrac{p}{3B}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\dfrac{p}{B}$",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-30",
+          "section": "Physics",
+          "text": "Which of the following statements are correct?\n(a) Centre of mass of a body always coincides with the centre of gravity of the body.\n(b) Centre of mass of a body is the point at which the total gravitational torque on the body is zero.\n(c) A couple on a body produces both translational and rotational motion in a body.\n(d) Mechanical advantage greater than one means that small effort can be used to lift a large load.",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "(a) and (b)",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "(b) and (c)",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "(c) and (d)",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "(b) and (d)",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-31",
+          "section": "Physics",
+          "text": "The acceleration due to gravity at a height 1 km above the earth is the same as at a depth d below the surface of earth. Then",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$d = 1$ km",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$d = \\dfrac{3}{2}$ km",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$d = 2$ km",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$d = \\dfrac{1}{2}$ km",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-32",
+          "section": "Physics",
+          "text": "Two blocks A and B of masses 3m and m respectively are connected by a massless and inextensible string. The whole system is suspended by a massless spring as shown in figure. The magnitudes of acceleration of A and B immediately after the string is cut, are respectively",
+          "image": "assets/exams/neet/physics/q32.png",
+          "options": [
+            {
+              "id": "A",
+              "text": "$g/3$, $g$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$g$, $g$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$g/3$, $g/3$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$g$, $g/3$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-33",
+          "section": "Physics",
+          "text": "The ratio of wavelengths of the last line of Balmer series and the last line of Lyman series is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "1",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "4",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "0.5",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "2",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-34",
+          "section": "Physics",
+          "text": "A beam of light from a source L is incident normally on a plane mirror fixed at a certain distance x from the source. The beam is reflected back as a spot on a scale placed just above the source L. When the mirror is rotated through a small angle $\\theta$, the spot of the light is found to move through a distance y on the scale. The angle $\\theta$ is given by",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\dfrac{y}{x}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\dfrac{x}{2y}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\dfrac{x}{y}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\dfrac{y}{2x}$",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-35",
+          "section": "Physics",
+          "text": "A spring of force constant k is cut into lengths of ratio 1:2:3. They are connected in series and the new force constant is k'. Then they are connected in parallel and force constant is k''. Then k' : k'' is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "1 : 9",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "1 : 11",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "1 : 14",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "1 : 6",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-36",
+          "section": "Physics",
+          "text": "The diagrams below show regions of equipotentials. A positive charge is moved from A to B in each diagram.",
+          "image": "assets/exams/neet/physics/q36.png",
+          "options": [
+            {
+              "id": "A",
+              "text": "In all the four cases the work done is the same.",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Minimum work is required to move q in figure (a).",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Maximum work is required to move q in figure (b).",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Maximum work is required to move q in figure (c).",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-37",
+          "section": "Physics",
+          "text": "Suppose the charge of a proton and an electron differ slightly. One of them is $-e$, the other is $(e + \\Delta e)$. If the net of electrostatic force and gravitational force between two hydrogen atoms placed at a distance d (much greater than atomic size) apart is zero, then $\\Delta e$ is of the order of [Given mass of hydrogen $m_h = 1.67 \\times 10^{-27}$ kg]",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$10^{-23}$ C",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$10^{-37}$ C",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$10^{-47}$ C",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$10^{-20}$ C",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-38",
+          "section": "Physics",
+          "text": "A physical quantity of the dimensions of length that can be formed out of c, G and $\\dfrac{e^2}{4\\pi\\varepsilon_0}$ is [c is velocity of light, G is universal constant of gravitation and e is charge]",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$c^2\\!\\left[G\\dfrac{e^2}{4\\pi\\varepsilon_0}\\right]^{1/2}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\dfrac{1}{c^2}\\!\\left[\\dfrac{e^2}{G4\\pi\\varepsilon_0}\\right]^{1/2}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\dfrac{1}{c}G\\dfrac{e^2}{4\\pi\\varepsilon_0}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\dfrac{1}{c^2}\\!\\left[G\\dfrac{e^2}{4\\pi\\varepsilon_0}\\right]^{1/2}$",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-39",
+          "section": "Physics",
+          "text": "Two Polaroids $P_1$ and $P_2$ are placed with their axis perpendicular to each other. Unpolarised light $I_0$ is incident on $P_1$. A third polaroid $P_3$ is kept in between $P_1$ and $P_2$ such that its axis makes an angle 45° with that of $P_1$. The intensity of transmitted light through $P_2$ is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$I_0/4$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$I_0/8$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$I_0/16$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$I_0/2$",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-40",
+          "section": "Physics",
+          "text": "A particle executes linear simple harmonic motion with an amplitude of 3 cm. When the particle is at 2 cm from the mean position, the magnitude of its velocity is equal to that of its acceleration. Then its time period in seconds is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\dfrac{\\sqrt{5}}{2\\pi}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$\\dfrac{4\\pi}{\\sqrt{5}}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$\\dfrac{2\\pi}{\\sqrt{3}}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$\\dfrac{\\sqrt{5}}{\\pi}$",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-41",
+          "section": "Physics",
+          "text": "A U tube with both ends open to the atmosphere, is partially filled with water. Oil, which is immiscible with water, is poured into one side until it stands at a distance of 10 mm above the water level on the other side. Meanwhile the water rises by 65 mm from its original level. The density of the oil is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$425$ kg m$^{-3}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$800$ kg m$^{-3}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$928$ kg m$^{-3}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$650$ kg m$^{-3}$",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-42",
+          "section": "Physics",
+          "text": "Consider a drop of rain water having mass 1 g falling from a height of 1 km. It hits the ground with a speed of 50 m/s. Take g constant with a value 10 m/s$^2$. The work done by the (i) gravitational force and the (ii) resistive force of air is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "(i) 1.25 J, (ii) $-8.25$ J",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "(i) 100 J, (ii) 8.75 J",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "(i) 10 J, (ii) $-8.75$ J",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "(i) $-10$ J, (ii) $-8.25$ J",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-43",
+          "section": "Physics",
+          "text": "The x and y coordinates of the particle at any time are $x = 5t - 2t^2$ and $y = 10t$ respectively, where x and y are in meters and t in seconds. The acceleration of the particle at $t = 2$ s is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$5$ m/s$^2$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$-4$ m/s$^2$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$-8$ m/s$^2$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$0$",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-44",
+          "section": "Physics",
+          "text": "A long solenoid of diameter 0.1 m has $2 \\times 10^4$ turns per meter. At the centre of the solenoid, a coil of 100 turns and radius 0.01 m is placed with its axis coinciding with the solenoid axis. The current in the solenoid reduces at a constant rate to 0 A from 4 A in 0.05 s. If the resistance of the coil is $10\\pi^2\\;\\Omega$, the total charge flowing through the coil during this time is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$16\\;\\mu$C",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$32\\;\\mu$C",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$16\\pi\\;\\mu$C",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$32\\pi\\;\\mu$C",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "physics-45",
+          "section": "Physics",
+          "text": "A Carnot engine having an efficiency of $\\dfrac{1}{10}$ as heat engine, is used as a refrigerator. If the work done on the system is 10 J, the amount of energy absorbed from the reservoir at lower temperature is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "90 J",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "99 J",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "100 J",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "1 J",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "chemistry-1",
+          "section": "Chemistry",
+          "text": "Which of the following is a sink for CO?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Micro-organisms present in the soil",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Oceans",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Plants",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Haemoglobin",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "chemistry-2",
+          "section": "Chemistry",
+          "text": "The element Z = 114 has been discovered recently. It will belong to which of the following family/group and electronic configuration?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Carbon family, $[Rn]\\,5f^{14}6d^{10}7s^27p^2$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Oxygen family, $[Rn]\\,5f^{14}6d^{10}7s^27p^4$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Nitrogen family, $[Rn]\\,5f^{14}6d^{10}7s^27p^6$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Halogen family, $[Rn]\\,5f^{14}6d^{10}7s^27p^5$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "chemistry-3",
+          "section": "Chemistry",
+          "text": "For a given reaction, $\\Delta H = 35.5$ kJ mol$^{-1}$ and $\\Delta S = 83.6$ J K$^{-1}$ mol$^{-1}$. The reaction is spontaneous at: (Assume $\\Delta H$ and $\\Delta S$ do not vary with temperature)",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$T > 425$ K",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "All temperatures",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$T > 298$ K",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$T < 425$ K",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "chemistry-4",
+          "section": "Chemistry",
+          "text": "Identify A and predict the type of reaction: A bromobenzene with $OCH_3$ group reacted with $NaNH_2$",
+          "image": "assets/exams/neet/chemistry/q4.png",
+          "options": [
+            {
+              "id": "A",
+              "text": "elimination addition reaction",
+              "image": "assets/exams/neet/chemistry/q4-opt-a.png"
+            },
+            {
+              "id": "B",
+              "text": "cine substitution reaction",
+              "image": "assets/exams/neet/chemistry/q4-opt-b.png"
+            },
+            {
+              "id": "C",
+              "text": "cine substitution reaction",
+              "image": "assets/exams/neet/chemistry/q4-opt-c.png"
+            },
+            {
+              "id": "D",
+              "text": "substitution reaction",
+              "image": "assets/exams/neet/chemistry/q4-opt-d.png"
+            }
+          ],
+          "correct": "D",
+          "needsReview": true,
+          "issue": "Reaction scheme and product structures require diagrams"
+        },
+        {
+          "id": "chemistry-5",
+          "section": "Chemistry",
+          "text": "Which of the following is dependent on temperature?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Molarity",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Mole fraction",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Weight percentage",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Molality",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "chemistry-6",
+          "section": "Chemistry",
+          "text": "With respect to the conformers of ethane, which of the following statements is true?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Bond angle changes but bond length remains same",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Both bond angle and bond length change",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Both bond angles and bond length remains same",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Bond angle remains same but bond length changes",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "chemistry-7",
+          "section": "Chemistry",
+          "text": "Name the gas that can readily decolourise acidified $KMnO_4$ solution:",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$SO_2$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$NO_2$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$P_2O_5$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$CO_2$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "chemistry-8",
+          "section": "Chemistry",
+          "text": "It is because of inability of $ns^2$ electrons of the valence shell to participate in bonding that",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$Sn^{2+}$ is oxidising while $Pb^{4+}$ is reducing",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$Sn^{2+}$ and $Pb^{2+}$ are both oxidising and reducing",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$Sn^{4+}$ is reducing while $Pb^{4+}$ is oxidising",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$Sn^{2+}$ is reducing while $Pb^{4+}$ is oxidising",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "chemistry-9",
+          "section": "Chemistry",
+          "text": "Mechanism of a hypothetical reaction $X_2 + Y_2 \\rightarrow 2XY$ is given below:\n(i) $X_2 \\rightarrow X + X$ (fast)\n(ii) $X + Y_2 \\rightleftharpoons XY + Y$ (slow)\n(iii) $X + Y \\rightarrow XY$ (fast)\nThe overall order of the reaction will be",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "2",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "0",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "1.5",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "1",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "chemistry-10",
+          "section": "Chemistry",
+          "text": "The equilibrium constants of the following are:\n$N_2 + 3H_2 \\rightleftharpoons 2NH_3 \\quad K_1$\n$N_2 + O_2 \\rightleftharpoons 2NO \\quad K_2$\n$H_2 + \\frac{1}{2}O_2 \\rightarrow H_2O \\quad K_3$\nThe equilibrium constant (K) of the reaction $2NH_3 + \\frac{5}{2}O_2 \\rightleftharpoons 2NO + 3H_2O$ will be",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$K_2 K_3^3 / K_1$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$K_2 K_3 / K_1$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$K_2^3 K_3 / K_1$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$K_1 K_3^3 / K_2$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "chemistry-11",
+          "section": "Chemistry",
+          "text": "Which one is the wrong statement?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "The uncertainty principle is $\\Delta E \\times \\Delta t \\geq \\frac{h}{4\\pi}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Half-filled and fully filled orbitals have greater stability due to greater exchange energy, greater symmetry and more balanced arrangement",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "The energy of $2s$ orbital is less than the energy of $2p$ orbital in case of Hydrogen like atoms",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "de-Broglie's wavelength is given by $\\lambda = \\frac{h}{mv}$, where m = mass of the particle, v = group velocity of the particle",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "chemistry-12",
+          "section": "Chemistry",
+          "text": "Which one of the following statements is not correct?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "The value of equilibrium constant is changed in the presence of a catalyst in the reaction at equilibrium",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Enzymes catalyse mainly bio-chemical reactions",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Coenzymes increase the catalytic activity of enzyme",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Catalyst does not initiate any reaction",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "chemistry-13",
+          "section": "Chemistry",
+          "text": "$HgCl_2$ and $I_2$ both when dissolved in water containing $I^-$ ions, the pair of species formed is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$HgI_2^-,\\; I^-$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$HgI_4^{2-},\\; I_3^-$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$Hg_2I_2,\\; I^-$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$HgI_2,\\; I_3^-$",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "chemistry-14",
+          "section": "Chemistry",
+          "text": "The correct increasing order of basic strength for the following compounds is: ",
+          "image": "assets/exams/neet/chemistry/q14.png",
+          "options": [
+            {
+              "id": "A",
+              "text": "III < I < II",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "III < II < I",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "II < I < III",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "II < III < I",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "chemistry-15",
+          "section": "Chemistry",
+          "text": "An example of a sigma bonded organometallic compound is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Grignard's reagent",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Ferrocene",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Cobaltocene",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Ruthenocene",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "chemistry-16",
+          "section": "Chemistry",
+          "text": "A 20 litre container at 400 K contains $CO_2(g)$ at pressure 0.4 atm and an excess of SrO (neglect the volume of solid SrO). The volume of the container is now decreased by moving the movable piston fitted in the container. The maximum volume of the container, when pressure of $CO_2$ attains its maximum value, will be (Given: $SrCO_3(s) \\rightleftharpoons SrO(s) + CO_2(g)$, $K_p = 1.6$ atm)",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "10 litre",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "4 litre",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "2 litre",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "5 litre",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "chemistry-17",
+          "section": "Chemistry",
+          "text": "Mixture of chloroxylenol and terpineol acts as",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Antiseptic",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Antipyretic",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Antibiotic",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Analgesic",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "chemistry-18",
+          "section": "Chemistry",
+          "text": "Pick out the correct statement with respect to $[Mn(CN)_6]^{3-}$",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "It is $sp^3d^2$ hybridised and tetrahedral",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "It is $d^2sp^3$ hybridised and octahedral",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "It is $dsp^2$ hybridised and square planar",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "It is $sp^3d^2$ hybridised and octahedral",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "chemistry-19",
+          "section": "Chemistry",
+          "text": "Match the interhalogen compounds (Column I) with geometry (Column II):\nColumn I: (a) XX' &nbsp; (b) $XX_3'$ &nbsp; (c) $XX_5'$ &nbsp; (d) $XX_7'$\nColumn II: (i) T-shape &nbsp; (ii) Pentagonal bipyramidal &nbsp; (iii) Linear &nbsp; (iv) Square-pyramidal &nbsp; (v) Tetrahedral",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "(a)-(iii), (b)-(i), (c)-(iv), (d)-(ii)",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "(a)-(v), (b)-(iv), (c)-(iii), (d)-(ii)",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "(a)-(iv), (b)-(iii), (c)-(ii), (d)-(i)",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "(a)-(iii), (b)-(iv), (c)-(i), (d)-(ii)",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "chemistry-20",
+          "section": "Chemistry",
+          "text": "The species having bond angles of 120° is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$ClF_3$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$NCl_3$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$BCl_3$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$PH_3$",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "chemistry-21",
+          "section": "Chemistry",
+          "text": "Predict the correct intermediate and product in the following reaction:\n$H_3C{-}C{\\equiv}CH \\xrightarrow{H_2O,\\,H_2SO_4,\\,HgSO_4}$ intermediate(A) $\\rightarrow$ product(B)",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "",
+              "image": "assets/exams/neet/chemistry/q21-opt-a.png"
+            },
+            {
+              "id": "B",
+              "text": "",
+              "image": "assets/exams/neet/chemistry/q21-opt-b.png"
+            },
+            {
+              "id": "C",
+              "text": "",
+              "image": "assets/exams/neet/chemistry/q21-opt-c.png"
+            },
+            {
+              "id": "D",
+              "text": "",
+              "image": "assets/exams/neet/chemistry/q21-opt-d.png"
+            }
+          ],
+          "correct": "C",
+          "needsReview": true,
+          "issue": "Structural formulas require diagram representation"
+        },
+        {
+          "id": "chemistry-22",
+          "section": "Chemistry",
+          "text": "If molality of the dilute solution is doubled, the value of molal depression constant ($K_f$) will be",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Halved",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Tripled",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Unchanged",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Doubled",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "chemistry-23",
+          "section": "Chemistry",
+          "text": "The heating of phenyl-methyl ethers with HI produces",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Iodobenzene",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Phenol",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Benzene",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Ethyl chlorides",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "chemistry-24",
+          "section": "Chemistry",
+          "text": "In the electrochemical cell $Zn|ZnSO_4(0.01\\,M)||CuSO_4(1.0\\,M)|Cu$, the emf is $E_1$. When the concentration of $ZnSO_4$ is changed to 1.0 M and that of $CuSO_4$ to 0.01 M, the emf changes to $E_2$. Which is the relationship between $E_1$ and $E_2$? (Given $RT/F = 0.059$)",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$E_1 < E_2$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$E_1 > E_2$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$E_2 = 0 \\neq E_1$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$E_1 = E_2$",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "chemistry-25",
+          "section": "Chemistry",
+          "text": "A first order reaction has a specific reaction rate of $10^{-2}$ s$^{-1}$. How much time will it take for 20 g of the reactant to reduce to 5 g?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "138.6 second",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "346.5 second",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "693.0 second",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "238.6 second",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "chemistry-26",
+          "section": "Chemistry",
+          "text": "Which one of the following pairs of species have the same bond order?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$O_2$, $NO^+$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$CN^-$, CO",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$N_2$, $O_2^-$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "CO, NO",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "chemistry-27",
+          "section": "Chemistry",
+          "text": "In which pair of ions both the species contain S–S bond?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$S_4O_6^{2-}$, $S_2O_3^{2-}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$S_2O_7^{2-}$, $S_2O_8^{2-}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$S_4O_6^{2-}$, $S_2O_7^{2-}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$S_2O_7^{2-}$, $S_2O_3^{2-}$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "chemistry-28",
+          "section": "Chemistry",
+          "text": "Concentration of $Ag^+$ ions in a saturated solution of $Ag_2C_2O_4$ is $2.2 \\times 10^{-4}$ mol L$^{-1}$. Solubility product of $Ag_2C_2O_4$ is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$2.66 \\times 10^{-12}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$4.5 \\times 10^{-11}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$5.3 \\times 10^{-12}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$2.42 \\times 10^{-8}$",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "chemistry-29",
+          "section": "Chemistry",
+          "text": "Ionic mobility of which of the following alkali metal ions is lowest when aqueous solution of their salts are put under an electric field?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "K",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Rb",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Li",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Na",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "chemistry-30",
+          "section": "Chemistry",
+          "text": "A gas is allowed to expand in a well insulated container against a constant external pressure of 2.5 atm from an initial volume of 2.50 L to a final volume of 4.50 L. The change in internal energy $\\Delta U$ of the gas in joules will be",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$-500$ J",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$-505$ J",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$+505$ J",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$1136.25$ J",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "chemistry-31",
+          "section": "Chemistry",
+          "text": "The reason for greater range of oxidation states in actinoids is attributed to",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Actinoid contraction",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "5f, 6d and 7s levels having comparable energies",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "4f and 5d levels being close in energies",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "The radioactive nature of actinoids",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "chemistry-32",
+          "section": "Chemistry",
+          "text": "The most suitable method of separation of 1:1 mixture of ortho and para-nitrophenols is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Chromatography",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Crystallisation",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Steam distillation",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Sublimation",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "chemistry-33",
+          "section": "Chemistry",
+          "text": "The correct order of the stoichiometries of AgCl formed when $AgNO_3$ in excess is treated with the complexes: $CoCl_3 \\cdot 6NH_3$, $CoCl_3 \\cdot 5NH_3$, $CoCl_3 \\cdot 4NH_3$ respectively is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "3 AgCl, 1 AgCl, 2 AgCl",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "3 AgCl, 2 AgCl, 1 AgCl",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "2 AgCl, 3 AgCl, 1 AgCl",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "1 AgCl, 3 AgCl, 2 AgCl",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "chemistry-34",
+          "section": "Chemistry",
+          "text": "Correct increasing order for the wavelengths of absorption in the visible region for the complexes of $Co^{3+}$ is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$[Co(H_2O)_6]^{3+}$, $[Co(en)_3]^{3+}$, $[Co(NH_3)_6]^{3+}$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$[Co(H_2O)_6]^{3+}$, $[Co(NH_3)_6]^{3+}$, $[Co(en)_3]^{3+}$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$[Co(NH_3)_6]^{3+}$, $[Co(en)_3]^{3+}$, $[Co(H_2O)_6]^{3+}$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$[Co(en)_3]^{3+}$, $[Co(NH_3)_6]^{3+}$, $[Co(H_2O)_6]^{3+}$",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "chemistry-35",
+          "section": "Chemistry",
+          "text": "Which one is the most acidic compound?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Phenol",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "4-nitrophenol",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "2,4,6-trinitrophenol (picric acid)",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "4-methylphenol (p-cresol)",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "chemistry-36",
+          "section": "Chemistry",
+          "text": "Which of the following pairs of compounds is isoelectronic and isostructural?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$TeI_2$, $XeF_2$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$IBr_2^-$, $XeF_2$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$IF_3$, $XeF_2$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$BeCl_2$, $XeF_2$",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "chemistry-37",
+          "section": "Chemistry",
+          "text": "Which of the following reactions is appropriate for converting acetamide to methanamine?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Hoffmann hypobromamide reaction",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Stephens reaction",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Gabriel's phthalimide synthesis",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Carbylamine reaction",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "chemistry-38",
+          "section": "Chemistry",
+          "text": "Of the following, which is the product formed when cyclohexanone undergoes aldol condensation followed by heating?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "",
+              "image": "assets/exams/neet/chemistry/q38-opt-a.png"
+            },
+            {
+              "id": "B",
+              "text": "",
+              "image": "assets/exams/neet/chemistry/q38-opt-b.png"
+            },
+            {
+              "id": "C",
+              "text": "",
+              "image": "assets/exams/neet/chemistry/q38-opt-c.png"
+            },
+            {
+              "id": "D",
+              "text": "",
+              "image": "assets/exams/neet/chemistry/q38-opt-d.png"
+            }
+          ],
+          "correct": "A",
+          "needsReview": true,
+          "issue": "Product structures require diagrams"
+        },
+        {
+          "id": "chemistry-39",
+          "section": "Chemistry",
+          "text": "Which of the following statements is not correct?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Ovalbumin is a simple food reserve in egg-white",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Blood proteins thrombin and fibrinogen are involved in blood clotting",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Denaturation makes the proteins more active",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Insulin maintains sugar level in the blood of a human body",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "chemistry-40",
+          "section": "Chemistry",
+          "text": "Which one is the correct order of acidity?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$CH{\\equiv}CH > CH_3{-}C{\\equiv}CH > CH_2{=}CH_2 > CH_3{-}CH_3$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$CH{\\equiv}CH > CH_2{=}CH_2 > CH_3{-}C{\\equiv}CH > CH_3{-}CH_3$",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$CH_3{-}CH_3 > CH_2{=}CH_2 > CH_3{-}C{\\equiv}CH > CH{\\equiv}CH$",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$CH_2{=}CH_2 > CH_3{-}CH{=}CH_2 > CH_3{-}C{\\equiv}CH > CH{\\equiv}CH$",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "chemistry-41",
+          "section": "Chemistry",
+          "text": "Extraction of gold and silver involves leaching with $CN^-$ ion. Silver is later recovered by",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Distillation",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Zone refining",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Displacement with Zn",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Liquation",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "chemistry-42",
+          "section": "Chemistry",
+          "text": "The correct statement regarding electrophile is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Electrophile is a negatively charged species and can form a bond by accepting a pair of electrons from another electrophile",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Electrophiles are generally neutral species and can form a bond by accepting a pair of electrons from a nucleophile",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Electrophile can be either neutral or positively charged species and can form a bond by accepting a pair of electrons from a nucleophile",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Electrophile is a negatively charged species and can form a bond by accepting a pair of electrons from a nucleophile",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "chemistry-43",
+          "section": "Chemistry",
+          "text": "Consider the reactions: $X(C_2H_6O) \\xrightarrow{Cu/573K} A \\xrightarrow{[Ag(NH_3)_2]^+,OH^-}$ Silver mirror observed; $A \\xrightarrow{OH^-,\\Delta} Y$; $A \\xrightarrow{NH_2{-}NH{-}C(=O){-}NH_2} Z$. Identify A, X, Y and Z",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "A-Methoxymethane, X-Ethanol, Y-Ethanoic acid, Z-Semicarbazide",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "A-Ethanal, X-Ethanol, Y-But-2-enal, Z-Semicarbazone",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "A-Ethanol, X-Acetaldehyde, Y-Butanone, Z-Hydrazone",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "A-Methoxymethane, X-Ethanoic acid, Y-Acetate ion, Z-hydrazine",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "chemistry-44",
+          "section": "Chemistry",
+          "text": "The IUPAC name of the compound shown is",
+          "image": "assets/exams/neet/chemistry/q44.png",
+          "options": [
+            {
+              "id": "A",
+              "text": "5-formylhex-2-en-3-one",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "5-methyl-4-oxohex-2-en-5-al",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "3-keto-2-methylhex-5-enal",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "3-keto-2-methylhex-4-enal",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": true,
+          "issue": "Structural diagram needed for question"
+        },
+        {
+          "id": "chemistry-45",
+          "section": "Chemistry",
+          "text": "Which is the incorrect statement?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Density decreases in case of crystals with Schottky's defect",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "NaCl(s) is insulator, silicon is semiconductor, silver is conductor, quartz is piezo electric crystal",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Frenkel defect is favoured in those ionic compounds in which sizes of cation and anion are almost equal",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$FeO_{0.98}$ has non stoichiometric metal deficiency defect",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-1",
+          "section": "Biology",
+          "text": "A decrease in blood pressure/volume will not cause the release of",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Atrial Natriuretic Factor",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Aldosterone",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "ADH",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Renin",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-2",
+          "section": "Biology",
+          "text": "Which of the following are not polymeric?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Proteins",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Polysaccharides",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Lipids",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Nucleic acids",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-3",
+          "section": "Biology",
+          "text": "A baby boy aged two years is admitted to play school and passes through a dental check-up. The dentist observed that the boy had twenty teeth. Which teeth were absent?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Canines",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Pre-molars",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Molars",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Incisors",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-4",
+          "section": "Biology",
+          "text": "Which of the following statements is correct?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "The descending limb of loop of Henle is impermeable to water",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "The ascending limb of loop of Henle is permeable to water",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "The descending limb of loop of Henle is permeable to electrolytes",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "The ascending limb of loop of Henle is impermeable to water",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-5",
+          "section": "Biology",
+          "text": "Adult human RBCs are enucleate. Which of the following statement(s) is/are most appropriate explanation for this feature?\n(a) They do not need to reproduce\n(b) They are somatic cells\n(c) They do not metabolize\n(d) All their internal space is available for oxygen transport",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Only (a)",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "(a), (c) and (d)",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "(b) and (c)",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Only (d)",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-6",
+          "section": "Biology",
+          "text": "An important characteristic that Hemichordates share with Chordates is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Ventral tubular nerve cord",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Pharynx with gill slits",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Pharynx without gill slits",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Absence of notochord",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-7",
+          "section": "Biology",
+          "text": "Alexander Von Humboldt described for the first time",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Laws of limiting factor",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Species area relationships",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Population Growth equation",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Ecological Biodiversity",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-8",
+          "section": "Biology",
+          "text": "Identify the wrong statement in context of heartwood.",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "It is highly durable",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "It conducts water and minerals efficiently",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "It comprises dead elements with highly lignified walls",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Organic compounds are deposited in it",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-9",
+          "section": "Biology",
+          "text": "Which one of the following statements is correct, with reference to enzymes?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Holoenzyme = Apoenzyme + Coenzyme",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Coenzyme = Apoenzyme + Holoenzyme",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Holoenzyme = Coenzyme + Cofactor",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Apoenzyme = Holoenzyme + Coenzyme",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-10",
+          "section": "Biology",
+          "text": "Root hairs develop from the region of",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Elongation",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Root cap",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Meristematic activity",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Maturation",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-11",
+          "section": "Biology",
+          "text": "Among the following characters, which one was not considered by Mendel in his experiments on pea?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Trichomes — Glandular or non-glandular",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Seed — Green or Yellow",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Pod — Inflated or Constricted",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Stem — Tall or Dwarf",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-12",
+          "section": "Biology",
+          "text": "Which of the following facilitates opening of stomatal aperture?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Decrease in turgidity of guard cells",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Radial orientation of cellulose microfibrils in the cell wall of guard cells",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Longitudinal orientation of cellulose microfibrils in the cell wall of guard cells",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Contraction of outer wall of guard cells",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-13",
+          "section": "Biology",
+          "text": "The association of histone H1 with a nucleosome indicates",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "DNA replication is occurring",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "The DNA is condensed into a Chromatin Fibre",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "The DNA double helix is exposed",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Transcription is occurring",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-14",
+          "section": "Biology",
+          "text": "DNA fragments are",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Negatively charged",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Neutral",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Either positively or negatively charged depending on their size",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Positively charged",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-15",
+          "section": "Biology",
+          "text": "The process of separation and purification of expressed protein before marketing is called",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Downstream processing",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Bioprocessing",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Postproduction processing",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Upstream processing",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-16",
+          "section": "Biology",
+          "text": "An example of colonial alga is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Volvox",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Ulothrix",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Spirogyra",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Chlorella",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-17",
+          "section": "Biology",
+          "text": "Capacitation occurs in",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Epididymis",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Vas deferens",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Female Reproductive tract",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Rete testis",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-18",
+          "section": "Biology",
+          "text": "Select the mismatch:",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Rhodospirillum — Mycorrhiza",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Anabaena — Nitrogen fixer",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Rhizobium — Alfalfa",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Frankia — Alnus",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-19",
+          "section": "Biology",
+          "text": "Homozygous purelines in cattle can be obtained by",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Mating of unrelated individuals of same breed",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Mating of individuals of different breed",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Mating of individuals of different species",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Mating of related individuals of same breed",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-20",
+          "section": "Biology",
+          "text": "The DNA fragments separated on an agarose gel can be visualised after staining with",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Acetocarmine",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Aniline blue",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Ethidium bromide",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Bromophenol blue",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-21",
+          "section": "Biology",
+          "text": "Double fertilization is exhibited by",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Algae",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Fungi",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Angiosperms",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Gymnosperms",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-22",
+          "section": "Biology",
+          "text": "The water potential of pure water is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Less than zero",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "More than zero but less than one",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "More than one",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Zero",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-23",
+          "section": "Biology",
+          "text": "Out of 'X' pairs of ribs in humans only 'Y' pairs are true ribs. Select the option that correctly represents values of X and Y and provides their explanation:",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "X = 12, Y = 5; True ribs are attached dorsally to vertebral column and sternum on the two ends",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "X = 24, Y = 7; True ribs are dorsally attached to vertebral column but are free on ventral side",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "X = 24, Y = 12; True ribs are dorsally attached to vertebral column but are free on ventral side",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "X = 12, Y = 7; True ribs are attached dorsally to vertebral column and ventrally to the sternum",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-24",
+          "section": "Biology",
+          "text": "DNA replication in bacteria occurs",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Within nucleolus",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Prior to fission",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Just before transcription",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "During S-phase",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-25",
+          "section": "Biology",
+          "text": "Which cells of 'Crypts of Lieberkuhn' secrete antibacterial lysozyme?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Paneth cells",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Zymogen cells",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Kupffer cells",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Argentaffin cells",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-26",
+          "section": "Biology",
+          "text": "The hepatic portal vein drains blood to liver from",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Stomach",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Kidneys",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Intestine",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Heart",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-27",
+          "section": "Biology",
+          "text": "In case of a couple where the male is having a very low sperm count, which technique will be suitable for fertilisation?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Gamete intra-fallopian transfer",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Artificial Insemination",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Intracytoplasmic sperm injection",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Intrauterine transfer",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-28",
+          "section": "Biology",
+          "text": "What is the criterion for DNA fragments movement on agarose gel during gel electrophoresis?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "The smaller the fragment size, the farther it moves",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Positively charged fragments move to farther end",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Negatively charged fragments do not move",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "The larger the fragment size, the farther it moves",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-29",
+          "section": "Biology",
+          "text": "The function of copper ions in copper releasing IUD's is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "They inhibit gametogenesis",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "They make uterus unsuitable for implantation",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "They inhibit ovulation",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "They suppress sperm motility and fertilising capacity of sperms",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-30",
+          "section": "Biology",
+          "text": "Spliceosomes are not found in cells of",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Fungi",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Animals",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Bacteria",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Plants",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-31",
+          "section": "Biology",
+          "text": "Which of the following cell organelles is responsible for extracting energy from carbohydrates to form ATP?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Ribosome",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Chloroplast",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Mitochondrion",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Lysosome",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-32",
+          "section": "Biology",
+          "text": "The pivot joint between atlas and axis is a type of",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Cartilaginous joint",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Synovial joint",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Saddle joint",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Fibrous joint",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-33",
+          "section": "Biology",
+          "text": "GnRH, a hypothalamic hormone needed in reproduction, acts on",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Anterior pituitary gland and stimulates secretion of LH and FSH",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Posterior pituitary gland and stimulates secretion of oxytocin and FSH",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Posterior pituitary gland and stimulates secretion of LH and relaxin",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Anterior pituitary gland and stimulates secretion of LH and oxytocin",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-34",
+          "section": "Biology",
+          "text": "Which of the following represents order of 'Horse'?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Perissodactyla",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Caballus",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Ferus",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Equidae",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-35",
+          "section": "Biology",
+          "text": "Phosphoenol pyruvate (PEP) is the primary $CO_2$ acceptor in",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "$C_4$ plants",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$C_2$ plants",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "$C_3$ and $C_4$ plants",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "$C_3$ plants",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-36",
+          "section": "Biology",
+          "text": "Which ecosystem has the maximum biomass?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Grassland ecosystem",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Pond ecosystem",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Lake ecosystem",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Forest ecosystem",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-37",
+          "section": "Biology",
+          "text": "A disease caused by an autosomal primary non-disjunction is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Klinefelter's syndrome",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Turner's syndrome",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Sickle cell anemia",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Down's syndrome",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-38",
+          "section": "Biology",
+          "text": "The vascular cambium normally gives rise to",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Primary phloem",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Secondary xylem",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Periderm",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Phelloderm",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-39",
+          "section": "Biology",
+          "text": "Which of the following is correctly matched for the product produced by them?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Methanobacterium — Lactic acid",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Penicillium notatum — Acetic acid",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Saccharomyces cerevisiae — Ethanol",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Acetobacter aceti — Antibiotics",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-40",
+          "section": "Biology",
+          "text": "Thalassemia and sickle cell anemia are caused due to a problem in globin molecule synthesis. Select the correct statement.",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Both are due to a quantitative defect in globin chain synthesis",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Thalassemia is due to less synthesis of globin molecules",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Sickle cell anemia is due to a quantitative problem of globin molecules",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Both are due to a qualitative defect in globin chain synthesis",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-41",
+          "section": "Biology",
+          "text": "Flowers which have single ovule in the ovary and are packed into inflorescence are usually pollinated by",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Bee",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Wind",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Bat",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Water",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-42",
+          "section": "Biology",
+          "text": "Receptor sites for neurotransmitters are present on",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Pre-synaptic membrane",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Tips of axons",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Post-synaptic membrane",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Membranes of synaptic vesicles",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-43",
+          "section": "Biology",
+          "text": "During DNA replication, Okazaki fragments are used to elongate",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "The lagging strand towards replication fork",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "The leading strand away from replication fork",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "The lagging strand away from the replication fork",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "The leading strand towards replication fork",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-44",
+          "section": "Biology",
+          "text": "Which of the following options best represents the enzyme composition of pancreatic juice?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Amylase, pepsin, trypsinogen, maltase",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Peptidase, amylase, pepsin, rennin",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Lipase, amylase, trypsinogen, procarboxypeptidase",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Amylase, peptidase, trypsinogen, rennin",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-45",
+          "section": "Biology",
+          "text": "Anaphase promoting complex (APC) is a protein degradation machinery necessary for proper mitosis of animal cells. If APC is defective in a human cell, which of the following is expected to occur?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Chromosomes will be fragmented",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Chromosomes will not segregate",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Recombination of chromosome arms will occur",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Chromosomes will not condense",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-46",
+          "section": "Biology",
+          "text": "The genotypes of a Husband and Wife are $I^AI^B$ and $I^Ai$. Among the blood types of their children, how many different genotypes and phenotypes are possible?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "3 genotypes; 4 phenotypes",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "4 genotypes; 3 phenotypes",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "4 genotypes; 4 phenotypes",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "3 genotypes; 3 phenotypes",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-47",
+          "section": "Biology",
+          "text": "Viroids differ from viruses in having",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "DNA molecules without protein coat",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "RNA molecules with protein coat",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "RNA molecules without protein coat",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "DNA molecules with protein coat",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-48",
+          "section": "Biology",
+          "text": "Mycorrhizae are the example of",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Amensalism",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Antibiosis",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Mutualism",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Fungistasis",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-49",
+          "section": "Biology",
+          "text": "The morphological nature of the edible part of coconut is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Cotyledon",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Endosperm",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Pericarp",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Perisperm",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-50",
+          "section": "Biology",
+          "text": "Myelin sheath is produced by",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Astrocytes and Schwann Cells",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Oligodendrocytes and Osteoclasts",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Osteoclasts and Astrocytes",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Schwann Cells and Oligodendrocytes",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-51",
+          "section": "Biology",
+          "text": "Match the sexually transmitted diseases (Column-I) with their causative agent (Column-II):\nColumn-I: (a) Gonorrhea, (b) Syphilis, (c) Genital Warts, (d) AIDS\nColumn-II: (i) HIV, (ii) Neisseria, (iii) Treponema, (iv) Human Papilloma virus",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "(a)-(iii), (b)-(iv), (c)-(i), (d)-(ii)",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "(a)-(iv), (b)-(ii), (c)-(iii), (d)-(i)",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "(a)-(iv), (b)-(iii), (c)-(ii), (d)-(i)",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "(a)-(ii), (b)-(iii), (c)-(iv), (d)-(i)",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-52",
+          "section": "Biology",
+          "text": "Which among these is the correct combination of aquatic mammals?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Dolphins, Seals, Trygon",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Whales, Dolphins, Seals",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Trygon, Whales, Seals",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Seals, Dolphins, Sharks",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-53",
+          "section": "Biology",
+          "text": "Coconut fruit is a",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Berry",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Nut",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Capsule",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Drupe",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-54",
+          "section": "Biology",
+          "text": "A dioecious flowering plant prevents both:",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Autogamy and geitonogamy",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Geitonogamy and xenogamy",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Cleistogamy and xenogamy",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Autogamy and xenogamy",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-55",
+          "section": "Biology",
+          "text": "Which of the following are found in extreme saline conditions?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Eubacteria",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Cyanobacteria",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Mycobacteria",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Archaebacteria",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-56",
+          "section": "Biology",
+          "text": "Which among the following are the smallest living cells, known without a definite cell wall, pathogenic to plants as well as animals and can survive without oxygen?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Pseudomonas",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Mycoplasma",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Nostoc",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Bacillus",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-57",
+          "section": "Biology",
+          "text": "With reference to factors affecting the rate of photosynthesis, which of the following statements is not correct?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Increasing atmospheric $CO_2$ concentration upto 0.05% can enhance $CO_2$ fixation rate",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "$C_3$ plants respond to higher temperatures with enhanced photosynthesis while $C_4$ plants have much lower temperature optimum",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Tomato is a greenhouse crop which can be grown in $CO_2$-enriched atmosphere for higher yield",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Light saturation for $CO_2$ fixation occurs at 10% of full sunlight",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-58",
+          "section": "Biology",
+          "text": "Life cycle of Ectocarpus and Fucus respectively are",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Diplontic, Haplodiplontic",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Haplodiplontic, Diplontic",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Haplodiplontic, Haplontic",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Haplontic, Diplontic",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-59",
+          "section": "Biology",
+          "text": "The region of Biosphere Reserve which is legally protected and where no human activity is allowed is known as",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Buffer zone",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Transition zone",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Restoration zone",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Core zone",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-60",
+          "section": "Biology",
+          "text": "A gene whose expression helps to identify transformed cell is known as",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Vector",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Plasmid",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Structural gene",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Selectable marker",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-61",
+          "section": "Biology",
+          "text": "Which of the following components provides sticky character to the bacterial cell?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Nuclear membrane",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Plasma membrane",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Glycocalyx",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Cell wall",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-62",
+          "section": "Biology",
+          "text": "The final proof for DNA as the genetic material came from the experiments of",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Hershey and Chase",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Avery, Mcleod and McCarty",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Hargobind Khorana",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Griffith",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-63",
+          "section": "Biology",
+          "text": "Fruit and leaf drop at early stages can be prevented by the application of",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Ethylene",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Auxins",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Gibberellic acid",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Cytokinins",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-64",
+          "section": "Biology",
+          "text": "Which one of the following statements is not valid for aerosols?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "They alter rainfall and monsoon patterns",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "They cause increased agricultural productivity",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "They have negative impact on agricultural land",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "They are harmful to human health",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-65",
+          "section": "Biology",
+          "text": "Which of the following options gives the correct sequence of events during mitosis?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Condensation $\\rightarrow$ nuclear membrane disassembly $\\rightarrow$ arrangement at equator $\\rightarrow$ centromere division $\\rightarrow$ segregation $\\rightarrow$ telophase",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Condensation $\\rightarrow$ crossing over $\\rightarrow$ nuclear membrane disassembly $\\rightarrow$ segregation $\\rightarrow$ telophase",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Condensation $\\rightarrow$ arrangement at equator $\\rightarrow$ centromere division $\\rightarrow$ segregation $\\rightarrow$ telophase",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Condensation $\\rightarrow$ nuclear membrane disassembly $\\rightarrow$ crossing over $\\rightarrow$ segregation $\\rightarrow$ telophase",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-66",
+          "section": "Biology",
+          "text": "In Bougainvillea thorns are the modifications of",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Adventitious root",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Stem",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Leaf",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Stipules",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-67",
+          "section": "Biology",
+          "text": "If there are 999 bases in an RNA that codes for a protein with 333 amino acids, and the base at position 901 is deleted such that the length of the RNA becomes 998 bases, how many codons will be altered?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "11",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "33",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "333",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "1",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-68",
+          "section": "Biology",
+          "text": "Transplantation of tissues/organs fails often due to non-acceptance by the patient's body. Which type of immune-response is responsible for such rejections?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Cell-mediated immune response",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Hormonal immune response",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Physiological immune response",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Autoimmune response",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-69",
+          "section": "Biology",
+          "text": "Select the correct route for the passage of sperms in male frogs:",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Testes $\\rightarrow$ Vasa efferentia $\\rightarrow$ Kidney $\\rightarrow$ Seminal Vesicle $\\rightarrow$ Urinogenital duct $\\rightarrow$ Cloaca",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Testes $\\rightarrow$ Vasa efferentia $\\rightarrow$ Bidder's canal $\\rightarrow$ Ureter $\\rightarrow$ Cloaca",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Testes $\\rightarrow$ Vasa efferentia $\\rightarrow$ Kidney $\\rightarrow$ Bidder's canal $\\rightarrow$ Urinogenital duct $\\rightarrow$ Cloaca",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Testes $\\rightarrow$ Bidder's canal $\\rightarrow$ Kidney $\\rightarrow$ Vasa efferentia $\\rightarrow$ Urinogenital duct $\\rightarrow$ Cloaca",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-70",
+          "section": "Biology",
+          "text": "A temporary endocrine gland in the human body is",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Corpus cardiacum",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Corpus luteum",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Corpus allatum",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Pineal gland",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-71",
+          "section": "Biology",
+          "text": "Attractants and rewards are required for",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Entomophily",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Hydrophily",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Cleistogamy",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Anemophily",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-72",
+          "section": "Biology",
+          "text": "Functional megaspore in an angiosperm develops into",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Endosperm",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Embryo sac",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Embryo",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Ovule",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-73",
+          "section": "Biology",
+          "text": "Which of the following in sewage treatment removes suspended solids?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Secondary treatment",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Primary treatment",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Sludge treatment",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Tertiary treatment",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-74",
+          "section": "Biology",
+          "text": "Presence of plants arranged into well defined vertical layers depending on their height can be seen best in",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Tropical Rain Forest",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Grassland",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Temperate Forest",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Tropical Savannah",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-75",
+          "section": "Biology",
+          "text": "Which of the following is made up of dead cells?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Collenchyma",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Phellem",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Phloem",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Xylem parenchyma",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-76",
+          "section": "Biology",
+          "text": "Zygotic meiosis is characteristic of",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Fucus",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Funaria",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Chlamydomonas",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Marchantia",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-77",
+          "section": "Biology",
+          "text": "MALT constitutes about __________ percent of the lymphoid tissue in human body",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "20%",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "70%",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "10%",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "50%",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-78",
+          "section": "Biology",
+          "text": "Lungs are made up of air-filled sacs, the alveoli. They do not collapse even after forceful expiration, because of:",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Inspiratory Reserve Volume",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Tidal Volume",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Expiratory Reserve Volume",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Residual Volume",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-79",
+          "section": "Biology",
+          "text": "In case of poriferans the spongocoel is lined with flagellated cells called:",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Oscula",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Choanocytes",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Mesenchymal cells",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Ostia",
+              "image": ""
+            }
+          ],
+          "correct": "B",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-80",
+          "section": "Biology",
+          "text": "Which one of the following is related to Ex-situ conservation of threatened animals and plants?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Biodiversity hot spots",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Amazon rainforest",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Himalayan region",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Wildlife Safari parks",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-81",
+          "section": "Biology",
+          "text": "Which of the following RNAs should be most abundant in animal cell?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "t-RNA",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "m-RNA",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "mi-RNA",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "r-RNA",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-82",
+          "section": "Biology",
+          "text": "Which statement is wrong for Krebs' cycle?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "There is one point in the cycle where $FAD^+$ is reduced to $FADH_2$",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "During conversion of succinyl CoA to succinic acid, a molecule of GTP is synthesised",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "The cycle starts with condensation of acetyl group (acetyl CoA) with pyruvic acid to yield citric acid",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "There are three points in the cycle where $NAD^+$ is reduced to $NADH + H^+$",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-83",
+          "section": "Biology",
+          "text": "Hypersecretion of Growth Hormone in adults does not cause further increase in height, because",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Epiphyseal plates close after adolescence",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Bones lose their sensitivity to Growth Hormone in adults",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Muscle fibres do not grow in size after birth",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Growth Hormone becomes inactive in adults",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-84",
+          "section": "Biology",
+          "text": "Plants which produce characteristic pneumatophores and show vivipary belong to",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Halophytes",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Psammophytes",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Hydrophytes",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Mesophytes",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-85",
+          "section": "Biology",
+          "text": "Asymptote in a logistic growth curve is obtained when",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "K = N",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "K > N",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "K < N",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "The value of 'r' approaches zero",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-86",
+          "section": "Biology",
+          "text": "Good vision depends on adequate intake of carotene rich food. Select the best option from the following statements:\n(a) Vitamin A derivatives are formed from carotene\n(b) The photopigments are embedded in the membrane discs of the inner segment\n(c) Retinal is a derivative of vitamin A\n(d) Retinal is a light absorbing part of all the visual photopigments",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "(a), (c) and (d)",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "(a) and (c)",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "(b), (c) and (d)",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "(a) and (b)",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-87",
+          "section": "Biology",
+          "text": "Artificial selection to obtain cows yielding higher milk output represents",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Directional as it pushes the mean of the character in one direction",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Disruptive as it splits the population into two — one yielding higher output and the other lower output",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Stabilizing followed by disruptive as it stabilizes the population to produce higher yielding cows",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Stabilizing selection as it stabilizes this character in the population",
+              "image": ""
+            }
+          ],
+          "correct": "A",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-88",
+          "section": "Biology",
+          "text": "Frog's heart when taken out of the body continues to beat for some time. Select the best option from the following statements:\n(a) Frog is a poikilotherm\n(b) Frog does not have any coronary circulation\n(c) Heart is \"myogenic\" in nature\n(d) Heart is autoexcitable",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Only (d)",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "(a) and (b)",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "(c) and (d)",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Only (c)",
+              "image": ""
+            }
+          ],
+          "correct": "C",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-89",
+          "section": "Biology",
+          "text": "Select the mismatch:",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "Cycas — Dioecious",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "Salvinia — Heterosporous",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "Equisetum — Homosporous",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "Pinus — Dioecious",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        },
+        {
+          "id": "biology-90",
+          "section": "Biology",
+          "text": "Which one from those given below is the period for Mendel's hybridization experiments?",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "1840 – 1850",
+              "image": ""
+            },
+            {
+              "id": "B",
+              "text": "1857 – 1869",
+              "image": ""
+            },
+            {
+              "id": "C",
+              "text": "1870 – 1877",
+              "image": ""
+            },
+            {
+              "id": "D",
+              "text": "1856 – 1863",
+              "image": ""
+            }
+          ],
+          "correct": "D",
+          "needsReview": false,
+          "issue": ""
+        }
+      ]
+    }
+  ]
+}
+</script>
+<script>
+function initRender() {
+  renderExam();
+}
+
+function overallNum(id) {
+  const p = id.split('-');
+  const sec = p[0], n = parseInt(p[1]);
+  if (sec === 'physics') return n;
+  if (sec === 'chemistry') return 45 + n;
+  return 90 + n;
+}
+
+function escHtml(s) {
+  return String(s)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
+function imgBox(path, cls) {
+  const safePath = escHtml(path);
+  const safeSrc = encodeURI(path);
+  return `<span class="img-wrap"><img class="${cls}" src="${safeSrc}" alt="Exam figure" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"><span class="img-missing">[MISSING IMAGE: ${safePath}]</span></span>`;
+}
+
+function renderExam() {
+  const raw = document.getElementById('edata').textContent;
+  const data = JSON.parse(raw);
+  const exam = data.exams[0];
+  const wrap = document.getElementById('qwrap');
+
+  const secRanges = { Physics: [1,45], Chemistry: [46,90], Biology: [91,180] };
+  const optMap = { A:'(1)', B:'(2)', C:'(3)', D:'(4)' };
+
+  // Sort questions by overall number (Physics first, then Chemistry, then Biology)
+  const sortedQuestions = exam.questions.sort((a, b) => overallNum(a.id) - overallNum(b.id));
+
+  let html = '';
+  let curSec = '';
+
+  sortedQuestions.forEach(q => {
+    const oNum = overallNum(q.id);
+
+    if (q.section !== curSec) {
+      curSec = q.section;
+      const r = secRanges[curSec];
+      html += `<div class="section-hdr">${curSec.toUpperCase()} &nbsp;(Q.${r[0]} to Q.${r[1]})</div>`;
+    }
+
+    const qTxt = q.text.replace(/\n/g, '<br>');
+
+    // Determine if single-col options (long text or images)
+    const longOpts = q.options.some(o => (o.text && o.text.length > 50) || o.image);
+
+    let opts = '<div class="options">';
+    q.options.forEach(o => {
+      opts += `<div class="option"><span class="opt-lbl">${optMap[o.id]}</span><span class="opt-body">${o.text}`;
+      if (o.image) opts += imgBox(o.image, 'opt-img');
+      opts += `</span></div>`;
+    });
+    opts += '</div>';
+
+    html += `<div class="question" id="q${oNum}">
+<div class="q-row"><span class="q-num">${oNum}.</span>
+<div class="q-body"><div class="q-text">${qTxt}</div>
+${q.image ? imgBox(q.image,'img-box') : ''}
+${opts}
+</div></div></div>`;
+  });
+
+  wrap.innerHTML = html;
+
+  // Answer Key
+  let akHtml = `<div class="ans-page"><div class="ans-title">ANSWER KEY — RE-NEET MOCK TEST</div>`;
+  const secs = [
+    { name: 'Physics', key: 'physics', start: 1, end: 45 },
+    { name: 'Chemistry', key: 'chemistry', start: 46, end: 90 },
+    { name: 'Biology', key: 'biology', start: 91, end: 180 }
+  ];
+
+  secs.forEach(sec => {
+    akHtml += `<div class="ans-section"><div class="ans-sec-hdr">${sec.name} (Q.${sec.start}–Q.${sec.end})</div><div class="ans-grid">`;
+    const qs = sortedQuestions.filter(q => q.id.startsWith(sec.key + '-'));
+    qs.forEach(q => {
+      const n = overallNum(q.id);
+      const ans = q.correct ? `${n}.(${q.correct === 'A' ? '1' : q.correct === 'B' ? '2' : q.correct === 'C' ? '3' : '4'})` : `${n}.(-)`;
+      akHtml += `<div class="ans-cell">${ans}</div>`;
+    });
+    akHtml += `</div></div>`;
+  });
+  akHtml += '</div>';
+  document.getElementById('anskey').innerHTML = akHtml;
+
+  // Trigger KaTeX if already loaded
+  if (typeof renderMathInElement !== 'undefined') {
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left:"$$", right:"$$", display:true},
+        {left:"$", right:"$", display:false}
+      ],
+      throwOnError: false,
+      errorColor: '#c00'
+    });
+  }
+}
+
+// Fallback if KaTeX loads after script runs
+document.addEventListener('DOMContentLoaded', function() {
+  if (document.getElementById('qwrap').innerHTML === '') {
+    renderExam();
+  }
+});
+</script>
+</body>
+</html>
