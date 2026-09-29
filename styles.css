@@ -1058,6 +1058,74 @@ td {
   }
 }
 
+/* ── Fixed exam size: keep wide math from widening the page ───────────────
+   MathJax renders each formula as an <svg> carrying a large intrinsic
+   width (a 4-column "match the list" array is ~1000px+ wide). A grid item
+   defaults to min-width:auto, so the question column refuses to shrink
+   below that width and the whole page picks up a horizontal scrollbar.
+   These rules let the column shrink and scale any oversized formula down
+   to fit, so nothing is ever clipped and nothing ever scrolls sideways. */
+
+.exam-layout > * {
+  min-width: 0;
+}
+
+.question-panel,
+.question-text-wrap,
+.opt,
+.opt-content,
+.opt-text {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.question-text-wrap,
+.opt-text,
+.expl-text,
+.modal-option {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+/* Scale oversized formulas to the column width instead of overflowing.
+   height:auto keeps the aspect ratio, so the formula stays undistorted. */
+mjx-container {
+  max-width: 100%;
+}
+
+mjx-container > svg {
+  max-width: 100%;
+  height: auto;
+  min-width: 0;
+}
+
+mjx-container[display="true"] {
+  display: block;
+  margin: 0.5em 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+@media print {
+  mjx-container[display="true"] {
+    overflow-x: visible;
+  }
+}
+
+/* MathJax's hidden MathML (screen-reader copy) is clipped to a 1px area but
+   its layout box is still content-sized, so on a narrow screen it pushed the
+   page wider. It is already visually hidden, so pinning the box is invisible. */
+mjx-container > mjx-assistive-mml,
+mjx-container > mjx-assistive-mml[display="block"] {
+  width: 1px !important;
+  height: 1px !important;
+  max-width: 1px !important;
+  max-height: 1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  border: 0 !important;
+}
+
 @media print {
   @page {
     size: A4;

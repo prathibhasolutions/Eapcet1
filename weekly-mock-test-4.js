@@ -332,7 +332,7 @@
             }
           ],
           "correct": "A",
-          "explanation": "The possible (men, women) splits are $(3,7), (4,6), (5,5)$ and $(6,4)$.\n$${{}^6C_3}{}^9C_7 + {}^6C_4}{}^9C_6 + {}^6C_5}{}^9C_5 + {}^6C_6}{}^9C_4$$$$= (20)(36) + (15)(84) + (6)(126) + (1)(126) = 720 + 1260 + 756 + 126 = 2862$$"
+          "explanation": "The possible (men, women) splits are $(3,7), (4,6), (5,5)$ and $(6,4)$.\n$$\\dfrac{{}^6C_3}{{}^9C_7} + \\dfrac{{}^6C_4}{{}^9C_6} + \\dfrac{{}^6C_5}{{}^9C_5} + \\dfrac{{}^6C_6}{{}^9C_4} = (20)(36) + (15)(84) + (6)(126) + (1)(126) = 720 + 1260 + 756 + 126 = 2862$$"
         },
         {
           "id": "w4-math-13",
@@ -970,7 +970,7 @@
             },
             {
               "id": "B",
-              "text": "$3$ and $\\sqrt{3} \u0007pprox 1.732$"
+              "text": "$3$ and $\\sqrt{3} \\approx 1.732$"
             },
             {
               "id": "C",
@@ -1462,7 +1462,7 @@
         {
           "id": "w4-chem-18",
           "section": "Chemistry (Atomic Structure, Periodicity, Chemical Bonding & Organic Basics)",
-          "text": "Match List-I with List-II and select the correct answer.\n$$\\begin{array}{ll} \\text{List-I} & \\text{List-II} \\\\ \\hline\\text{(a) Intermolecular hydrogen bonding} & \\text{(1) } \\text{HF} > \\text{HCl} > \\text{HBr} > \\text{HI} \\\\[6pt]\\text{(b) Intramolecular hydrogen bonding} & \\text{(2) Occurs within the same molecule, e.g. in } o\\text{-nitrophenol} \\\\[6pt]\\text{(c) Strength among the hydrogen halides} & \\text{(3) Explains the unusually high boiling point of water} \\\\[6pt]\\text{(d) Effect of hydrogen bonding on water} & \\text{(4) Occurs between the H of one molecule and an electronegative atom of another molecule \\\\ \\end{array}$$",
+          "text": "Match List-I with List-II and select the correct answer.\n$$\\begin{array}{ll} \\text{List-I} & \\text{List-II} \\\\ \\hline\\text{(a) Intermolecular hydrogen bonding} & \\text{(1) } \\text{HF} > \\text{HCl} > \\text{HBr} > \\text{HI} \\\\[6pt]\\text{(b) Intramolecular hydrogen bonding} & \\text{(2) Occurs within the same molecule, e.g. in } o\\text{-nitrophenol} \\\\[6pt]\\text{(c) Strength among the hydrogen halides} & \\text{(3) Explains the unusually high boiling point of water} \\\\[6pt]\\text{(d) Effect of hydrogen bonding on water} & \\text{(4) Occurs between the H of one molecule and an electronegative atom of another molecule } \\\\ \\end{array}$$",
           "options": [
             {
               "id": "A",
@@ -1641,19 +1641,19 @@
           "options": [
             {
               "id": "A",
-              "text": "$4.2\\ \text{ly}$"
+              "text": "$4.2\\ \\text{ly}$"
             },
             {
               "id": "B",
-              "text": "$4.2 \times 10^{1}\\ \text{ly}$"
+              "text": "$4.2 \\times 10^{1}\\ \\text{ly}$"
             },
             {
               "id": "C",
-              "text": "$42\\ \text{ly}$"
+              "text": "$42\\ \\text{ly}$"
             },
             {
               "id": "D",
-              "text": "$0.42\\ \text{ly}$"
+              "text": "$0.42\\ \\text{ly}$"
             }
           ],
           "correct": "A",
@@ -1691,19 +1691,19 @@
           "options": [
             {
               "id": "A",
-              "text": "$5.45\\ \text{mm}$"
+              "text": "$5.45\\ \\text{mm}$"
             },
             {
               "id": "B",
-              "text": "$5.43\\ \text{mm}$"
+              "text": "$5.43\\ \\text{mm}$"
             },
             {
               "id": "C",
-              "text": "$5.48\\ \text{mm}$"
+              "text": "$5.48\\ \\text{mm}$"
             },
             {
               "id": "D",
-              "text": "$5.44\\ \text{mm}$"
+              "text": "$5.44\\ \\text{mm}$"
             }
           ],
           "correct": "D",
@@ -1741,19 +1741,19 @@
           "options": [
             {
               "id": "A",
-              "text": "$0.001\\ \text{cm}$ and $0.022\\%$"
+              "text": "$0.001\\ \\text{cm}$ and $0.022\\%$"
             },
             {
               "id": "B",
-              "text": "$0.0005\\ \text{cm}$ and $0.043\\%$"
+              "text": "$0.0005\\ \\text{cm}$ and $0.043\\%$"
             },
             {
               "id": "C",
-              "text": "$0.0005\\ \text{cm}$ and $0.022\\%$"
+              "text": "$0.0005\\ \\text{cm}$ and $0.022\\%$"
             },
             {
               "id": "D",
-              "text": "$0.001\\ \text{cm}$ and $0.043\\%$"
+              "text": "$0.001\\ \\text{cm}$ and $0.043\\%$"
             }
           ],
           "correct": "C",
@@ -1916,19 +1916,19 @@
           "options": [
             {
               "id": "A",
-              "text": "$50\\ \text{km h}^{-1}$"
+              "text": "$50\\ \\text{km h}^{-1}$"
             },
             {
               "id": "B",
-              "text": "$48\\ \text{km h}^{-1}$"
+              "text": "$48\\ \\text{km h}^{-1}$"
             },
             {
               "id": "C",
-              "text": "$45\\ \text{km h}^{-1}$"
+              "text": "$45\\ \\text{km h}^{-1}$"
             },
             {
               "id": "D",
-              "text": "$52\\ \text{km h}^{-1}$"
+              "text": "$52\\ \\text{km h}^{-1}$"
             }
           ],
           "correct": "B",
@@ -1941,19 +1941,19 @@
           "options": [
             {
               "id": "A",
-              "text": "$6\\ \text{m s}^{-1}$"
+              "text": "$6\\ \\text{m s}^{-1}$"
             },
             {
               "id": "B",
-              "text": "$12\\ \text{m s}^{-1}$"
+              "text": "$12\\ \\text{m s}^{-1}$"
             },
             {
               "id": "C",
-              "text": "$8\\ \text{m s}^{-1}$"
+              "text": "$8\\ \\text{m s}^{-1}$"
             },
             {
               "id": "D",
-              "text": "$10\\ \text{m s}^{-1}$"
+              "text": "$10\\ \\text{m s}^{-1}$"
             }
           ],
           "correct": "D",
@@ -1991,19 +1991,19 @@
           "options": [
             {
               "id": "A",
-              "text": "$3\\ \text{s}$ and $20\\ \text{m s}^{-1}$"
+              "text": "$3\\ \\text{s}$ and $20\\ \\text{m s}^{-1}$"
             },
             {
               "id": "B",
-              "text": "$1.5\\ \text{s}$ and $15\\ \text{m s}^{-1}$"
+              "text": "$1.5\\ \\text{s}$ and $15\\ \\text{m s}^{-1}$"
             },
             {
               "id": "C",
-              "text": "$3\\ \text{s}$ and $30\\ \text{m s}^{-1}$"
+              "text": "$3\\ \\text{s}$ and $30\\ \\text{m s}^{-1}$"
             },
             {
               "id": "D",
-              "text": "$6\\ \text{s}$ and $60\\ \text{m s}^{-1}$"
+              "text": "$6\\ \\text{s}$ and $60\\ \\text{m s}^{-1}$"
             }
           ],
           "correct": "C",
@@ -2016,19 +2016,19 @@
           "options": [
             {
               "id": "A",
-              "text": "$45\\ \text{s}$"
+              "text": "$45\\ \\text{s}$"
             },
             {
               "id": "B",
-              "text": "$60\\ \text{s}$"
+              "text": "$60\\ \\text{s}$"
             },
             {
               "id": "C",
-              "text": "$90\\ \text{s}$"
+              "text": "$90\\ \\text{s}$"
             },
             {
               "id": "D",
-              "text": "$36\\ \text{s}$"
+              "text": "$36\\ \\text{s}$"
             }
           ],
           "correct": "C",
