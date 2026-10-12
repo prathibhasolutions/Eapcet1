@@ -1,0 +1,224 @@
+==== weekly-mock-test-1.js :: weekly-mock-test-01 :: Weekly Mock Test - 1 (Atomic Structure & Permutations and Combinations)
+[w1-chem-1] Which of the following statements regarding cathode rays and canal rays in discharge tube experiments is INCORRECT?
+[w1-chem-2] According to Rutherford's $\alpha$-particle scattering experiment, the radius of an atomic nucleus of mass number $A$ is given by $R = R_0 A^{1/3}$ (where $R_0 = 1.2\text{ fm}$). What is the ratio of the nuclear density of $^{27}_{13}\text{
+[w1-chem-3] A $100\text{ W}$ sodium vapor lamp emits yellow light of wavelength $\lambda = 589.6\text{ nm}$. If $60\%$ of the electrical energy is converted into light, calculate the number of photons emitted by the lamp per second. ($h = 6.626 \times 
+[w1-chem-4] In a photoelectric effect experiment, when radiation of wavelength $\lambda$ is incident on a metallic surface, the stopping potential is $4.8\text{ V}$. When radiation of wavelength $2\lambda$ is incident on the same surface, the stopping 
+[w1-chem-5] If $r_1$ is the radius of the first Bohr orbit of a hydrogen atom ($Z=1$), what is the radius of the third Bohr orbit ($n=3$) of a $\text{Li}^{2+}$ ion?
+[w1-chem-6] The ionization energy of a ground-state $\text{He}^+$ ion is $54.4\text{ eV}$. What is the energy required to excite an electron in a $\text{Li}^{2+}$ ion from its first excited state ($n=2$) to its second excited state ($n=3$)?
+[w1-chem-7] In the emission spectrum of atomic hydrogen, what is the ratio of the shortest wavelength (series limit) of the Balmer series to the longest wavelength of the Lyman series?
+[w1-chem-8] An electron in a sample of hydrogen atoms in the ground state is excited by absorbing monochromatic radiation of photon energy $12.75\text{ eV}$. When these excited atoms de-excite back to the ground state: (i) What is the principal quantum
+[w1-chem-9] Consider the following statements regarding the Bohr model and its developments: I. Splitting of spectral lines in the presence of an external magnetic field is known as the Zeeman effect. II. Splitting of spectral lines in the presence of 
+[w1-chem-10] A proton ($p$) and an $\alpha$-particle ($\text{He}^{2+}$) are accelerated from rest through the same electric potential difference $V$. Given that $m_\alpha \approx 4 m_p$ and $q_\alpha = 2 q_p$, what is the ratio of their de Broglie wavel
+[w1-chem-11] According to de Broglie's explanation of Bohr's second postulate of quantization of angular momentum, if the circumference of the 4th Bohr orbit of a hydrogen atom is $C$, the de Broglie wavelength $\lambda$ of the electron moving in this o
+[w1-chem-12] A cricket ball of mass $200\text{ g}$ is moving with a speed of $30\text{ m/s}$ measured with an uncertainty of $0.001\%$. The minimum uncertainty in its position ($\Delta x$) is approximately: ($h = 6.626 \times 10^{-34}\text{ kg}\cdot\tex
+[w1-chem-13] Which of the following sets of quantum numbers $(n, l, m_l, m_s)$ represents a permissible state for an electron in a $4d$ subshell, and what is the maximum number of electrons in an atom that can have the quantum numbers $n=4, l=2, m_l=+1$
+[w1-chem-14] For a $5d$ atomic orbital, the number of radial nodes, angular nodes (nodal planes), and total nodes are respectively:
+[w1-chem-15] The orbital angular momentum of an electron in a $3p$ orbital is $L$, and the spin-only magnetic moment of a high-spin gaseous $\text{Fe}^{2+}$ ion ($Z=26$) is $\mu_s$. The values of $L$ and $\mu_s$ are respectively:
+[w1-chem-16] Match the principle/rule in List I with its correct governing statement in List II: List I: (A) Aufbau Principle (B) Pauli's Exclusion Principle (C) Hund's Rule of Maximum Multiplicity (D) Heisenberg's Uncertainty Principle List II: (I) Pai
+[w1-chem-17] Consider the following orbitals in a multi-electron atom: (1) $n=4, l=0$ (2) $n=3, l=2$ (3) $n=4, l=1$ (4) $n=3, l=1$ According to the $(n+l)$ rule, arrange these orbitals in the correct order of increasing energy:
+[w1-chem-18] In the ground state electronic configuration of a neutral Chromium atom ($\text{Cr}, Z=24$): (i) What is the total number of electrons having azimuthal quantum number $l = 1$? (ii) What is the total number of unpaired electrons in the atom?
+[w1-chem-19] The stability of half-filled subshells is significantly enhanced by exchange energy. What is the total number of possible exchange interactions among electrons with parallel spins in the $3d^5$ subshell of a $\text{Mn}^{2+}$ ion?
+[w1-chem-20] Regarding the quantum mechanical model and radial probability distribution curves $4\pi r^2 R^2(r)$ versus distance $r$ from the nucleus, which of the following statements is INCORRECT?
+[w1-math-21] How many 4-digit numbers strictly greater than $4000$ can be formed using the digits $\{0, 1, 2, 4, 5, 7, 8\}$ without repeating any digit in the number?
+[w1-math-22] In how many different ways can the letters of the word $\text{TRIANGLE}$ be arranged so that no two vowels are consecutive?
+[w1-math-23] If all possible permutations of the letters of the word $\text{MASTER}$ are listed in dictionary (alphabetical) order, what is the rank of the word $\text{MASTER}$?
+[w1-math-24] In how many ways can the letters of the word $\text{ASSASSINATION}$ be arranged such that all four $\text{S}$'s occur together as a single block?
+[w1-math-25] In how many ways can 7 distinct persons be seated around a circular table such that two particular persons never sit adjacent to each other?
+[w1-math-26] A decorative garland is to be made using 8 distinct flowers of different colours. In how many different ways can the garland be made?
+[w1-math-27] In how many ways can 5 boys and 5 girls sit alternately around a round table?
+[w1-math-28] How many 5-letter arrangements can be formed from 10 distinct letters such that 2 designated letters are always included in every arrangement?
+[w1-math-29] A committee of 6 members is to be formed from a group of 7 men and 5 women. In how many ways can this committee be chosen if it must contain at least 2 women and at least 2 men?
+[w1-math-30] There are 12 points in a plane, out of which 5 points are collinear and no other set of 3 points is collinear. (i) How many straight lines can be formed by joining pairs of these points? (ii) How many triangles can be formed with these poin
+[w1-math-31] Match the combinatorial identity in List I with its simplified form in List II: List I: (A) $^{n}C_r + ^{n}C_{r-1}$ (B) $\sum_{r=0}^{n} {^nC_r}$ (C) $\sum_{r=1}^{n} r \cdot {^nC_r}$ (D) $^{n}C_0 + ^{n+1}C_1 + ^{n+2}C_2 + \dots + ^{n+k}C_k$ 
+[w1-math-32] A basket contains 4 identical apples, 5 identical mangoes, and 6 distinct oranges. In how many different ways can a person select at least one fruit from the basket?
+[w1-math-33] Consider the integer $N = 2^4 \times 3^3 \times 5^2 \times 7^1 = 75600$. (i) What is the total number of positive divisors of $N$? (ii) How many of these divisors are even numbers? (iii) How many of these divisors are divisible by $12$?
+[w1-math-34] In how many ways can 12 distinct books be: (i) Distributed equally among 3 students? (ii) Divided into 3 equal unlabelled packets of 4 books each?
+[w1-math-35] Find the number of non-negative integer solutions to the equation: $$x_1 + x_2 + x_3 + x_4 = 15$$ subject to the constraints $x_1 \ge 1$, $x_2 \ge 2$, $x_3 \ge 0$, and $x_4 \ge 0$.
+[w1-math-36] In how many ways can the letters of the word $\text{CHANDIGARH}$ be arranged so that the vowels always appear in alphabetical order (i.e. first $\text{A}$, then $\text{A}$, then $\text{I}$)?
+[w1-math-37] A person writes 5 letters to 5 different recipients and addresses 5 corresponding envelopes. In how many ways can all 5 letters be placed into envelopes such that no letter goes into its correctly addressed envelope?
+[w1-math-38] What is the sum of all 4-digit numbers that can be formed using the digits $\{1, 3, 5, 7\}$ without repeating any digit?
+[w1-math-39] What is the highest exponent of the prime number $3$ that divides $100!$, and what is the number of trailing zeroes at the end of $100!$?
+[w1-math-40] Find the total number of 4-letter words (with or without meaning) that can be formed using the letters of the word $\text{EXAMINATION}$.
+==== weekly-mock-test-2.js :: weekly-mock-test-02 :: Weekly Mock Test - 2 (P&C, Probability, Atomic Structure, Periodic Classification)
+[w2-math-1] How many 5-digit numbers can be formed using the digits $\{0, 1, 2, 3, 4, 5\}$ without repeating any digit in the number such that the formed number is divisible by $6$?
+[w2-math-2] The letters of the word $\text{INDEPENDENCE}$ are arranged at random. In how many of these arrangements do all the vowels never occur together as a single block?
+[w2-math-3] In how many ways can 6 boys and 6 girls be seated around a circular table such that all the boys sit together and all the girls sit together?
+[w2-math-4] If all possible permutations of the letters of the word $\text{KOTAK}$ are arranged in dictionary (alphabetical) order, what is the rank of the word $\text{KOTAK}$?
+[w2-math-5] Consider a regular decagon (a polygon with 10 sides): (i) What is the total number of diagonals that can be drawn? (ii) Assuming no three diagonals intersect at the same point inside the polygon, what is the number of points of intersection
+[w2-math-6] Evaluate the value of the combinatorial expression: $$S = \frac{\sum_{r=0}^{10} {^{20}C_r} \cdot {^{20}C_{10-r}}}{^{40}C_{10}} + \sum_{r=1}^{10} r \cdot \frac{^{10}C_r}{^{10}C_{r-1}}$$
+[w2-math-7] Find the number of non-negative integer solutions to the equation: $$x + y + z + w = 20$$ subject to the constraints $x \ge 2$, $y \ge 3$, $z \ge 1$, and $0 \le w \le 4$.
+[w2-math-8] A person writes 6 letters to 6 different persons and addresses 6 corresponding envelopes. If the letters are placed randomly into the envelopes, what is the number of ways in which exactly 2 letters are placed into their correctly addressed
+[w2-math-9] In a municipal election, there are 4 candidates and 5 voters. (i) In how many ways can the 5 distinct voters cast their votes if each voter can choose any of the 4 candidates? (ii) In how many ways can the total count of 5 votes be distribu
+[w2-math-10] In how many ways can 9 distinct toys be distributed among 3 children such that the youngest child receives 4 toys, and the other two children receive 3 toys and 2 toys respectively?
+[w2-math-11] Three unbiased six-faced dice are thrown simultaneously. What is the probability that the sum of the numbers appearing on the top faces of the three dice is equal to $14$?
+[w2-math-12] For two events $A$ and $B$, it is given that $P(A) = \frac{3}{8}$, $P(B) = \frac{1}{2}$, and $P(A \cup B) = \frac{5}{8}$. What is the value of the conditional probability $P(A' \cap B' \mid A' \cup B')$?
+[w2-math-13] Three marksmen $A$, $B$, and $C$ fire at a target independently with probabilities of hitting the target given by $\frac{1}{2}$, $\frac{1}{3}$, and $\frac{1}{4}$ respectively. What is the probability that the target is hit by exactly two of
+[w2-math-14] A card is drawn from a well-shuffled standard pack of 52 playing cards. Let event $E_1$ be "the card drawn is a King or an Ace" and event $E_2$ be "the card drawn is a face card (Jack, Queen, or King) or a Spade". What is the conditional pr
+[w2-math-15] Bag I contains 4 red and 6 black balls. Bag II contains 5 red and 3 black balls. A bag is chosen at random with equal probability and a ball is drawn from it. If the ball drawn is found to be red, what is the probability that it was drawn f
+[w2-math-16] In a certain population, $0.1\%$ of the individuals have a rare condition. A medical test designed to diagnose this condition is $99\%$ accurate for diseased individuals (gives a positive result) and has a $0.5\%$ false positive rate for he
+[w2-math-17] Two players $A$ and $B$ play a game by alternately rolling a pair of standard fair dice. $A$ rolls first. The player who first gets a sum of $7$ on the two dice wins the game. What is the probability that player $A$ wins?
+[w2-math-18] Five married couples (10 people) are seated at random around a circular dining table. What is the probability that a particular husband and his wife sit adjacent to each other?
+[w2-math-19] An urn contains 6 white and 4 black balls. Two balls are drawn at random without replacement. Let $X$ be the random variable denoting the number of white balls drawn. What are the expected value $E(X)$ and the probability $P(X \ge 1)$?
+[w2-math-20] Match the probability theorem/relation in List I with its exact mathematical representation in List II: List I: (A) Multiplication rule for independent events $A$ and $B$ (B) Total Probability Theorem for a partition $\{E_1, E_2\}$ (C) Cond
+[w2-chem-21] In a Rutherford $\alpha$-particle scattering experiment, an $\alpha$-particle ($q_\alpha = 2e$) with kinetic energy $K$ approaches a heavy gold nucleus ($Z = 79$) in a head-on collision. The distance of closest approach is $r_0$. If the kin
+[w2-chem-22] When ultraviolet radiation of wavelength $\lambda_1 = 200\text{ nm}$ is incident on a clean metallic surface, the maximum kinetic energy of the emitted photoelectrons is $2.82\text{ eV}$. When radiation of wavelength $\lambda_2 = 300\text{ 
+[w2-chem-23] According to Bohr's model for a hydrogen-like species with atomic number $Z$, if $v_n$ is the orbital velocity of the electron in the $n$-th stationary orbit and $T_n$ is the time period of revolution in that orbit, which of the following r
+[w2-chem-24] In the emission spectrum of atomic hydrogen: (i) What is the wave number ($\bar{\nu}$) of the second line of the Balmer series ($H_\beta$) in terms of the Rydberg constant $R_{\text{H}}$? (ii) In which electromagnetic spectral region does t
+[w2-chem-25] An electron of mass $m_e$ and a proton of mass $m_p$ possess the same kinetic energy $K$. If $\lambda_e$ and $\lambda_p$ represent their respective de Broglie wavelengths, then the ratio $\frac{\lambda_e}{\lambda_p}$ is equal to:
+[w2-chem-26] An electron ($m = 9.1 \times 10^{-31}\text{ kg}$) is confined within an atomic dimension of uncertainty in position $\Delta x = 1.0 \times 10^{-10}\text{ m}$. According to Heisenberg's Uncertainty Principle ($\Delta x \cdot \Delta v \ge \fr
+[w2-chem-27] Which of the following statements regarding atomic orbitals and quantum numbers is INCORRECT?
+[w2-chem-28] Consider the spatial characteristics of atomic orbitals: (i) What is the number of radial nodes in a $4p$ orbital? (ii) What is the geometric shape of the nodal surface in a $3d_{z^2}$ orbital?
+[w2-chem-29] The ground-state electronic configuration of neutral Gadolinium ($\text{Gd}, Z=64$) is $[\text{Xe}] 4f^7 5d^1 6s^2$ instead of $[\text{Xe}] 4f^8 6s^2$. What is the primary reason for this configuration?
+[w2-chem-30] What is the ground-state electronic configuration and the spin-only magnetic moment ($\mu_s$) of an isolated gaseous $\text{Cu}^{2+}$ ion ($Z=29$)?
+[w2-chem-31] Moseley's pioneering experiment on the characteristic X-ray spectra of elements established that $\sqrt{\nu} = a(Z - b)$, where $\nu$ is the X-ray frequency and $Z$ is the atomic number. This experimental finding definitively proved that:
+[w2-chem-32] What are the systematic IUPAC name and symbol for the transactinide element with atomic number $Z = 118$, and to which group and period of the modern periodic table does it belong?
+[w2-chem-33] An element in its ground state has the outer electronic configuration $[\text{Kr}] 4d^{10} 5s^2 5p^3$. The period, group number, and block of this element in the modern periodic table are respectively:
+[w2-chem-34] Arrange the following isoelectronic species in the correct order of increasing ionic radius: $$\text{Al}^{3+}, \text{Mg}^{2+}, \text{Na}^+, \text{F}^-, \text{O}^{2-}, \text{N}^{3-}$$
+[w2-chem-35] Zirconium ($\text{Zr}, Z=40$) and Hafnium ($\text{Hf}, Z=72$) have nearly identical atomic radii ($160\text{ pm}$ and $159\text{ pm}$ respectively) and exhibit remarkably similar chemical behaviors. This phenomenon is primarily a consequenc
+[w2-chem-36] Which of the following sequences represents the CORRECT order of first ionization enthalpy ($\text{IE}_1$) for the second-period elements?
+[w2-chem-37] Regarding the electron gain enthalpies ($\Delta_{\text{eg}}H$) of group 16 and group 17 elements, which of the following statements is INCORRECT?
+[w2-chem-38] According to Pauling's scale of electronegativity, which of the following sequences represents the correct order of decreasing electronegativity?
+[w2-chem-39] Match the oxide listed in List I with its characteristic acid-base behavior in List II: List I: (A) $\text{Al}_2\text{O}_3$ (B) $\text{Cl}_2\text{O}_7$ (C) $\text{Na}_2\text{O}$ (D) $\text{CO}$ List II: (I) Strongly basic oxide (II) Amphote
+[w2-chem-40] Beryllium ($\text{Be}$) and Aluminium ($\text{Al}$) exhibit a diagonal relationship due to similar charge-to-radius ratio. Which of the following properties is NOT shared by both $\text{Be}$ and $\text{Al}$?
+==== weekly-mock-test-3.js :: weekly-mock-test-03 :: Weekly Mock Test - 3 (P&C, Probability, Dispersion | Bonding, Periodicity | Units)
+[w3-math-1] In how many ways can a committee of 5 members be selected from a group of 6 men and 4 women such that the committee contains exactly 2 women?
+[w3-math-2] Seven boys and three girls sit on a long bench. In how many ways can they be seated if all the three girls always sit together?
+[w3-math-3] How many numbers greater than $1,00,000$ can be formed by using all the digits $2, 3, 0, 3, 4, 2$ (both $2$'s and both $3$'s are used)?
+[w3-math-4] A polygon has 35 diagonals. Find the number of its sides.
+[w3-math-5] In how many ways can 8 different books be arranged on a shelf such that two particular books are always together in a fixed order (the first immediately followed by the second)?
+[w3-math-6] In how many ways can 8 distinct prizes be awarded to 3 boys if each boy may receive any number of prizes (including zero)?
+[w3-math-7] A number lock opens with a 3-digit code using digits $0$ to $9$. How many different codes are possible if no digit is repeated?
+[w3-math-8] In how many ways can the letters of the word $\text{EBENEZER}$ be arranged if the three E's are never all together as a single block?
+[w3-math-9] In how many ways can 4 different books be distributed between 2 students so that each student receives at least one book?
+[w3-math-10] How many 4-digit numbers divisible by 5 can be formed using the digits $\{1, 2, 3, 4, 5, 6\}$ if repetition of digits is allowed?
+[w3-math-11] Two fair dice are thrown once. What is the probability that the sum of the numbers on them is an even prime number?
+[w3-math-12] A fair coin is tossed 5 times. Find the probability of getting exactly 3 heads.
+[w3-math-13] Two cards are drawn at random without replacement from a well-shuffled pack of 52 cards. Find the probability that both are kings.
+[w3-math-14] The probabilities that three students can solve a problem are $\frac{2}{3}$, $\frac{1}{2}$ and $\frac{2}{5}$ respectively. If all three attempt it independently, what is the probability that the problem will be solved?
+[w3-math-15] A box contains 3 red and 5 green balls. Two balls are drawn at random without replacement. Find the probability that the two balls drawn are of different colours.
+[w3-math-16] The probability that a student passes a certain test is $\frac{3}{4}$. If 4 students take the test independently, what is the probability that at least one of them passes?
+[w3-math-17] A fair die is thrown twice. Find the probability that the product of the two numbers shown is a perfect square.
+[w3-math-18] A bag contains 4 white and 5 black balls. A ball is drawn, its colour noted, and then replaced. This is done twice. Find the probability that both drawn balls are of the same colour.
+[w3-math-19] In a class, $60\%$ of the students passed Mathematics and $50\%$ of the total students passed both Mathematics and Physics. If a student who passed Mathematics is chosen at random, what is the probability that this student also passed Physi
+[w3-math-20] Two events $A$ and $B$ are independent. If $P(A) = \frac{1}{4}$ and $P(A \cup B) = \frac{5}{8}$, then $P(B)$ equals:
+[w3-math-21] For the data $12, 18, 25, 9, 31, 7, 42, 15$, the range is:
+[w3-math-22] The variance of the first $n$ natural numbers is:
+[w3-math-23] The variance of the five observations $5, 5, 5, 5, 5$ is:
+[w3-math-24] The mean of 5 numbers is 12. If the observation 18 is replaced by 12, the new mean is:
+[w3-math-25] The standard deviation of a data set is 4. If every observation is multiplied by 2 and then 3 is added to it, the new standard deviation is:
+[w3-math-26] For the data $1, 3, 5, 7, 9, 11, 13, 15$, the mean deviation about the mean is:
+[w3-math-27] The coefficient of variation of the data $4, 6, 8, 10, 12$ is:
+[w3-math-28] The mean of a distribution is 20 and its coefficient of variation is $25\%$. The standard deviation of the distribution is:
+[w3-math-29] The quartile deviation (semi-interquartile range) of the data $5, 8, 12, 15, 18, 20, 24, 27, 30, 33, 36$ is:
+[w3-math-30] The mean of 100 observations is 40. It is later found that one observation 45 was wrongly recorded as 54. The correct mean is:
+[w3-chem-31] The energy of an electron in the first Bohr orbit of a hydrogen atom is $-13.6\text{ eV}$. The energy of an electron in the fourth Bohr orbit is:
+[w3-chem-32] Using the Rydberg formula with $R = 1.097 \times 10^7\text{ m}^{-1}$, the wavelength of the light emitted when an electron in a hydrogen atom jumps from $n = 3$ to $n = 2$ (first line of the Balmer series) is approximately:
+[w3-chem-33] An electron is accelerated through a potential difference of $100\text{ V}$. Its de Broglie wavelength is approximately:
+[w3-chem-34] The correct set of four quantum numbers $(n, l, m_l, m_s)$ for the outermost electron in a sodium atom ($Z = 11$) in its ground state is:
+[w3-chem-35] The number of unpaired electrons present in the ground state of the $\text{Fe}^{3+}$ ion ($Z = 26$) is:
+[w3-chem-36] Among the isoelectronic species $\text{Ca}^{2+}$, $\text{K}^+$, $\text{Ar}$, $\text{Cl}^-$, and $\text{S}^{2-}$, the one having the smallest ionic radius is:
+[w3-chem-37] Which of the following elements has the highest first ionisation enthalpy: $\text{Na}$, $\text{Mg}$, $\text{Al}$, or $\text{Si}$?
+[w3-chem-38] The outer electronic configuration $7s^2$ belongs to an element placed in which of the following positions of the periodic table?
+[w3-chem-39] Among the halogens $\text{F}$, $\text{Cl}$, $\text{Br}$, and $\text{I}$, the element having the largest atomic radius is:
+[w3-chem-40] Between phosphorus and sulphur, the element having the more negative electron gain enthalpy is:
+[w3-chem-41] Which of the following elements of Group 15 has the highest electronegativity?
+[w3-chem-42] The number of elements present in the fifth period of the modern periodic table is:
+[w3-chem-43] Which of the following molecules does not obey the octet rule?
+[w3-chem-44] The molecular geometry (shape) of the $\text{XeF}_4$ molecule is:
+[w3-chem-45] Which of the following molecules has a zero dipole moment?
+[w3-chem-46] The hybridisation of the central atom in the $\text{SF}_4$ molecule is:
+[w3-chem-47] Which of the following species is paramagnetic?
+[w3-chem-48] The bond orders of $\text{O}_2^{+}$, $\text{O}_2$ and $\text{O}_2^{-}$ are respectively:
+[w3-chem-49] According to Fajans' rules, which of the following ionic halides has the highest covalent character?
+[w3-chem-50] Which of the following compounds contains both ionic and covalent bonds?
+[w3-phy-51] Which of the following is not a fundamental physical quantity in the SI system?
+[w3-phy-52] The SI unit of electric charge is:
+[w3-phy-53] The dimensional formula of force is:
+[w3-phy-54] The dimensional formula of Planck's constant $h$ is:
+[w3-phy-55] Which of the following quantities has the dimensional formula $[\text{M L}^2 \text{T}^{-3}]$?
+[w3-phy-56] If the velocity $v$ of a particle varies with time $t$ as $v = at^2 + bt + c$, then the dimensional formula of $a$ is:
+[w3-phy-57] The distance between two cities is given as 1.6 km. The number of significant figures in this measurement is:
+[w3-phy-58] Which of the following relations is dimensionally correct for the velocity $v$ of a body falling freely through a height $h$ under acceleration due to gravity $g$?
+[w3-phy-59] Work and torque have the same dimensional formula because:
+[w3-phy-60] In the equation $y = A \sin(kx - \omega t)$, the dimensional formula of the wave number $k$ is:
+==== weekly-mock-test-4.js :: weekly-mock-test-04 :: Weekly Mock Test - 4 (Probability Distributions | Bonding, Periodicity | Units, Motion)
+[w4-math-1] A fair coin is tossed and a fair die is thrown simultaneously. The number of elements in the sample space associated with this random experiment is:
+[w4-math-2] In how many ways can $3$ boys and $2$ girls be seated in a row so that no two girls sit together?
+[w4-math-3] The number of arrangements of the letters of the word $EDUCATION$ in which all the vowels always occur together is:
+[w4-math-4] In how many ways can $3$ distinct prizes be distributed among $5$ students if a student may receive more than one prize?
+[w4-math-5] The number of $4$-letter words (meaningful or meaningless) that can be formed from $7$ different letters when repetition is allowed is:
+[w4-math-6] In how many ways can $8$ different persons be seated around a circular table?
+[w4-math-7] In how many ways can $5$ boys and $3$ girls be seated around a round table such that all the girls sit together?
+[w4-math-8] In how many ways can $6$ different coloured beads be arranged to form a necklace?
+[w4-math-9] The number of distinct arrangements of the letters of the word $BALLOON$ is:
+[w4-math-10] Match List-I with List-II and select the correct answer. $$\begin{array}{ll} \text{List-I} & \text{List-II} \\ \hline\text{(a) Arranging } n \text{ distinct things in a row} & \text{(1) } \dfrac{(n-1)!}{2} \\[6pt]\text{(b) Circular arrangem
+[w4-math-11] A committee of $4$ members is to be chosen from $6$ men and $5$ women. The number of committees containing at least one woman is:
+[w4-math-12] The number of ways of selecting $10$ members to form a committee from $6$ men and $9$ women, in which there are at least $3$ men and at least $2$ women, is:
+[w4-math-13] For the data $4,\, 6,\, 8,\, 9,\, 12,\, 15$, the range and the mean deviation about the mean are respectively:
+[w4-math-14] The variance of the data $2,\, 4,\, 6,\, 8,\, 10$ is:
+[w4-math-15] The following is the frequency distribution of marks obtained by $10$ students. $$\begin{array}{c|cccc} \text{Class} & 0-10 & 10-20 & 20-30 & 30-40 \\ \hline \text{Frequency} & 1 & 2 & 3 & 4 \end{array}$$ The mean and standard deviation of 
+[w4-math-16] Two series $A$ and $B$ have the same mean $60$ but their standard deviations are $15$ and $10$ respectively. Their coefficients of variation are:
+[w4-math-17] Match List-I with List-II and select the correct answer. $$\begin{array}{ll} \text{List-I} & \text{List-II} \\ \hline\text{(a) Range} & \text{(1) } \dfrac{\sigma}{\bar{x}} \times 100 \\[6pt]\text{(b) Mean deviation about the mean} & \text{(
+[w4-math-18] For the data $2,\, 4,\, 8,\, 10,\, 11$, the mean deviation about the mean and about the median are:
+[w4-math-19] The variance of a data set is $36$ and its coefficient of variation is $60\%$. The mean of the data is:
+[w4-math-20] Two frequency distributions have equal means but different variances. The distribution with the smaller variance:
+[w4-math-21] Series $A$ has mean $50$ and standard deviation $10$, while series $B$ has the same mean $50$ and standard deviation $20$. The ratio of their coefficients of variation is:
+[w4-math-22] A fair die is thrown once. The probability of getting a number greater than $4$ is:
+[w4-math-23] Match List-I with List-II and select the correct answer. $$\begin{array}{ll} \text{List-I} & \text{List-II} \\ \hline\text{(a) Mutually exclusive events} & \text{(1) } 1 - P(A) \\[6pt]\text{(b) Independent events} & \text{(2) } P(A \cap B) 
+[w4-math-24] If $P(A) = 0.4$ and $P(B) = 0.5$, the maximum possible value of $P(A \cap B)$ is:
+[w4-math-25] For two events $A$ and $B$, if $P(A) = \frac{1}{3}$, $P(B) = \frac{1}{4}$ and $P(A \cup B) = \frac{1}{2}$, then $P(A \cap B)$ is:
+[w4-math-26] A fair die is thrown twice. The probability that the sum of the two numbers obtained is $8$ is:
+[w4-math-27] Two events $A$ and $B$ are such that $P(A) = \frac{1}{2}$, $P(B) = \frac{1}{3}$ and $P(A \cap B) = \frac{1}{6}$. Then the events $A$ and $B$ are:
+[w4-math-28] If $P(A) = 0.6$, $P(B) = 0.5$ and the events $A$ and $B$ are independent, then $P(A \mid B)$ is:
+[w4-math-29] Two fair coins are tossed. Given that at least one head appears, the probability of getting exactly one head is:
+[w4-math-30] Three cards are drawn at random without replacement from a well-shuffled pack of $52$ cards. The probability that all three are aces is:
+[w4-math-31] A bag contains $4$ red and $6$ black balls. Two balls are drawn at random without replacement. The probability that both are red is:
+[w4-math-32] A factory produces $60\%$ of its bulbs on line $A$ and the remaining on line $B$. The defective rates are $5\%$ on line $A$ and $10\%$ on line $B$. If a bulb picked at random is found defective, the probability that it came from line $A$ is
+[w4-math-33] A random variable $X$ is defined as:
+[w4-math-34] Match List-I with List-II and select the correct answer. $$\begin{array}{ll} \text{List-I} & \text{List-II} \\ \hline\text{(a) Binomial distribution} & \text{(1) } \lambda \\[6pt]\text{(b) Poisson distribution} & \text{(2) } n p \\[6pt]\tex
+[w4-math-35] In a binomial distribution with $n = 10$ and $p = 0.2$, the mean and the variance are:
+[w4-math-36] If $n = 20$ and $p = 0.3$ in a binomial distribution, its standard deviation is approximately:
+[w4-math-37] A fair coin is tossed $6$ times. The probability of getting exactly $3$ heads is:
+[w4-math-38] In a Poisson distribution with $\lambda = 3$, the variance and standard deviation are:
+[w4-math-39] The number of telephone calls received at a switchboard in a day follows a Poisson distribution with mean $5$. The probability that no call is received on a particular day is:
+[w4-math-40] For a Poisson distribution with $\lambda = 2$, the value of $P(X = 0) + P(X = 1)$ is:
+[w4-chem-1] Match List-I with List-II and select the correct answer. $$\begin{array}{ll} \text{List-I} & \text{List-II} \\ \hline\text{(a) Electron} & \text{(1) Discovered by Chadwick and electrically neutral} \\[6pt]\text{(b) Proton} & \text{(2) Disco
+[w4-chem-2] Match List-I with List-II and select the correct answer. $$\begin{array}{ll} \text{List-I} & \text{List-II} \\ \hline\text{(a) Thomson's model} & \text{(1) Electrons revolve only in certain permitted orbits with quantised energy} \\[6pt]\te
+[w4-chem-3] According to Rutherford's model of the atom, an electron revolving around the nucleus:
+[w4-chem-4] The energy of a photon of wavelength $600\ \text{nm}$ is approximately: $$[\,h = 6.6 \times 10^{-34}\ \text{J s},\quad c = 3 \times 10^{8}\ \text{m s}^{-1}\,]$$
+[w4-chem-5] The minimum energy that must be supplied to excite the electron of a hydrogen atom from the ground state $(n = 1)$ to $n = 3$ is: $$[\,E_n = -13.6 \times \dfrac{1}{n^2}\ \text{eV}\,]$$
+[w4-chem-6] Match List-I with List-II and select the correct answer. $$\begin{array}{ll} \text{List-I} & \text{List-II} \\ \hline\text{(a) Principal quantum number } n & \text{(1) Gives the orientation of the orbital in space} \\[6pt]\text{(b) Azimutha
+[w4-chem-7] Match List-I with List-II and select the correct answer. $$\begin{array}{ll} \text{List-I} & \text{List-II} \\ \hline\text{(a) Aufbau principle} & \text{(1) No two electrons in an atom can have the same set of four quantum numbers} \\[6pt]\
+[w4-chem-8] The number of unpaired electrons in the ground state atom of the element with atomic number $24$ (Cr) is:
+[w4-chem-9] Match List-I with List-II and select the correct answer. $$\begin{array}{ll} \text{List-I} & \text{List-II} \\ \hline\text{(a) Mg } (Z = 12) & \text{(1) Period 4, group 8, d-block} \\[6pt]\text{(b) Cl } (Z = 17) & \text{(2) Period 6, f-bloc
+[w4-chem-10] The elements of the f-block are characterised by the filling of:
+[w4-chem-11] Moving from left to right across a period of the periodic table, one generally observes that:
+[w4-chem-12] The correct increasing order of the first ionisation enthalpies of the elements Na, Mg, Al and Si is:
+[w4-chem-13] The elements of the second period show a diagonal relationship with certain elements of the third period. The pair that does NOT show such a diagonal relationship is:
+[w4-chem-14] Match List-I with List-II and select the correct answer. $$\begin{array}{ll} \text{List-I} & \text{List-II} \\ \hline\text{(a) Coordinate bond} & \text{(1) One of the bonded atoms donates both electrons of the shared pair} \\[6pt]\text{(b) 
+[w4-chem-15] According to the molecular orbital theory, the molecular orbital configuration of $O_2$ gives a bond order of $2$ and the molecule is paramagnetic. If one electron is removed from the highest-energy antibonding orbital to form $O_2^{+}$, th
+[w4-chem-16] Match List-I with List-II and select the correct answer. $$\begin{array}{ll} \text{List-I} & \text{List-II} \\ \hline\text{(a) } \text{BeCl}_2 & \text{(1) Square planar, } sp^3d^2 \\[6pt]\text{(b) } \text{BF}_3 & \text{(2) Tetrahedral, } sp
+[w4-chem-17] Ionic compounds crystallise in different lattice structures depending on the relative sizes of the cation and the anion. The range of the radius ratio $\dfrac{r^+}{r^-}$ for which an 8:8 coordination (CsCl type) structure is stable is:
+[w4-chem-18] Match List-I with List-II and select the correct answer. $$\begin{array}{ll} \text{List-I} & \text{List-II} \\ \hline\text{(a) Intermolecular hydrogen bonding} & \text{(1) } \text{HF} > \text{HCl} > \text{HBr} > \text{HI} \\[6pt]\text{(b) I
+[w4-chem-19] The IUPAC name of the compound $\text{CH}_3 - \text{CH}(\text{CH}_3) - \text{CH}_2 - \text{CH}_2 - \text{OH}$ is:
+[w4-chem-20] Match List-I with List-II and select the correct answer. $$\begin{array}{ll} \text{List-I} & \text{List-II} \\ \hline\text{(a) Inductive effect} & \text{(1) Shift of } \pi\text{-electrons of a multiple bond in the presence of an attacking r
+[w4-phy-1] Physics deals with the study of nature and natural phenomena. Which of the following studies does NOT come under the scope of physics?
+[w4-phy-2] Match List-I with List-II and select the correct answer. $$\begin{array}{ll} \text{List-I} & \text{List-II} \\ \hline\text{(a) Gravitational force} & \text{(1) The strongest force; binds the nucleons inside the nucleus} \\[6pt]\text{(b) Ele
+[w4-phy-3] The Grand Unified Theory is an attempt to unify the following three fundamental interactions:
+[w4-phy-4] Match List-I with List-II and select the correct answer. $$\begin{array}{ll} \text{List-I} & \text{List-II} \\ \hline\text{(a) Length} & \text{(1) second} \\[6pt]\text{(b) Mass} & \text{(2) mole} \\[6pt]\text{(c) Time} & \text{(3) kilogram}
+[w4-phy-5] The distance of the star Proxima Centauri from the Earth is about $4.0 \times 10^{16}\ \text{m}$. Expressing this in light years, given $1\ \text{ly} = 9.46 \times 10^{15}\ \text{m}$, the distance is:
+[w4-phy-6] Match List-I with List-II and select the correct answer. $$\begin{array}{ll} \text{List-I} & \text{List-II} \\ \hline\text{(a) Size of a water molecule} & \text{(1) } 9.1 \times 10^{-31}\ \text{kg} \\[6pt]\text{(b) Mass of an electron} & \t
+[w4-phy-7] A screw gauge has a least count of $0.01\ \text{mm}$ and a positive zero error of $0.02\ \text{mm}$. If the observed reading for a wire is $5.46\ \text{mm}$, the correct reading is:
+[w4-phy-8] Match List-I with List-II and select the correct answer. $$\begin{array}{ll} \text{List-I} & \text{List-II} \\ \hline\text{(a) Systematic error} & \text{(1) Consistent error in one direction caused by a faulty instrument or method} \\[6pt]\
+[w4-phy-9] The diameter of a wire measured with an instrument of least count $0.001\ \text{cm}$ is $2.315\ \text{cm}$. The maximum possible absolute error and the corresponding percentage error are:
+[w4-phy-10] Four repeated measurements of the same length by an instrument give $9.7\ \text{m},\ 9.8\ \text{m},\ 9.9\ \text{m}$ and $9.8\ \text{m}$, while the true value is $10.0\ \text{m}$. The instrument is:
+[w4-phy-11] In an experiment the quantity $y$ is calculated from $y = \dfrac{x^2}{t}$. If the percentage errors in $x$ and $t$ are $2\%$ and $3\%$ respectively, the maximum percentage error in $y$ is:
+[w4-phy-12] The measured value of a length is $8.46\ \text{m}$ with an uncertainty of $0.05\ \text{m}$. Also, the result of the calculation $\dfrac{0.0091 \times 2.5}{4.4}$ is to be reported with the correct number of significant figures. These two val
+[w4-phy-13] Which of the following equations is dimensionally consistent?
+[w4-phy-14] The pressure exerted by a liquid on the walls of a moving tank is found to vary as $P = \alpha v^{2}$, where $v$ is the velocity of the tank. The dimensional formula of the constant $\alpha$ is:
+[w4-phy-15] A person walks $4\ \text{km}$ due east, then $3\ \text{km}$ due north and then $4\ \text{km}$ due west. The path length covered and the displacement of the person are:
+[w4-phy-16] A car covers the first half of a journey at $40\ \text{km h}^{-1}$ and the second half at $60\ \text{km h}^{-1}$. The average speed of the car for the whole journey is:
+[w4-phy-17] The position of a particle at time $t$ is given by $x = 3t^{2} - 2t\ \text{m}$. The instantaneous velocity of the particle at $t = 2\ \text{s}$ is:
+[w4-phy-18] A body moves with a constant speed $v$ in a circle of radius $r$. The acceleration of the body is:
+[w4-phy-19] A stone is dropped from rest from a height of $45\ \text{m}$. Taking $g = 10\ \text{m s}^{-2}$, the time taken to reach the ground and the speed on striking the ground are:
+[w4-phy-20] A train $150\ \text{m}$ long moving at $30\ \text{km h}^{-1}$ overtakes a train $100\ \text{m}$ long moving at $20\ \text{km h}^{-1}$ in the same direction. The time taken for the complete overtaking is:
