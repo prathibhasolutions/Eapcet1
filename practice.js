@@ -7,7 +7,7 @@
         "id": "practice-test",
         "title": "Practice",
         "date": "2026-10-16",
-        "durationMinutes": 60,
+        "durationMinutes": 75,
         "marksPerQuestion": 1,
         "negativeMark": 0,
         "sections": [
