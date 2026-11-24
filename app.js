@@ -9,12 +9,15 @@
     awayStartedAt: 0,
     visited: {},
     currentQuestionIndex: 0,
+    currentReviewIndex: 0,
     currentSectionIndex: 0,
     currentPaletteSection: "maths",
     timerSeconds: 0,
     timerEndAt: 0,
     timerRef: null,
-    submitted: false
+    submitted: false,
+    lastResult: null,
+    pdfFlashTimer: null
   };
 
   var SESSION_STORAGE_KEY = "eapcet-active-exam-session-v1";
@@ -42,7 +45,7 @@
 
   function escapeHtml(text) {
     var map = { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;" };
-    return String(text || "").replace(/[&<>"']/g, function (m) { return map[m]; });
+    return String(text == null ? "" : text).replace(/[&<>"']/g, function (m) { return map[m]; });
   }
 
   function slugify(value) {
@@ -428,6 +431,21 @@
     if (isCodingQuestion(question)) return [];
     if (!question || !Array.isArray(question.options)) return [];
     return question.options.map(function (opt, i) { return toOptionObject(opt, i); });
+  }
+
+  function getOptionById(question, id) {
+    if (!id || id === "-") return null;
+    var options = getOptionList(question);
+    for (var i = 0; i < options.length; i++) {
+      if (options[i].id === id) return options[i];
+    }
+    return null;
+  }
+
+  function formatAnswer(question, id) {
+    if (!id || id === "-") return "Not Attempted";
+    var opt = getOptionById(question, id);
+    return opt ? (opt.id + ". " + opt.text) : id;
   }
 
   function escapeMathHtml(text) {
@@ -838,16 +856,38 @@
   }
 
   function openQuestionModal(qIndex) {
+    if (!state.exam || !state.exam.questions.length) return;
+    state.currentReviewIndex = Math.max(0, Math.min(state.exam.questions.length - 1, qIndex));
+    renderReviewQuestion();
     var modal = document.getElementById("qModal");
+    modal.hidden = false;
+    document.body.style.overflow = "hidden";
+  }
+
+  function moveReviewQuestion(step) {
+    if (!state.exam) return;
+    state.currentReviewIndex = Math.max(0, Math.min(state.exam.questions.length - 1, state.currentReviewIndex + step));
+    renderReviewQuestion();
+  }
+
+  function renderReviewQuestion() {
+    var qIndex = state.currentReviewIndex;
+    var total = state.exam.questions.length;
     var q = getQuestionByIndex(qIndex);
     var sec = getSectionByQuestionIndex(qIndex);
     var correctId = getCorrectOptionId(q);
     var options = getOptionList(q);
     var isCoding = isCodingQuestion(q);
+    var chosenId = isCoding ? "" : ((state.answers && state.answers[q.id]) || "");
+    var responseText = String((state.textResponses && state.textResponses[q.id]) || "").trim();
+    var status = isCoding ? (responseText ? "Manual Review" : "Not Attempted") : (!chosenId ? "Not Attempted" : chosenId === correctId ? "Correct" : "Wrong");
 
-    document.getElementById("modalTitle").textContent = "Question " + (qIndex + 1);
+    document.getElementById("modalTitle").textContent = "Question " + (qIndex + 1) + "  ·  " + status;
     document.getElementById("modalQNo").textContent = "Q" + (qIndex + 1);
     document.getElementById("modalSection").textContent = sec.title;
+    document.getElementById("modalNavInfo").textContent = "Question " + (qIndex + 1) + " of " + total;
+    document.getElementById("modalPrevBtn").disabled = qIndex === 0;
+    document.getElementById("modalNextBtn").disabled = qIndex === total - 1;
 
     var modalQText = document.getElementById("modalQText");
     renderMathInNode(modalQText, q.text ? q.text : "");
@@ -861,14 +901,28 @@
     if (isCoding) {
       var codingRow = document.createElement("div");
       codingRow.className = "modal-option";
-      codingRow.innerHTML = "<strong>Manual evaluation question.</strong><br><span class='modal-coding-note'>This coding response is descriptive and not auto-graded.</span>";
+      codingRow.innerHTML = "<strong>Manual evaluation question.</strong><br><span class='modal-coding-note'>This response is not auto-graded.</span>"
+        + (responseText ? "<div class='modal-coding-response'>" + escapeHtml(responseText) + "</div>" : "");
       optionPreview.appendChild(codingRow);
     } else {
       options.forEach(function (opt) {
         var row = document.createElement("div");
-        row.className = "modal-option" + (opt.id === correctId ? " correct-opt" : "");
-
-        var html = "<strong>" + escapeHtml(opt.id) + ".</strong> " + escapeMathHtml(opt.text);
+        var isCorrect = opt.id === correctId;
+        var isChosen = opt.id === chosenId;
+        var cls = "modal-option";
+        var tags = "";
+        if (isCorrect && isChosen) {
+          cls += " correct-opt chosen-opt";
+          tags = "<span class='opt-tag tag-correct'>Correct answer & your choice</span>";
+        } else if (isCorrect) {
+          cls += " correct-opt";
+          tags = "<span class='opt-tag tag-correct'>Correct answer</span>";
+        } else if (isChosen) {
+          cls += " wrong-opt";
+          tags = "<span class='opt-tag tag-wrong'>Your choice</span>";
+        }
+        row.className = cls;
+        var html = "<div class='modal-option-top'><strong>" + escapeHtml(opt.id) + ".</strong> " + escapeMathHtml(opt.text) + tags + "</div>";
         if (opt.image) {
           html += "<div style='margin-top:8px'><img class='opt-img' alt='Option " + escapeHtml(opt.id) + "' src='" + escapeHtml(opt.image) + "'></div>";
         }
@@ -878,29 +932,28 @@
       });
     }
 
-    var yourAns = isCoding
-      ? (String((state.textResponses && state.textResponses[q.id]) || "").trim() ? "Provided" : "-")
-      : ((state.answers && state.answers[q.id]) || "-");
+    var yourAns = isCoding ? (responseText ? "Provided" : "-") : (chosenId || "-");
     var yourEl = document.getElementById("modalYourAns");
-    yourEl.textContent = yourAns;
-    yourEl.className = "modal-val" + (isCoding ? (yourAns === "-" ? " modal-val-na" : " modal-val-correct") : (yourAns === correctId ? " modal-val-correct" : yourAns === "-" ? " modal-val-na" : " modal-val-wrong"));
+    yourEl.textContent = isCoding ? yourAns : formatAnswer(q, yourAns);
+    yourEl.className = "modal-val" + (isCoding ? (yourAns === "-" ? " modal-val-na" : " modal-val-correct") : (!yourAns ? " modal-val-na" : yourAns === correctId ? " modal-val-correct" : " modal-val-wrong"));
 
-    document.getElementById("modalCorrectAns").textContent = isCoding ? "Manual" : correctId;
+    var correctEl = document.getElementById("modalCorrectAns");
+    correctEl.textContent = isCoding ? "Manual Evaluation" : formatAnswer(q, correctId);
 
     var expWrap = document.getElementById("modalExplanationWrap");
     var expText = document.getElementById("modalExplanationText");
-    if (expWrap && expText) {
-      if (q.explanation) {
+    var expTitle = document.getElementById("modalExplanationTitle");
+    if (expWrap && expText && expTitle) {
+      var expContent = isCoding ? responseText : (q.explanation || "");
+      if (expContent) {
         expWrap.style.display = "block";
-        renderMathInNode(expText, q.explanation);
+        expTitle.textContent = isCoding ? "Your Response (Manual Evaluation):" : "Solution & Explanation:";
+        renderMathInNode(expText, expContent);
       } else {
         expWrap.style.display = "none";
         expText.innerHTML = "";
       }
     }
-
-    modal.hidden = false;
-    document.body.style.overflow = "hidden";
   }
 
   function closeQuestionModal() {
@@ -995,6 +1048,8 @@
 
   function wireModal() {
     document.getElementById("modalCloseBtn").addEventListener("click", closeQuestionModal);
+    document.getElementById("modalPrevBtn").addEventListener("click", function () { moveReviewQuestion(-1); });
+    document.getElementById("modalNextBtn").addEventListener("click", function () { moveReviewQuestion(1); });
     document.getElementById("qModal").addEventListener("click", function (e) {
       if (e.target === this) closeQuestionModal();
     });
@@ -1107,6 +1162,8 @@
     var payload = {
       examId: state.exam.id,
       studentName: state.studentName,
+      answers: state.answers,
+      textResponses: state.textResponses,
       result: result
     };
     try {
@@ -1145,7 +1202,10 @@
 
     state.exam = exam;
     state.studentName = saved.studentName || "";
+    state.answers = saved.answers || {};
+    state.textResponses = saved.textResponses || {};
     state.submitted = true;
+    state.lastResult = saved.result;
     renderResult(saved.result);
     return true;
   }
@@ -1164,100 +1224,280 @@
 
     var result = calculateResult();
     result.submittedAt = new Date().toLocaleString();
+    result.autoSubmitted = !!isAutoSubmit;
+    state.lastResult = result;
     saveResultSession(result);
     renderResult(result);
-    autoDownloadResultPdf(result, isAutoSubmit);
     saveResultToGoogleSheet(result, isAutoSubmit);
   }
 
-  function autoDownloadResultPdf(result, isAutoSubmit) {
-    if (!window.jspdf || !window.jspdf.jsPDF) return;
+  function resultPdfFileName(suffix) {
+    var safeExam = String(state.exam && state.exam.title ? state.exam.title : "exam").replace(/[^a-z0-9]+/gi, "-").replace(/^-+|-+$/g, "").toLowerCase();
+    var safeStudent = String(state.studentName || "student").replace(/[^a-z0-9]+/gi, "-").replace(/^-+|-+$/g, "").toLowerCase();
+    var stamp = new Date().toISOString().replace(/[.:]/g, "-");
+    return [safeExam || "exam", safeStudent || "student", suffix || "report", stamp].join("_") + ".pdf";
+  }
 
+  function setPdfButtonBusy(busy, label) {
+    var btn = document.getElementById("downloadReportBtn");
+    if (!btn) return;
+    if (busy && state.pdfFlashTimer) {
+      clearTimeout(state.pdfFlashTimer);
+      state.pdfFlashTimer = null;
+    }
+    btn.disabled = busy;
+    btn.textContent = label || (busy ? "Preparing PDF..." : "Download Report (PDF)");
+  }
+
+  function flashPdfButton(label) {
+    setPdfButtonBusy(false, label);
+    state.pdfFlashTimer = setTimeout(function () {
+      state.pdfFlashTimer = null;
+      setPdfButtonBusy(false);
+    }, 3000);
+  }
+
+  function savePdfDocument(doc, suffix) {
+    var fileName = resultPdfFileName(suffix);
+    try {
+      var blob = doc.output("blob");
+      var url = URL.createObjectURL(blob);
+      var link = document.createElement("a");
+      link.href = url;
+      link.download = fileName;
+      link.style.display = "none";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      setTimeout(function () { URL.revokeObjectURL(url); }, 30000);
+    } catch (err) {
+      console.error("Blob download failed, using jsPDF save.", err);
+      doc.save(fileName);
+    }
+  }
+
+  function autoDownloadResultPdf(result, isAutoSubmit) {
+    if (typeof isAutoSubmit === "boolean") result.autoSubmitted = isAutoSubmit;
+    if (!window.jspdf || !window.jspdf.jsPDF) {
+      setPdfButtonBusy(false, "PDF unavailable - retry");
+      window.alert("PDF library could not load. Check your internet connection, reload the page, then try again.");
+      return;
+    }
+    try {
+      downloadFastResultPdf(result);
+      flashPdfButton("Downloaded");
+    } catch (err) {
+      console.error("PDF generation failed.", err);
+      setPdfButtonBusy(false, "Download failed - retry");
+      window.alert("PDF download failed. Please reload the page and try again.");
+    }
+  }
+
+  function pdfPlainText(value) {
+    return String(value == null ? "" : value)
+      .replace(/\$\$/g, "")
+      .replace(/\$/g, "")
+      .replace(/\\begin\{[^}]*\}/g, "")
+      .replace(/\\end\{[^}]*\}/g, "")
+      .replace(/\\frac\{([^{}]*)\}\{([^{}]*)\}/g, "$1/$2")
+      .replace(/\\times/g, "×")
+      .replace(/\\pm/g, "±")
+      .replace(/\\le/g, "≤")
+      .replace(/\\ge/g, "≥")
+      .replace(/\\neq/g, "≠")
+      .replace(/\\alpha/g, "α")
+      .replace(/\\beta/g, "β")
+      .replace(/\\pi/g, "π")
+      .replace(/\\[a-zA-Z]+/g, "")
+      .replace(/[{}]/g, "")
+      .replace(/\*\*/g, "")
+      .trim();
+  }
+
+  function downloadFastResultPdf(result) {
     var jsPDF = window.jspdf.jsPDF;
     var doc = new jsPDF({ unit: "pt", format: "a4" });
     var pageW = doc.internal.pageSize.getWidth();
     var pageH = doc.internal.pageSize.getHeight();
-    var margin = 32;
+    var margin = 34;
+    var width = pageW - margin * 2;
     var y = margin;
-    var lineH = 14;
+    var navy = [15, 23, 42];
+    var blue = [37, 99, 235];
+    var green = [5, 150, 105];
+    var red = [220, 38, 38];
+    var muted = [100, 116, 139];
+    var light = [241, 245, 249];
+    var white = [255, 255, 255];
 
-    function ensureSpace(extra) {
-      if (y + (extra || lineH) <= pageH - margin) return;
+    function ensure(height) {
+      if (y + height <= pageH - margin) return;
       doc.addPage();
       y = margin;
     }
 
-    function writeLine(text, size, bold) {
-      ensureSpace(lineH + 2);
-      doc.setFont("helvetica", bold ? "bold" : "normal");
-      doc.setFontSize(size || 10);
-      doc.text(String(text || ""), margin, y);
-      y += lineH;
+    function box(x, top, w, h, color) {
+      doc.setFillColor(color[0], color[1], color[2]);
+      doc.rect(x, top, w, h, "F");
     }
 
-    function writeWrapped(text, size, bold) {
-      var lines = doc.splitTextToSize(String(text || ""), pageW - margin * 2);
+    function text(value, x, top, size, color, bold) {
+      doc.setFont("helvetica", bold ? "bold" : "normal");
+      doc.setFontSize(size);
+      doc.setTextColor(color[0], color[1], color[2]);
+      doc.text(pdfPlainText(value), x, top);
+    }
+
+    function wrap(value, size, color, bold, x, w) {
+      var lines = doc.splitTextToSize(pdfPlainText(value), w || width);
       lines.forEach(function (line) {
-        writeLine(line, size, bold);
+        if (!String(line).trim()) return;
+        ensure(14);
+        text(line, x || margin, y + 10, size || 10, color, bold);
+        y += 14;
       });
     }
 
-    writeLine("EAPCET Result Report", 16, true);
-    y += 2;
-    writeLine("Exam: " + (state.exam && state.exam.title ? state.exam.title : "-"), 11, false);
-    writeLine("Student: " + (state.studentName || "-"), 11, false);
-    writeLine("Submitted At: " + (result.submittedAt || "-"), 11, false);
-    writeLine("Submission Type: " + (isAutoSubmit ? "Auto (Timer Completed)" : "Manual"), 11, false);
-    y += 4;
+    function pill(label, x, top, w, color) {
+      box(x, top, w, 17, color);
+      text(label, x + 6, top + 12, 8, white, true);
+    }
 
-    writeLine("Summary", 12, true);
-    writeLine("Total: " + result.total + "   Attempted: " + result.attempted + "   Correct: " + result.correct + "   Wrong: " + result.wrong + "   Score: " + result.score, 10, false);
-    y += 4;
+    ensure(110);
+    box(margin, y, width, 96, navy);
+    box(margin, y, 6, 96, blue);
+    text("EXAM PERFORMANCE REPORT", margin + 18, y + 24, 9, [147, 197, 253], true);
+    text((state.exam && state.exam.title) || "Mock Test", margin + 18, y + 47, 17, white, true);
+    text("Student: " + (state.studentName || "-"), margin + 18, y + 68, 10, [219, 234, 254], false);
+    text("Submitted: " + (result.submittedAt || "-") + "   |   Mode: " + (result.autoSubmitted ? "Auto (timer)" : "Manual"), margin + 18, y + 84, 9, [191, 219, 254], false);
+    y += 110;
 
-    writeLine("Section-wise Scores", 12, true);
-    (result.sections || []).forEach(function (s) {
-      writeLine(
-        (s.name || "General") + " | Score: " + s.score + " | Correct: " + s.correct + " | Wrong: " + s.wrong + " | Total: " + s.total,
-        10,
-        false
-      );
+    var accuracy = result.attempted ? Math.round((result.correct / result.attempted) * 100) : 0;
+    var kpis = [
+      ["Total Questions", result.total, navy],
+      ["Attempted", result.attempted, blue],
+      ["Correct", result.correct, green],
+      ["Wrong", result.wrong, red],
+      ["Accuracy", accuracy + "%", blue],
+      ["Score", result.score, [180, 83, 9]]
+    ];
+    var gap = 8;
+    var boxW = (width - gap * 2) / 3;
+    kpis.forEach(function (kpi, i) {
+      var col = i % 3;
+      var row = Math.floor(i / 3);
+      var x = margin + col * (boxW + gap);
+      var top = y + row * 48;
+      box(x, top, boxW, 42, light);
+      text(kpi[0], x + 9, top + 16, 8, muted, true);
+      text(kpi[1], x + 9, top + 34, 15, kpi[2], true);
     });
-    y += 4;
+    y += 100;
 
-    writeLine("Question Attempts", 12, true);
-    writeLine("# | Section | Your Answer | Correct | Status", 10, true);
-    (result.rows || []).forEach(function (row) {
-      var line = [
-        row.no,
-        row.section || "",
-        row.selected || "-",
-        row.correct || "-",
-        row.status || "-"
-      ].join(" | ");
-      writeWrapped(line, 10, false);
+    ensure(24);
+    text("Section-wise Scores", margin, y, 13, navy, true);
+    y += 12;
+    (result.sections || []).forEach(function (s) {
+      ensure(26);
+      box(margin, y, width, 22, light);
+      text(s.name, margin + 8, y + 15, 10, navy, true);
+      text("Score: " + s.score + (s.maxMarks ? "/" + s.maxMarks : ""), margin + 210, y + 15, 10, green, true);
+      text("Correct: " + s.correct + "   Wrong: " + s.wrong + "   Attempted: " + (s.attempted || 0), margin + 340, y + 15, 9, muted, false);
+      y += 26;
+    });
+    y += 8;
+
+    ensure(40);
+    text("Answer Key at a Glance", margin, y, 13, navy, true);
+    y += 12;
+    ensure(24);
+    box(margin, y, width, 20, navy);
+    text("Question No.", margin + 8, y + 14, 8, white, true);
+    text("Your Answer", margin + 100, y + 14, 8, white, true);
+    text("Correct Option", margin + 250, y + 14, 8, white, true);
+    text("Status", margin + 420, y + 14, 8, white, true);
+    y += 20;
+    (result.rows || []).forEach(function (r, i) {
+      ensure(17);
+      if (i % 2 === 0) box(margin, y, width, 16, [248, 250, 252]);
+      var statusColor = r.status === "Correct" ? green : r.status === "Wrong" ? red : muted;
+      text(r.no, margin + 8, y + 11, 8, navy, false);
+      text(r.selected === "-" ? "-" : r.selected, margin + 100, y + 11, 8, navy, false);
+      text(r.correct === "-" ? "-" : r.correct, margin + 250, y + 11, 8, navy, false);
+      text(r.status, margin + 420, y + 11, 8, statusColor, true);
+      y += 16;
+    });
+    y += 12;
+
+    ensure(24);
+    text("Detailed Question Review", margin, y, 13, navy, true);
+    y += 12;
+    text("Green = correct option. Red = your incorrect choice. Explanations are included when available.", margin, y, 8, muted, false);
+    y += 14;
+
+    (state.exam.questions || []).forEach(function (q, idx) {
+      var row = (result.rows || [])[idx] || {};
+      var correctId = getCorrectOptionId(q);
+      var isCoding = isCodingQuestion(q);
+      var chosenId = isCoding ? "" : ((state.answers && state.answers[q.id]) || "");
+      var responseText = String((state.textResponses && state.textResponses[q.id]) || "").trim();
+      var status = row.status || (!chosenId ? "Not Attempted" : chosenId === correctId ? "Correct" : "Wrong");
+      var statusColor = status === "Correct" ? green : status === "Wrong" ? red : blue;
+
+      ensure(28);
+      box(margin, y, width, 24, [239, 246, 255]);
+      box(margin, y, 4, 24, statusColor);
+      text("Q" + (idx + 1) + "  " + (q.section || "General"), margin + 12, y + 16, 10, navy, true);
+      text(status, margin + width - 110, y + 16, 9, statusColor, true);
+      y += 30;
+
+      wrap(q.text || "", 10, navy, false, margin + 10, width - 20);
+      y += 2;
+
+      if (isCoding) {
+        wrap(responseText ? "Your response: " + responseText : "No response provided.", 9, muted, false, margin + 10, width - 20);
+      } else {
+        getOptionList(q).forEach(function (opt) {
+          var isCorrect = opt.id === correctId;
+          var isChosen = opt.id === chosenId;
+          var color = isCorrect && isChosen ? [209, 250, 229] : isCorrect ? [220, 252, 231] : isChosen ? [254, 226, 226] : [248, 250, 252];
+          var ink = isChosen && !isCorrect ? red : isCorrect ? green : navy;
+          ensure(18);
+          box(margin + 10, y, width - 20, 17, color);
+          text(opt.id + ". " + opt.text + (isCorrect ? "   [Correct answer]" : "") + (isChosen ? "   [Your choice]" : ""), margin + 17, y + 12, 9, ink, isCorrect || isChosen);
+          y += 18;
+        });
+      }
+
+      ensure(20);
+      box(margin + 10, y, (width - 24) / 2, 18, [239, 246, 255]);
+      box(margin + 14 + (width - 24) / 2, y, (width - 24) / 2, 18, [220, 252, 231]);
+      text("Your Choice: " + (isCoding ? (responseText ? "Provided" : "-") : (chosenId || "-")), margin + 16, y + 12, 9, navy, true);
+      text("Correct: " + (isCoding ? "Manual" : correctId), margin + 20 + (width - 24) / 2, y + 12, 9, green, true);
+      y += 24;
+
+      if (q.explanation) {
+        wrap("Solution: " + q.explanation, 9, [20, 83, 45], false, margin + 10, width - 20);
+      }
+      y += 8;
     });
 
     if (result.keyActivity && result.keyActivity.length) {
-      y += 6;
-      writeLine("Keyboard / Activity Log", 12, true);
-      writeLine("# | Time | Q | Section | Event", 10, true);
-      result.keyActivity.forEach(function (entry, idx) {
-        var logLine = [
-          idx + 1,
-          entry.at || "-",
-          "Q" + (entry.questionNo || "-"),
-          entry.section || "-",
-          entry.key || "-"
-        ].join(" | ");
-        writeWrapped(logLine, 10, false);
+      ensure(28);
+      text("Keyboard / Activity Log", margin, y, 13, navy, true);
+      y += 12;
+      result.keyActivity.forEach(function (entry, i) {
+        wrap((i + 1) + ". " + (entry.at || "-") + " | Q" + (entry.questionNo || "-") + " | " + (entry.key || "-"), 8, muted, false, margin, width);
       });
     }
 
-    var safeExam = String(state.exam && state.exam.title ? state.exam.title : "exam").replace(/[^a-z0-9]+/gi, "-").replace(/^-+|-+$/g, "").toLowerCase();
-    var safeStudent = String(state.studentName || "student").replace(/[^a-z0-9]+/gi, "-").replace(/^-+|-+$/g, "").toLowerCase();
-    var stamp = new Date().toISOString().replace(/[.:]/g, "-");
-    var fileName = [safeExam || "exam", safeStudent || "student", "result", stamp].join("_") + ".pdf";
-    doc.save(fileName);
+    var pages = doc.internal.getNumberOfPages();
+    for (var p = 1; p <= pages; p++) {
+      doc.setPage(p);
+      text("EAPCET Mock Test · Performance Report", margin, pageH - 16, 8, muted, false);
+      text("Page " + p + " of " + pages, pageW - margin - 70, pageH - 16, 8, muted, false);
+    }
+    savePdfDocument(doc, "report");
   }
 
   function saveExamSession() {
@@ -1683,6 +1923,10 @@
     document.getElementById("goHomeBtn").addEventListener("click", function () {
       clearResultSession();
       showScreen("home");
+    });
+
+    document.getElementById("downloadReportBtn").addEventListener("click", function () {
+      if (state.lastResult && state.exam) autoDownloadResultPdf(state.lastResult, false);
     });
 
     document.getElementById("editExamBackBtn").addEventListener("click", function () {

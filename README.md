@@ -22,7 +22,7 @@ Static NTA-style mock test platform for daily exams.
   - Correct/Wrong/Not attempted status
   - Score summary
 - Save result to Google Sheet (via Apps Script endpoint)
-- Auto-download result PDF on submission (manual or timer auto-submit)
+- Manual PDF download from the result screen (no automatic download on submission)
 
 ## Files
 
