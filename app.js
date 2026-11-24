@@ -1293,24 +1293,209 @@
     }
   }
 
+  var PDF_MATH_NAMES = {
+    alpha: "alpha", beta: "beta", gamma: "gamma", delta: "delta", Delta: "Delta",
+    epsilon: "epsilon", varepsilon: "epsilon", zeta: "zeta", eta: "eta", theta: "theta",
+    Theta: "Theta", iota: "iota", kappa: "kappa", lambda: "lambda", Lambda: "Lambda",
+    mu: "mu", nu: "nu", xi: "xi", pi: "pi", Pi: "Pi", rho: "rho", sigma: "sigma",
+    Sigma: "Sigma", tau: "tau", upsilon: "upsilon", phi: "phi", varphi: "phi", Phi: "Phi",
+    chi: "chi", psi: "psi", Psi: "Psi", omega: "omega", Omega: "Omega",
+    sin: "sin", cos: "cos", tan: "tan", cot: "cot", sec: "sec", cosec: "cosec",
+    sinh: "sinh", cosh: "cosh", tanh: "tanh", ln: "ln", log: "log", lim: "lim",
+    max: "max", min: "min", gcd: "gcd", arg: "arg", det: "det", exp: "exp",
+    times: "×", cdot: "·", bullet: "·", pm: "±", mp: "-/+",
+    le: "<=", leq: "<=", ge: ">=", geq: ">=", ne: "!=", neq: "!=", approx: "~",
+    sim: "~", equiv: "=", propto: "prop to", to: "->", rightarrow: "->",
+    longrightarrow: "->", leftarrow: "<-", Rightarrow: "=>", Leftarrow: "<=",
+    implies: "=>", iff: "<=>", xrightarrow: "->", cap: "cap", cup: "cup",
+    in: "in", notin: "not in", subset: "subset", subseteq: "subseteq",
+    supseteq: "supseteq", mid: " | ", sum: "sum", prod: "prod", int: "int",
+    infty: "infinity", partial: "d", nabla: "grad", hbar: "h-bar", ell: "l",
+    Re: "Re", Im: "Im", circ: "°", ldots: "...", cdots: "...", dots: "...",
+    angle: "angle", triangle: "triangle", parallel: "||", perp: "perp", AA: "Å",
+    quad: " ", qquad: "  ", displaystyle: "", limits: "", prime: "'",
+    begin: "", end: "", hline: "", left: "", right: "", Big: "", big: "",
+    bigg: "", Bigg: "", textstyle: "", scriptstyle: ""
+  };
+
+  var PDF_GREEK_SYMBOLS = {
+    alpha: "a", beta: "b", gamma: "g", delta: "d", Delta: "D", epsilon: "e", varepsilon: "e",
+    zeta: "z", eta: "h", theta: "q", Theta: "Q", iota: "i", kappa: "k",
+    lambda: "l", Lambda: "L", mu: "m", nu: "n", xi: "x", omicron: "o",
+    pi: "p", Pi: "P", rho: "r", sigma: "s", Sigma: "S", tau: "t",
+    upsilon: "u", phi: "f", varphi: "f", Phi: "F", chi: "c", psi: "y",
+    Psi: "Y", omega: "w", Omega: "W"
+  };
+
+  var PDF_MATH_ACCENTS = { bar: "-bar", overline: "-bar", vec: "vec", hat: "hat", dot: "dot" };
+  var PDF_MATH_TEXT = ["text", "mathrm", "mathbf", "mathbb", "mathcal", "mathit", "operatorname", "textrm", "textbf"];
+  var PDF_MATH_FUNCTIONS = ["sin", "cos", "tan", "cot", "sec", "cosec", "sinh", "cosh", "tanh", "ln", "log", "lim", "max", "min", "gcd", "arg", "det", "exp"];
+
   function pdfPlainText(value) {
-    return String(value == null ? "" : value)
-      .replace(/\$\$/g, "")
-      .replace(/\$/g, "")
-      .replace(/\\begin\{[^}]*\}/g, "")
-      .replace(/\\end\{[^}]*\}/g, "")
-      .replace(/\\frac\{([^{}]*)\}\{([^{}]*)\}/g, "$1/$2")
-      .replace(/\\times/g, "×")
-      .replace(/\\pm/g, "±")
-      .replace(/\\le/g, "≤")
-      .replace(/\\ge/g, "≥")
-      .replace(/\\neq/g, "≠")
-      .replace(/\\alpha/g, "α")
-      .replace(/\\beta/g, "β")
-      .replace(/\\pi/g, "π")
-      .replace(/\\[a-zA-Z]+/g, "")
-      .replace(/[{}]/g, "")
-      .replace(/\*\*/g, "")
+    var src = String(value == null ? "" : value)
+      .replace(/\$\$/g, " ")
+      .replace(/\$/g, "");
+    var i = 0;
+    var out = "";
+    var active = null;
+    var inScript = false;
+    var suppressScriptSpace = false;
+
+    function isLetter(ch) {
+      return /[A-Za-z]/.test(ch || "");
+    }
+
+    function isAlphaNum(ch) {
+      return /[A-Za-z0-9]/.test(ch || "");
+    }
+
+    function silentAhead() {
+      if (src[i] !== "\\") return false;
+      var j = i + 1;
+      if (j >= src.length) return false;
+      if (!isLetter(src[j])) return src[j] === "!";
+      var name = "";
+      while (j < src.length && isLetter(src[j])) name += src[j++];
+      return ["left", "right", "displaystyle", "limits", "Big", "big", "bigg", "Bigg", "textstyle", "scriptstyle", "begin", "end", "hline"].indexOf(name) !== -1;
+    }
+
+    function withSpace(text, allowLead) {
+      if (!text) return text;
+      var recent = active ? active.text : out;
+      var lead = allowLead && !inScript && /^[A-Za-z]/.test(text) && /[A-Za-z0-9)\]]$/.test(recent) ? " " : "";
+      var tail = isAlphaNum(src[i]) || (src[i] === "\\" && !silentAhead()) ? " " : "";
+      return lead + text + tail;
+    }
+
+    function simple(arg) {
+      return /^-?[0-9]+(\.[0-9]+)?$/.test(arg) || /^[A-Za-z+\-]$/.test(arg);
+    }
+
+    function simpleFraction(arg) {
+      return /^[0-9.]+$/.test(arg);
+    }
+
+    function readArg() {
+      while (src[i] === " ") i += 1;
+      if (src[i] === "{") {
+        i += 1;
+        return readGroup();
+      }
+      if (src[i] === "\\") return readCommand();
+      if (i < src.length) return src[i++];
+      return "";
+    }
+
+    function readGroup() {
+      var previous = active;
+      var frame = { text: "" };
+      active = frame;
+      while (i < src.length && src[i] !== "}") frame.text += readToken();
+      if (src[i] === "}") i += 1;
+      active = previous;
+      return frame.text;
+    }
+
+    function readCommand() {
+      i += 1;
+      if (i >= src.length) return "";
+      var ch = src[i];
+      var name;
+      var arg;
+      var arg2;
+      if (isLetter(ch)) {
+        name = "";
+        while (i < src.length && isLetter(src[i])) name += src[i++];
+        if (name === "begin" || name === "end") {
+          readArg();
+          if (src[i] === "{") readGroup();
+          return "";
+        }
+        if (name === "frac" || name === "dfrac" || name === "tfrac" || name === "binom") {
+          arg = readArg();
+          arg2 = readArg();
+          if (name === "binom") return withSpace("(" + arg + " choose " + arg2 + ")", false);
+          return withSpace(simpleFraction(arg) && simpleFraction(arg2) ? arg + "/" + arg2 : "(" + arg + ")/(" + arg2 + ")", false);
+        }
+        if (name === "sqrt") {
+          var root;
+          if (src[i] === "[") {
+            i += 1;
+            root = "";
+            while (i < src.length && src[i] !== "]") root += readToken();
+            if (src[i] === "]") i += 1;
+          }
+          arg = readArg();
+          return withSpace(root ? "(" + arg + ")^(1/" + root + ")" : "sqrt(" + arg + ")", false);
+        }
+        if (PDF_MATH_TEXT.indexOf(name) !== -1) return readArg();
+        if (PDF_MATH_ACCENTS[name]) {
+          arg = readArg();
+          return withSpace(PDF_MATH_ACCENTS[name] === "-bar" && simple(arg) ? arg + "-bar" : PDF_MATH_ACCENTS[name] + "(" + arg + ")", true);
+        }
+        if (name === "pmod") return " (mod " + readArg() + ")";
+        if (name === "xrightarrow") return "-> " + readArg();
+        if (name === "overset") {
+          arg = readArg();
+          arg2 = readArg();
+          return arg + " " + arg2;
+        }
+        if (Object.prototype.hasOwnProperty.call(PDF_MATH_NAMES, name)) return withSpace(PDF_MATH_NAMES[name], PDF_MATH_FUNCTIONS.indexOf(name) !== -1);
+        return withSpace(name, PDF_MATH_FUNCTIONS.indexOf(name) !== -1);
+      }
+      i += 1;
+      if (ch === "{" || ch === "}") return ch;
+      if (ch === "%" || ch === "$" || ch === "&" || ch === "#" || ch === "_") return ch;
+      if (ch === " ") return " ";
+      if (ch === "\\") {
+        if (isLetter(src[i])) {
+          i -= 1;
+          return readCommand();
+        }
+        return "\n";
+      }
+      if (ch === "," || ch === ":" || ch === ";") return " ";
+      if (ch === "!") return "";
+      return ch;
+    }
+
+    function readToken() {
+      var ch = src[i];
+      var arg;
+      if (ch === "{") {
+        i += 1;
+        if (src[i] === "}") {
+          i += 1;
+          suppressScriptSpace = true;
+          return "";
+        }
+        return readGroup();
+      }
+      if (ch === "}") {
+        i += 1;
+        return "";
+      }
+      if (ch === "\\") return readCommand();
+      if (ch === "^" || ch === "_") {
+        i += 1;
+        inScript = true;
+        arg = readArg();
+        inScript = false;
+        if (ch === "^" && (arg === "°" || arg === "'")) return withSpace(arg, false);
+        var script = ch + (simple(arg) ? arg : "(" + arg + ")");
+        if (!suppressScriptSpace) script = withSpace(script, false);
+        suppressScriptSpace = false;
+        return script;
+      }
+      i += 1;
+      return ch;
+    }
+
+    while (i < src.length) out += readToken();
+    return out
+      .replace(/\*\*([^*]+)\*\*/g, "$1")
+      .replace(/\^\(?([A-Za-z0-9+\-]+)\)?C_\(?([A-Za-z0-9+\-]+)\)?/g, "($1)C($2)")
+      .replace(/[ \t]+/g, " ")
       .trim();
   }
 
@@ -1348,12 +1533,108 @@
       doc.text(pdfPlainText(value), x, top);
     }
 
+    function mathSegments(value, size, bold) {
+      var source = String(value || "");
+      var segments = [];
+      var i = 0;
+
+      function push(chunk, scale, dy) {
+        var tokens = String(chunk).match(/\s+|[A-Za-z]+|[0-9]+|[^\sA-Za-z0-9]+/g) || [];
+        tokens.forEach(function (token) {
+          var symbol = PDF_GREEK_SYMBOLS[token];
+          segments.push({
+            text: symbol || token,
+            font: symbol ? "symbol" : "helvetica",
+            scale: scale,
+            dy: dy,
+            bold: symbol ? false : bold
+          });
+        });
+      }
+
+      while (i < source.length) {
+        var ch = source[i];
+        if (ch === "^" || ch === "_") {
+          i += 1;
+          var argument = "";
+          if (source[i] === "(") {
+            i += 1;
+            var depth = 1;
+            while (i < source.length && depth > 0) {
+              if (source[i] === "(") depth += 1;
+              if (source[i] === ")") {
+                depth -= 1;
+                if (depth === 0) {
+                  i += 1;
+                  break;
+                }
+              }
+              argument += source[i];
+              i += 1;
+            }
+          } else {
+            argument = source[i] || "";
+            i += 1;
+          }
+          push(argument, 0.72, ch === "^" ? -0.34 * size : 0.22 * size);
+        } else {
+          var start = i;
+          while (i < source.length && source[i] !== "^" && source[i] !== "_") i += 1;
+          push(source.slice(start, i), 1, 0);
+        }
+      }
+      return segments;
+    }
+
+    function segmentWidth(segment, size, bold) {
+      doc.setFont(segment.font || "helvetica", segment.bold ? "bold" : "normal");
+      doc.setFontSize(size * segment.scale);
+      return doc.getTextWidth(segment.text);
+    }
+
+    function drawSegments(segments, x, top, size, color, bold) {
+      var cursor = x;
+      segments.forEach(function (segment) {
+        doc.setFont(segment.font || "helvetica", segment.bold ? "bold" : "normal");
+        doc.setFontSize(size * segment.scale);
+        doc.setTextColor(color[0], color[1], color[2]);
+        doc.text(segment.text, cursor, top + segment.dy);
+        cursor += doc.getTextWidth(segment.text);
+      });
+    }
+
+    function richText(value, x, top, size, color, bold) {
+      var fontSize = size || 10;
+      drawSegments(mathSegments(pdfPlainText(value), fontSize, bold), x, top, fontSize, color, bold);
+    }
+
     function wrap(value, size, color, bold, x, w) {
-      var lines = doc.splitTextToSize(pdfPlainText(value), w || width);
-      lines.forEach(function (line) {
-        if (!String(line).trim()) return;
+      var fontSize = size || 10;
+      var limit = w || width;
+      var segments = mathSegments(pdfPlainText(value), fontSize, bold);
+      var lines = [];
+      var line = [];
+      var lineWidth = 0;
+      segments.forEach(function (segment) {
+        var segWidth = segmentWidth(segment, fontSize, bold);
+        if (!segment.text.trim()) {
+          if (line.length) line.push(segment);
+          return;
+        }
+        if (line.length && lineWidth + segWidth > limit) {
+          lines.push(line);
+          line = [];
+          lineWidth = 0;
+        }
+        line.push(segment);
+        lineWidth += segWidth;
+      });
+      if (line.length) lines.push(line);
+      lines.forEach(function (parts) {
+        while (parts.length && !parts[parts.length - 1].text.trim()) parts.pop();
+        if (!parts.length) return;
         ensure(14);
-        text(line, x || margin, y + 10, size || 10, color, bold);
+        drawSegments(parts, x || margin, y + 10, fontSize, color, bold);
         y += 14;
       });
     }
@@ -1464,7 +1745,7 @@
           var ink = isChosen && !isCorrect ? red : isCorrect ? green : navy;
           ensure(18);
           box(margin + 10, y, width - 20, 17, color);
-          text(opt.id + ". " + opt.text + (isCorrect ? "   [Correct answer]" : "") + (isChosen ? "   [Your choice]" : ""), margin + 17, y + 12, 9, ink, isCorrect || isChosen);
+          richText(opt.id + ". " + opt.text + (isCorrect ? "   [Correct answer]" : "") + (isChosen ? "   [Your choice]" : ""), margin + 17, y + 12, 9, ink, isCorrect || isChosen);
           y += 18;
         });
       }
